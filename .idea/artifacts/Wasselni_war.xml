@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Wasselni:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Wasselni</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Wasselni-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Wasselni:war exploded" />
+    </root>
+  </artifact>
+</component>

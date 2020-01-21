@@ -9,8 +9,8 @@
         <module name="Wasselni" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Wasselni" target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="Wasselni" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

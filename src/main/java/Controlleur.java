@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "cs",urlPatterns = {"/","*.jee"})
+@WebServlet(name = "cs",urlPatterns = {"/index"})
 public class Controlleur extends HttpServlet {
     @Override
     public void init() throws ServletException {
