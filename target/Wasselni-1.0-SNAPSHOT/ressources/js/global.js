@@ -19,7 +19,7 @@
     
     } catch(er) {console.log(er);}
     /*==================================================================
-        [ Input Number ]*/
+        [ Input Number (debugage :'(  ) ]*/
     
     try {
     
@@ -47,7 +47,7 @@
             });
     
             btnMinus.on('click', function () {
-                var min = 0;
+                var min = 1;
     
                 var oldValue = parseInt(qtyInput.val());
                 if (oldValue <= min) {
