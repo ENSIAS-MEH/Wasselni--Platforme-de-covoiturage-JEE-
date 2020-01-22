@@ -5,36 +5,39 @@ import java.util.Date;
 
 public class DetailsTrajet implements Serializable {
     private static final long serialVersionUID = -3068506332086499721L;
-    private int idDetailsTrajet;
+    private Long idDetailsTrajet;
     private Date dateDepart;
     private Date dateArrivee;
     private int prixPlace;
     private String typeVoiture;
     private int effectif;
+    private Long idTrajetChoisie;
 
     public DetailsTrajet() {
         super();
     }
 
-    public DetailsTrajet(int idDetailsTrajet,
+    public DetailsTrajet(Long idDetailsTrajet,
                          Date dateDepart,
                          Date dateArrivee,
                          int prixPlace,
                          String typeVoiture,
-                         int effectif) {
+                         int effectif,
+                         Long idTrajetChoisie) {
         this.idDetailsTrajet = idDetailsTrajet;
         this.dateDepart = dateDepart;
         this.dateArrivee = dateArrivee;
         this.prixPlace = prixPlace;
         this.typeVoiture = typeVoiture;
         this.effectif = effectif;
+        this.idTrajetChoisie=idTrajetChoisie;
     }
 
-    public int getIdDetailsTrajet() {
+    public Long getIdDetailsTrajet() {
         return idDetailsTrajet;
     }
 
-    public void setIdDetailsTrajet(int idDetailsTrajet) {
+    public void setIdDetailsTrajet(Long idDetailsTrajet) {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 
@@ -76,5 +79,13 @@ public class DetailsTrajet implements Serializable {
 
     public void setEffectif(int effectif) {
         this.effectif = effectif;
+    }
+
+    public Long getIdTrajetChoisie() {
+        return idTrajetChoisie;
+    }
+
+    public void setIdTrajetChoisie(Long idTrajetChoisie) {
+        this.idTrajetChoisie = idTrajetChoisie;
     }
 }

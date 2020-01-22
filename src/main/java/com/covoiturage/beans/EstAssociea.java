@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class EstAssociea implements Serializable {
     private static final long serialVersionUID = 6685041004718402373L;
-    private int idDetailsTrajet;
+    private Long idDetailsTrajet;
     private String cinUser;
     private String TypeAssociation;
     private Date DateAssociation;
@@ -14,18 +14,18 @@ public class EstAssociea implements Serializable {
         super();
     }
 
-    public EstAssociea(int idDetailsTrajet, String cinUser, String typeAssociation, Date dateAssociation) {
+    public EstAssociea(Long idDetailsTrajet, String cinUser, String typeAssociation, Date dateAssociation) {
         this.idDetailsTrajet = idDetailsTrajet;
         this.cinUser = cinUser;
         TypeAssociation = typeAssociation;
         DateAssociation = dateAssociation;
     }
 
-    public int getIdDetailsTrajet() {
+    public Long getIdDetailsTrajet() {
         return idDetailsTrajet;
     }
 
-    public void setIdDetailsTrajet(int idDetailsTrajet) {
+    public void setIdDetailsTrajet(Long idDetailsTrajet) {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Trajet implements Serializable {
     private static final long serialVersionUID = -9145861415727573123L;
-    private int idTrajet;
+    private Long idTrajet;
     private String DepartTrajet;
     private String DestinationTrajet;
 
@@ -12,17 +12,17 @@ public class Trajet implements Serializable {
         super();
     }
 
-    public Trajet(int idTrajet, String departTrajet, String destinationTrajet) {
+    public Trajet(Long idTrajet, String departTrajet, String destinationTrajet) {
         this.idTrajet = idTrajet;
         DepartTrajet = departTrajet;
         DestinationTrajet = destinationTrajet;
     }
 
-    public int getIdTrajet() {
+    public Long getIdTrajet() {
         return idTrajet;
     }
 
-    public void setIdTrajet(int idTrajet) {
+    public void setIdTrajet(Long idTrajet) {
         this.idTrajet = idTrajet;
     }
 
