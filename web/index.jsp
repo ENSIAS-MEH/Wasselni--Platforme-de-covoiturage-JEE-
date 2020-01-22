@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -111,7 +111,7 @@
 
                                                 <!--Depart-->
                                                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                                    <input class="input100" type="text" name="pseudo" placeholder="Départ">
+                                                    <input class="input100" type="text" name="depare" placeholder="Départ">
                                                     <span class="focus-input100"></span>
                                                     <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                                 </div>
@@ -119,7 +119,7 @@
 
                                                 <!--Destination-->
                                                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                                    <input class="input100" type="text" name="pseudo" placeholder="Destination">
+                                                    <input class="input100" type="text" name="destination" placeholder="Destination">
                                                     <span class="focus-input100"></span>
                                                     <span class="symbol-input100"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                                                 </div>
@@ -127,7 +127,7 @@
                                                 
                                                 <!--Date-->
                                                 <div class="wrap-input100 input-group">
-                                                    <input class="input100" type="text" name="checkin" placeholder="Date" id="input-start">
+                                                    <input class="input100" type="text" name="datetrajet" placeholder="Date" id="input-start">
                                                     <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                                 </div>
 
@@ -140,7 +140,7 @@
                                                             <span class="plus">+</span>
                                                             <span class="minus">-</span>
                                                         </div>
-                                                        <input class="input100 quantity" style="height: 44px; border-radius: 17px; margin-bottom: 5px; width: 288px;" type="text" name="guests" value="2 Personnes">
+                                                        <input class="input100 quantity" style="height: 44px; border-radius: 17px; margin-bottom: 5px; width: 288px;" type="text" name="effectif" value="2 Personnes">
                                                         <span class="symbol-input100"><i class="fa fa-users" aria-hidden="true"></i></span>
                                                     </div>
                                                 </div>
@@ -285,8 +285,40 @@
 </div>
 </div>
 
-
-
+<!--************-->
+<!--Inscrire-->
+<!--************-->
+<section id="sectionMilieu" class="p-5">
+    <div class="dark-overlay">
+        <div class="row">
+                <div class="container pt-5  inscriremv">
+                    <h2 class="display-5 d-inline mylead">N'hésitez plus, abonnez vous maintenant !</h2>
+                    <br><br><br><br>
+                  
+                    <div style="margin-left: 210px;">
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="Nom" placeholder="Nom">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-user" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="Email" placeholder="Email">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-envelope" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info mb-2 ">Inscrire</button>
+                      </form>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
 
 
 
@@ -443,7 +475,11 @@
         duration:2000,
         distance:'60px'
     });
-
+    ScrollReveal().reveal('.inscriremv' ,{
+        origin:'bottom',
+        duration:2000,
+        distance:'60px'
+    });
 
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
