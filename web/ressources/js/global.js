@@ -60,7 +60,7 @@
         });
     
         function refineString(s) {
-            if(parseInt(s) <= 1) return parseInt(s) + " Personne";
+            if(parseInt(s) == 1) return parseInt(s) + " Personne";
             else return parseInt(s) + " Personnes";
         }
     

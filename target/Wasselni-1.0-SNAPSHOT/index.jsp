@@ -26,13 +26,14 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <link rel="stylesheet" href="ressources/css/style.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">   
     
     <!--Fichiers-->
     <link rel="icon" type="image/png" href="ressources/images/icons/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="ressources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="ressources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
+   
 
     <title>Wasselni</title>
 </head>
@@ -226,6 +227,73 @@
 <!--************-->
 <!--Nos services (en cours) -->
 <!--************-->
+<div class="row" style="margin-top: 60px;margin-bottom: 60px;">
+
+
+ <!-- Service Client -->
+ <div class="col-12 col-lg-4 srv1">
+    <div class="single-service-area mb-80">
+        <div class="service-icon">
+                <i class="fa fa-life-ring"></i>
+            </div>
+            <h5  style="font-weight: bold;">Service Client 24/24 et 7/7</h5>
+            <p></p>
+        </div>
+        <center>
+            Assistance et d'accueil téléphonique 24/7 avec <br>
+            nos expertises qui réponses Aux votre questions.
+            <br> <br> <br>
+            <a href="#" class="btn btn2" style="font-weight: bold;">En savoir plus</a>
+        </center>
+    </div>
+    
+    <!-- Service Proposer un trajet -->
+    <div class="col-12 col-lg-4 srv2">
+        <div class="single-service-area mb-80">
+            <div class="service-icon">
+                <i class="fa fa-bullhorn"></i>
+            </div>
+            <h5 style="font-weight: bold;">Comment proposer un trajet</h5>
+            <p></p>
+        </div>
+        <center>
+            permet aux conducteurs de publier une annonce <br>
+             avec des places libres pour trouver des passagers <br>
+              recherchant le même trajet. <br> <br>
+            <a href="#" class="btn btn2" style="font-weight: bold; ">En savoir plus</a>
+        </center>
+    </div>
+
+   <!-- Service la Sureté -->
+   <div class="col-12 col-lg-4 srv3">
+        <div class="single-service-area mb-80">
+            <div class="service-icon">
+                <i  class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <h5  style="font-weight: bold;">Vous pouvez compter sur nous</h5>
+            <p></p>
+        </div>
+        <center>
+            Nous vous accompagnons dans votre trajet,  <br>
+            en vous envoyant un signe <span style="font-weight: bold;">20 min</span>,<br>
+            en enquêtant sur votre place. <br> <br>
+            <a href="#" class="btn btn2" style="font-weight: bold;">En savoir plus</a>
+        </center>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 <!--************-->
@@ -336,7 +404,22 @@
         distance:'60px'
     });
     
-    
+    //Service
+    ScrollReveal().reveal('.srv1',{
+        origin:'left',
+        duration:2000,
+        distance:'60px'
+    });
+    ScrollReveal().reveal('.srv2',{
+        origin:'bottom',
+        duration:2000,
+        distance:'60px'
+    });
+    ScrollReveal().reveal('.srv3',{
+        origin:'right',
+        duration:2000,
+        distance:'60px'
+    });
 
 
     //footer
