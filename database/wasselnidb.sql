@@ -1,0 +1,109 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3308
+-- Généré le :  mer. 22 jan. 2020 à 14:40
+-- Version du serveur :  5.7.24
+-- Version de PHP :  7.2.14
+
+create database wasselnidb;
+use wasselnidb;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  wasselnidb
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table users
+--
+
+DROP TABLE IF EXISTS users;
+CREATE TABLE IF NOT EXISTS users (
+  CIN varchar(50) NOT NULL,
+  NOM varchar(50) NOT NULL,
+  PRENOM varchar(50) NOT NULL,
+  DATE_NAISSANCE date NOT NULL,
+  SEXE varchar(5) NOT NULL,
+  LOGIN varchar(50) NOT NULL,
+  EMAIL varchar(50) NOT NULL,
+  PASSWORD varchar(50) NOT NULL,
+  DATE_INSCRIPTION datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  RANK float NOT NULL DEFAULT '5',
+  PRIMARY KEY (CIN),
+  UNIQUE KEY LOGIN_UNIQUE (LOGIN),
+  UNIQUE KEY EMAIL_UNIQUE (EMAIL)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table trajet
+--
+
+DROP TABLE IF EXISTS trajet;
+CREATE TABLE IF NOT EXISTS trajet (
+  ID_TRAJET int(11) NOT NULL AUTO_INCREMENT,
+  DEPART_TRAJET varchar(100) NOT NULL,
+  DESTINATION_TRAJET varchar(100) NOT NULL,
+  PRIMARY KEY (ID_TRAJET),
+  UNIQUE KEY TRAJET_UNIQUE (DEPART_TRAJET,DESTINATION_TRAJET) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table details_trajet
+--
+
+DROP TABLE IF EXISTS details_trajet;
+CREATE TABLE IF NOT EXISTS details_trajet (
+  ID_DETAILS_TRAJET int(11) NOT NULL AUTO_INCREMENT,
+  DATETIME_DEPART datetime NOT NULL,
+  DATETIME_ARRIVEE datetime NOT NULL,
+  PRIX_PLACE int(11) NOT NULL,
+  TYPE_VOITURE varchar(50) NOT NULL,
+  EFFECTIF int(11) NOT NULL,
+  ID_TRAJET_CHOISIE int(11) NOT NULL,
+  PRIMARY KEY (ID_DETAILS_TRAJET),
+  FOREIGN KEY (ID_TRAJET_CHOISIE) REFERENCES trajet(ID_TRAJET)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table estassocie_a
+--
+
+DROP TABLE IF EXISTS estassocie_a;
+CREATE TABLE IF NOT EXISTS estassocie_a (
+  ID_DETAILS_TRAJET_ASSOCIE int(11) NOT NULL,
+  CIN_ASSOCIE varchar(50) NOT NULL,
+  TYPE_ASSOCIATION varchar(50) NOT NULL,
+  DATE_ASSOCIATION datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (ID_DETAILS_TRAJET_ASSOCIE,CIN_ASSOCIE),
+  FOREIGN KEY (ID_DETAILS_TRAJET_ASSOCIE) REFERENCES details_trajet(ID_DETAILS_TRAJET),
+  FOREIGN KEY (CIN_ASSOCIE) REFERENCES users(CIN)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
