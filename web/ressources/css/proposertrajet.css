@@ -103,7 +103,20 @@ body {
 /*buttons NExt*/
 #proposer .suivant{
 	width: 100px;
-	background: #3fc380;
+	background: #3fa9c3;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 25px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+    transition: all 0.4s;
+}
+
+#proposer .proposer{
+	width: 100px;
+	background: #3fc381;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -119,7 +132,7 @@ background: #333333;
 /*buttons precedant*/
 #proposer .precedant {
 	width: 100px;
-	background: #f03434;
+	background: #2b3542;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
