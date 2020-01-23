@@ -1,5 +1,7 @@
 package com.covoiturage.dao;
 import com.covoiturage.dao.exceptions.DAOConfigurationException;
+import com.covoiturage.dao.implementations.UserDaoImp;
+import com.covoiturage.dao.interfaces.UserDao;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -72,7 +74,10 @@ public class DAOFactory {
     }
 
     /*
-     * Méthodes de récupération de l'implémentation des différents DAO (Aucune pour le moment)
+     * Méthodes de récupération de l'implémentation des différents DAO (une pour le moment)
      */
+    public UserDao getUserDao() {
+        return new UserDaoImp( this );
+    }
 
 }

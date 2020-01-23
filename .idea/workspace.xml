@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +225,7 @@
       <workItem from="1579703350356" duration="800000" />
       <workItem from="1579710285633" duration="12000" />
       <workItem from="1579774133483" duration="4080000" />
-      <workItem from="1579789407208" duration="1596000" />
+      <workItem from="1579789407208" duration="3350000" />
     </task>
     <servers />
   </component>
@@ -269,9 +268,10 @@
     </state>
     <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1579789493122" />
     <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774417624" />
-    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1579778201058">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1579791951362">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579791951362" />
     <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579778201058" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579774153857">
       <screen x="0" y="0" width="1920" height="1040" />
