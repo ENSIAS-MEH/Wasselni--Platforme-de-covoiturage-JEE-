@@ -7,15 +7,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/Trajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/Trajet.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="191" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="trajet: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +70,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\GL\S4\PROJET JEE\2019_DW_Pr3\.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -44,6 +95,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1W2re5IisvOTAGC5uwGiPun2csY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -51,25 +107,20 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.273" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.273" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RunManager" selected="Application.DatabaseConnection">
+    <configuration name="DatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DatabaseConnection" />
+      <module name="Wasselni" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.273" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <deployment>
         <artifact name="Wasselni:war exploded">
@@ -141,6 +192,23 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DatabaseConnection" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -159,6 +227,7 @@
       <workItem from="1579694128832" duration="92000" />
       <workItem from="1579703350356" duration="800000" />
       <workItem from="1579710285633" duration="12000" />
+      <workItem from="1579774133483" duration="4080000" />
     </task>
     <servers />
   </component>
@@ -177,5 +246,66 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="621" y="359" key="#Project_Structure" timestamp="1579774208886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="359" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1579774208886" />
+    <state x="544" y="193" key="#SQL_Dialects" timestamp="1579776429458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="193" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1579776429458" />
+    <state x="725" y="359" key="#Tomcat_9.0.273" timestamp="1579774198589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="359" key="#Tomcat_9.0.273/0.0.1920.1040@0.0.1920.1040" timestamp="1579774198589" />
+    <state x="621" y="359" key="#Tomcat_Server" timestamp="1579774193945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="359" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1579774193945" />
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579774417624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774417624" />
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1579778201058">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579778201058" />
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579774153857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774153857" />
+    <state width="1860" height="270" key="GridCell.Tab.0.bottom" timestamp="1579776792700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
+    <state width="1860" height="270" key="GridCell.Tab.0.center" timestamp="1579776792700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
+    <state width="1860" height="270" key="GridCell.Tab.0.left" timestamp="1579776792700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
+    <state width="1860" height="270" key="GridCell.Tab.0.right" timestamp="1579776792700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
+    <state x="559" y="191" key="SettingsEditor" timestamp="1579774183218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="559" y="191" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579774183218" />
+    <state x="655" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579774136494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774136494" />
+    <state x="615" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1579776982677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="615" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579776982677" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/2019_DW_Pr3$DatabaseConnection.ic" NAME="DatabaseConnection Coverage Results" MODIFIED="1579776789811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
