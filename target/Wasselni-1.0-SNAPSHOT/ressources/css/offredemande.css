@@ -1,0 +1,136 @@
+
+.card {
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.post-meta {
+  position: relative;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 500px;
+  background: #fff;
+}
+.card .post-image {
+  height: 300px;
+  overflow: hidden;
+  background: rgb(41, 41, 41);
+}
+
+.card .post-image img {
+  transition: .5s;
+}
+
+.card .news-content {
+  position: absolute;
+  bottom: -30%;
+  background: #fff;
+  transition: .5s;
+}
+.card:hover .news-content {
+  bottom: 0;
+}
+.card .category {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  height: 30px;
+  background: #52b3d9;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  padding: 5px 20px;
+  font-size: 15px;
+  transition: .5s;
+}
+.card .news-content .post-meta a {
+  text-decoration: none;
+  font-size: 12px;
+  padding-right: 10px;
+  color: grey;
+  font-weight: bold;
+  transition: .5s;
+}
+.card .news-content .post-meta a:hover {
+  color: #52b3d9;
+}
+.card .news-content .post-header {
+  margin: 0;
+  padding: 0px 0;
+  color: #007da6;
+  height: 50px;
+  font-size: 18px;
+}
+.card .news-content p {
+  font-size: 10px;
+  margin: 10px 0 0;
+  padding: 0;
+  color: grey;
+  transition: .5s;
+  opacity: 0;
+}
+.card:hover .news-content p {
+  opacity: 1;
+}
+
+
+
+
+#btnd{
+  width: 105px;
+  height: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #52d98a;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+ text-decoration: none;
+
+}
+
+#btnd:before{
+  color: white;
+  content: 'Choisi';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  transition: all 0.3s;
+  text-decoration: none;
+
+}
+#btnd:hover:before{
+  top: -30px;
+  text-decoration: none;
+    
+
+}
+#btnd:after{
+  font-family: 'Ionicons';
+  content: '\f30f';
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 140%;
+  transition: all 0.3s;
+  text-decoration: none;
+    
+
+}
+#btnd:hover:after{
+ text-decoration: none;
+  top: 50%;
+    
+}
+
+
+

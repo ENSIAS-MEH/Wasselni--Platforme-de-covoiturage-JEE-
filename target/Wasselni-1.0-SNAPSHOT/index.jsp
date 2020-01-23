@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="ressources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="ressources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
-   
+    <link rel="stylesheet" href="ressources/css/offredemande.css">
 
     <title>Wasselni</title>
 </head>
@@ -225,7 +225,7 @@
 
 
 <!--************-->
-<!--Nos services (en cours) -->
+<!--Nos services  -->
 <!--************-->
 <div class="row" style="margin-top: 60px;margin-bottom: 60px;">
 
@@ -322,10 +322,560 @@
 
 
 
+<!--************-->
+<!--Derniere Offres  -->
+<!--************-->
+<h3 class="h2" style="text-align: center;">Les derniere offres</h3>
+<br><br>
+  <div class="section-container slider">
+	<div class="row ">
+		<div class="col-md-8 col-center m-auto">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Les insdicateurs-->
+				<ol class="carousel-indicators carousel-indicatorss ">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol>   
+                <!-- Items-->
+                <center>
+				<div class="carousel-inner">
+                    <!--Debut item-->
+                    <div class="container item carousel-item active slidecitation">
+                        <div class="row"> 
+        
+                            <!--Trajte-->
+                            <div class="col-sm-6" >
+                                <div class="card " style="margin-left: 50px;" >
+                                    <div class="post-image">
+                                        <div class="imgBox">
+                                            <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                        </div>
+                                        <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
+                                        <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                            <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                            <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                            <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                            <span style="color: rgb(255, 255, 255);" >F</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="news-content">
+                                        <!--Prix-->
+                                        <span class="category">Prix de trajet: 200Dh</span>
+                                        <div class="post-meta">
+                                            <div class="row" style="text-align: left;">
+                                                <!--Depart-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                                </div>
+                                                 <!--Destination-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                                </div> 
+                                            </div>
+                                            <div class="row" style="text-align: left;">
+                                                <!--Date-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                                </div>  
+                                                 <!--Effectif-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br><br>
+                                                <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                                <br>
+                                            </p>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Trajte-->
+                            <div class="col-sm-6" >
+                                <div class="card " style="margin-left: 50px;" >
+                                    <div class="post-image">
+                                        <div class="imgBox">
+                                            <img src="ressources/img/box4.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                        </div>
+                                        <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Kamal Zoubire</h4>
+                                        <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                            <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                            <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                            <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                            <span style="color: rgb(255, 255, 255);" >F</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="news-content">
+                                        <!--Prix-->
+                                        <span class="category">Prix de trajet: 200Dh</span>
+                                        <div class="post-meta">
+                                            <div class="row" style="text-align: left;">
+                                                <!--Depart-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                                </div>
+                                                 <!--Destination-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                                </div> 
+                                            </div>
+                                            <div class="row" style="text-align: left;">
+                                                <!--Date-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                                </div>  
+                                                 <!--Effectif-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br><br>
+                                                <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                                <br>
+                                            </p>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--Fin item-->
+                
+                
+
+
+                <!--Debut item-->
+                <div class="container item carousel-item ">
+                    <div class="row"> 
+    
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBox">
+                                        <img src="ressources/img/box2.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Abdellah Boufous</h4>
+                                    <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                        <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >F</span>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="news-content">
+                                    <!--Prix-->
+                                    <span class="category">Prix de trajet: 200Dh</span>
+                                    <div class="post-meta">
+                                        <div class="row" style="text-align: left;">
+                                            <!--Depart-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                            </div>
+                                             <!--Destination-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                            </div> 
+                                        </div>
+                                        <div class="row" style="text-align: left;">
+                                            <!--Date-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                            </div>  
+                                             <!--Effectif-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                            </div>
+                                        </div>
+                                    <p>
+                                    <br> <br>
+                                     <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                     <br>
+                
+                                    </p>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBox">
+                                        <img src="ressources/img/box3.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Abdellah Boufous</h4>
+                                    <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                        <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >F</span>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="news-content">
+                                   <!--Prix-->
+                                   <span class="category">Prix de trajet: 200Dh</span>
+                                   <div class="post-meta">
+                                       <div class="row" style="text-align: left;">
+                                           <!--Depart-->
+                                           <div class="col-sm-5">
+                                               <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                           </div>
+                                            <!--Destination-->
+                                           <div class="col">
+                                               <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                           </div> 
+                                       </div>
+                                       <div class="row" style="text-align: left;">
+                                           <!--Date-->
+                                           <div class="col-sm-5">
+                                               <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                           </div>  
+                                            <!--Effectif-->
+                                           <div class="col">
+                                               <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                           </div>
+                                       </div>
+                
+                                    <p>
+                                        <br><br>
+                                        <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                        <br>
+                                    </p>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--Fin item-->
+
+                </center>
+                <!-- *controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+                </a>
+			</div>
+		</div>
+	</div>
+</div>
+  
+<!--************-->
+<!--Proposer-->
+<!--************-->
+<section id="sectionProposer" class="p-5">
+    <div class="proposer-overlay">
+        <div class="row">
+                <div class="container pt-5  inscriremv">
+                    <h2 class="display-5 d-inline mylead">vous pouvez proposer un trajet facilement! </h2>
+                    <br><br> <br> <br>
+                    <div >
+                    <form class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="depart" placeholder="Depart">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="destination" placeholder="Destination">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-map-marker" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="Prix" placeholder="Prix">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info mb-2 ">Proposer</button>
+                      </form>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
 
 
 
+<!--************-->
+<!--Derniere demande  -->
+<!--************-->
+<h3 class="h2" style="text-align: center;">Les derniere demandes</h3>
+<br><br>
+  <div class="section-container slider">
+	<div class="row ">
+		<div class="col-md-8 col-center m-auto">
+			<div id="myCarouselOffere" class="carousel slide" data-ride="carousel">
+				<!-- Les insdicateurs-->
+				<ol class="carousel-indicators carousel-indicatorss ">
+					<li data-target="#myCarouselOffere" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarouselOffere" data-slide-to="1"></li>
+				</ol>   
+                <!-- Items-->
+                <center>
+				<div class="carousel-inner">
+                    <!--Debut item-->
+                    <div class="container item carousel-item active slidecitation">
+                        <div class="row"> 
+        
+                            <!--Trajte-->
+                            <div class="col-sm-6" >
+                                <div class="card " style="margin-left: 50px;" >
+                                    <div class="post-image">
+                                        <div class="imgBox">
+                                            <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                        </div>
+                                        <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
+                                        <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                            <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                            <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                            <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                            <span style="color: rgb(255, 255, 255);" >F</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="news-content">
+                                        <!--Prix-->
+                                        <span class="category">Prix de trajet: 200Dh</span>
+                                        <div class="post-meta">
+                                            <div class="row" style="text-align: left;">
+                                                <!--Depart-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                                </div>
+                                                 <!--Destination-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                                </div> 
+                                            </div>
+                                            <div class="row" style="text-align: left;">
+                                                <!--Date-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                                </div>  
+                                                 <!--Effectif-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                                </div>
+                                            </div>
+                                        <p>
+                                        <br> <br>
+                                         <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                         <br>
+                    
+                                        </p>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Trajte-->
+                            <div class="col-sm-6" >
+                                <div class="card " style="margin-left: 50px;" >
+                                    <div class="post-image">
+                                        <div class="imgBox">
+                                            <img src="ressources/img/box4.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                        </div>
+                                        <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Kamal Zoubire</h4>
+                                        <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                            <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                            <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                            <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                            <span style="color: rgb(255, 255, 255);" >F</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="news-content">
+                                        <!--Prix-->
+                                        <span class="category">Prix de trajet: 200Dh</span>
+                                        <div class="post-meta">
+                                            <div class="row" style="text-align: left;">
+                                                <!--Depart-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                                </div>
+                                                 <!--Destination-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                                </div> 
+                                            </div>
+                                            <div class="row" style="text-align: left;">
+                                                <!--Date-->
+                                                <div class="col-sm-5">
+                                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                                </div>  
+                                                 <!--Effectif-->
+                                                <div class="col">
+                                                    <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                                </div>
+                                            </div>
+                                        <p>
+                                        <br> <br>
+                                         <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                         <br>
+                    
+                                        </p>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--Fin item-->
+                
+                
 
+
+                <!--Debut item-->
+                <div class="container item carousel-item ">
+                    <div class="row"> 
+    
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBox">
+                                        <img src="ressources/img/box2.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Abdellah Boufous</h4>
+                                    <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                        <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >F</span>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="news-content">
+                                    <!--Prix-->
+                                    <span class="category">Prix de trajet: 200Dh</span>
+                                    <div class="post-meta">
+                                        <div class="row" style="text-align: left;">
+                                            <!--Depart-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                            </div>
+                                             <!--Destination-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                            </div> 
+                                        </div>
+                                        <div class="row" style="text-align: left;">
+                                            <!--Date-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                            </div>  
+                                             <!--Effectif-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                            </div>
+                                        </div>
+                                    <p>
+                                    <br> <br>
+                                     <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                     <br>
+                
+                                    </p>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBox">
+                                        <img src="ressources/img/box3.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style="text-align: left;margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Abdellah Boufous</h4>
+                                    <div style="text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" >Age:</span>
+                                        <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >F</span>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="news-content">
+                                   <!--Prix-->
+                                   <span class="category">Prix de trajet: 200Dh</span>
+                                   <div class="post-meta">
+                                       <div class="row" style="text-align: left;">
+                                           <!--Depart-->
+                                           <div class="col-sm-5">
+                                               <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                           </div>
+                                            <!--Destination-->
+                                           <div class="col">
+                                               <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                           </div> 
+                                       </div>
+                                       <div class="row" style="text-align: left;">
+                                           <!--Date-->
+                                           <div class="col-sm-5">
+                                               <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                           </div>  
+                                            <!--Effectif-->
+                                           <div class="col">
+                                               <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                           </div>
+                                       </div>
+                
+                                       <p>
+                                        <br><br>
+                                        <a style="margin-left: 100px;" href="#" id="btnd" ></a>
+                                        <br>
+                                    </p>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--Fin item-->
+
+                </center>
+                <!-- *controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarouselOffere" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarouselOffere" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+                </a>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!--************-->
@@ -453,6 +1003,12 @@
         distance:'60px'
     });
 
+      //mini slider
+      ScrollReveal().reveal('.slider',{
+        origin:'left',
+        duration:2000,
+        distance:'60px'
+    });
 
     //footer
     ScrollReveal().reveal('.colfooter0',{
