@@ -69,9 +69,7 @@
         
                     
                       <fieldset>
-                        
                          <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4> 
-                               
                                 <br>
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous ?</div>
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
@@ -119,7 +117,6 @@
                                             <option value="22">22h</option>
                                             <option value="23">23h</option>
                                           </select>
-                                        
                                           <select class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:200px;">
                                             <option value="0"selected>00min</option>
                                             <option value="10">10min</option>
@@ -137,7 +134,47 @@
                     
                     <!--Phase 2-->
                       <fieldset>
-                      
+                        <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4> 
+                        <br>
+                        
+                                <!--Effectif-->
+                                <div style="margin-left: 20px; text-align: left; font-weight: bold;"> Effectif</div>
+                                <div class="wrap-input100 input-group">
+                                    <div class="input-group-icon js-number-input">
+                                      <div class="icon-con">
+                                          <span class="plus">+</span>
+                                          <span class="minus">-</span>
+                                      </div>
+                                        <input class="input100 quantity" style="width: 520px; height: 50px; margin-bottom: 10px;" type="text" name="effectif" value="2 Personnes">
+                                        <span class="focus-input100"></span>
+                                        <span class="symbol-input100"><i class="fa fa-users" aria-hidden="true"></i>  </span>
+                                            
+                                  </div>
+                              </div>
+                              <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 15px;"> Prix par passager ?</div>
+                              <div class="wrap-input100 input-group">
+                                <div class="input-group-icon js-prix-input">
+                                  <div class="icon-con">
+                                      <span class="plus">+</span>
+                                      <span class="minus">-</span>
+                                  </div>
+                                    <input class="input100 montant" style="width: 520px; height: 50px; margin-bottom: 10px;" type="text" name="effectif" value="50 Dhs">
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100"><i class="fa fa-users" aria-hidden="true"></i>  </span>
+                                        
+                              </div>
+                          </div>
+
+
+
+                              <!--Les checkbox-->
+                            
+                            <div class="checkbox icheck-check1">
+                              <input type="checkbox" checked id="check1" />
+                              <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage autorisé</label>
+                          </div>
+                                
+                                <br>
                         <input type="button" name="precedant" class="previous precedant" value="précedant" />
                         <input type="button" name="suivant" class="next suivant" value="Suivant" />
                       </fieldset>
