@@ -5,17 +5,32 @@ import java.io.Serializable;
 public class Trajet implements Serializable {
     private static final long serialVersionUID = -9145861415727573123L;
     private Long idTrajet;
-    private String DepartTrajet;
-    private String DestinationTrajet;
+    private String villeDepart;
+    private String quartierDepart;
+    private String rueDepart;
+    private String villeDestination;
+    private String quartierDestination;
+    private String rueDestination;
+
 
     public Trajet() {
         super();
     }
 
-    public Trajet(Long idTrajet, String departTrajet, String destinationTrajet) {
+    public Trajet(Long idTrajet,
+                  String villeDepart,
+                  String quartierDepart,
+                  String rueDepart,
+                  String villeDestination,
+                  String quartierDestination,
+                  String rueDestination) {
         this.idTrajet = idTrajet;
-        DepartTrajet = departTrajet;
-        DestinationTrajet = destinationTrajet;
+        this.villeDepart = villeDepart;
+        this.quartierDepart = quartierDepart;
+        this.rueDepart = rueDepart;
+        this.villeDestination = villeDestination;
+        this.quartierDestination = quartierDestination;
+        this.rueDestination = rueDestination;
     }
 
     public Long getIdTrajet() {
@@ -26,19 +41,51 @@ public class Trajet implements Serializable {
         this.idTrajet = idTrajet;
     }
 
-    public String getDepartTrajet() {
-        return DepartTrajet;
+    public String getVilleDepart() {
+        return villeDepart;
     }
 
-    public void setDepartTrajet(String departTrajet) {
-        DepartTrajet = departTrajet;
+    public void setVilleDepart(String villeDepart) {
+        this.villeDepart = villeDepart;
     }
 
-    public String getDestinationTrajet() {
-        return DestinationTrajet;
+    public String getQuartierDepart() {
+        return quartierDepart;
     }
 
-    public void setDestinationTrajet(String destinationTrajet) {
-        DestinationTrajet = destinationTrajet;
+    public void setQuartierDepart(String quartierDepart) {
+        this.quartierDepart = quartierDepart;
+    }
+
+    public String getRueDepart() {
+        return rueDepart;
+    }
+
+    public void setRueDepart(String rueDepart) {
+        this.rueDepart = rueDepart;
+    }
+
+    public String getVilleDestination() {
+        return villeDestination;
+    }
+
+    public void setVilleDestination(String villeDestination) {
+        this.villeDestination = villeDestination;
+    }
+
+    public String getQuartierDestination() {
+        return quartierDestination;
+    }
+
+    public void setQuartierDestination(String quartierDestination) {
+        this.quartierDestination = quartierDestination;
+    }
+
+    public String getRueDestination() {
+        return rueDestination;
+    }
+
+    public void setRueDestination(String rueDestination) {
+        this.rueDestination = rueDestination;
     }
 }
