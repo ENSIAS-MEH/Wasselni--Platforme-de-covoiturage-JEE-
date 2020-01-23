@@ -1,4 +1,6 @@
 package com.covoiturage.dao;
+import com.covoiturage.dao.exceptions.DAOConfigurationException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;

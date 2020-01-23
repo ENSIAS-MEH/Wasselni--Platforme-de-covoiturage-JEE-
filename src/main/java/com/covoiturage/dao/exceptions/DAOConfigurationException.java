@@ -1,4 +1,4 @@
-package com.covoiturage.dao;
+package com.covoiturage.dao.exceptions;
 
 public class DAOConfigurationException extends RuntimeException {
     /*
