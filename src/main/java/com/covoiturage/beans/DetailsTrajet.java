@@ -12,6 +12,9 @@ public class DetailsTrajet implements Serializable {
     private LocalDateTime dateArrivee;
     private int prixPlace;
     private String typeVoiture;
+    private String marqueVoiture;
+    private String modeleVoiture;
+    private int climatisationVoiture;
     private int effectif;
     private Long idTrajetChoisie;
 
@@ -19,11 +22,14 @@ public class DetailsTrajet implements Serializable {
         super();
     }
 
-    public DetailsTrajet(Long idDetailsTrajet,
+    public DetailsTrajet( Long idDetailsTrajet,
                          LocalDateTime dateDepart,
                          LocalDateTime dateArrivee,
                          int prixPlace,
                          String typeVoiture,
+                         String marqueVoiture,
+                         String modeleVoiture,
+                         int climatisationVoiture,
                          int effectif,
                          Long idTrajetChoisie) {
         this.idDetailsTrajet = idDetailsTrajet;
@@ -31,8 +37,11 @@ public class DetailsTrajet implements Serializable {
         this.dateArrivee = dateArrivee;
         this.prixPlace = prixPlace;
         this.typeVoiture = typeVoiture;
+        this.marqueVoiture = marqueVoiture;
+        this.modeleVoiture = modeleVoiture;
+        this.climatisationVoiture = climatisationVoiture;
         this.effectif = effectif;
-        this.idTrajetChoisie=idTrajetChoisie;
+        this.idTrajetChoisie = idTrajetChoisie;
     }
 
     public Long getIdDetailsTrajet() {
@@ -73,6 +82,30 @@ public class DetailsTrajet implements Serializable {
 
     public void setTypeVoiture(String typeVoiture) {
         this.typeVoiture = typeVoiture;
+    }
+
+    public String getMarqueVoiture() {
+        return marqueVoiture;
+    }
+
+    public void setMarqueVoiture(String marqueVoiture) {
+        this.marqueVoiture = marqueVoiture;
+    }
+
+    public String getModeleVoiture() {
+        return modeleVoiture;
+    }
+
+    public void setModeleVoiture(String modeleVoiture) {
+        this.modeleVoiture = modeleVoiture;
+    }
+
+    public int getClimatisationVoiture() {
+        return climatisationVoiture;
+    }
+
+    public void setClimatisationVoiture(int climatisationVoiture) {
+        this.climatisationVoiture = climatisationVoiture;
     }
 
     public int getEffectif() {

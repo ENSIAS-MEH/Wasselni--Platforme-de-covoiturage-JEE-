@@ -16,7 +16,8 @@ public class DetailsTrajetDaoImp {
     }
 
     public DetailsTrajet findSpecificDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException {
-        String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, DATETIME_ARRIVEE, PRIX_PLACE, TYPE_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE " +
+        String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, DATETIME_ARRIVEE, PRIX_PLACE, TYPE_VOITURE, MARQUE_VOITURE, " +
+                " MODELE_VOITURE, CLIMATISATION_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE " +
                 "FROM DETAILS_TRAJET WHERE ID_DETAILS_TRAJET = ?";
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
@@ -31,10 +32,14 @@ public class DetailsTrajetDaoImp {
             LocalDateTime dateArrivee = resultset.getObject("DATETIME_ARRIVEE", LocalDateTime.class);
             int prixPlace = resultset.getInt("PRIX_PLACE");
             String typeVoiture = resultset.getString("TYPE_VOITURE");
+            String marqueVoiture = resultset.getString("MARQUE_VOITURE");
+            String modeleVoiture = resultset.getString("MODELE_VOITURE");
+            int climatisationVoiture = resultset.getInt("CLIMATISATION_VOITURE");
             int effectif = resultset.getInt("EFFECTIF");
             Long idTrajetChoisie = resultset.getLong("ID_TRAJET_CHOISIE");
             returnedDetailsTrajet = new DetailsTrajet(idDetailsTrajet, dateDepart,
-                    dateArrivee, prixPlace, typeVoiture, effectif, idTrajetChoisie);
+                    dateArrivee, prixPlace, typeVoiture, marqueVoiture,
+                    modeleVoiture, climatisationVoiture, effectif, idTrajetChoisie);
         } else {
             returnedDetailsTrajet = null;
         }
@@ -48,7 +53,8 @@ public class DetailsTrajetDaoImp {
 
     public List<DetailsTrajet> findAllDetailsTrajets() throws SQLException {
         List<DetailsTrajet> listofDetailsTrajets = new ArrayList<DetailsTrajet>();
-        String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, DATETIME_ARRIVEE, PRIX_PLACE, TYPE_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE " +
+        String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, DATETIME_ARRIVEE, PRIX_PLACE, TYPE_VOITURE, MARQUE_VOITURE," +
+                " MODELE_VOITURE, CLIMATISATION_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE " +
                 "FROM DETAILS_TRAJET";
         Statement stmt = null;
         ResultSet resultset;
@@ -61,10 +67,14 @@ public class DetailsTrajetDaoImp {
             LocalDateTime dateArrivee = resultset.getObject("DATETIME_ARRIVEE", LocalDateTime.class);
             int prixPlace = resultset.getInt("PRIX_PLACE");
             String typeVoiture = resultset.getString("TYPE_VOITURE");
+            String marqueVoiture = resultset.getString("MARQUE_VOITURE");
+            String modeleVoiture = resultset.getString("MODELE_VOITURE");
+            int climatisationVoiture = resultset.getInt("CLIMATISATION_VOITURE");
             int effectif = resultset.getInt("EFFECTIF");
             Long idTrajetChoisie = resultset.getLong("ID_TRAJET_CHOISIE");
             DetailsTrajet detailsTrajetToAdd = new DetailsTrajet(idDetailsTrajet, dateDepart,
-                    dateArrivee, prixPlace, typeVoiture, effectif, idTrajetChoisie);
+                    dateArrivee, prixPlace, typeVoiture, marqueVoiture,
+                    modeleVoiture, climatisationVoiture, effectif, idTrajetChoisie);
             listofDetailsTrajets.add(detailsTrajetToAdd);
         }
 
@@ -78,8 +88,8 @@ public class DetailsTrajetDaoImp {
     public Long insertDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException {
         Long idrowInserted;
         String sql = "INSERT INTO DETAILS_TRAJET(DATETIME_DEPART,DATETIME_ARRIVEE," +
-                "PRIX_PLACE,TYPE_VOITURE,EFFECTIF,ID_TRAJET_CHOISIE) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?)";
+                "PRIX_PLACE,TYPE_VOITURE,MARQUE_VOITURE,MODELE_VOITURE,CLIMATISATION_VOITURE,EFFECTIF,ID_TRAJET_CHOISIE) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement preparedStmt;
         ResultSet resultset;
         Connection connection = DAOFactory.getInstance().getConnection();
@@ -88,8 +98,11 @@ public class DetailsTrajetDaoImp {
         preparedStmt.setObject(2, detailsTrajet.getDateArrivee());
         preparedStmt.setInt(3, detailsTrajet.getPrixPlace());
         preparedStmt.setString(4, detailsTrajet.getTypeVoiture());
-        preparedStmt.setInt(5, detailsTrajet.getEffectif());
-        preparedStmt.setLong(6, detailsTrajet.getIdTrajetChoisie());
+        preparedStmt.setString(5, detailsTrajet.getMarqueVoiture());
+        preparedStmt.setString(6, detailsTrajet.getModeleVoiture());
+        preparedStmt.setInt(7, detailsTrajet.getClimatisationVoiture());
+        preparedStmt.setInt(8, detailsTrajet.getEffectif());
+        preparedStmt.setLong(9, detailsTrajet.getIdTrajetChoisie());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
 

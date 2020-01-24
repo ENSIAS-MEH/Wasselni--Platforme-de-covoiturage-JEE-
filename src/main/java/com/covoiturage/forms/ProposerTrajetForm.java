@@ -103,10 +103,13 @@ public class ProposerTrajetForm {
         return new Trajet();
     }
 
+<<<<<<< HEAD
     private void validation(String champ) throws Exception{
         if ( champ != null ) {
             throw new Exception( "Merci de saisir tous les champs avant de continuer." );
         }
     }
 
+=======
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
 }

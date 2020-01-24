@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/EstAssocieADaoImp.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" afterDir="false" />
@@ -28,6 +29,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/DAOFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/UserDao.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/database/wasselnidbMLD.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/database/wasselnidbMLD.PNG" afterDir="false" />
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="details_trajet: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -87,12 +114,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1W2re5IisvOTAGC5uwGiPun2csY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -199,6 +230,18 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+<<<<<<< HEAD
+=======
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:wasselnidb@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
             </expand>
             <select />
           </treeState>
@@ -228,8 +271,12 @@
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
       <workItem from="1579869825186" duration="175000" />
+<<<<<<< HEAD
       <workItem from="1579875741927" duration="3245000" />
       <workItem from="1579880504675" duration="291000" />
+=======
+      <workItem from="1579875741927" duration="4901000" />
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
     </task>
     <servers />
   </component>
@@ -248,6 +295,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="87" key="#Project_Structure" timestamp="1579860697237">
@@ -284,11 +334,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1579793292424" />
-    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1579791951362">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1579879718481">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579791951362" />
-    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579778201058" />
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579879718481" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579875881973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,26 +351,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1579864938487" />
-    <state width="905" height="215" key="GridCell.Tab.0.bottom" timestamp="1579874732543">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1293" height="3" key="GridCell.Tab.0.bottom" timestamp="1579879252268">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="905" height="215" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579874732543" />
-    <state width="1860" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.center" timestamp="1579874732543">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1293" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
+    <state width="1293" height="3" key="GridCell.Tab.0.center" timestamp="1579879252268">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="905" height="215" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579874732543" />
-    <state width="1860" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.left" timestamp="1579874732542">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1293" height="3" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
+    <state width="1293" height="3" key="GridCell.Tab.0.left" timestamp="1579879252267">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="905" height="215" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579874732542" />
-    <state width="1860" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.right" timestamp="1579874732543">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1293" height="3" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252267" />
+    <state width="1293" height="3" key="GridCell.Tab.0.right" timestamp="1579879252268">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="905" height="215" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579874732543" />
-    <state width="1860" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
+    <state width="1293" height="3" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
     <state width="905" height="215" key="GridCell.Tab.1.bottom" timestamp="1579874732407">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
