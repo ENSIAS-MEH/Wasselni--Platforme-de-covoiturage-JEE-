@@ -40,7 +40,7 @@
           <ul class="navbar-nav ml-auto">
 
               <li class="nav-item">
-                  <a href="<c:url value="/"/>" class="nav-link">Accueil</a>
+                  <a href="<c:url value="/accueil"/>" class="nav-link">Accueil</a>
               </li>
 
               <li class="nav-item">
@@ -48,7 +48,7 @@
               </li>
 
               <li class="nav-item">
-                  <a href="#" class="nav-link">Demander un trajet</a>
+                  <a href="<c:url value="/demanderTrajet"/>" class="nav-link">Demander un trajet</a>
               </li>
 
           </ul>

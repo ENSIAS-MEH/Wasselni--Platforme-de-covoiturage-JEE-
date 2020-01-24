@@ -40,7 +40,7 @@
           <ul class="navbar-nav ml-auto">
 
               <li class="nav-item">
-                  <a href="<c:url value="/"/>" class="nav-link">Accueil</a>
+                  <a href="<c:url value="/accueil"/>" class="nav-link">Accueil</a>
               </li>
 
               <li class="nav-item">
@@ -48,7 +48,7 @@
               </li>
 
               <li class="nav-item">
-                  <a href="#" class="nav-link">Demander un trajet</a>
+                  <a href="<c:url value="/demanderTrajet"/>" class="nav-link">Demander un trajet</a>
               </li>
 
           </ul>
@@ -90,7 +90,7 @@
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
                                             <input class="input100"type="text" name="destination" placeholder="Exemple: Boukhalef, Tanger">
                                             <span class="focus-input100"></span>
-                                            <span class="symbol-input100"><i class="fa fa-map-marker-alt" aria-hidden="true"></i>  </span>
+                                            <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
 
 
@@ -270,6 +270,7 @@
 <script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="../ressources/js/global.js"></script>
+
 
 </body>
 </html>
