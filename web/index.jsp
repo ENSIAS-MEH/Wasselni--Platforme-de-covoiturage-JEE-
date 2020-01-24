@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Demander un trajet</a>
+                    <a href="#" class="nav-link">Demander un trajet</a>
                 </li>
 
             </ul>
