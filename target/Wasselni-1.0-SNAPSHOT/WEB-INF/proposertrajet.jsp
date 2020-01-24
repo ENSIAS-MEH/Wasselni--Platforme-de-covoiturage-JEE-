@@ -1,8 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Wasselni</title>
-
+    <meta charset="UTF-8" />
+    <% request.setCharacterEncoding("UTF-8"); %>
 
  <!--************************************************-->
     <!--CODE CSS-->
@@ -15,11 +17,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Fichiers-->
-   <link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
-   <link rel="stylesheet" type="text/css" href="ressources/css/proposertrajet.css">
-   <link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
-   <link rel="stylesheet" href="ressources/css/style.css">
-    
+   <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
+   <link rel="stylesheet" type="text/css" href="../ressources/css/proposertrajet.css">
+   <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
+   <link rel="stylesheet" href="../ressources/css/style.css">
+
 </head>
 
 
@@ -30,7 +32,7 @@
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
   <div class="container">
-      <a href="#" class="navbar-brand"> <img src="ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+      <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,11 +40,11 @@
           <ul class="navbar-nav ml-auto">
 
               <li class="nav-item">
-                  <a href="#" class="nav-link">Accueil</a>
+                  <a href="<c:url value="/"/>" class="nav-link">Accueil</a>
               </li>
 
               <li class="nav-item">
-                  <a href="#" class="nav-link">Proposer un trajet</a>
+                  <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
               </li>
 
               <li class="nav-item">
@@ -61,8 +63,8 @@
                     <div class="loader">
                             <div class="loader-img"></div>
                         </div>
-                
-                   
+
+
                     <ul id="progressbar">
                         <li class="active">Votre Itinéraire</li>
                         <li>Votre annonce</li>
@@ -70,14 +72,14 @@
                       </ul>
                       <!--Phase 1-->
                       <fieldset>
-                         <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4> 
+                         <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4>
                                 <br>
 
 
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous</div>
                                         <!--Depart-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                              <input class="input100"  type="text" name="depare" placeholder="Exemple: Madinat AlIrfan, Rabat">
+                                              <input class="input100"  type="text" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
                                             <span class="focus-input100"></span>
                                             <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
@@ -134,18 +136,18 @@
                                             <option value="50">50min</option>
                                           </select>
                                         </div>
-                                        
+
                                 <br>
                                 <!--Suivant-->
                         <input type="button" name="suivant" class="next suivant" value="Suivant" />
                       </fieldset>
-                    
+
                     <!--Phase 2-->
                       <fieldset>
-                        <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4> 
+                        <h4 style="font-family: Montserrat-Bold;">Concernant votre trajet</h4>
                         <br>
-                        
-                                
+
+
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold;"> Effectif</div>
                                 <!--Effectif-->
                                 <div class="wrap-input100 input-group">
@@ -156,7 +158,7 @@
                                       </div>
                                         <input class="input100 quantity" style="width: 520px; height: 50px; margin-bottom: 10px;" type="text" name="effectif" value="2 Personnes">
                                         <span class="focus-input100"></span>
-                                        <span class="symbol-input100"><i class="fa fa-users" aria-hidden="true"></i>  </span>     
+                                        <span class="symbol-input100"><i class="fa fa-users" aria-hidden="true"></i>  </span>
                                   </div>
                               </div>
 
@@ -171,30 +173,30 @@
                                   </div>
                                     <input class="input100 montant" style="width: 520px; height: 50px; margin-bottom: 10px;" type="text" name="prix" value="50 Dhs">
                                     <span class="focus-input100"></span>
-                                    <span class="symbol-input100"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>   
+                                    <span class="symbol-input100"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
                               </div>
                           </div>
 
                            <!--Les checkbox-->
                            <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check1">
-                              <input type="checkbox" checked id="check1" />
+                              <input type="checkbox" checked id="check1" name="babageautorise" />
                               <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage autorisé</label>
-                          </div> 
+                          </div>
                            </div>
-                            
+
                         <br>
                         <!--precedant-->
                         <input type="button" name="precedant" class="previous precedant" value="précedant" />
                         <!--suivant-->
                         <input type="button" name="suivant" class="next suivant" value="Suivant" />
                       </fieldset>
-                   
-                     
-                     
+
+
+
                      <!--Phase 3-->
                      <fieldset>
-                      <h4 style="font-family: Montserrat-Bold;">Informations suplémentaire</h4> 
+                      <h4 style="font-family: Montserrat-Bold;">Informations suplémentaire</h4>
                         <br>
 
 
@@ -202,18 +204,18 @@
                       <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 8px;margin-bottom: 8px;"> Type de véhicule</div>
                           <!--type véhicule-->
                         <div style="text-align: left;">
-                            <select class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:516px;">
+                            <select name="typevehicule" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:516px;">
                               <option value="petit" selected>Petit Véhicule (2 personnes)</option>
                               <option value="moyen" selected>Moyen Véhicule (4 personnes)</option>
                               <option value="grand" selected>Grand Véhicule ( +4 personnes)</option>
                             </select>
-                          </div> 
+                          </div>
 
 
                           <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 8px;margin-bottom: 8px;">La marque</div>
                           <!--marque-->
                           <div style="text-align: left;">
-                            <select class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:516px;">
+                            <select name ="marque" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:516px;">
                               <option value="Peugeot" selected>Peugeot</option>
                               <option value="Renault" >Renault</option>
                               <option value="Opel" >Opel</option>
@@ -228,7 +230,7 @@
                               <option value="Fiat" >Fiat</option>
                               <option value="Autre" >Autre</option>
                             </select>
-                          </div> 
+                          </div>
 
 
                           <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 20px;"> Model</div>
@@ -240,22 +242,22 @@
                       </div>
                           <!--Les checkbox-->
                           <div style="text-align: left;margin-left: 20px;">
-                            <div class="checkbox icheck-check2">
-                              <input type="checkbox" checked id="check2" />
+                            <div class="checkbox icheck-check2" >
+                              <input type="checkbox" checked id="check2" name="climatisation"/>
                               <label for="check2" style="color: darkslategray; font-style:initial;font-size: 15px;">Climatisation</label>
-                          </div> 
-                          </div> 
+                          </div>
+                          </div>
                         <br>
                         <!--PRECEDANT-->
                         <input type="button" name="precedant" class="previous precedant" value="précedant" />
-                        <!--PROPOSER (submet button)-->
+                        <!--PROPOSER (submit button)-->
                         <input type="submit" name="suivant" class="proposer" value="Proposer" />
                     </fieldset>
-                    
+
         </form>
-        
+
         </div>
-        
+
 </center>
 
 <!--************************************************-->
@@ -263,11 +265,11 @@
 <!--************************************************-->
 
 
-<script src="ressources/js/moment.min.js"></script>
-<script src="ressources/js/dateTrajetSlide.js"></script>
-<script src="ressources/js/proposertrajet.js"></script>
+<script src="../ressources/js/moment.min.js"></script>
+<script src="../ressources/js/dateTrajetSlide.js"></script>
+<script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<script src="ressources/js/global.js"></script>
+<script src="../ressources/js/global.js"></script>
 
 </body>
 </html>
