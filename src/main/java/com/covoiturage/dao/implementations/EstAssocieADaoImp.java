@@ -9,7 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EstAssocieADaoImp {
-
+    DAOFactory daoFactory;
+    public EstAssocieADaoImp(DAOFactory daoFactory) {
+        this.daoFactory = daoFactory;
+    }
     public EstAssociea findSpecificEstAssocieA(EstAssociea estAssociea) throws SQLException {
         String sql = "SELECT ID_DETAILS_TRAJET_ASSOCIE, CIN_ASSOCIE, TYPE_ASSOCIATION, DATE_ASSOCIATION FROM ESTASSOCIE_A " +
                 "WHERE ID_DETAILS_TRAJET_ASSOCIE = ? and CIN_ASSOCIE = ?";

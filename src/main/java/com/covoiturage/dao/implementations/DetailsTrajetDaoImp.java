@@ -9,6 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DetailsTrajetDaoImp {
+    DAOFactory daoFactory;
+
+    public DetailsTrajetDaoImp(DAOFactory daoFactory) {
+        this.daoFactory = daoFactory;
+    }
 
     public DetailsTrajet findSpecificDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException {
         String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, DATETIME_ARRIVEE, PRIX_PLACE, TYPE_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE " +
