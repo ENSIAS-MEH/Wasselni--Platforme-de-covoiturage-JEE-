@@ -1,13 +1,15 @@
 package com.covoiturage.beans;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class DetailsTrajet implements Serializable {
     private static final long serialVersionUID = -3068506332086499721L;
     private Long idDetailsTrajet;
-    private Date dateDepart;
-    private Date dateArrivee;
+    private LocalDateTime dateDepart;
+    private LocalDateTime dateArrivee;
     private int prixPlace;
     private String typeVoiture;
     private int effectif;
@@ -18,8 +20,8 @@ public class DetailsTrajet implements Serializable {
     }
 
     public DetailsTrajet(Long idDetailsTrajet,
-                         Date dateDepart,
-                         Date dateArrivee,
+                         LocalDateTime dateDepart,
+                         LocalDateTime dateArrivee,
                          int prixPlace,
                          String typeVoiture,
                          int effectif,
@@ -41,19 +43,19 @@ public class DetailsTrajet implements Serializable {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 
-    public Date getDateDepart() {
+    public LocalDateTime getDateDepart() {
         return dateDepart;
     }
 
-    public void setDateDepart(Date dateDepart) {
+    public void setDateDepart(LocalDateTime dateDepart) {
         this.dateDepart = dateDepart;
     }
 
-    public Date getDateArrivee() {
+    public LocalDateTime getDateArrivee() {
         return dateArrivee;
     }
 
-    public void setDateArrivee(Date dateArrivee) {
+    public void setDateArrivee(LocalDateTime dateArrivee) {
         this.dateArrivee = dateArrivee;
     }
 
