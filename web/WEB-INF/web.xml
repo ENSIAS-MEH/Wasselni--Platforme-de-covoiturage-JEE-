@@ -11,6 +11,15 @@
         <servlet-name>ProposerTrajet</servlet-name>
         <url-pattern>/proposerTrajet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>com.covoiturage.servlets.Accueil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/</url-pattern>    
+    </servlet-mapping>
+
     <jsp-config>
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>
