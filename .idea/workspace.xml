@@ -6,14 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-=======
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="" />
->>>>>>> 61f403c72a8380719d5bebf1e8227922e5ccc274
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,12 +225,12 @@
       <workItem from="1579694128832" duration="92000" />
       <workItem from="1579703350356" duration="800000" />
       <workItem from="1579710285633" duration="12000" />
-<<<<<<< HEAD
+
       <workItem from="1579741333491" duration="685000" />
-=======
+
       <workItem from="1579774133483" duration="4080000" />
       <workItem from="1579789407208" duration="3931000" />
->>>>>>> 61f403c72a8380719d5bebf1e8227922e5ccc274
+
     </task>
     <servers />
   </component>
