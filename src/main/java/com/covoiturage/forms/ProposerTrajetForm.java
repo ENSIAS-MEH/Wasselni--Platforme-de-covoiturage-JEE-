@@ -78,6 +78,4 @@ public class ProposerTrajetForm {
         return new Trajet();
     }
 
-    private void
-
 }
