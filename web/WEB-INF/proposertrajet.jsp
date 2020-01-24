@@ -54,7 +54,7 @@
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous</div>
                                         <!--Depart-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                              <input class="input100"  type="text" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
+                                              <input class="input100"  type="text" id="depart" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
                                             <span class="focus-input100"></span>
                                             <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
@@ -63,7 +63,7 @@
                                         <div style="margin-left: 20px;text-align: left; font-weight: bold; margin-top: 25px;"> Où allez-vous</div>
                                         <!--Destination-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                            <input class="input100"type="text" name="destination" placeholder="Exemple: Boukhalef, Tanger">
+                                            <input class="input100"type="text" id="destination" name="destination" placeholder="Exemple: Boukhalef, Tanger">
                                             <span class="focus-input100"></span>
                                             <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
@@ -76,7 +76,7 @@
                                           <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                       </div>
                                         <div style="text-align: left;">
-                                          <select name="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
+                                          <select name="heureDepart" id="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
                                             <option value ="0" selected>00h</option>
                                             <option value="1">01h</option>
                                             <option value="2">02h</option>
@@ -102,7 +102,7 @@
                                             <option value="22">22h</option>
                                             <option value="23">23h</option>
                                           </select>
-                                          <select name="minuteDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
+                                          <select name="minuteDepart" name="minutesDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
                                             <option value="0"selected>00min</option>
                                             <option value="10">10min</option>
                                             <option value="20">20min</option>
@@ -114,7 +114,14 @@
 
                                 <br>
                                 <!--Suivant-->
-                        <input type="button" name="suivant" class="next suivant" value="${suivant}" />
+                        <input type="button" id="myButton" name="suivant" class="suivant" value="suivant" onclick="valid()" />
+                          <script>
+                              function valid(){
+                                      $(function () {
+                                          $('#myButton').addClass("next suivant")
+                                      })
+                              }
+                          </script>
                       </fieldset>
 
                     <!--Phase 2-->

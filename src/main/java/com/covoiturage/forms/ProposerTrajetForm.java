@@ -60,13 +60,38 @@ public class ProposerTrajetForm {
         return resultat;
     }
 
-    private void proposerTrajetPhase1(HttpServletRequest request){
+    private boolean proposerTrajetPhase1(HttpServletRequest request){
+        boolean validé;
+
         String depart = getValeurChamp( request, CHAMP_DEPART );
         String destination = getValeurChamp( request, CHAMP_DESTINATION );
         String heureDepart = getValeurChamp( request, CHAMP_HEURE_DEPART );
         String minutesDepart = getValeurChamp( request, CHAMP_MINUTES_DEPART );
-
-
+        try {
+            validation(depart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_DEPART,e.getMessage());
+        }
+        try {
+            validation(destination);
+        } catch (Exception e) {
+            setErreurs(CHAMP_DESTINATION,e.getMessage());
+        }
+        try {
+            validation(heureDepart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_HEURE_DEPART,e.getMessage());
+        }
+        try {
+            validation(minutesDepart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_MINUTES_DEPART,e.getMessage());
+        }
+        if ( erreurs.isEmpty() ) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public Trajet proposerTrajet(HttpServletRequest request) {
@@ -78,6 +103,10 @@ public class ProposerTrajetForm {
         return new Trajet();
     }
 
-    private void
+    private void validation(String champ) throws Exception{
+        if ( champ != null ) {
+            throw new Exception( "Merci de saisir tous les champs avant de continuer." );
+        }
+    }
 
 }
