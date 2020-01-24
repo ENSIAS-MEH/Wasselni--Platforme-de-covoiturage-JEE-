@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/DetailsTrajetDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/EstAssocieADaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/EstAssocieADao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/EstAssociea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/EstAssociea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -214,7 +215,7 @@
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
       <workItem from="1579869825186" duration="175000" />
-      <workItem from="1579875741927" duration="2156000" />
+      <workItem from="1579875741927" duration="3060000" />
     </task>
     <servers />
   </component>
