@@ -15,6 +15,8 @@ public class ProposerTrajetForm {
     private static final String CHAMP_DEPART = "depart";
     private static final String CHAMP_DESTINATION = "destination";
     private static final String CHAMP_DATE_TRAJET = "datetrajet";
+    private static final String CHAMP_HEURE_DEPART = "heureDepart";
+    private static final String CHAMP_MINUTES_DEPART = "minutesDepart";
     private static final String CHAMP_EFFECTIF = "effectif";
     private static final String CHAMP_PRIX = "prix";
     private static final String CHAMP_BAGAGE_AUTORISE = "bagageautorise";
@@ -58,11 +60,24 @@ public class ProposerTrajetForm {
         return resultat;
     }
 
-    public Trajet proposerTrajet(HttpServletRequest req) {
+    private void proposerTrajetPhase1(HttpServletRequest request){
+        String depart = getValeurChamp( request, CHAMP_DEPART );
+        String destination = getValeurChamp( request, CHAMP_DESTINATION );
+        String heureDepart = getValeurChamp( request, CHAMP_HEURE_DEPART );
+        String minutesDepart = getValeurChamp( request, CHAMP_MINUTES_DEPART );
+
+
+    }
+
+    public Trajet proposerTrajet(HttpServletRequest request) {
         /*
          * A implementer
          */
+
+
         return new Trajet();
     }
+
+    private void
 
 }
