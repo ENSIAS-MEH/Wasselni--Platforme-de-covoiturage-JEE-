@@ -75,18 +75,25 @@ public class UserDaoImp implements UserDao {
                 "FROM USERS";
         stmt = connection.createStatement();
         resultset = stmt.executeQuery(sql);
+
+        String cin, nom, prenom, sexe, login, email, password;
+        LocalDate dateNaissance;
+        LocalDateTime dateInscription;
+        float rank;
+        User usertoAdd;
+
         while( resultset.next() ) {
-            String cin = resultset.getString("CIN");
-            String nom = resultset.getString("NOM");
-            String prenom = resultset.getString("PRENOM");;
-            LocalDate dateNaissance = resultset.getObject("DATE_NAISSANCE", LocalDate.class);
-            String sexe = resultset.getString("SEXE");
-            String login = resultset.getString("LOGIN");
-            String email = resultset.getString("EMAIL");
-            String password = resultset.getString("PASSWORD");
-            LocalDateTime dateInscription = resultset.getObject("DATE_INSCRIPTION",LocalDateTime.class);
-            float rank = resultset.getFloat("RANK");
-            User usertoAdd = new User(cin,nom,prenom,dateNaissance,sexe,login,email,password,dateInscription,rank);
+            cin = resultset.getString("CIN");
+            nom = resultset.getString("NOM");
+            prenom = resultset.getString("PRENOM");;
+            dateNaissance = resultset.getObject("DATE_NAISSANCE", LocalDate.class);
+            sexe = resultset.getString("SEXE");
+            login = resultset.getString("LOGIN");
+            email = resultset.getString("EMAIL");
+            password = resultset.getString("PASSWORD");
+            dateInscription = resultset.getObject("DATE_INSCRIPTION",LocalDateTime.class);
+            rank = resultset.getFloat("RANK");
+            usertoAdd = new User(cin,nom,prenom,dateNaissance,sexe,login,email,password,dateInscription,rank);
             listofUsers.add(usertoAdd);
         }
 
