@@ -55,15 +55,15 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Accueil</a>
+                    <a href="/" class="nav-link">Accueil</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Proposer un trajet</a>
+                    <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Demander un trajet</a>
+                    <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Demander un trajet</a>
                 </li>
 
             </ul>

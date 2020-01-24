@@ -3,4 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <servlet>
+        <servlet-name>ProposerTrajet</servlet-name>
+        <servlet-class>com.covoiturage.servlets.ProposerTrajet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProposerTrajet</servlet-name>
+        <url-pattern>/proposerTrajet</url-pattern>
+    </servlet-mapping>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
 </web-app>
