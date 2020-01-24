@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="MySQL - @localhost" uuid="00bec185-6d0d-4303-8f23-83226de73584">
+    <data-source source="LOCAL" name="wasselnidb@localhost" uuid="79a63d64-9f30-4082-9942-5dbb518e8d6c">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3308</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3308/wasselnidb</jdbc-url>
     </data-source>
   </component>
 </project>

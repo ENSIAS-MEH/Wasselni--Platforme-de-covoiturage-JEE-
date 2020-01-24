@@ -7,9 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/DetailsTrajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/DetailsTrajet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +36,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="trajet: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -97,6 +80,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -117,25 +101,19 @@
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.273">
-    <configuration name="DatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DatabaseConnection" />
-      <module name="Wasselni" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.273" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/accueil" />
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:1155/Wasselni_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Wasselni:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/Wasselni_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_273_Wasselni" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_2019_DW_Pr3_2" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -143,7 +121,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57004" />
+        <option name="DEBUG_PORT" value="64119" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -197,15 +175,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.DatabaseConnection" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.273" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DatabaseConnection" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -219,8 +188,7 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="root:wasselnidb@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -251,6 +219,7 @@
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
       <workItem from="1579869825186" duration="175000" />
+      <workItem from="1579875741927" duration="203000" />
     </task>
     <servers />
   </component>
@@ -288,11 +257,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="621" y="359" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1579774193945" />
-    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579872130270">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579875945387">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1579872130270" />
-    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774417624" />
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579875945387" />
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579793292424">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -302,10 +271,10 @@
     </state>
     <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579791951362" />
     <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579778201058" />
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579774153857">
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579875881973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774153857" />
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579875881973" />
     <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579863935038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
