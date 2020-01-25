@@ -8,9 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/demandertrajet.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/demandertrajet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/demandertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/demandertrajet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/Inscription.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +242,8 @@
       <workItem from="1579774133483" duration="4080000" />
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
-      <workItem from="1579869825186" duration="175000" />
+      <workItem from="1579869825186" duration="631000" />
+      <workItem from="1579994964540" duration="67000" />
     </task>
     <servers />
   </component>
