@@ -1,24 +1,24 @@
 package com.covoiturage.beans;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class EstAssociea implements Serializable {
     private static final long serialVersionUID = 6685041004718402373L;
     private Long idDetailsTrajet;
     private String cinUser;
-    private String TypeAssociation;
-    private Date DateAssociation;
+    private String typeAssociation;
+    private LocalDateTime dateAssociation;
 
     public EstAssociea() {
         super();
     }
 
-    public EstAssociea(Long idDetailsTrajet, String cinUser, String typeAssociation, Date dateAssociation) {
+    public EstAssociea(Long idDetailsTrajet, String cinUser, String typeAssociation, LocalDateTime dateAssociation) {
         this.idDetailsTrajet = idDetailsTrajet;
         this.cinUser = cinUser;
-        TypeAssociation = typeAssociation;
-        DateAssociation = dateAssociation;
+        this.typeAssociation = typeAssociation;
+        this.dateAssociation = dateAssociation;
     }
 
     public Long getIdDetailsTrajet() {
@@ -38,18 +38,18 @@ public class EstAssociea implements Serializable {
     }
 
     public String getTypeAssociation() {
-        return TypeAssociation;
+        return typeAssociation;
     }
 
     public void setTypeAssociation(String typeAssociation) {
-        TypeAssociation = typeAssociation;
+        this.typeAssociation = typeAssociation;
     }
 
-    public Date getDateAssociation() {
-        return DateAssociation;
+    public LocalDateTime getDateAssociation() {
+        return dateAssociation;
     }
 
-    public void setDateAssociation(Date dateAssociation) {
-        DateAssociation = dateAssociation;
+    public void setDateAssociation(LocalDateTime dateAssociation) {
+        this.dateAssociation = dateAssociation;
     }
 }

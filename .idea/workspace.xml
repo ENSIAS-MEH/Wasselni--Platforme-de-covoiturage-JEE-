@@ -8,12 +8,31 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/web/demandertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/demandertrajet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ressources/css/Inscription.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/style.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/Controlleur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/DatabaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/DAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/ProposerTrajetForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/ProposerTrajetForm.class" afterDir="false" />
+>>>>>>> 60a75fb3fa6ea4c8fe381e5eaaacb1ce501c614f
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,25 +55,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="trajet: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="details_trajet: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -64,6 +83,7 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,12 +114,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1W2re5IisvOTAGC5uwGiPun2csY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -112,35 +137,18 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.273">
-    <configuration name="DatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DatabaseConnection" />
-      <module name="Wasselni" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.273" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/accueil" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Wasselni:war exploded">
           <settings>
@@ -149,7 +157,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_273_Wasselni" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_2019_DW_Pr3_2" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -157,7 +165,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57004" />
+        <option name="DEBUG_PORT" value="64119" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -211,15 +219,28 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.DatabaseConnection" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.273" />
-    </list>
-    <recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <item itemvalue="Application.DatabaseConnection" />
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
       </list>
-    </recent_temporary>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -242,8 +263,16 @@
       <workItem from="1579774133483" duration="4080000" />
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
+<<<<<<< HEAD
       <workItem from="1579869825186" duration="631000" />
       <workItem from="1579994964540" duration="67000" />
+=======
+      <workItem from="1579869825186" duration="175000" />
+      <workItem from="1579875741927" duration="3245000" />
+      <workItem from="1579880504675" duration="291000" />
+      <workItem from="1579875741927" duration="4901000" />
+      <workItem from="1579882841391" duration="321000" />
+>>>>>>> 60a75fb3fa6ea4c8fe381e5eaaacb1ce501c614f
     </task>
     <servers />
   </component>
@@ -263,6 +292,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="442" y="87" key="#Project_Structure" timestamp="1579860697237">
       <screen x="0" y="0" width="1366" height="768" />
@@ -273,32 +305,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="544" y="193" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1579776429458" />
+    <state x="275" y="43" key="#Template_Data_Languages" timestamp="1579877843955">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="43" key="#Template_Data_Languages/0.0.1366.768@0.0.1366.768" timestamp="1579877843955" />
+    <state x="380" y="0" width="619" height="768" key="#Tomcat_9.0.27" timestamp="1579882873374">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="380" y="0" width="619" height="768" key="#Tomcat_9.0.27/0.0.1366.768@0.0.1366.768" timestamp="1579882873374" />
     <state x="725" y="359" key="#Tomcat_9.0.273" timestamp="1579774198589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="725" y="359" key="#Tomcat_9.0.273/0.0.1920.1040@0.0.1920.1040" timestamp="1579774198589" />
-    <state x="621" y="359" key="#Tomcat_Server" timestamp="1579774193945">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="621" y="359" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1579774193945" />
-    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579865557428">
+    <state x="442" y="87" key="#Tomcat_Server" timestamp="1579882848033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1579865557428" />
-    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774417624" />
+    <state x="442" y="87" key="#Tomcat_Server/0.0.1366.768@0.0.1366.768" timestamp="1579882848033" />
+    <state x="621" y="359" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1579774193945" />
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579876582621">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579876582621" />
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579875945387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1579872130270" />
+    <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579875945387" />
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579793292424">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1579793292424" />
-    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1579791951362">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579791951362" />
-    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579778201058" />
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579774153857">
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1579879718481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579774153857" />
+    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1579791951362" />
+    <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579879718481" />
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579875881973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579875881973" />
     <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579863935038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -307,58 +352,58 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1579864938487" />
-    <state width="905" height="215" key="GridCell.Tab.0.bottom" timestamp="1579866026085">
+    <state width="905" height="13" key="GridCell.Tab.0.bottom" timestamp="1579883120281">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579866026085" />
-    <state width="1860" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.center" timestamp="1579866026084">
+    <state width="905" height="13" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579883120281" />
+    <state width="1293" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
+    <state width="905" height="13" key="GridCell.Tab.0.center" timestamp="1579883120281">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579866026084" />
-    <state width="1860" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.left" timestamp="1579866026084">
+    <state width="905" height="13" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579883120281" />
+    <state width="1293" height="3" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
+    <state width="905" height="13" key="GridCell.Tab.0.left" timestamp="1579883120281">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579866026084" />
-    <state width="1860" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.0.right" timestamp="1579866026084">
+    <state width="905" height="13" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579883120281" />
+    <state width="1293" height="3" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252267" />
+    <state width="905" height="13" key="GridCell.Tab.0.right" timestamp="1579883120281">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579866026084" />
-    <state width="1860" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579776792700" />
-    <state width="905" height="215" key="GridCell.Tab.1.bottom" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579883120281" />
+    <state width="1293" height="3" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
+    <state width="905" height="13" key="GridCell.Tab.1.bottom" timestamp="1579883120174">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.1.center" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579883120174" />
+    <state width="905" height="13" key="GridCell.Tab.1.center" timestamp="1579883120174">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.1.left" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1579883120174" />
+    <state width="905" height="13" key="GridCell.Tab.1.left" timestamp="1579883120174">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.1.right" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1579883120174" />
+    <state width="905" height="13" key="GridCell.Tab.1.right" timestamp="1579883120174">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.2.bottom" timestamp="1579866025991">
+    <state width="905" height="13" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1579883120174" />
+    <state width="905" height="13" key="GridCell.Tab.2.bottom" timestamp="1579883120175">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579866025991" />
-    <state width="905" height="215" key="GridCell.Tab.2.center" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579883120175" />
+    <state width="905" height="13" key="GridCell.Tab.2.center" timestamp="1579883120175">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.2.left" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1579883120175" />
+    <state width="905" height="13" key="GridCell.Tab.2.left" timestamp="1579883120175">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
-    <state width="905" height="215" key="GridCell.Tab.2.right" timestamp="1579866025990">
+    <state width="905" height="13" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1579883120175" />
+    <state width="905" height="13" key="GridCell.Tab.2.right" timestamp="1579883120175">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="215" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1579866025990" />
+    <state width="905" height="13" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1579883120175" />
     <state x="559" y="191" key="SettingsEditor" timestamp="1579774183218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -17,7 +17,15 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Accueil</servlet-name>
-        <url-pattern>/</url-pattern>    
+        <url-pattern>/accueil</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DemanderTrajet</servlet-name>
+        <servlet-class>com.covoiturage.servlets.DemanderTrajet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemanderTrajet</servlet-name>
+        <url-pattern>/demanderTrajet</url-pattern>
     </servlet-mapping>
 
     <jsp-config>

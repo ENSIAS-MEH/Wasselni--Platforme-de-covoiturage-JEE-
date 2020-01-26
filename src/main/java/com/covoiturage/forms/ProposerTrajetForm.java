@@ -15,6 +15,8 @@ public class ProposerTrajetForm {
     private static final String CHAMP_DEPART = "depart";
     private static final String CHAMP_DESTINATION = "destination";
     private static final String CHAMP_DATE_TRAJET = "datetrajet";
+    private static final String CHAMP_HEURE_DEPART = "heureDepart";
+    private static final String CHAMP_MINUTES_DEPART = "minutesDepart";
     private static final String CHAMP_EFFECTIF = "effectif";
     private static final String CHAMP_PRIX = "prix";
     private static final String CHAMP_BAGAGE_AUTORISE = "bagageautorise";
@@ -58,11 +60,54 @@ public class ProposerTrajetForm {
         return resultat;
     }
 
-    public Trajet proposerTrajet(HttpServletRequest req) {
+    private boolean proposerTrajetPhase1(HttpServletRequest request) {
+        boolean validé;
+
+        String depart = getValeurChamp(request, CHAMP_DEPART);
+        String destination = getValeurChamp(request, CHAMP_DESTINATION);
+        String heureDepart = getValeurChamp(request, CHAMP_HEURE_DEPART);
+        String minutesDepart = getValeurChamp(request, CHAMP_MINUTES_DEPART);
+        try {
+            validation(depart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_DEPART, e.getMessage());
+        }
+        try {
+            validation(destination);
+        } catch (Exception e) {
+            setErreurs(CHAMP_DESTINATION, e.getMessage());
+        }
+        try {
+            validation(heureDepart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_HEURE_DEPART, e.getMessage());
+        }
+        try {
+            validation(minutesDepart);
+        } catch (Exception e) {
+            setErreurs(CHAMP_MINUTES_DEPART, e.getMessage());
+        }
+        if (erreurs.isEmpty()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Trajet proposerTrajet(HttpServletRequest request) {
         /*
          * A implementer
          */
+
+
         return new Trajet();
     }
 
+
+    private void validation(String champ) throws Exception {
+        if (champ != null) {
+            throw new Exception("Merci de saisir tous les champs avant de continuer.");
+        }
+    }
 }
+

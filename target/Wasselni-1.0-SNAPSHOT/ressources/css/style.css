@@ -749,3 +749,40 @@ bottom: 350px;
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
+#infobar {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #333;
+  overflow-y: scroll;
+}
+
+.content {
+  width: 100%;
+}
+
+.content div {
+  color: blue;
+  opacity: 0.5;
+}
+
+.content div span {
+  color: #666;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.example {
+  background-color: #F8F8F8;
+}
+
+.submit {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  #mobile {
+    padding: 20px 0;
+  }
+}

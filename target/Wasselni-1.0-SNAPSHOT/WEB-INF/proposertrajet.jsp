@@ -30,32 +30,7 @@
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
-  <div class="container">
-      <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-
-              <li class="nav-item">
-                  <a href="<c:url value="/"/>" class="nav-link">Accueil</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Demander un trajet</a>
-              </li>
-
-          </ul>
-      </div>
-  </div>
-</nav>
-
+<c:import url="../navbar.jsp"/>
 
 <center>
     <div class="container-proposer" ></div>
@@ -79,7 +54,7 @@
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous</div>
                                         <!--Depart-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                              <input class="input100"  type="text" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
+                                              <input class="input100"  type="text" id="depart" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
                                             <span class="focus-input100"></span>
                                             <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
@@ -88,9 +63,9 @@
                                         <div style="margin-left: 20px;text-align: left; font-weight: bold; margin-top: 25px;"> Où allez-vous</div>
                                         <!--Destination-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                            <input class="input100"type="text" name="destination" placeholder="Exemple: Boukhalef, Tanger">
+                                            <input class="input100"type="text" id="destination" name="destination" placeholder="Exemple: Boukhalef, Tanger">
                                             <span class="focus-input100"></span>
-                                            <span class="symbol-input100"><i class="fa fa-map-marker-alt" aria-hidden="true"></i>  </span>
+                                            <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
 
 
@@ -101,7 +76,11 @@
                                           <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                       </div>
                                         <div style="text-align: left;">
-                                          <select class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
+<<<<<<< HEAD
+                                          <select name="heureDepart" id="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
+=======
+                                          <select name="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                                             <option value ="0" selected>00h</option>
                                             <option value="1">01h</option>
                                             <option value="2">02h</option>
@@ -127,7 +106,11 @@
                                             <option value="22">22h</option>
                                             <option value="23">23h</option>
                                           </select>
-                                          <select class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
+<<<<<<< HEAD
+                                          <select name="minuteDepart" name="minutesDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
+=======
+                                          <select name="minuteDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                                             <option value="0"selected>00min</option>
                                             <option value="10">10min</option>
                                             <option value="20">20min</option>
@@ -139,7 +122,18 @@
 
                                 <br>
                                 <!--Suivant-->
-                        <input type="button" name="suivant" class="next suivant" value="Suivant" />
+<<<<<<< HEAD
+                        <input type="button" id="myButton" name="suivant" class="suivant" value="suivant" onclick="valid()" />
+                          <script>
+                              function valid(){
+                                      $(function () {
+                                          $('#myButton').addClass("next suivant")
+                                      })
+                              }
+                          </script>
+=======
+                        <input type="button" name="suivant" class="next suivant" value="${suivant}" />
+>>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                       </fieldset>
 
                     <!--Phase 2-->
@@ -270,6 +264,7 @@
 <script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="../ressources/js/global.js"></script>
+
 
 </body>
 </html>

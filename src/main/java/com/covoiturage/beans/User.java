@@ -1,19 +1,20 @@
 package com.covoiturage.beans;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 7657644172878601328L;
     private String cin;
     private String nom;
     private String prenom;
-    private Date dateNaissance;
+    private LocalDate dateNaissance;
     private String sexe;
     private String login;
     private String email;
     private String password;
-    private Date dateInscription;
+    private LocalDateTime dateInscription;
     private float rank;
 
     public User() {
@@ -23,12 +24,12 @@ public class User implements Serializable {
     public User(String cin,
                 String nom,
                 String prenom,
-                Date dateNaissance,
+                LocalDate dateNaissance,
                 String sexe,
                 String login,
                 String email,
                 String password,
-                Date dateInscription,
+                LocalDateTime dateInscription,
                 float rank) {
         this.cin = cin;
         this.nom = nom;
@@ -66,11 +67,11 @@ public class User implements Serializable {
         this.prenom = prenom;
     }
 
-    public Date getDateNaissance() {
+    public LocalDate getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(LocalDate dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 
@@ -106,11 +107,11 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public Date getDateInscription() {
+    public LocalDateTime getDateInscription() {
         return dateInscription;
     }
 
-    public void setDateInscription(Date dateInscription) {
+    public void setDateInscription(LocalDateTime dateInscription) {
         this.dateInscription = dateInscription;
     }
 
