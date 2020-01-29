@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -10,6 +11,7 @@
 
 <%@ page import="com.covoiturage.fb.login.UserProfile" %>
 <%@ page import="com.covoiturage.fb.login.UserDetails" %>
+<%@ page import="java.util.List" %>
 <html>
 <head>
     <title>Welcome</title>
@@ -18,7 +20,28 @@
     <% String accessToken = request.getParameter("accessToken");
      UserProfile user_profile = UserDetails.GetUserProfile(accessToken);
     %>
-    Bienvenue <%=user_profile.getName()%> à notre site de covoiturage !
+    Bienvenue <%=user_profile.getName()%> à notre site de covoiturage ! <a href="<c:url value='offres.jsp'/>">consulter les offres sur le site: </a>
+
+    <p>
+    <p>
+        Posts from Wessalni_Dev :
+    </p>
+
+
+    <%  int i =0;
+        List<String> myList = UserDetails.GetGroupPosts(accessToken);
+        for(i=0;i<myList.size();i++) {%>
+
+    <div>
+
+        <%
+            out.println(myList.get(i));
+
+        %>
+    </div>
+
+    <%   }     %>
+    </p>
 
 
 </body>

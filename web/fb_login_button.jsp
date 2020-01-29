@@ -13,7 +13,7 @@
         console.log('statusChangeCallback');
         console.log(response);                   // The current login status of the person.
         if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-            window.location.href="welcome.jsp?accessToken="+response.authResponse.accessToken;
+            window.location.href="page_after_sign_up.jsp?accessToken="+response.authResponse.accessToken;
             //testAPI();
         } else {                                 // Not logged into your webpage or we are unable to tell.
             document.getElementById('status').innerHTML = 'Please log ' +

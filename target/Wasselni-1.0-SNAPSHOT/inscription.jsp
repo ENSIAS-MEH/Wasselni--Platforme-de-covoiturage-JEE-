@@ -15,8 +15,6 @@
 
 
 <!--Liens-->
-   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -24,10 +22,10 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Fichiers-->
-<link rel="stylesheet" href="ressources/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
 <link rel="stylesheet" href="ressources/css/style.css">
-<link rel="stylesheet" href="ressources/css/authentification.css">
+<link rel="stylesheet" href="ressources/css/offres.css">
+<link rel="stylesheet" href="ressources/css/inscription.css">
 <link rel="stylesheet" href="ressources/css/validation.css">
 
 
@@ -74,151 +72,129 @@ crossorigin="anonymous">
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
 		<div class="container-inscription insc">
-
-            <div class="container">
-
-                <!--Authentification par facebook-->
-                <div class="row">
-                    <div  style="margin-top: 130px;margin-bottom: 30px;">
-                        
-
-                    </div>
-                </div>
-
-                <!--Authentification par un compte-->
-                <div class="row">
-                 
-                    
-
-
-                    <div class="wrap-inscription" style="margin-bottom: 130px;">
-
-                        <div class="container">
-                            <div class="row">
-                            
-                                <form class="inscription-form validate-form" style="align-self: center;">	
-                                    <span class="inscription-form-title" style="margin-left: 130px;">
-                                        S'authentifier
-                                    </span>			
-                                    <!--Email-->
-                                    <div class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
-                                        <input class="input100" type="text" name="email" placeholder="Email">
-                                        <span class="focus-input100"></span>
-                                        <span class="symbol-input100">
-                                            <i class="fa fa-at" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                
-                                <!--MOT de PASSE-->
-                                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-                                        <input class="input100" type="password" name="motpass" placeholder="Mot de passe">
-                                        <span class="focus-input100"></span>
-                                        <span class="symbol-input100">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                
+			<div class="wrap-inscription" style="margin-top: 130px;margin-bottom: 130px;">
+                <span class="inscription-form-title" style="margin-left: 130px;">
+                    Rejoins nous
+                </span>
                 
-                                <!--Buton pour connecter-->
-                                <button type="submit" class="authentification-form-btn" >
-                                    <span>
-                                        Connecter <i class="fa fa-sign-in-alt"> </i>
-                                    </span>
-                                </button>
-                                </form> 
-                            </div>
-                            <hr style="width: 300px; margin-right: 160px;">
-                            <div class="row" >
-                                <button class="connecterFC" style="margin-left: 180px;" onlogin="checkLoginState()" >
-                                    <span>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </span>
-                                </button>
-                                <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
-                            </div>
+				<form class="inscription-form validate-form" style="align-self: center;">
+					
+                   <!--NOM-->
+                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="text" name="nom" placeholder="Nom">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-info" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					 <!--PRENOM-->
+                   
+                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="text" name="prenom" placeholder="Prénom">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-info" aria-hidden="true"></i>
+						</span>
+					</div>
 
-                        </div>
-
+                    <!--Sex-->
+                    <div class="mylabel" style="font-weight: bold; margin-left: 50px;"> Sex: </div>
+                    <div class="mylabel">
+                        <input type="radio" id="M" name="sex"  value="M" checked>
+                        <div class="slidinggroove"></div>
+                        <label class="mylabel" for="M"><p class="labelterm">M</p></label>
                     </div>
-                </div>
 
+                    <div class="mylabel" style="margin-left: 150px;">
+                        <input type="radio" id="F" name="sex"  value="F">
+                        <div class="slidinggroove"></div>
+                        <label class="mylabel" for="F" ><p class="labelterm">F</p></100Dhs></label>
+                    </div>
+                    <!--Date naissance-->
+                    <div class="wrap-input100 " data-validate="Champ obligatoire">
+                        <input class="input100" type="text" name="datetnaissance"  id="input-start" placeholder="Date naissance">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                    </div>
 
-            </div>
-            
+                    <!--Region-->
+                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="text" name="region" placeholder="Région">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <br> <br> <br>
+
+                    <!--Nom d'utilisateur-->
+                   connectcafe
+                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="text" name="pseudo" placeholder="Pseudo-Nom">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>					
+					<!--Email-->
+					<div class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-at" aria-hidden="true"></i>
+						</span>
+					</div>
+                   
+                   <!--MOT de PASSE-->
+                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="password" name="motpass" placeholder="Mot de passe">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					
+					<!--La confirmation de mot de passe -->
+					
+					 <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="password" name="cmotpass" placeholder="Confirme mot de passe">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+               <br> 
+               
+                   <!--Les checkbox-->
+                    <div class="checkbox icheck-check2">
+                        <input type="checkbox" checked id="check2" />
+                        <label for="check2">j'aimerais avoir des notifications sur l'actualité par email</label>
+                    <br> <br>
+                      </div>
+                       <div class="checkbox icheck-check1">
+                        <input type="checkbox" checked id="check1" />
+                        <label for="check1">j'accepte <a href="">les termes et conditions et la politique de confidentialité</a></label>
+                    </div>
+                
+                
+                
+                <!--Buton pour rejoindre-->
+                
+					<div class="container-inscription-form-btn">
+						<button  class="inscription-form-btn"  >
+							Rejoindre
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 
   </section>
 
-  <!-- FB authentification -->
-<script>
-
-
-    function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-
-        console.log('statusChangeCallback');
-        console.log(response);                   // The current login status of the person.
-        if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-            window.location.href="page_after_sign_up.jsp?accessToken="+response.authResponse.accessToken;
-            //testAPI();
-        } else {                                 // Not logged into your webpage or we are unable to tell.
-            document.getElementById('status').innerHTML = 'Please log ' +
-                'into this webpage.';
-        }
-    }
-
-
-    function checkLoginState() {               // Called when a person is finished with the Login Button.
-        FB.getLoginStatus(function(response) {   // See the onlogin handler
-            statusChangeCallback(response);
-        });
-    }
-
-
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '176037053649511',
-            cookie     : true,                     // Enable cookies to allow the server to access the session.
-            xfbml      : true,                     // Parse social plugins on this webpage.
-            version    : 'v5.0'           // Use this Graph API version for this call.
-        });
-
-
-        FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-            statusChangeCallback(response);        // Returns the login status.
-        });
-    };
-
-
-    (function(d, s, id) {                      // Load the SDK asynchronously
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
-    function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-            console.log('Successful login for: ' + response.name);
-            document.getElementById('status').innerHTML =
-                'Thanks for logging in, ' + response.name + '!';
-        });
-    }
-
-</script>
-
-
-
-
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=176037053649511&autoLogAppEvents=1"></script>
-<div id="status">
-</div>
-
+  
   
 
 <!--************-->

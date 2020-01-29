@@ -4,7 +4,7 @@
 <head>
 <title>Wasselni</title>
     <meta charset="UTF-8" />
-    <% request.setCharacterEncoding("UTF-8"); %>
+    <% request.setCharacterEncoding("UTF-8"); %> 
 
  <!--************************************************-->
     <!--CODE CSS-->
@@ -21,6 +21,7 @@
    <link rel="stylesheet" type="text/css" href="../ressources/css/proposertrajet.css">
    <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
    <link rel="stylesheet" href="../ressources/css/style.css">
+   <link rel="stylesheet" href="../ressources/css/validation.css">
 
 </head>
 
@@ -30,9 +31,34 @@
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<c:import url="../navbar.jsp"/>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
+  <div class="container">
+      <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
 
-<center>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Accueil</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Proposer un trajet</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Demander un trajet</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div style="text-align: center;">
     <div class="container-proposer" ></div>
         <form id="proposer" style="margin-top: 80px;">
                     <div class="loader">
@@ -51,6 +77,7 @@
                                 <br>
 
 
+                                
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous</div>
                                         <!--Depart-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
@@ -114,14 +141,7 @@
 
                                 <br>
                                 <!--Suivant-->
-                        <input type="button" id="myButton" name="suivant" class="suivant" value="suivant" onclick="valid()" />
-                          <script>
-                              function valid(){
-                                      $(function () {
-                                          $('#myButton').addClass("next suivant")
-                                      })
-                              }
-                          </script>
+                        <input type="button" name="suivant" class="next suivant" value="Suivant" />
                       </fieldset>
 
                     <!--Phase 2-->
@@ -229,6 +249,7 @@
                               <label for="check2" style="color: darkslategray; font-style:initial;font-size: 15px;">Climatisation</label>
                           </div>
                           </div>
+                          
                         <br>
                         <!--PRECEDANT-->
                         <input type="button" name="precedant" class="previous precedant" value="précedant" />
@@ -238,9 +259,12 @@
 
         </form>
 
+
+
         </div>
 
-</center>
+</div>
+
 
 <!--************************************************-->
 <!--CODE JAVASCRIPT-->
@@ -252,6 +276,7 @@
 <script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="../ressources/js/global.js"></script>
+<script src="../ressources/js/validation.js"></script>
 
 
 </body>

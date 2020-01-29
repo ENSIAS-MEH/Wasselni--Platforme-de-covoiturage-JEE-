@@ -58,7 +58,7 @@
 </nav>
 
 
-<center>
+<div style="text-align: center;">
     <div class="container-proposer" ></div>
         <form id="proposer" style="margin-top: 80px;">
                     <div class="loader">
@@ -259,9 +259,12 @@
 
         </form>
 
+
+
         </div>
 
-</center>
+</div>
+
 
 <!--************************************************-->
 <!--CODE JAVASCRIPT-->

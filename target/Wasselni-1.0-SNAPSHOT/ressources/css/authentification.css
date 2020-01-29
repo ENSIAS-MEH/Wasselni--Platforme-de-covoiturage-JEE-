@@ -115,6 +115,7 @@
   .container-inscription {
     width: 100%;  
     min-height: 100vh;
+    
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -129,7 +130,8 @@
   
   .wrap-inscription {
     width: 710px;
-    height: 900px;
+    height: 400px;
+    margin-left: 200px;
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
@@ -138,6 +140,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px 30px 57px 135px;
@@ -447,68 +450,126 @@
       background-color: #3498db;
       border-color: #3498db;
   }
-  .icheck-check2 > input:first-child:not(:checked):not(:disabled):hover + label::before,
-  .icheck-check2 > input:first-child:not(:checked):not(:disabled):hover + input[type="hidden"] + label::before {
-      border-color: #3498db;
+
+
+
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+
+.authentification-form-btn {
+  font-family: Montserrat;
+  font-size: 13.5px;
+  color: #fff;
+  line-height: 1.2;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 440px;
+  height: 35px;
+  border-radius: 27px;
+  background: #333333;
+  position: relative;
+  z-index: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.authentification-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 27px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #52b3d9;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.authentification-form-btn:hover:before {
+  opacity: 0;
+}
+
+.authentification-form-btn i {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.authentification-form-btn:hover i {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.connecterFC{
+  width: 70px;
+  height: 70px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  position: relative;
+  overflow: hidden;
+}
+
+.connecterFC i{
+  font-size: 15px;
+  transition: 0.2s linear;
+
+}
+
+.connecterFC:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.connecterFC::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.connecterFC:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+  left: -10%;
   }
-  
-  .icheck-check2 > input:first-child:checked + label::before,
-  .icheck-check2 > input:first-child:checked + input[type="hidden"] + label::before {
-      background-color: #3498db;
-      border-color: #3498db;
-  }
-
-
-  /*Sex*/
-  .mylabel{
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.mylabel input{
-    display: none;
-}
-
-.slidinggroove{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #B8B8B8;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-
-.slidinggroove:after{
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #f5f5f5;
-    top: 0px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
-
-input:checked + .slidinggroove{
-    background: #52b3d9;
-}
-
-input:checked + .slidinggroove:after{
-    transform: translateX(20px);
-}
-
-.labelterm{
-    position: relative;
-    top: 0px;
-    font-weight: bold;
-    margin-left: 50px;
-    font-size: 13px;
-    color: #222;
 }

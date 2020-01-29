@@ -1,0 +1,137 @@
+
+.asRange {
+  position: relative;
+  width: 140px;
+  height: 8px;
+  background-color: #b6b6b6;
+  border-radius: 8px;
+}
+.asRange .asRange-pointer {
+  position: absolute;
+  left: 30%;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+.asRange .asRange-pointer:before {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  content: "";
+  background: #6ba1ad;
+  border-radius: inherit;
+}
+.asRange .asRange-pointer:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: #fff;
+  border-radius: inherit;
+}
+.asRange .asRange-pointer.start {
+  left: 0;
+  margin-left: 4px;
+}
+.asRange .asRange-pointer.stop {
+  left: 100%;
+  margin-left: -12px;
+}
+.asRange .asRange-pointer .asRange-tip {
+  position: absolute;
+  top: -33px;
+  left: 0;
+  width: 36px;
+  height: 20px;
+  margin-left: -15px;
+  font-family: Bpreplay;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #5d5c58;
+  border: 1px solid #5d5c58;
+  border-radius: 3px; 
+  -webkit-transition: opacity .3s ease-in-out 0s; 
+  transition: opacity .3s ease-in-out 0s;
+}
+.asRange .asRange-pointer .asRange-tip:before {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  content: "";
+  background-color: #5d5c58;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.asRange .asRange-selected {
+  position: absolute;
+  left: 30%;
+  z-index: 1;
+  width: 40%;
+  height: 8px;
+  background-color: #7ebdcb;
+  border-radius: 9px;
+}
+.asRange .asRange-scale {
+  display: none;
+}
+
+/*------------------------------------------------------------------
+[ Button  offre]*/
+.container-offre-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.offre-form-btn {
+  width: 60%;
+  height: 40px;
+  border-radius: 25px;
+  border: #fff;
+  background: #52b3d9;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.offre-form-btn:hover {
+  background: #333333;
+}
+
+
+
+
