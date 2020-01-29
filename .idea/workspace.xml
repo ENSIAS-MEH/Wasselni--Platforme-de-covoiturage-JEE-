@@ -8,6 +8,30 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/demandertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/demandertrajet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/Inscription.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/demandertrajet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/style.css" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ProposerTrajetForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/Controlleur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/DatabaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/DAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/ProposerTrajetForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/ProposerTrajetForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,12 +264,20 @@
       <workItem from="1579774133483" duration="4080000" />
       <workItem from="1579789407208" duration="3931000" />
       <workItem from="1579860375027" duration="5590000" />
+
+      <workItem from="1579869825186" duration="631000" />
+      <workItem from="1579994964540" duration="67000" />
+
       <workItem from="1579869825186" duration="175000" />
       <workItem from="1579875741927" duration="3245000" />
       <workItem from="1579880504675" duration="291000" />
       <workItem from="1579875741927" duration="4901000" />
+
+      <workItem from="1579882841391" duration="321000" />
       <workItem from="1579882841391" duration="1213000" />
       <workItem from="1580305990458" duration="2262000" />
+      <workItem from="1580305990458" duration="833000" />
+
     </task>
     <servers />
   </component>

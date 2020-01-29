@@ -1,0 +1,575 @@
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ les fonts ]*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+  
+    
+  
+  body{
+      height: 100%;
+      font-family: Montserrat;
+      font-size: 13.5px;
+  }
+  
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color: #57b846;
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  input:focus::-moz-placeholder { color:transparent; }
+  input:focus:-ms-input-placeholder { color:transparent; }
+  
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; }
+  textarea:focus::-moz-placeholder { color:transparent; }
+  textarea:focus:-ms-input-placeholder { color:transparent; }
+  
+  input::-webkit-input-placeholder { color: #aaaaaa; }
+  input:-moz-placeholder { color: #aaaaaa; }
+  input::-moz-placeholder { color: #aaaaaa; }
+  input:-ms-input-placeholder { color: #aaaaaa; }
+  
+  textarea::-webkit-input-placeholder { color: #aaaaaa; }
+  textarea:-moz-placeholder { color: #aaaaaa; }
+  textarea::-moz-placeholder { color: #aaaaaa; }
+  textarea:-ms-input-placeholder { color: #aaaaaa; }
+  
+  /*---------------------------------------------*/
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+  
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ inscription ]*/
+  
+
+  .container-inscription {
+    width: 100%;  
+    min-height: 100vh;
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-image: linear-gradient(to bottom right,rgba(110, 180, 247,0.3), rgba(62, 95, 165, 0.8));
+  }
+  
+  .wrap-inscription {
+    width: 710px;
+    height: 400px;
+    margin-left: 200px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 30px 57px 135px;
+  }
+  
+ 
+  
+  
+  .inscription-form {
+    width: 390px;
+  }
+  
+  .inscription-form-title {
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 36px;
+  }
+  
+  input.input100 {
+    height: 40px;
+    width: 440px;
+    border-radius: 20px;
+    padding: 0 30px 0 50px;
+  }
+  
+  input.input100[name="email"] {
+    padding: 0 30px 0 54px;
+  }
+  
+  textarea.input100 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 14px 30px;
+  }
+  
+  /*---------------------------------------------*/
+  .wrap-input100 {
+    position: relative;
+    width: 440px;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  
+  .input100 {
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: Montserrat-Bold;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666666;
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Focus ]*/
+  .focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(132,106,221, 0.5);
+  }
+  
+  .input100:focus + .focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 25px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 25px;
+      opacity: 0;
+    }
+  }
+  
+  .symbol-input100 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    pointer-events: none;
+    color: #aaaaaa;
+    font-size: 15px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .input100:focus + .focus-input100 + .symbol-input100 {
+    color: #52b3d9;
+    padding-left: 22px;
+  }
+  
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  .container-inscription-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .inscription-form-btn {
+    width: 60%;
+    height: 40px;
+    border-radius: 25px;
+    background: #52b3d9;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .inscription-form-btn:hover {
+    background: #333333;
+  }
+  
+  @media (max-width: 1200px) {
+    .inscription-pic {
+      width: 33.5%;
+    }
+  
+    .inscription-form {
+      width: 44%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .wrap-inscription {
+      padding: 110px 80px 157px 90px;
+    }
+  
+    .inscription-pic {
+      width: 35%;
+    }
+  
+    .inscription-form {
+      width: 55%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrap-inscription {
+      padding: 110px 80px 157px 80px;
+    }
+  
+    .inscription-pic {
+      display: none;
+    }
+  
+    .inscription-form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .wrap-inscription {
+      padding: 110px 15px 157px 15px;
+    }
+  }
+  
+  
+
+  
+  
+   [class*="icheck-"] {
+      min-height: 22px;
+      margin-top: 6px !important;
+      margin-bottom: 6px !important;
+      padding-left: 0px;
+  }
+  
+  .icheck-inline {
+      display: inline-block;
+  }
+  
+      .icheck-inline + .icheck-inline {
+          margin-left: .75rem;
+          margin-top: 6px;
+      }
+  
+  [class*="icheck-"] > label {
+      padding-left: 29px !important;
+      min-height: 22px;
+      line-height: 22px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      margin-bottom: 0;
+      font-weight: normal;
+      cursor: pointer;
+  }
+  
+  [class*="icheck-"] > input:first-child {
+      position: absolute !important;
+      opacity: 0;
+      margin: 0;
+  }
+  
+      [class*="icheck-"] > input:first-child:disabled {
+          cursor: default;
+      }
+  
+      [class*="icheck-"] > input:first-child + label::before,
+      [class*="icheck-"] > input:first-child + input[type="hidden"] + label::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          border: 1px solid rgb(68, 113, 238);
+          border-radius: 0px;
+          margin-left: -29px;
+      }
+  
+      [class*="icheck-"] > input:first-child:checked + label::after,
+      [class*="icheck-"] > input:first-child:checked + input[type="hidden"] + label::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 7px;
+          height: 10px;
+          border: solid 2px #fff;
+          border-left: none;
+          border-top: none;
+          transform: translate(7.75px, 4.5px) rotate(45deg);
+          -ms-transform: translate(7.75px, 4.5px) rotate(45deg);
+      }
+  
+  [class*="icheck-"] > input[type="radio"]:first-child + label::before,
+  [class*="icheck-"] > input[type="radio"]:first-child + input[type="hidden"] + label::before {
+      border-radius: 50%;
+  }
+  
+  [class*="icheck-"] > input:first-child:not(:checked):not(:disabled):hover + label::before,
+  [class*="icheck-"] > input:first-child:not(:checked):not(:disabled):hover + input[type="hidden"] + label::before {
+      border-width: 2px;
+  }
+  
+  [class*="icheck-"] > input:first-child:disabled + label,
+  [class*="icheck-"] > input:first-child:disabled + input[type="hidden"] + label,
+  [class*="icheck-"] > input:first-child:disabled + label::before,
+  [class*="icheck-"] > input:first-child:disabled + input[type="hidden"] + label::before {
+      pointer-events: none;
+      cursor: default;
+      filter: alpha(opacity=65);
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      opacity: .65;
+  }
+  
+  .icheck-check1 > input:first-child:not(:checked):not(:disabled):hover + label::before,
+  .icheck-check1 > input:first-child:not(:checked):not(:disabled):hover + input[type="hidden"] + label::before {
+      border-color: #3498db;
+  }
+  
+  .icheck-check1 > input:first-child:checked + label::before,
+  .icheck-check1 > input:first-child:checked + input[type="hidden"] + label::before {
+      background-color: #3498db;
+      border-color: #3498db;
+  }
+
+
+
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+
+.authentification-form-btn {
+  font-family: Montserrat;
+  font-size: 13.5px;
+  color: #fff;
+  line-height: 1.2;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 440px;
+  height: 35px;
+  border-radius: 27px;
+  background: #333333;
+  position: relative;
+  z-index: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.authentification-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 27px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #52b3d9;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.authentification-form-btn:hover:before {
+  opacity: 0;
+}
+
+.authentification-form-btn i {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.authentification-form-btn:hover i {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.connecterFC{
+  width: 70px;
+  height: 70px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  position: relative;
+  overflow: hidden;
+}
+
+.connecterFC i{
+  font-size: 15px;
+  transition: 0.2s linear;
+
+}
+
+.connecterFC:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.connecterFC::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.connecterFC:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+  left: -10%;
+  }
+}

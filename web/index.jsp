@@ -206,8 +206,8 @@
  <!-- Service Client -->
  <div class="col-12 col-lg-4 srv1">
     <div class="single-service-area mb-80">
-        <div class="service-icon">
-                <i class="fa fa-life-ring"></i>
+        <div class="service-icon" >
+                <i class="fa fa-life-ring" style="margin-top: 25px;"></i>
             </div>
             <h5  style="font-weight: bold;">Service Client 24/24 et 7/7</h5>
             <p></p>
@@ -224,7 +224,7 @@
     <div class="col-12 col-lg-4 srv2">
         <div class="single-service-area mb-80">
             <div class="service-icon">
-                <i class="fa fa-bullhorn"></i>
+                <i class="fa fa-bullhorn" style="margin-top: 25px;"></i>
             </div>
             <h5 style="font-weight: bold;">Comment proposer un trajet</h5>
             <p></p>
@@ -241,7 +241,7 @@
    <div class="col-12 col-lg-4 srv3">
         <div class="single-service-area mb-80">
             <div class="service-icon">
-                <i  class="fa fa-eye" aria-hidden="true"></i>
+                <i  class="fa fa-eye" aria-hidden="true" style="margin-top: 25px;"></i>
             </div>
             <h5  style="font-weight: bold;">Vous pouvez compter sur nous</h5>
             <p></p>

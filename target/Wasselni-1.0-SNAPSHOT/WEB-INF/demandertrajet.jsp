@@ -69,7 +69,7 @@
 
                                         <div style="margin-left: 20px;text-align: left; font-weight: bold; margin-top: 25px;">Quand partez-vous ?</div>
                                         <!--Date-->
-                                        <div class="wrap-input100 input-group">
+                                      <div class="wrap-input100 input-group">
                                           <input class="input100" type="text" name="datetrajet" placeholder="Date" id="input-start">
                                           <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                       </div>
