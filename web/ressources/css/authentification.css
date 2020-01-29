@@ -115,6 +115,7 @@
   .container-inscription {
     width: 100%;  
     min-height: 100vh;
+    
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -130,6 +131,7 @@
   .wrap-inscription {
     width: 710px;
     height: 400px;
+    margin-left: 200px;
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
