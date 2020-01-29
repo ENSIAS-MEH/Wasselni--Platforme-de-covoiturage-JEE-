@@ -29,6 +29,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.18</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.restfb/restfb -->
+        <dependency>
+            <groupId>com.restfb</groupId>
+            <artifactId>restfb</artifactId>
+            <version>2.26.0</version>
+        </dependency>
+
 
     </dependencies>
 
