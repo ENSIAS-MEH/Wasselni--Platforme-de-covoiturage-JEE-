@@ -129,7 +129,7 @@ crossorigin="anonymous">
                     <br> <br> <br>
 
                     <!--Nom d'utilisateur-->
-                   
+                   connectcafe
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
 						<input class="input100" type="text" name="pseudo" placeholder="Pseudo-Nom">
 						<span class="focus-input100"></span>
