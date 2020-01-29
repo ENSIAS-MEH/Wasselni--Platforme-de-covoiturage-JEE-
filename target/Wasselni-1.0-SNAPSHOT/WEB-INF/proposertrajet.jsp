@@ -76,11 +76,7 @@
                                           <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                       </div>
                                         <div style="text-align: left;">
-<<<<<<< HEAD
                                           <select name="heureDepart" id="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
-=======
-                                          <select name="heureDepart" class="browser-default custom-select" style="margin-left: 12px; border-radius: 20px; background:#e6e6e6; width:250px;">
->>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                                             <option value ="0" selected>00h</option>
                                             <option value="1">01h</option>
                                             <option value="2">02h</option>
@@ -106,11 +102,7 @@
                                             <option value="22">22h</option>
                                             <option value="23">23h</option>
                                           </select>
-<<<<<<< HEAD
                                           <select name="minuteDepart" name="minutesDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
-=======
-                                          <select name="minuteDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
->>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                                             <option value="0"selected>00min</option>
                                             <option value="10">10min</option>
                                             <option value="20">20min</option>
@@ -122,7 +114,6 @@
 
                                 <br>
                                 <!--Suivant-->
-<<<<<<< HEAD
                         <input type="button" id="myButton" name="suivant" class="suivant" value="suivant" onclick="valid()" />
                           <script>
                               function valid(){
@@ -131,9 +122,6 @@
                                       })
                               }
                           </script>
-=======
-                        <input type="button" name="suivant" class="next suivant" value="${suivant}" />
->>>>>>> 6a083316182ef192a9c1bb7d1ec05209ade8dd7a
                       </fieldset>
 
                     <!--Phase 2-->
