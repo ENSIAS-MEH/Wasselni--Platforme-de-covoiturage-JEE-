@@ -101,7 +101,7 @@ crossorigin="anonymous">
                                         S'authentifier
                                     </span>			
                                     <!--Email-->
-                                    <div class="wrap-input100 " >
+                                    <div class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
                                         <input class="input100" type="text" name="email" placeholder="Email">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
@@ -110,7 +110,7 @@ crossorigin="anonymous">
                                     </div>
                                 
                                 <!--MOT de PASSE-->
-                                    <div class="wrap-input100 " >
+                                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
                                         <input class="input100" type="password" name="motpass" placeholder="Mot de passe">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
@@ -149,6 +149,62 @@ crossorigin="anonymous">
   </section>
 
   
+  
+
+<!--************-->
+<!--Foter -->
+<!--************-->
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 colfooter0">
+                    <img src="ressources/img/logo-footer.png"  alt="Wasselni" style="width:50%;height:22%;">
+                    <br>
+                    <p>
+                        Notre équipe travaillent  pour vous offrir des conseilles fidèles, des offres originaux.
+                    </p>
+                    <p><a href="#" class="a">Notre équipe </a></p>
+                </div>
+                <div class="col-md-4 offset-md-1 colfooter1">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Avune de france, Agdal, Rabat</p>
+                    <p><i class="fas fa-phone" ></i> Téléphone: O5 36 22 67 11</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com" class="a">support@wasselni.com</a></p>
+                </div>
+                <div class="col-md-4 footer-links colfooter2">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Liens</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><a class="scroll-link a" href="#top-content">Accueil</a></p>
+                            <p><a href="#" class="a">proposer un trajet</a></p>
+                            <p><a href="#" class="a">Demande un trajet</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row rowfooter">
+                <div class="col-md-6 footer-copyright">
+                    Copyright &copy; <span id="year"></span>, powered by ENSIAS
+                </div>
+                <div class="col-md-6 footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
      
 
