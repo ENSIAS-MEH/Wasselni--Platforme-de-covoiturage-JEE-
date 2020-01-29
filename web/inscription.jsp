@@ -71,8 +71,8 @@ crossorigin="anonymous">
   <!--************-->
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
-		<div class="container-inscription insc">
-			<div class="wrap-inscription" style="margin-top: 130px;margin-bottom: 130px;">
+		<div class="container-inscription ">
+			<div class="wrap-inscription insc" style="margin-top: 130px;margin-bottom: 130px;">
                 <span class="inscription-form-title" style="margin-left: 130px;">
                     Rejoins nous
                 </span>
@@ -129,7 +129,6 @@ crossorigin="anonymous">
                     <br> <br> <br>
 
                     <!--Nom d'utilisateur-->
-                   connectcafe
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
 						<input class="input100" type="text" name="pseudo" placeholder="Pseudo-Nom">
 						<span class="focus-input100"></span>

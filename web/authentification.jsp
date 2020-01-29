@@ -73,7 +73,7 @@ crossorigin="anonymous">
   <!--************-->
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
-		<div class="container-inscription insc">
+		<div class="container-inscription">
 
             <div class="container">
 
@@ -91,13 +91,13 @@ crossorigin="anonymous">
                     
 
 
-                    <div class="wrap-inscription" style="margin-bottom: 130px;">
+                    <div class="wrap-inscription insc" style="margin-bottom: 130px;">
 
                         <div class="container">
                             <div class="row">
                             
                                 <form class="inscription-form validate-form" style="align-self: center;">	
-                                    <span class="inscription-form-title" style="margin-left: 130px;">
+                                    <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
                                         S'authentifier
                                     </span>			
                                     <!--Email-->
@@ -127,6 +127,7 @@ crossorigin="anonymous">
                                 </button>
                                 </form> 
                             </div>
+                            <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>
                             <hr style="width: 300px; margin-right: 160px;">
                             <div class="row">
                                 <button class="connecterFC" style="margin-left: 180px;">
