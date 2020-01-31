@@ -493,7 +493,7 @@
         <div style="margin-top: 100px;">
             <ul class="pagination  justify-content-center ">
                 <li class="page-item disabled">
-                  <span class="page-link">Previous</span>
+                  <span class="page-link">Précédent</span>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item active">
@@ -504,7 +504,7 @@
                 </li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
+                  <a class="page-link" href="#">Suivant</a>
                 </li>
               </ul>
         </div>
