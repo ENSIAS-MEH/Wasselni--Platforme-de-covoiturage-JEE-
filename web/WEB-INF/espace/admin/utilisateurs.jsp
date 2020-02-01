@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,38 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nom_de_admin| Espace Admin</title>
     <!-- Bootstrap CSS -->
-    <link href="ressources/bootstrapPack/css/bootstrap.min.css" rel="stylesheet">
-    <link href="ressources/bootstrapPack/css/style.css" rel="stylesheet">
+    <link href="../../../ressources/bootstrapPack/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../ressources/bootstrapPack/css/style.css" rel="stylesheet">
     <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img  src="ressources/img/logo_admin.png" alt="" width="65%" height="95%"></a></a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="admin.html">Espace principale</a></li>
-            <li><a href="utilisateurs.html">Utilisateurs</a></li>
-            <li><a href="offres_admin.html">Offres</a></li>
-            <li><a href="demandes_admin.html">Demandes</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Bienvenue, nom_de_admin</a></li>
-            <li><a href="authentification.html">Déconnecter</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+   <c:import url="./navbar.jsp"/>
     <header id="header">
       <div class="container">
         <div class="row">
@@ -53,7 +30,7 @@
     <section id="breadcrumb">
       <div class="container">
         <ol class="breadcrumb">
-          <li><a href="admin.html">Principale</a></li>
+          <li><a href="admin.jsp">Principale</a></li>
           <li class="active">Utilisateurs</li>
         </ol>
       </div>
@@ -63,14 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <div class="list-group">
-              <a href="admin.html" class="list-group-item active main-color-bg">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Espace admin
-              </a>
-              <a href="utilisateurs.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Utlisateurs <span class="badge">96</span></a>
-              <a href="offres_admin.html" class="list-group-item"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Offres <span class="badge">12</span></a>
-              <a href="demandes_admin.html" class="list-group-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Demandes <span class="badge">23</span></a>
-            </div>
+              <c:import url="./list_group.jsp"/>
 
             <div class="well">
               <h4 style="font-size: 17px; font-weight: bold;">La Croissance par semaine</h4>
@@ -282,6 +252,6 @@
       CKEDITOR.replace( 'editor1' );
   </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="ressources/bootstrapPack/js/bootstrap.min.js"></script>
+    <script src="../../../ressources/bootstrapPack/js/bootstrap.min.js"></script>
   </body>
 </html>

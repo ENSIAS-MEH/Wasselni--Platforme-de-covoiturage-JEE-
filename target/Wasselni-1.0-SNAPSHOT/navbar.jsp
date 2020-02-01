@@ -9,12 +9,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
 
+
               <li class="nav-item">
                   <a href="<c:url value="/accueil"/>" class="nav-link">Accueil</a>
               </li>
 
               <li class="nav-item">
-                  <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
+                  <a href="<c:url value="/authentification.jsp"/>" class="nav-link">Proposer un trajet</a>
               </li>
 
               <li class="nav-item">
