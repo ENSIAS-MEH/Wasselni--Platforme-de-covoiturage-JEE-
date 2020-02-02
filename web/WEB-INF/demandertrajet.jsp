@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -31,7 +30,7 @@
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<c:import url="../navbar.jsp"/>
+<c:import url="/navbar.jsp"/>
 
 <center>
     <div class="container-proposer" ></div>

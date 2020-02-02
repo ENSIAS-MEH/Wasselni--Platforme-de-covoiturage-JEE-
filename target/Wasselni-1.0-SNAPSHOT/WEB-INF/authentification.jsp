@@ -41,33 +41,7 @@ crossorigin="anonymous">
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
-    <div class="container">
-        <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-  
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Accueil</a>
-                </li>
-  
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Proposer un trajet</a>
-                </li>
-  
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Demander un trajet</a>
-                </li>
-  
-            </ul>
-        </div>
-    </div>
-  </nav>
-  
-  
+<c:import url="/navbar.jsp"/>
    <!--************-->
   <!-- Inscription -->
   <!--************-->
@@ -129,12 +103,6 @@ crossorigin="anonymous">
                             </div>
                             <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>
                             <hr style="width: 300px; margin-right: 160px;">
-                            <div class="row" >
-                                <button class="connecterFC" style="margin-left: 180px;" onlogin="checkLoginState()" >
-                                    <span>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </span>
-                                </button>
                                 <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
                             </div>
 
