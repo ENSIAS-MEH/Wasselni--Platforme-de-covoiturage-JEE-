@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +21,11 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Fichiers-->
-<link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
-<link rel="stylesheet" href="ressources/css/style.css">
-<link rel="stylesheet" href="ressources/css/offres.css">
-<link rel="stylesheet" href="ressources/css/inscription.css">
-<link rel="stylesheet" href="ressources/css/validation.css">
+<link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
+<link rel="stylesheet" href="../ressources/css/style.css">
+<link rel="stylesheet" href="../ressources/css/offres.css">
+<link rel="stylesheet" href="../ressources/css/inscription.css">
+<link rel="stylesheet" href="../ressources/css/validation.css">
 
 
 
@@ -41,7 +40,7 @@ crossorigin="anonymous">
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
     <div class="container">
-        <a href="#" class="navbar-brand"> <img src="ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+        <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,50 +76,54 @@ crossorigin="anonymous">
                     Rejoins nous
                 </span>
                 
-				<form class="inscription-form validate-form" style="align-self: center;">
-					
+				<form method="post" action="<c:url value='/inscription'/>" style="align-self: center;">
+
                    <!--NOM-->
-                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" name="nom" placeholder="Nom">
+                    <div class="wrap-input100 validate-input" data-validate ="">
+						<input class="input100" type="text" name="nom" value="<c:out value='${user.nom}'/>" placeholder="Nom">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-info" aria-hidden="true"></i>
 						</span>
+                        <span>${form.erreurs['nom']}</span>
 					</div>
+
 					
 					 <!--PRENOM-->
                    
                      <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" name="prenom" placeholder="Prénom">
+						<input class="input100" type="text" value="<c:out value='${user.prenom}'/>" name="prenom" placeholder="Prénom">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-info" aria-hidden="true"></i>
 						</span>
+                         <span>${form.erreurs['prenom']}</span>
 					</div>
 
-                    <!--Sex-->
-                    <div class="mylabel" style="font-weight: bold; margin-left: 50px;"> Sex: </div>
+                    <!--Sexe-->
+                    <div class="mylabel" style="font-weight: bold; margin-left: 50px;"> Sexe: </div>
                     <div class="mylabel">
-                        <input type="radio" id="M" name="sex"  value="M" checked>
+                        <input type="radio" id="M" name="sexe"  value="M" checked>
                         <div class="slidinggroove"></div>
                         <label class="mylabel" for="M"><p class="labelterm">M</p></label>
                     </div>
 
                     <div class="mylabel" style="margin-left: 150px;">
-                        <input type="radio" id="F" name="sex"  value="F">
+                        <input type="radio" id="F" name="sexe"  value="F">
                         <div class="slidinggroove"></div>
                         <label class="mylabel" for="F" ><p class="labelterm">F</p></100Dhs></label>
                     </div>
                     <!--Date naissance-->
                     <div class="wrap-input100 " data-validate="Champ obligatoire">
-                        <input class="input100" type="text" name="datetnaissance"  id="input-start" placeholder="Date naissance">
+                        <input class="input100" type="text" value="<c:out value='${user.dateNaissance}'/>" name="datenaissance"  id="input-start" placeholder="Date naissance">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+                        <span>${form.erreurs['datenaissance']}</span>
                     </div>
 
                     <!--Region-->
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" name="region" placeholder="Région">
+						<input class="input100" value="<c:out value='${user.region}'/>" type="text" name="region" placeholder="Région">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
@@ -130,35 +133,38 @@ crossorigin="anonymous">
 
                     <!--Nom d'utilisateur-->
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" name="pseudo" placeholder="Pseudo-Nom">
+						<input class="input100" type="text" value="<c:out value='${user.login}'/>" name="pseudo" placeholder="Pseudo-Nom">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
+                        <span>${form.erreurs['pseudo']}</span>
 					</div>					
 					<!--Email-->
 					<div class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="email" value="<c:out value='${user.email}'/>" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-at" aria-hidden="true"></i>
 						</span>
+                        <span>${form.erreurs['email']}</span>
 					</div>
                    
                    <!--MOT de PASSE-->
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="password" name="motpass" placeholder="Mot de passe">
+						<input class="input100" type="password" value="<c:out value='${user.password}'/>" name="motdepasse" placeholder="Mot de passe">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
+                        <span>${form.erreurs['motdepasse']}</span>
 					</div>
 
 					
 					<!--La confirmation de mot de passe -->
 					
 					 <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="password" name="cmotpass" placeholder="Confirme mot de passe">
+						<input class="input100" type="password" name="confirmationmotdepasse" placeholder="Confirmer mot de passe">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -182,9 +188,7 @@ crossorigin="anonymous">
                 <!--Buton pour rejoindre-->
                 
 					<div class="container-inscription-form-btn">
-						<button  class="inscription-form-btn"  >
-							Rejoindre
-						</button>
+						<input type="submit" class="inscription-form-btn" value="Rejoindre" />
 					</div>
 				</form>
 			</div>
@@ -205,7 +209,7 @@ crossorigin="anonymous">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 colfooter0">
-                    <img src="ressources/img/logo-footer.png"  alt="Wasselni" style="width:50%;height:22%;">
+                    <img src="../ressources/img/logo-footer.png" alt="Wasselni" style="width:50%;height:22%;">
                     <br>
                     <p>
                         Notre équipe travaillent  pour vous offrir des conseilles fidèles, des offres originaux.
@@ -272,13 +276,13 @@ crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-<script src="ressources/js/moment.min.js"></script>
-<script src="ressources/js/dateTrajetSlide.js"></script>
-<script src="ressources/js/proposertrajet.js"></script>
+<script src="../ressources/js/moment.min.js"></script>
+<script src="../ressources/js/dateTrajetSlide.js"></script>
+<script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<script src="ressources/js/global.js"></script>
-<script src="ressources/js/jquery-asRange.js"></script>
-<script src="ressources/js/validation.js"></script>
+<script src="../ressources/js/global.js"></script>
+<script src="../ressources/js/jquery-asRange.js"></script>
+<script src="../ressources/js/validation.js"></script>
 
 
 

@@ -6,6 +6,10 @@ import java.time.LocalDateTime;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 7657644172878601328L;
+    private Long id;
+    /**
+     * J'ai ajouté id pour établir la session , ce n'est pas sécurisé de le faire avec cin
+     */
     private String cin;
     private String nom;
     private String prenom;
@@ -16,6 +20,10 @@ public class User implements Serializable {
     private String password;
     private LocalDateTime dateInscription;
     private float rank;
+    private String region;
+    /**
+     * J'ai ajouté région
+     */
 
     public User() {
         super();
@@ -51,6 +59,14 @@ public class User implements Serializable {
         this.cin = cin;
     }
 
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -65,6 +81,14 @@ public class User implements Serializable {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public LocalDate getDateNaissance() {

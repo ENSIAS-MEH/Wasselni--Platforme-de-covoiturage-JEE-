@@ -72,6 +72,15 @@
         <servlet-name>AdminUsers</servlet-name>
         <url-pattern>/admin_users</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InscriptionUser</servlet-name>
+        <servlet-class>com.covoiturage.servlets.InscriptionUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InscriptionUser</servlet-name>
+        <url-pattern>/inscription</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>

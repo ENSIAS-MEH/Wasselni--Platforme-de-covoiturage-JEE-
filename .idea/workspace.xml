@@ -10,44 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_catalina_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_coyote_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_el_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jaspic_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jni_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jsp_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_scan_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/filter/EspacePrivee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/espace/admin/AdminAccueil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/espace/admin/AdminDemandes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/espace/admin/AdminOffres.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/espace/admin/AdminUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/list_group.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/taglibs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/InscriptionUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/after_inscription.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/demandertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/demandertrajet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/demandes_admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/demandes_admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/offres_admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/offres_admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/proposertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/proposertrajet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/inscription.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/inscription.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/offres.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/offres.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/page_after_sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/page_after_sign_up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/demandertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/demandertrajet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/demandes_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/demandes_admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/offres_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/offres_admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/utilisateurs.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/utilisateurs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/authentification.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/offres.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/offres.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/page_after_sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/page_after_sign_up.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +109,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -145,7 +138,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -154,10 +147,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace\admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace.admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
@@ -253,7 +246,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -295,7 +288,8 @@
       <workItem from="1580305990458" duration="833000" />
       <workItem from="1580316102857" duration="5939000" />
       <workItem from="1580397675495" duration="467000" />
-      <workItem from="1580569709691" duration="5792000" />
+      <workItem from="1580569709691" duration="9591000" />
+      <workItem from="1580630319656" duration="9111000" />
     </task>
     <servers />
   </component>
@@ -358,10 +352,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1579793292424" />
-    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1580571637924">
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1580632607840">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="539" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580571637924" />
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580632607840" />
     <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579879718481" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579875881973">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -375,58 +369,74 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580398151367" />
-    <state width="905" height="132" key="GridCell.Tab.0.bottom" timestamp="1580577536481">
+    <state width="893" height="19" key="GridCell.Tab.0.bottom" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580577536481" />
+    <state width="893" height="19" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
     <state width="1293" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="905" height="132" key="GridCell.Tab.0.center" timestamp="1580577536481">
+    <state width="893" height="19" key="GridCell.Tab.0.center" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580577536481" />
+    <state width="893" height="19" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
     <state width="1293" height="3" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="905" height="132" key="GridCell.Tab.0.left" timestamp="1580577536481">
+    <state width="893" height="19" key="GridCell.Tab.0.left" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580577536481" />
+    <state width="893" height="19" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
     <state width="1293" height="3" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252267" />
-    <state width="905" height="132" key="GridCell.Tab.0.right" timestamp="1580577536481">
+    <state width="893" height="19" key="GridCell.Tab.0.right" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580577536481" />
+    <state width="893" height="19" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
     <state width="1293" height="3" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="905" height="132" key="GridCell.Tab.1.bottom" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.1.bottom" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
-    <state width="905" height="132" key="GridCell.Tab.1.center" timestamp="1580577536370">
+    <state width="893" height="19" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="19" key="GridCell.Tab.1.center" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1580577536370" />
-    <state width="905" height="132" key="GridCell.Tab.1.left" timestamp="1580577536370">
+    <state width="893" height="19" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="19" key="GridCell.Tab.1.left" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1580577536370" />
-    <state width="905" height="132" key="GridCell.Tab.1.right" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="19" key="GridCell.Tab.1.right" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
-    <state width="905" height="132" key="GridCell.Tab.2.bottom" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="19" key="GridCell.Tab.2.bottom" timestamp="1580646594527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
-    <state width="905" height="132" key="GridCell.Tab.2.center" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
+    <state width="893" height="19" key="GridCell.Tab.2.center" timestamp="1580646594527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
-    <state width="905" height="132" key="GridCell.Tab.2.left" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
+    <state width="893" height="19" key="GridCell.Tab.2.left" timestamp="1580646594526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
-    <state width="905" height="132" key="GridCell.Tab.2.right" timestamp="1580577536371">
+    <state width="893" height="19" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="19" key="GridCell.Tab.2.right" timestamp="1580646594527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="905" height="132" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1580577536371" />
+    <state width="893" height="19" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
+    <state width="893" height="123" key="GridCell.Tab.3.bottom" timestamp="1580643152240">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="893" height="123" key="GridCell.Tab.3.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
+    <state width="893" height="123" key="GridCell.Tab.3.center" timestamp="1580643152240">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="893" height="123" key="GridCell.Tab.3.center/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
+    <state width="893" height="123" key="GridCell.Tab.3.left" timestamp="1580643152239">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="893" height="123" key="GridCell.Tab.3.left/0.0.1366.768@0.0.1366.768" timestamp="1580643152239" />
+    <state width="893" height="123" key="GridCell.Tab.3.right" timestamp="1580643152240">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="893" height="123" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
     <state x="559" y="191" key="SettingsEditor" timestamp="1579774183218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -443,6 +453,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="615" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579776982677" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserForm.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserForm.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/2019_DW_Pr3$DatabaseConnection.ic" NAME="DatabaseConnection Coverage Results" MODIFIED="1579776789811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
