@@ -125,7 +125,7 @@
                         <!--precedant-->
                         <input type="button" name="precedant" class="previous precedant" value="précedant" />
                         <!--PROPOSER (submet button)-->
-                        <input type="submit" name="suivant" class="proposer" value="Proposer" />
+                        <input type="submit" name="suivant" class="proposer" value="Demander" />
                     </fieldset>
                     
         </form>
