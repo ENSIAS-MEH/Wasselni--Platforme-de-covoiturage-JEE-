@@ -129,12 +129,6 @@ crossorigin="anonymous">
                             </div>
                             <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>
                             <hr style="width: 300px; margin-right: 160px;">
-                            <div class="row" >
-                                <button class="connecterFC" style="margin-left: 180px;" onlogin="checkLoginState()" >
-                                    <span>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </span>
-                                </button>
                                 <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
                             </div>
 
