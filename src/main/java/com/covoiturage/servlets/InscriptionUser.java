@@ -1,7 +1,7 @@
 package com.covoiturage.servlets;
 
 import com.covoiturage.beans.User;
-import com.covoiturage.forms.UserForm;
+import com.covoiturage.forms.UserInscriptionForm;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,7 +24,7 @@ public class InscriptionUser extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserForm form = new UserForm();
+        UserInscriptionForm form = new UserInscriptionForm();
         User user = form.inscrireUser(req);
 
         req.setAttribute(ATT_FORM,form);

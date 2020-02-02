@@ -25,10 +25,10 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Fichiers-->
 <link rel="stylesheet" href="ressources/css/material-design-iconic-font.min.css">
-<link rel="stylesheet" type="text/css" href="ressources/css/TrajetSlide.css">
-<link rel="stylesheet" href="ressources/css/style.css">
-<link rel="stylesheet" href="ressources/css/authentification.css">
-<link rel="stylesheet" href="ressources/css/validation.css">
+<link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
+<link rel="stylesheet" href="../ressources/css/style.css">
+<link rel="stylesheet" href="../ressources/css/authentification.css">
+<link rel="stylesheet" href="../ressources/css/validation.css">
 
 
 
@@ -43,7 +43,7 @@ crossorigin="anonymous">
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
     <div class="container">
-        <a href="#" class="navbar-brand"> <img src="ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+        <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -231,7 +231,7 @@ crossorigin="anonymous">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 colfooter0">
-                    <img src="ressources/img/logo-footer.png"  alt="Wasselni" style="width:50%;height:22%;">
+                    <img src="../ressources/img/logo-footer.png" alt="Wasselni" style="width:50%;height:22%;">
                     <br>
                     <p>
                         Notre équipe travaillent  pour vous offrir des conseilles fidèles, des offres originaux.
@@ -298,13 +298,13 @@ crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-<script src="ressources/js/moment.min.js"></script>
-<script src="ressources/js/dateTrajetSlide.js"></script>
-<script src="ressources/js/proposertrajet.js"></script>
+<script src="../ressources/js/moment.min.js"></script>
+<script src="../ressources/js/dateTrajetSlide.js"></script>
+<script src="../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<script src="ressources/js/global.js"></script>
-<script src="ressources/js/jquery-asRange.js"></script>
-<script src="ressources/js/validation.js"></script>
+<script src="../ressources/js/global.js"></script>
+<script src="../ressources/js/jquery-asRange.js"></script>
+<script src="../ressources/js/validation.js"></script>
 
 
 

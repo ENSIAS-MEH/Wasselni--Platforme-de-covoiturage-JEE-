@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserForm {
+public class UserInscriptionForm {
     private static final String CHAMP_NOM       = "nom";
     private static final String CHAMP_PRENOM    = "prenom";
     private static final String CHAMP_SEXE   = "sexe";
