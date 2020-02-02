@@ -111,7 +111,7 @@ crossorigin="anonymous">
                                 
                                 <!--MOT de PASSE-->
                                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-                                        <input class="input100" type="password" name="motpass" placeholder="Mot de passe">
+                                        <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
                                             <i class="fa fa-lock" aria-hidden="true"></i>

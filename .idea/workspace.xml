@@ -10,12 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/InscriptionUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/InscriptionUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,16 +118,16 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\src\main\java\com\covoiturage\fb\login" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace\admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace.admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
-      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\src\main\java\com\covoiturage\fb\login" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,7 +261,7 @@
       <workItem from="1580316102857" duration="5939000" />
       <workItem from="1580397675495" duration="467000" />
       <workItem from="1580569709691" duration="9591000" />
-      <workItem from="1580630319656" duration="9542000" />
+      <workItem from="1580630319656" duration="10362000" />
     </task>
     <servers />
   </component>
