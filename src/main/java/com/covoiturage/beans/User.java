@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 7657644172878601328L;
-    private Long id;
+    private int id;
     /**
      * J'ai ajouté id pour établir la session , ce n'est pas sécurisé de le faire avec cin
      */
@@ -83,11 +83,11 @@ public class User implements Serializable {
         this.prenom = prenom;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

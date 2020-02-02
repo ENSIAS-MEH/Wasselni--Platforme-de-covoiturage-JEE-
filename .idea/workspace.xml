@@ -11,7 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/InscriptionUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/authentification.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/after_inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/after_inscription.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +275,7 @@
       <workItem from="1580316102857" duration="5939000" />
       <workItem from="1580397675495" duration="467000" />
       <workItem from="1580569709691" duration="9591000" />
-      <workItem from="1580630319656" duration="11243000" />
+      <workItem from="1580630319656" duration="15123000" />
     </task>
     <servers />
   </component>
@@ -323,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1579793292424" />
-    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1580632607840">
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1580652685931">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580632607840" />
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580652685931" />
     <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579879718481" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579875881973">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -340,74 +355,74 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580398151367" />
-    <state width="893" height="19" key="GridCell.Tab.0.bottom" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.0.bottom" timestamp="1580655442928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="2" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580655442928" />
     <state width="1293" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="893" height="19" key="GridCell.Tab.0.center" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.0.center" timestamp="1580655442928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="2" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580655442928" />
     <state width="1293" height="3" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="893" height="19" key="GridCell.Tab.0.left" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.0.left" timestamp="1580655442928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="2" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580655442928" />
     <state width="1293" height="3" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252267" />
-    <state width="893" height="19" key="GridCell.Tab.0.right" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.0.right" timestamp="1580655442928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
+    <state width="893" height="2" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580655442928" />
     <state width="1293" height="3" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579879252268" />
-    <state width="893" height="19" key="GridCell.Tab.1.bottom" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.1.bottom" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
-    <state width="893" height="19" key="GridCell.Tab.1.center" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.1.center" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
-    <state width="893" height="19" key="GridCell.Tab.1.left" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.1.left" timestamp="1580655442782">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
-    <state width="893" height="19" key="GridCell.Tab.1.right" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1580655442782" />
+    <state width="893" height="2" key="GridCell.Tab.1.right" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
-    <state width="893" height="19" key="GridCell.Tab.2.bottom" timestamp="1580646594527">
+    <state width="893" height="2" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.2.bottom" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
-    <state width="893" height="19" key="GridCell.Tab.2.center" timestamp="1580646594527">
+    <state width="893" height="2" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.2.center" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
-    <state width="893" height="19" key="GridCell.Tab.2.left" timestamp="1580646594526">
+    <state width="893" height="2" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.2.left" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1580646594526" />
-    <state width="893" height="19" key="GridCell.Tab.2.right" timestamp="1580646594527">
+    <state width="893" height="2" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.2.right" timestamp="1580655442783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="19" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1580646594527" />
-    <state width="893" height="123" key="GridCell.Tab.3.bottom" timestamp="1580643152240">
+    <state width="893" height="2" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1580655442783" />
+    <state width="893" height="2" key="GridCell.Tab.3.bottom" timestamp="1580655334472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="123" key="GridCell.Tab.3.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
-    <state width="893" height="123" key="GridCell.Tab.3.center" timestamp="1580643152240">
+    <state width="893" height="2" key="GridCell.Tab.3.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580655334472" />
+    <state width="893" height="2" key="GridCell.Tab.3.center" timestamp="1580655334472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="123" key="GridCell.Tab.3.center/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
-    <state width="893" height="123" key="GridCell.Tab.3.left" timestamp="1580643152239">
+    <state width="893" height="2" key="GridCell.Tab.3.center/0.0.1366.768@0.0.1366.768" timestamp="1580655334472" />
+    <state width="893" height="2" key="GridCell.Tab.3.left" timestamp="1580655334472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="123" key="GridCell.Tab.3.left/0.0.1366.768@0.0.1366.768" timestamp="1580643152239" />
-    <state width="893" height="123" key="GridCell.Tab.3.right" timestamp="1580643152240">
+    <state width="893" height="2" key="GridCell.Tab.3.left/0.0.1366.768@0.0.1366.768" timestamp="1580655334472" />
+    <state width="893" height="2" key="GridCell.Tab.3.right" timestamp="1580655334472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="893" height="123" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1580643152240" />
+    <state width="893" height="2" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1580655334472" />
     <state x="559" y="191" key="SettingsEditor" timestamp="1579774183218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -437,6 +452,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java</url>
           <line>53</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

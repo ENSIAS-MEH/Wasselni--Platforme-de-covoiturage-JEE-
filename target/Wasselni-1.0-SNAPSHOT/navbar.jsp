@@ -15,7 +15,7 @@
               </li>
 
               <li class="nav-item">
-                  <a href="<c:url value="/authentification.jsp"/>" class="nav-link">Proposer un trajet</a>
+                  <a href="<c:url value="/WEB-INF/authentification.jsp"/>" class="nav-link">Proposer un trajet</a>
               </li>
 
               <li class="nav-item">

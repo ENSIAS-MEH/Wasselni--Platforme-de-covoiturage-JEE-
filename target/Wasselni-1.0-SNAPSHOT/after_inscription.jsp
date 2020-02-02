@@ -11,6 +11,7 @@
     <title></title>
 </head>
 <body>
+    <p>${sessionScope.userId}</p>
     <p>${user.nom}</p>
     <p>${user.prenom}</p>
     <p>${user.dateNaissance}</p>

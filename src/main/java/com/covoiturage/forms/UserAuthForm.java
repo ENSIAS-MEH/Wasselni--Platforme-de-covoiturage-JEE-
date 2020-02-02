@@ -1,5 +1,7 @@
 package com.covoiturage.forms;
 
+import com.covoiturage.beans.User;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,27 +21,31 @@ public class UserAuthForm {
         return resultat;
     }
 
-    public int authentification(HttpServletRequest req){
-        String email = getValeurChamp(req,CHAMP_MOT_DE_PASSE);
-        String motDePasse = getValeurChamp(req,CHAMP_EMAIL);
+    public User authentification(HttpServletRequest req){
+        String email = getValeurChamp(req,CHAMP_EMAIL);
+        String motDePasse = getValeurChamp(req,CHAMP_MOT_DE_PASSE);
 
+        User user = new User();
         int userId = -1;
+        user.setId(userId);
         try {
             validationEmail(email);
         } catch (Exception e) {
             setErreur(CHAMP_EMAIL,e.getMessage());
         }
+        user.setEmail(email);
         try {
             userId = validationUser(email, motDePasse);
         } catch (Exception e) {
             setErreur(CHAMP_MOT_DE_PASSE,e.getMessage());
         }
+        user.setId(userId);
         if(erreurs.isEmpty()){
             resultat = "Succés de l'authentification";
         } else {
             resultat = "Echec de l'authentification. Veuillez réessayer.";
         }
-        return userId;
+        return user;
 
 
     }
@@ -47,20 +53,19 @@ public class UserAuthForm {
         if ( email != null) {
             if ( !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
                 throw new Exception( "Merci de saisir une adresse mail valide." );
-            } else {
-                /**
-                 * Recherche de l'email dans la bd
-                 */
             }
         } else {
             throw new Exception( "Merci de saisir une adresse mail." );
         }
     }
     private int validationUser(String email,String motDePasse) throws Exception {
+        if(motDePasse == null ){
+            throw new Exception("Merci de saisir un mot de passe");
+        }
         /**
          * Recherche de l'user dans la bd
          */
-        return 0;
+        return 10;
     }
 
 

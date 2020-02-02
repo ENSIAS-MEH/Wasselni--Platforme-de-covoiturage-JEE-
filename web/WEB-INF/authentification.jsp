@@ -96,35 +96,35 @@ crossorigin="anonymous">
                         <div class="container">
                             <div class="row">
                             
-                                <form class="inscription-form validate-form" style="align-self: center;">	
+                                <form method="post" action="<c:url value='/authentification'/> " style="align-self: center;">
                                     <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
                                         S'authentifier
                                     </span>			
                                     <!--Email-->
-                                    <div class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
-                                        <input class="input100" type="text" name="email" placeholder="Email">
+                                    <div>
+                                        <input class="input100" type="text" value="<c:out value='${user.email}'/>" name="email" placeholder="Email">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
                                             <i class="fa fa-at" aria-hidden="true"></i>
                                         </span>
+                                        <span>${form.erreurs['email']}</span>
                                     </div>
                                 
                                 <!--MOT de PASSE-->
-                                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+                                    <div>
                                         <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
                                             <i class="fa fa-lock" aria-hidden="true"></i>
                                         </span>
+                                        <span>${form.erreurs['motdepasse']}</span>
+                                        <span>${form.resultat}</span>
                                     </div>
                                 
                 
                                 <!--Buton pour connecter-->
-                                <button type="submit" class="authentification-form-btn" >
-                                    <span>
-                                        Connecter <i class="fa fa-sign-in-alt"> </i>
-                                    </span>
-                                </button>
+                                <input type="submit" class="authentification-form-btn" value="Connecter"/>
+
                                 </form> 
                             </div>
                             <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>

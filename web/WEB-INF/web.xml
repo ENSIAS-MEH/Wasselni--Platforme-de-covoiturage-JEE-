@@ -81,6 +81,15 @@
         <servlet-name>InscriptionUser</servlet-name>
         <url-pattern>/inscription</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AuthUser</servlet-name>
+        <servlet-class>com.covoiturage.servlets.AuthUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthUser</servlet-name>
+        <url-pattern>/authentification</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>
