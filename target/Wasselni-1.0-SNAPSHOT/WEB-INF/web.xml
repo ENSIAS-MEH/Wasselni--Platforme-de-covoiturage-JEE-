@@ -90,6 +90,15 @@
         <servlet-name>AuthUser</servlet-name>
         <url-pattern>/authentification</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConsulterOffres</servlet-name>
+        <servlet-class>com.covoiturage.servlets.ConsulterOffres</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsulterOffres</servlet-name>
+        <url-pattern>/consulterOffres</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>

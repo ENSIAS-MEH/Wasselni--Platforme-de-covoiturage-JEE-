@@ -78,13 +78,13 @@
                                 <div class="grid slideactive">
                                     <div id="login">
                                         <center><h2><span  class="fa fa-road"></span >  Où allez-vous ?</h2></center>
-                                        <form action="#" method="POST">
+                                        <form action="/consulterOffres" method="post">
                                             <fieldset>
 
 
                                                 <!--Depart-->
                                                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                                    <input class="input100" type="text" name="depare" placeholder="Départ">
+                                                    <input class="input100" type="text" name="depart" placeholder="Départ">
                                                     <span class="focus-input100"></span>
                                                     <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                                 </div>
@@ -122,7 +122,7 @@
 
                                                 <!--Les checkbox-->
                                                 <div class="checkbox icheck-check1">
-                                                    <input type="checkbox" checked id="check1" />
+                                                    <input type="checkbox" checked id="check1" name="retour" value="true" />
                                                     <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Avec retour</label>
                                                 </div>
                                                 <br>
@@ -131,7 +131,7 @@
 
                                                 <!--Button pour chercher-->
                                                 <div style="margin-left: 150px; margin-top: 20px;">
-                                                    <a href="#" id="btn" ></a>
+                                                    <input type="submit" id="btn" ></input>
                                                 </div>
 
 

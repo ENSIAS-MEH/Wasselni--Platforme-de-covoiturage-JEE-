@@ -23,6 +23,7 @@ ${sessionScope.typeVehicule}--
 ${sessionScope.marque}--
 ${sessionScope.model}--
 ${sessionScope.climatisation}--
+${sessionScope.retour}
 
 </body>
 </html>
