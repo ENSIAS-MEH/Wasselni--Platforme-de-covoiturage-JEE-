@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Fichiers-->
-   <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
-   <link rel="stylesheet" type="text/css" href="../ressources/css/proposertrajet.css">
-   <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
-   <link rel="stylesheet" href="../ressources/css/style.css">
-   <link rel="stylesheet" href="../ressources/css/validation.css">
+   <link rel="stylesheet" type="text/css" href="../../ressources/css/TrajetSlide.css">
+   <link rel="stylesheet" type="text/css" href="../../ressources/css/proposertrajet.css">
+   <link rel="stylesheet" type="text/css" href="../../ressources/css/TrajetSlide.css">
+   <link rel="stylesheet" href="../../ressources/css/style.css">
+   <link rel="stylesheet" href="../../ressources/css/validation.css">
 
 </head>
 
@@ -35,7 +35,7 @@
 
 <div style="text-align: center;">
     <div class="container-proposer" ></div>
-        <form id="proposer" style="margin-top: 80px;">
+        <form id="proposer" action="/proposerTrajet" method="post" style="margin-top: 80px;">
                     <div class="loader">
                             <div class="loader-img"></div>
                         </div>
@@ -104,7 +104,7 @@
                                             <option value="22">22h</option>
                                             <option value="23">23h</option>
                                           </select>
-                                          <select name="minuteDepart" name="minutesDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
+                                          <select name="minutesDepart" class="browser-default custom-select" style=" border-radius: 20px; background:#e6e6e6; width:260px;">
                                             <option value="0"selected>00min</option>
                                             <option value="10">10min</option>
                                             <option value="20">20min</option>
@@ -157,7 +157,7 @@
                            <!--Les checkbox-->
                            <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check1">
-                              <input type="checkbox" checked id="check1" name="babageautorise" />
+                              <input type="checkbox" id="check1" name="bagageautorise" value="true" />
                               <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage autorisé</label>
                           </div>
                            </div>
@@ -220,7 +220,7 @@
                           <!--Les checkbox-->
                           <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check2" >
-                              <input type="checkbox" checked id="check2" name="climatisation"/>
+                              <input type="checkbox" checked id="check2" name="climatisation" value="true"/>
                               <label for="check2" style="color: darkslategray; font-style:initial;font-size: 15px;">Climatisation</label>
                           </div>
                           </div>
@@ -246,12 +246,12 @@
 <!--************************************************-->
 
 
-<script src="../ressources/js/moment.min.js"></script>
-<script src="../ressources/js/dateTrajetSlide.js"></script>
-<script src="../ressources/js/proposertrajet.js"></script>
+<script src="../../ressources/js/moment.min.js"></script>
+<script src="../../ressources/js/dateTrajetSlide.js"></script>
+<script src="../../ressources/js/proposertrajet.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<script src="../ressources/js/global.js"></script>
-<script src="../ressources/js/validation.js"></script>
+<script src="../../ressources/js/global.js"></script>
+<script src="../../ressources/js/validation.js"></script>
 
 
 </body>

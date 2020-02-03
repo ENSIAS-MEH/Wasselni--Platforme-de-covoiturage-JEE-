@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class DemanderTrajet extends HttpServlet {
-    private static final String VUE_CREATION = "/WEB-INF/demandertrajet.jsp";
+    private static final String VUE_CREATION = "/WEB-INF/trajet/demandertrajet.jsp";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
