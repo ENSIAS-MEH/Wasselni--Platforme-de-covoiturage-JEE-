@@ -551,6 +551,49 @@
 </div>
 
 <!--************-->
+<!--Proposer-->
+<!--************-->
+<section id="sectionProposer" class="p-5">
+    <div class="proposer-overlay">
+        <div class="row">
+                <div class="container pt-5  inscriremv">
+                    <h2 class="display-5 d-inline mylead">vous pouvez proposer un trajet facilement! </h2>
+                    <br><br> <br> <br>
+                    <div >
+                    <form class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="depart" placeholder="Depart">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="destination" placeholder="Destination">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-map-marker" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">    
+                                <input class="input10i" type="text" name="Prix" placeholder="Prix">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info mb-2 ">Proposer</button>
+                      </form>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--************-->
 <!--Derniere demande  -->
 <!--************-->
 <h3 class="h2" style="text-align: center;">Les derniere demandes</h3>
