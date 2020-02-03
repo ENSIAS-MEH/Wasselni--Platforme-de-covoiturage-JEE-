@@ -1,5 +1,7 @@
 package com.covoiturage.beans;
 
+import org.apache.tomcat.jni.Local;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -8,7 +10,15 @@ import java.util.Date;
 public class DetailsTrajet implements Serializable {
     private static final long serialVersionUID = -3068506332086499721L;
     private Long idDetailsTrajet;
-    private LocalDateTime dateDepart;
+    /**
+     * Date depart est subdivisé en dateDepart , minutesDepart , heureDepart
+     */
+    private LocalDate dateDepart;
+    private int minutesDepart;
+    private int heureDepart;
+    /**
+     * dateArrivee ??
+     */
     private LocalDateTime dateArrivee;
     private int prixPlace;
     private String typeVoiture;
@@ -23,7 +33,7 @@ public class DetailsTrajet implements Serializable {
     }
 
     public DetailsTrajet( Long idDetailsTrajet,
-                         LocalDateTime dateDepart,
+                         LocalDate dateDepart,
                          LocalDateTime dateArrivee,
                          int prixPlace,
                          String typeVoiture,
@@ -52,16 +62,32 @@ public class DetailsTrajet implements Serializable {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 
-    public LocalDateTime getDateDepart() {
+    public LocalDate getDateDepart() {
         return dateDepart;
     }
 
-    public void setDateDepart(LocalDateTime dateDepart) {
+    public void setDateDepart(LocalDate dateDepart) {
         this.dateDepart = dateDepart;
     }
 
     public LocalDateTime getDateArrivee() {
         return dateArrivee;
+    }
+
+    public int getMinutesDepart() {
+        return minutesDepart;
+    }
+
+    public void setMinutesDepart(int minutesDepart) {
+        this.minutesDepart = minutesDepart;
+    }
+
+    public int getHeureDepart() {
+        return heureDepart;
+    }
+
+    public void setHeureDepart(int heureDepart) {
+        this.heureDepart = heureDepart;
     }
 
     public void setDateArrivee(LocalDateTime dateArrivee) {
@@ -123,4 +149,6 @@ public class DetailsTrajet implements Serializable {
     public void setIdTrajetChoisie(Long idTrajetChoisie) {
         this.idTrajetChoisie = idTrajetChoisie;
     }
+
+
 }

@@ -4,6 +4,7 @@ import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.dao.DAOFactory;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class DetailsTrajetDaoImp {
         DetailsTrajet returnedDetailsTrajet;
         if( resultset.next() ) {
             Long idDetailsTrajet = resultset.getLong("ID_DETAILS_TRAJET");
-            LocalDateTime dateDepart = resultset.getObject("DATETIME_DEPART", LocalDateTime.class);
+            LocalDate dateDepart = resultset.getObject("DATETIME_DEPART", LocalDate.class);
             LocalDateTime dateArrivee = resultset.getObject("DATETIME_ARRIVEE", LocalDateTime.class);
             int prixPlace = resultset.getInt("PRIX_PLACE");
             String typeVoiture = resultset.getString("TYPE_VOITURE");
@@ -63,7 +64,7 @@ public class DetailsTrajetDaoImp {
         resultset = stmt.executeQuery(sql);
         while( resultset.next()) {
             Long idDetailsTrajet = resultset.getLong("ID_DETAILS_TRAJET");
-            LocalDateTime dateDepart = resultset.getObject("DATETIME_DEPART", LocalDateTime.class);
+            LocalDate dateDepart = resultset.getObject("DATETIME_DEPART", LocalDate.class);
             LocalDateTime dateArrivee = resultset.getObject("DATETIME_ARRIVEE", LocalDateTime.class);
             int prixPlace = resultset.getInt("PRIX_PLACE");
             String typeVoiture = resultset.getString("TYPE_VOITURE");

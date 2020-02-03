@@ -35,7 +35,7 @@ public class ProposerTrajet extends HttpServlet {
         req.setAttribute(ATT_FORM,form);
         req.setAttribute(ATT_TRAJET,trajet);
 
-        HttpSession session = req.getSession();
+        /*HttpSession session = req.getSession();
         session.getAttribute("depart");
         session.getAttribute("destination");
         session.getAttribute("dateTrajet");
@@ -44,10 +44,12 @@ public class ProposerTrajet extends HttpServlet {
         session.getAttribute("effectif");
         session.getAttribute("prix");
         session.getAttribute("bagageAutorisé");
-        session.getAttribute("typeVehicule");
+        session.getAttribute("typeVehicule");*/
 
-
+        if(form.getErreurs().isEmpty()){
             req.getServletContext().getRequestDispatcher(VUE_RESULTAT).forward(req,resp);
-
+        }else {
+            req.getServletContext().getRequestDispatcher(VUE_CREATION).forward(req,resp);
+        }
     }
 }

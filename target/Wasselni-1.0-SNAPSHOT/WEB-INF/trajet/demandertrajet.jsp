@@ -34,7 +34,7 @@
 
 <center>
     <div class="container-proposer" ></div>
-        <form id="proposer" style="margin-top: 80px;">
+        <form id="proposer" method="post" action="/demanderTrajet" style="margin-top: 80px;">
                     <div class="loader">
                             <div class="loader-img"></div>
                         </div>
@@ -51,7 +51,7 @@
                                 <div style="margin-left: 20px; text-align: left; font-weight: bold; margin-top: 25px;"> D’où partez-vous</div>
                                         <!--Depart-->
                                         <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                              <input class="input100"  type="text" name="depare" placeholder="Exemple: Madinat AlIrfan, Rabat">
+                                              <input class="input100"  type="text" name="depart" placeholder="Exemple: Madinat AlIrfan, Rabat">
                                             <span class="focus-input100"></span>
                                             <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                         </div>
@@ -101,7 +101,7 @@
                                  <section>
                                   <div style="margin-top: 10px;padding: 2em;">
                                     
-                                      <input class="prix"  type="text" min="50" max="500" value="150,370" name="prixx" step="10" />
+                                      <input class="prix"  type="text" min="50" max="500" value="150,370" name="prix" step="10" />
                                      
                                     <script>
                                       $(document).ready(function() {
@@ -116,7 +116,7 @@
                            <!--Les checkbox-->
                            <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check1">
-                              <input type="checkbox" checked id="check1" />
+                              <input type="checkbox" name ="bagageautorise" id="check1" value="true" />
                               <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage</label>
                           </div> 
                            </div>
