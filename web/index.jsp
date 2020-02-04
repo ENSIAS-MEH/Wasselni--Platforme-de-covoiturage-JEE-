@@ -122,8 +122,8 @@
 
                                                 <!--Les checkbox-->
                                                 <div class="checkbox icheck-check1">
-                                                    <input type="checkbox" checked id="check1" name="retour" value="true" />
-                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Avec retour</label>
+                                                    <input type="checkbox" checked id="check1" name="bagageautorise" value="true" />
+                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage Autorisé</label>
                                                 </div>
                                                 <br>
 
@@ -576,7 +576,7 @@
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
-                            <div class=" wrap-input10i ">    
+                            <div class=" wrap-input10i ">
                                 <input class="input10i" type="text" name="Prix" placeholder="Prix">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>

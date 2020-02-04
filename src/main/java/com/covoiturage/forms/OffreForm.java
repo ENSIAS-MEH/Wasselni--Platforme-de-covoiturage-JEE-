@@ -10,7 +10,7 @@ public class OffreForm {
     private static final String CHAMP_DESTINATION = "destination";
     private static final String CHAMP_DATE_TRAJET = "datetrajet";
     private static final String CHAMP_EFFECTIF = "effectif";
-    private static final String CHAMP_RETOUR = "retour";
+    private static final String CHAMP_BAGAGE_AUTORISE = "bagageautorise";
 
     private String resultat;
     private Map<String, String> erreurs= new HashMap();
@@ -28,14 +28,14 @@ public class OffreForm {
         String destination = getValeurChamp(req,CHAMP_DESTINATION);
         String dateTrajet = getValeurChamp(req,CHAMP_DATE_TRAJET);
         String effectif = getValeurChamp(req,CHAMP_EFFECTIF);
-        String retour = getValeurChamp(req,CHAMP_RETOUR);
+        String bagageAutorisé = getValeurChamp(req,CHAMP_BAGAGE_AUTORISE);
 
         HttpSession session = req.getSession();
         session.setAttribute("depart",depart);
         session.setAttribute( "destination",destination);
         session.setAttribute("dateTrajet",dateTrajet);
         session.setAttribute("effectif", effectif );
-        session.setAttribute( "retour",retour);
+        session.setAttribute( "retour",bagageAutorisé);
 
     }
 
