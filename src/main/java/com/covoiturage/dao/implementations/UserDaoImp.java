@@ -26,14 +26,16 @@ public class UserDaoImp implements UserDao {
         Connection connection = DAOFactory.getInstance().getConnection();
 
         if(user.getLogin() != null) {
-            sql = "SELECT CIN, NOM, PRENOM, DATE_NAISSANCE, SEXE, LOGIN, EMAIL, PASSWORD, DATE_INSCRIPTION, RANK "+
+            sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION "+
                     "FROM USERS WHERE LOGIN = ? ";
             preparedStmt = connection.prepareStatement(sql);
             preparedStmt.setString(1,user.getLogin());
         }
 
         if(user.getEmail() != null) {
-            sql = "SELECT CIN, NOM, PRENOM, DATE_NAISSANCE, SEXE, LOGIN, EMAIL, PASSWORD, DATE_INSCRIPTION, RANK "+
+            sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION "+
                     "FROM USERS WHERE EMAIL = ? ";
             preparedStmt = connection.prepareStatement(sql);
             preparedStmt.setString(1,user.getEmail());
@@ -43,16 +45,19 @@ public class UserDaoImp implements UserDao {
         User returnedUser;
         if( resultset.next() ) {
             returnedUser = new User();
-            returnedUser.setCin(resultset.getString("CIN"));
+            returnedUser.setId(resultset.getLong("ID"));
             returnedUser.setNom(resultset.getString("NOM"));
             returnedUser.setPrenom(resultset.getString("PRENOM"));
-            returnedUser.setDateNaissance(resultset.getObject("DATE_NAISSANCE", LocalDate.class));
             returnedUser.setSexe(resultset.getString("SEXE"));
+            returnedUser.setDateNaissance(resultset.getObject("DATE_NAISSANCE", LocalDate.class));
+            returnedUser.setRegion(resultset.getString("REGION"));
             returnedUser.setLogin(resultset.getString("LOGIN"));
             returnedUser.setEmail(resultset.getString("EMAIL"));
             returnedUser.setPassword(resultset.getString("PASSWORD"));
+            returnedUser.setImage(resultset.getString("IMAGE_PATH"));
             returnedUser.setDateInscription(resultset.getObject("DATE_INSCRIPTION", LocalDateTime.class));
             returnedUser.setRank(resultset.getFloat("RANK"));
+            returnedUser.setActivation(resultset.getInt("ACTIVATION"));
         } else {
             returnedUser = null;
         }
@@ -67,33 +72,39 @@ public class UserDaoImp implements UserDao {
     @Override
     public List<User> findAllUsers() throws SQLException {
         String sql;
-        Statement stmt= null;
+        Statement stmt;
         ResultSet resultset;
         Connection connection = DAOFactory.getInstance().getConnection();
         List<User> listofUsers = new ArrayList<User>();
-        sql = "SELECT CIN, NOM, PRENOM, DATE_NAISSANCE, SEXE, LOGIN, EMAIL, PASSWORD, DATE_INSCRIPTION, RANK " +
+        sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION " +
                 "FROM USERS";
         stmt = connection.createStatement();
         resultset = stmt.executeQuery(sql);
 
-        String cin, nom, prenom, sexe, login, email, password;
+        Long id;
+        String nom, prenom, sexe, login, email, password, region, image;
         LocalDate dateNaissance;
         LocalDateTime dateInscription;
         float rank;
+        int activation;
         User usertoAdd;
 
         while( resultset.next() ) {
-            cin = resultset.getString("CIN");
+            id = resultset.getLong("ID");
             nom = resultset.getString("NOM");
             prenom = resultset.getString("PRENOM");;
-            dateNaissance = resultset.getObject("DATE_NAISSANCE", LocalDate.class);
             sexe = resultset.getString("SEXE");
+            dateNaissance = resultset.getObject("DATE_NAISSANCE", LocalDate.class);
+            region = resultset.getString("REGION");
             login = resultset.getString("LOGIN");
             email = resultset.getString("EMAIL");
             password = resultset.getString("PASSWORD");
+            image = resultset.getString("IMAGE_PATH");
             dateInscription = resultset.getObject("DATE_INSCRIPTION",LocalDateTime.class);
             rank = resultset.getFloat("RANK");
-            usertoAdd = new User(cin,nom,prenom,dateNaissance,sexe,login,email,password,dateInscription,rank);
+            activation = resultset.getInt("ACTIVATION");
+            usertoAdd = new User(id,nom,prenom,sexe,dateNaissance,region,login,email,password,image,dateInscription,rank,activation);
             listofUsers.add(usertoAdd);
         }
 
@@ -105,34 +116,44 @@ public class UserDaoImp implements UserDao {
     }
 
     @Override
-    public boolean insertUser(User user) throws SQLException {
-        boolean rowInserted;
+    public Long insertUser(User user) throws SQLException {
+        Long idrowInserted;
         String sql;
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
         Connection connection = DAOFactory.getInstance().getConnection();
         //Rank est par Defaut 5
-        sql = "INSERT INTO users (CIN, NOM, PRENOM, DATE_NAISSANCE, SEXE, LOGIN, EMAIL, PASSWORD, DATE_INSCRIPTION) " +
+        sql = "INSERT INTO users (ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        preparedStmt.setString(1, user.getCin());
+        preparedStmt.setLong(1, user.getId());
         preparedStmt.setString(2, user.getNom());
         preparedStmt.setString(3, user.getPrenom());
-        preparedStmt.setObject(4, user.getDateNaissance());
-        preparedStmt.setString(5, user.getSexe());
-        preparedStmt.setString(6, user.getLogin());
-        preparedStmt.setString(7, user.getEmail());
-        preparedStmt.setString(8, user.getPassword());
-        preparedStmt.setObject(9, LocalDateTime.now());
-        rowInserted = preparedStmt.execute();
-        if(rowInserted) {
+        preparedStmt.setString(4, user.getSexe());
+        preparedStmt.setObject(5, user.getDateNaissance());
+        preparedStmt.setString(6, user.getRegion());
+        preparedStmt.setString(7, user.getLogin());
+        preparedStmt.setString(8, user.getEmail());
+        preparedStmt.setString(9, user.getPassword());
+        preparedStmt.setString(10, user.getImage());
+        preparedStmt.setObject(11, LocalDateTime.now());
+        preparedStmt.setFloat(12, user.getRank());
+        preparedStmt.setInt(13, user.getActivation());
+        preparedStmt.execute();
+        resultset = preparedStmt.getGeneratedKeys();
+        if (resultset.next()) {
+            idrowInserted = resultset.getLong(1);
             connection.commit();
+        } else {
+            idrowInserted = -1L;
         }
 
         preparedStmt.close();
+        resultset.close();
         connection.close();
 
-        return  rowInserted;
+        return idrowInserted;
     }
 
     @Override
@@ -141,18 +162,22 @@ public class UserDaoImp implements UserDao {
         String sql;
         PreparedStatement preparedStmt = null;
         Connection connection = DAOFactory.getInstance().getConnection();
-        sql = "UPDATE users set NOM = ? , PRENOM = ? , DATE_NAISSANCE = ? , " +
-                "SEXE = ? , LOGIN = ? , EMAIL = ?, PASSWORD = ? , RANK = ? where CIN = ?";
+        sql = "UPDATE users set NOM = ? , PRENOM = ? , SEXE = ? , DATE_NAISSANCE = ? , " +
+                "REGION = ? , LOGIN = ? , EMAIL = ? , PASSWORD = ? , " +
+                "IMAGE_PATH = ? , RANK = ? , ACTIVATION = ? where ID = ?";
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setString(1, user.getNom());
         preparedStmt.setString(2, user.getPrenom());
-        preparedStmt.setObject(3, user.getDateNaissance());
-        preparedStmt.setString(4, user.getSexe());
-        preparedStmt.setString(5, user.getLogin());
-        preparedStmt.setString(6, user.getEmail());
-        preparedStmt.setString(7, user.getPassword());
-        preparedStmt.setObject(8, user.getRank());
-        preparedStmt.setString(9, user.getCin());
+        preparedStmt.setString(3, user.getSexe());
+        preparedStmt.setObject(4, user.getDateNaissance());
+        preparedStmt.setString(5, user.getRegion());
+        preparedStmt.setString(6, user.getLogin());
+        preparedStmt.setString(7, user.getEmail());
+        preparedStmt.setString(8, user.getPassword());
+        preparedStmt.setString(9, user.getImage());
+        preparedStmt.setFloat(10, user.getRank());
+        preparedStmt.setInt(11, user.getActivation());
+        preparedStmt.setLong(12, user.getId());
         rowUpdated = preparedStmt.executeUpdate() > 0;
         if(rowUpdated) {
             connection.commit();
@@ -168,11 +193,11 @@ public class UserDaoImp implements UserDao {
     public boolean deleteUser(User user) throws SQLException {
         boolean rowDeleted;
         String sql;
-        PreparedStatement preparedStmt = null;
+        PreparedStatement preparedStmt;
         Connection connection = DAOFactory.getInstance().getConnection();
-        sql = "DELETE from users where CIN = ?";
+        sql = "DELETE from users where ID = ?";
         preparedStmt = connection.prepareStatement(sql);
-        preparedStmt.setString(1, user.getCin());
+        preparedStmt.setLong(1, user.getId());
         rowDeleted = preparedStmt.executeUpdate() > 0;
         if(rowDeleted) {
             connection.commit();

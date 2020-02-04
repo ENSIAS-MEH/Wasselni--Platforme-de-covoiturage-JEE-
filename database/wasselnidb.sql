@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.4
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1:3308
--- Généré le :  mer. 22 jan. 2020 à 14:40
--- Version du serveur :  5.7.24
--- Version de PHP :  7.2.14
-
 create database wasselnidb;
 use wasselnidb;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -32,19 +23,22 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
-  CIN varchar(50) NOT NULL,
-  NOM varchar(50) NOT NULL,
-  PRENOM varchar(50) NOT NULL,
-  DATE_NAISSANCE date NOT NULL,
-  SEXE varchar(5) NOT NULL,
-  LOGIN varchar(50) NOT NULL,
-  EMAIL varchar(50) NOT NULL,
-  PASSWORD varchar(50) NOT NULL,
-  DATE_INSCRIPTION datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  RANK float NOT NULL DEFAULT '5',
-  PRIMARY KEY (CIN),
-  UNIQUE KEY LOGIN_UNIQUE (LOGIN),
-  UNIQUE KEY EMAIL_UNIQUE (EMAIL)
+                                     ID bigint(20) NOT NULL,
+                                     NOM varchar(50),
+                                     PRENOM varchar(50),
+                                     SEXE varchar(5),
+                                     DATE_NAISSANCE date,
+                                     REGION VARCHAR(50),
+                                     LOGIN varchar(50),
+                                     EMAIL varchar(50),
+                                     PASSWORD varchar(50),
+                                     IMAGE_PATH VARCHAR(200),
+                                     DATE_INSCRIPTION datetime DEFAULT CURRENT_TIMESTAMP,
+                                     RANK float DEFAULT '5',
+                                     ACTIVATION int(11) DEFAULT '1',
+                                     PRIMARY KEY (ID),
+                                     UNIQUE KEY LOGIN_UNIQUE (LOGIN),
+                                     UNIQUE KEY EMAIL_UNIQUE (EMAIL)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
@@ -57,15 +51,15 @@ COMMIT;
 
 DROP TABLE IF EXISTS trajet;
 CREATE TABLE IF NOT EXISTS trajet (
-  ID_TRAJET bigint(20) NOT NULL AUTO_INCREMENT,
-  VILLE_DEPART varchar(100) NOT NULL,
-  QUARTIER_DEPART varchar(100) NOT NULL,
-  RUE_DEPART varchar(100) NOT NULL,
-  VILLE_DESTINATION varchar(100) NOT NULL,
-  QUARTIER_DESTINATION varchar(100) NOT NULL,
-  RUE_DESTINATION varchar(100) NOT NULL,
-  PRIMARY KEY (ID_TRAJET),
-  UNIQUE KEY TRAJET_UNIQUE (VILLE_DEPART,QUARTIER_DEPART,RUE_DEPART,VILLE_DESTINATION,QUARTIER_DESTINATION,RUE_DESTINATION)
+                                      ID_TRAJET bigint(20) NOT NULL AUTO_INCREMENT,
+                                      VILLE_DEPART varchar(100),
+                                      QUARTIER_DEPART varchar(100),
+                                      RUE_DEPART varchar(100),
+                                      VILLE_DESTINATION varchar(100),
+                                      QUARTIER_DESTINATION varchar(100),
+                                      RUE_DESTINATION varchar(100),
+                                      PRIMARY KEY (ID_TRAJET),
+                                      UNIQUE KEY TRAJET_UNIQUE (VILLE_DEPART,QUARTIER_DEPART,RUE_DEPART,VILLE_DESTINATION,QUARTIER_DESTINATION,RUE_DESTINATION)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
@@ -77,18 +71,17 @@ COMMIT;
 
 DROP TABLE IF EXISTS details_trajet;
 CREATE TABLE IF NOT EXISTS details_trajet (
-  ID_DETAILS_TRAJET BIGINT(20) NOT NULL AUTO_INCREMENT,
-  DATETIME_DEPART datetime NOT NULL,
-  DATETIME_ARRIVEE datetime NOT NULL,
-  PRIX_PLACE int(11) NOT NULL,
-  TYPE_VOITURE varchar(50) NOT NULL,
-  MARQUE_VOITURE varchar(50) NOT NULL,
-  MODELE_VOITURE varchar(50) NOT NULL,
-  CLIMATISATION_VOITURE int(11) NOT NULL,
-  EFFECTIF int(11) NOT NULL,
-  ID_TRAJET_CHOISIE BIGINT(20) NOT NULL,
-  PRIMARY KEY (ID_DETAILS_TRAJET),
-  FOREIGN KEY (ID_TRAJET_CHOISIE) REFERENCES trajet(ID_TRAJET)
+                                              ID_DETAILS_TRAJET BIGINT(20) NOT NULL AUTO_INCREMENT,
+                                              DATETIME_DEPART datetime,
+                                              PRIX_PLACE int(11),
+                                              TYPE_VOITURE varchar(50),
+                                              MODELE_VOITURE varchar(50),
+                                              MARQUE_VOITURE varchar(50),
+                                              CLIMATISATION_VOITURE int(11),
+                                              EFFECTIF int(11),
+                                              ID_TRAJET_CHOISIE BIGINT(20),
+                                              PRIMARY KEY (ID_DETAILS_TRAJET),
+                                              FOREIGN KEY (ID_TRAJET_CHOISIE) REFERENCES trajet(ID_TRAJET)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
@@ -100,13 +93,13 @@ COMMIT;
 
 DROP TABLE IF EXISTS estassocie_a;
 CREATE TABLE IF NOT EXISTS estassocie_a (
-  ID_DETAILS_TRAJET_ASSOCIE BIGINT(20) NOT NULL,
-  CIN_ASSOCIE varchar(50) NOT NULL,
-  TYPE_ASSOCIATION varchar(50) NOT NULL,
-  DATE_ASSOCIATION datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (ID_DETAILS_TRAJET_ASSOCIE,CIN_ASSOCIE),
-  FOREIGN KEY (ID_DETAILS_TRAJET_ASSOCIE) REFERENCES details_trajet(ID_DETAILS_TRAJET),
-  FOREIGN KEY (CIN_ASSOCIE) REFERENCES users(CIN)
+                                            ID_DETAILS_TRAJET_ASSOCIE BIGINT(20) NOT NULL,
+                                            ID_USER_ASSOCIE bigint(20) NOT NULL,
+                                            TYPE_ASSOCIATION varchar(50),
+                                            DATE_ASSOCIATION datetime DEFAULT CURRENT_TIMESTAMP,
+                                            PRIMARY KEY (ID_DETAILS_TRAJET_ASSOCIE,ID_USER_ASSOCIE),
+                                            FOREIGN KEY (ID_DETAILS_TRAJET_ASSOCIE) REFERENCES details_trajet(ID_DETAILS_TRAJET),
+                                            FOREIGN KEY (ID_USER_ASSOCIE) REFERENCES users(ID)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 

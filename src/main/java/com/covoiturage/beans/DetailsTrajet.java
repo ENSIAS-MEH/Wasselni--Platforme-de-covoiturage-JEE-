@@ -3,7 +3,6 @@ package com.covoiturage.beans;
 import org.apache.tomcat.jni.Local;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -11,19 +10,19 @@ public class DetailsTrajet implements Serializable {
     private static final long serialVersionUID = -3068506332086499721L;
     private Long idDetailsTrajet;
     /**
-     * Date depart est subdivisé en dateDepart , minutesDepart , heureDepart
+     * dateDepart est de type LocalDateTime dont la format est : "yyyy-MM-dd HH:mm"
+     * dont on peut extraire l'heure et les minutes en utilisant les methodes
+     *
+     * dateDepart.getHour() the hour-of-day, from 0 to 23
+     * getMinute() the minute of hour, from 0 to 59
+     *
+     * or you can simply format the date by .format() method
      */
-    private LocalDate dateDepart;
-    private int minutesDepart;
-    private int heureDepart;
-    /**
-     * dateArrivee ??
-     */
-    private LocalDateTime dateArrivee;
+    private LocalDateTime dateDepart;
     private int prixPlace;
     private String typeVoiture;
-    private String marqueVoiture;
     private String modeleVoiture;
+    private String marqueVoiture;
     private int climatisationVoiture;
     private int effectif;
     private Long idTrajetChoisie;
@@ -32,23 +31,20 @@ public class DetailsTrajet implements Serializable {
         super();
     }
 
-    public DetailsTrajet( Long idDetailsTrajet,
-                         LocalDate dateDepart,
-                         LocalDateTime dateArrivee,
-                         int prixPlace,
-                         String typeVoiture,
-                         String marqueVoiture,
+    public DetailsTrajet(Long idDetailsTrajet,
+                         LocalDateTime dateDepart,
+                         int prixPlace, String typeVoiture,
                          String modeleVoiture,
+                         String marqueVoiture,
                          int climatisationVoiture,
                          int effectif,
                          Long idTrajetChoisie) {
         this.idDetailsTrajet = idDetailsTrajet;
         this.dateDepart = dateDepart;
-        this.dateArrivee = dateArrivee;
         this.prixPlace = prixPlace;
         this.typeVoiture = typeVoiture;
-        this.marqueVoiture = marqueVoiture;
         this.modeleVoiture = modeleVoiture;
+        this.marqueVoiture = marqueVoiture;
         this.climatisationVoiture = climatisationVoiture;
         this.effectif = effectif;
         this.idTrajetChoisie = idTrajetChoisie;
@@ -62,36 +58,12 @@ public class DetailsTrajet implements Serializable {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 
-    public LocalDate getDateDepart() {
+    public LocalDateTime getDateDepart() {
         return dateDepart;
     }
 
-    public void setDateDepart(LocalDate dateDepart) {
+    public void setDateDepart(LocalDateTime dateDepart) {
         this.dateDepart = dateDepart;
-    }
-
-    public LocalDateTime getDateArrivee() {
-        return dateArrivee;
-    }
-
-    public int getMinutesDepart() {
-        return minutesDepart;
-    }
-
-    public void setMinutesDepart(int minutesDepart) {
-        this.minutesDepart = minutesDepart;
-    }
-
-    public int getHeureDepart() {
-        return heureDepart;
-    }
-
-    public void setHeureDepart(int heureDepart) {
-        this.heureDepart = heureDepart;
-    }
-
-    public void setDateArrivee(LocalDateTime dateArrivee) {
-        this.dateArrivee = dateArrivee;
     }
 
     public int getPrixPlace() {
@@ -110,20 +82,20 @@ public class DetailsTrajet implements Serializable {
         this.typeVoiture = typeVoiture;
     }
 
-    public String getMarqueVoiture() {
-        return marqueVoiture;
-    }
-
-    public void setMarqueVoiture(String marqueVoiture) {
-        this.marqueVoiture = marqueVoiture;
-    }
-
     public String getModeleVoiture() {
         return modeleVoiture;
     }
 
     public void setModeleVoiture(String modeleVoiture) {
         this.modeleVoiture = modeleVoiture;
+    }
+
+    public String getMarqueVoiture() {
+        return marqueVoiture;
+    }
+
+    public void setMarqueVoiture(String marqueVoiture) {
+        this.marqueVoiture = marqueVoiture;
     }
 
     public int getClimatisationVoiture() {
@@ -149,6 +121,4 @@ public class DetailsTrajet implements Serializable {
     public void setIdTrajetChoisie(Long idTrajetChoisie) {
         this.idTrajetChoisie = idTrajetChoisie;
     }
-
-
 }

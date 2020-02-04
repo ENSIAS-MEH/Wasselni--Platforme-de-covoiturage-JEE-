@@ -6,65 +6,58 @@ import java.time.LocalDateTime;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 7657644172878601328L;
-    private int id;
-    /**
-     * J'ai ajouté id pour établir la session , ce n'est pas sécurisé de le faire avec cin
-     */
-    private String cin;
+    private Long id;
     private String nom;
     private String prenom;
-    private LocalDate dateNaissance;
     private String sexe;
+    private LocalDate dateNaissance;
+    private String region;
     private String login;
     private String email;
     private String password;
+    private String image;
     private LocalDateTime dateInscription;
     private float rank;
-    private String region;
-    /**
-     * J'ai ajouté région
-     */
+    private int activation;
 
     public User() {
         super();
     }
 
-    public User(String cin,
+    public User(Long id,
                 String nom,
                 String prenom,
-                LocalDate dateNaissance,
                 String sexe,
+                LocalDate dateNaissance,
+                String region,
                 String login,
                 String email,
                 String password,
+                String image,
                 LocalDateTime dateInscription,
-                float rank) {
-        this.cin = cin;
+                float rank,
+                int activation) {
+        this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        this.dateNaissance = dateNaissance;
         this.sexe = sexe;
+        this.dateNaissance = dateNaissance;
+        this.region = region;
         this.login = login;
         this.email = email;
         this.password = password;
+        this.image = image;
         this.dateInscription = dateInscription;
         this.rank = rank;
+        this.activation = activation;
     }
 
-    public String getCin() {
-        return cin;
+    public Long getId() {
+        return id;
     }
 
-    public void setCin(String cin) {
-        this.cin = cin;
-    }
-
-    public String getRegion() {
-        return region;
-    }
-
-    public void setRegion(String region) {
-        this.region = region;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNom() {
@@ -83,12 +76,12 @@ public class User implements Serializable {
         this.prenom = prenom;
     }
 
-    public int getId() {
-        return id;
+    public String getSexe() {
+        return sexe;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
     }
 
     public LocalDate getDateNaissance() {
@@ -99,12 +92,12 @@ public class User implements Serializable {
         this.dateNaissance = dateNaissance;
     }
 
-    public String getSexe() {
-        return sexe;
+    public String getRegion() {
+        return region;
     }
 
-    public void setSexe(String sexe) {
-        this.sexe = sexe;
+    public void setRegion(String region) {
+        this.region = region;
     }
 
     public String getLogin() {
@@ -131,6 +124,14 @@ public class User implements Serializable {
         this.password = password;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public LocalDateTime getDateInscription() {
         return dateInscription;
     }
@@ -145,5 +146,13 @@ public class User implements Serializable {
 
     public void setRank(float rank) {
         this.rank = rank;
+    }
+
+    public int getActivation() {
+        return activation;
+    }
+
+    public void setActivation(int activation) {
+        this.activation = activation;
     }
 }
