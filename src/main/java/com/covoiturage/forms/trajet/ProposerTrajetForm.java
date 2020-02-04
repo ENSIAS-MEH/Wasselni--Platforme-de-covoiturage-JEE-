@@ -51,7 +51,7 @@ public class ProposerTrajetForm {
         DetailsTrajet details = new DetailsTrajet();
 
 
-        /*HttpSession session = req.getSession();
+        HttpSession session = req.getSession();
         session.setAttribute("depart",depart);
         session.setAttribute( "destination",destination);
         session.setAttribute("dateTrajet",dateTrajet);
@@ -63,7 +63,7 @@ public class ProposerTrajetForm {
         session.setAttribute( "typeVehicule",typeVehicule);
         session.setAttribute( "marque",marque);
         session.setAttribute("model", model);
-        session.setAttribute( "climatisation",climatisation);*/
+        session.setAttribute( "climatisation",climatisation);
 
         try{
             validationTrajet(trajet);

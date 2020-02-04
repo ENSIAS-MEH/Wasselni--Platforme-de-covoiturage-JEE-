@@ -1,23 +1,22 @@
 package com.covoiturage.servlets;
 
-import com.covoiturage.forms.OffreForm;
+import com.covoiturage.forms.AbonnementForm;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.Console;
 import java.io.IOException;
 
-public class ConsulterOffres extends HttpServlet {
+public class Abonnement extends HttpServlet {
+    private static final String VUE_APRE_ABONNEMENT = "";
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        OffreForm form = new OffreForm();
-        form.consulterOffres(req);
+        AbonnementForm form = new AbonnementForm();
+        form.inscrire(req);
 
-        this.getServletContext().getRequestDispatcher("/test.jsp").forward(req,resp);
-
+        this.getServletContext().getRequestDispatcher(VUE_APRE_ABONNEMENT).forward(req,resp);
     }
 }
-

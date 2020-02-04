@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class Accueil extends HttpServlet {
-
     static final String VUE_ACCUEIL = "/index.jsp";
 
     @Override

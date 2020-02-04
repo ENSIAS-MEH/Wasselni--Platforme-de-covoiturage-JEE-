@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AdminAccueil extends HttpServlet {
-
     private static final String VUE_ACCUEIL = "/WEB-INF/espace/admin/admin.jsp";
 
     @Override

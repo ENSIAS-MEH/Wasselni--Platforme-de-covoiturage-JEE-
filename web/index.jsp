@@ -269,17 +269,17 @@
                     <br><br><br><br>
                   
                     <div style="margin-left: 210px;">
-                    <form class="form-inline">
+                    <form method="post" action="/abonnement" class="form-inline">
                         <div class="form-group mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Nom" placeholder="Nom">
+                                <input class="input10i" type="text" name="nom" placeholder="Nom">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Email" placeholder="Email">
+                                <input class="input10i" type="email" name="email" placeholder="Email">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-envelope" aria-hidden="true"></i>  </span>
                             </div>
@@ -560,7 +560,7 @@
                     <h2 class="display-5 d-inline mylead">vous pouvez proposer un trajet facilement! </h2>
                     <br><br> <br> <br>
                     <div >
-                    <form class="form-inline">
+                    <form method="post" action="/proposerTrajet" class="form-inline">
                         <div class="form-group mx-sm-3 mb-2">
                             <div class=" wrap-input10i ">
                                 <input class="input10i" type="text" name="depart" placeholder="Depart">
@@ -577,7 +577,7 @@
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
                             <div class=" wrap-input10i ">
-                                <input class="input10i" type="text" name="Prix" placeholder="Prix">
+                                <input class="input10i" type="text" name="prix" placeholder="Prix">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
                             </div>

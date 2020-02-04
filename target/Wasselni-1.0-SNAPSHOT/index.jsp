@@ -122,8 +122,8 @@
 
                                                 <!--Les checkbox-->
                                                 <div class="checkbox icheck-check1">
-                                                    <input type="checkbox" checked id="check1" name="retour" value="true" />
-                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Avec retour</label>
+                                                    <input type="checkbox" checked id="check1" name="bagageautorise" value="true" />
+                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage Autorisé</label>
                                                 </div>
                                                 <br>
 
@@ -269,17 +269,17 @@
                     <br><br><br><br>
                   
                     <div style="margin-left: 210px;">
-                    <form class="form-inline">
+                    <form method="post" action="/abonnement" class="form-inline">
                         <div class="form-group mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Nom" placeholder="Nom">
+                                <input class="input10i" type="text" name="nom" placeholder="Nom">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Email" placeholder="Email">
+                                <input class="input10i" type="email" name="email" placeholder="Email">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-envelope" aria-hidden="true"></i>  </span>
                             </div>
@@ -549,6 +549,49 @@
 		</div>
 	</div>
 </div>
+
+<!--************-->
+<!--Proposer-->
+<!--************-->
+<section id="sectionProposer" class="p-5">
+    <div class="proposer-overlay">
+        <div class="row">
+                <div class="container pt-5  inscriremv">
+                    <h2 class="display-5 d-inline mylead">vous pouvez proposer un trajet facilement! </h2>
+                    <br><br> <br> <br>
+                    <div >
+                    <form method="post" action="/proposerTrajet" class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="depart" placeholder="Depart">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="destination" placeholder="Destination">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-map-marker" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="prix" placeholder="Prix">
+                                <span class="focus-input10i"></span>
+                                <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info mb-2 ">Proposer</button>
+                      </form>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+
 
 <!--************-->
 <!--Derniere demande  -->

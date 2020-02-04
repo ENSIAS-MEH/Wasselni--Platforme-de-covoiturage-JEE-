@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class ProposerTrajet extends HttpServlet {
-
     private static final String VUE_CREATION = "/WEB-INF/trajet/proposertrajet.jsp";
     /*
      * Page resultat apres avoir proposé un trajet à implémenter
