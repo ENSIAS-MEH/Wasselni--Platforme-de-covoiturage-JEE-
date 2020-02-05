@@ -41,9 +41,9 @@ public class InscriptionUser extends HttpServlet {
         req.setAttribute(ATT_FORM,form);
         req.setAttribute(ATT_USER,user);
 
-        HttpSession session = req.getSession();
+        //HttpSession session = req.getSession();
         if(form.getErreurs().isEmpty()){
-            session.setAttribute("user",user);
+            //session.setAttribute("user",user);
             this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRITPION).forward(req,resp);
         } else {
             this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION).forward(req, resp);
