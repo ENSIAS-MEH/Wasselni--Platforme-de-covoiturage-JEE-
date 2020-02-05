@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
@@ -25,6 +26,12 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
 >>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
 >>>>>>> 28cf140ca8ab3edc1be9391dfe23977ced842764
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/after_inscription.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/espace_user.jsp" beforeDir="false" />
+>>>>>>> 32244519b8bdbdaa514224e9c94026f04dfb6526
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -359,6 +366,7 @@
       <workItem from="1580911492012" duration="10705000" />
       <workItem from="1580911492012" duration="2040000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1580926855209" duration="2811000" />
 =======
 <<<<<<< HEAD
@@ -367,6 +375,9 @@
       <workItem from="1580918037199" duration="4358000" />
 >>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
 >>>>>>> 28cf140ca8ab3edc1be9391dfe23977ced842764
+=======
+      <workItem from="1580918037199" duration="5931000" />
+>>>>>>> 32244519b8bdbdaa514224e9c94026f04dfb6526
     </task>
     <servers />
   </component>

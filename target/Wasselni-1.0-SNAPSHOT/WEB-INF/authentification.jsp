@@ -75,7 +75,7 @@ crossorigin="anonymous">
                                         S'authentifier
                                     </span>			
                                     <!--Email-->
-                                    <div>
+                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
                                         <input class="input100" type="text" value="<c:out value='${user.email}'/>" name="email" placeholder="Email">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
@@ -85,7 +85,7 @@ crossorigin="anonymous">
                                     </div>
                                 
                                 <!--MOT de PASSE-->
-                                    <div>
+                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
                                         <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
