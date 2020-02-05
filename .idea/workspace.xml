@@ -9,7 +9,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/filter/EspacePrivee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/filter/EspacePrivee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
+    </list>
+>>>>>>> db5072b7d254ebb2ce8458f3bfec2bf4c850aa41
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -321,8 +331,12 @@
       <workItem from="1580934607110" duration="3160000" />
       <workItem from="1580938514831" duration="1438000" />
       <workItem from="1580918037199" duration="5931000" />
+<<<<<<< HEAD
       <workItem from="1580940869500" duration="2049000" />
       <workItem from="1580943064666" duration="924000" />
+=======
+      <workItem from="1580940869500" duration="2979000" />
+>>>>>>> db5072b7d254ebb2ce8458f3bfec2bf4c850aa41
     </task>
     <servers />
   </component>

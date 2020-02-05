@@ -75,7 +75,8 @@ public class ValidationForm {
             throw new Exception("Le code que vous avez entré est vide .Réessayez ");
         } else {
             if((Integer.toString(user.getActivation()).equals(code))){
-                userDao.setUserActivation();
+                user.setActivation(Integer.parseInt(code));
+                userDao.setUserActivation(user);
             } else {
                 throw new Exception("Le code que vous avez entré est incorrect.");
             }
