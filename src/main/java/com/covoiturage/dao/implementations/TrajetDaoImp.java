@@ -2,12 +2,13 @@ package com.covoiturage.dao.implementations;
 
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.TrajetDao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrajetDaoImp {
+public class TrajetDaoImp implements TrajetDao {
     private DAOFactory daoFactory;
 
     public TrajetDaoImp(DAOFactory daoFactory) {
@@ -22,7 +23,7 @@ public class TrajetDaoImp {
                 " and VILLE_DESTINATION = ? and QUARTIER_DESTINATION = ? and RUE_DESTINATION = ?";
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
-        Connection connection = DAOFactory.getInstance().getConnection();
+        Connection connection = daoFactory.getConnection();
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setString(1, trajet.getVilleDepart());
         preparedStmt.setString(2, trajet.getQuartierDepart());

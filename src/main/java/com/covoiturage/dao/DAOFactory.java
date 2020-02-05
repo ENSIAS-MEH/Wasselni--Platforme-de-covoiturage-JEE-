@@ -1,7 +1,14 @@
 package com.covoiturage.dao;
+import com.covoiturage.beans.EstAssociea;
 import com.covoiturage.beans.User;
 import com.covoiturage.dao.exceptions.DAOConfigurationException;
+import com.covoiturage.dao.implementations.DetailsTrajetDaoImp;
+import com.covoiturage.dao.implementations.EstAssocieADaoImp;
+import com.covoiturage.dao.implementations.TrajetDaoImp;
 import com.covoiturage.dao.implementations.UserDaoImp;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
+import com.covoiturage.dao.interfaces.TrajetDao;
 import com.covoiturage.dao.interfaces.UserDao;
 
 import java.io.IOException;
@@ -33,8 +40,13 @@ public class DAOFactory {
      * Constructeur privé chargé de récupérer les informations de connexion à la base de
      * données, charger le driver JDBC afin d'établir une connection avec la base de Données
      * */
-
-    private DAOFactory() throws SQLException{
+    DAOFactory( String url, String username, String password ) throws SQLException {
+        this.url = url;
+        this.username = username;
+        this.password = password;
+        this.connection = DriverManager.getConnection(url,username,password);
+    }
+    public static DAOFactory getInstance() throws DAOConfigurationException, SQLException {
         Properties properties = new Properties();
         String url;
         String driver;
@@ -49,42 +61,23 @@ public class DAOFactory {
         }
 
         try {
-
             properties.load( fichierProperties );
             url = properties.getProperty( PROPERTY_URL );
             driver = properties.getProperty( PROPERTY_DRIVER );
             nomUtilisateur = properties.getProperty( PROPERTY_NOM_UTILISATEUR );
             motDePasse = properties.getProperty( PROPERTY_MOT_DE_PASSE );
-
         } catch ( IOException e ) {
             throw new DAOConfigurationException( "Impossible de charger le fichier properties " + FICHIER_PROPERTIES, e );
         }
 
-        System.out.println(nomUtilisateur);
-
-        this.url = url;
-        this.username = nomUtilisateur;
-        this.password = motDePasse;
-
         try {
             Class.forName( driver );
-            this.connection = DriverManager.getConnection(this.url, this.username, this.password);
-        } catch ( ClassNotFoundException e ) {
+
+        } catch (ClassNotFoundException e ) {
             throw new DAOConfigurationException( "Le driver est introuvable dans le classpath.", e );
         }
-    }
 
-    /*
-     * Méthode chargée de retourner une instance de la Factory En implementant le Pattern Singleton
-     */
-    public static DAOFactory getInstance() throws DAOConfigurationException, SQLException {
-
-        if( instance == null ) {
-            instance = new DAOFactory();
-        } else if( instance.getConnection().isClosed() ){
-            instance = new DAOFactory();
-        }
-
+        DAOFactory instance = new DAOFactory( url, nomUtilisateur, motDePasse );
         return instance;
     }
 
@@ -96,11 +89,14 @@ public class DAOFactory {
     }
 
     /*
-     * Méthodes de récupération de l'implémentation des différents DAO (une pour le moment)
+     * Méthodes de récupération de l'implémentation des différents DAO
      */
     public UserDao getUserDao() {
         return new UserDaoImp( this );
     }
+    public TrajetDao getTrajetDao()  { return new TrajetDaoImp(this);}
+    public EstAssocieADao getEstAssocieADao() { return new EstAssocieADaoImp(this);}
+    public DetailsTrajetDao getDetailsTrajetDao() { return new DetailsTrajetDaoImp(this);}
 
     public static void main(String[] args) throws SQLException {
         UserDao users = new UserDaoImp(DAOFactory.getInstance());

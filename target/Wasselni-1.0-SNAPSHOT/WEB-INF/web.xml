@@ -99,6 +99,7 @@
         <servlet-name>ConsulterOffres</servlet-name>
         <url-pattern>/consulterOffres</url-pattern>
     </servlet-mapping>
+
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>
@@ -129,7 +130,6 @@
         <servlet-name>cs</servlet-name>
         <servlet-class>com.covoiturage.servlets.UploadServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>cs</servlet-name>
         <url-pattern>/upload</url-pattern>
@@ -139,10 +139,14 @@
         <servlet-name>css</servlet-name>
         <servlet-class>com.covoiturage.servlets.ImageServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>css</servlet-name>
         <url-pattern>/getimage</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>com.covoiturage.dao.config.InitialisationDaoFactory</listener-class>
+    </listener>
+
 
 </web-app>

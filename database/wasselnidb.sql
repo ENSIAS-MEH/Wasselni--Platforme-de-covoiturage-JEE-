@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
-                                     ID bigint(20) NOT NULL,
+                                     ID bigint(20) NOT NULL AUTO_INCREMENT,
                                      NOM varchar(50),
                                      PRENOM varchar(50),
                                      SEXE varchar(5),
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS users (
                                      REGION VARCHAR(50),
                                      LOGIN varchar(50),
                                      EMAIL varchar(50),
-                                     PASSWORD varchar(50),
+                                     PASSWORD varchar(255),
                                      IMAGE_PATH VARCHAR(200),
                                      DATE_INSCRIPTION datetime DEFAULT CURRENT_TIMESTAMP,
                                      RANK float DEFAULT '5',

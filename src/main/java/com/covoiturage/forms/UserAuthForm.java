@@ -1,12 +1,19 @@
-/*package com.covoiturage.forms;
+package com.covoiturage.forms;
 
 import com.covoiturage.beans.User;
+import com.covoiturage.dao.interfaces.UserDao;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
 public class UserAuthForm {
+    private UserDao userDao;
+
+    public UserAuthForm(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
     private static final String CHAMP_MOT_DE_PASSE = "motdepasse";
     private static final String CHAMP_EMAIL = "email";
 
@@ -49,6 +56,16 @@ public class UserAuthForm {
 
 
     }
+    /**
+     *
+     */
+
+
+    /**
+     * Méthodes de validation
+     */
+
+
     private void validationEmail(String email) throws Exception{
         if ( email != null) {
             if ( !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
@@ -62,13 +79,14 @@ public class UserAuthForm {
         if(motDePasse == null ){
             throw new Exception("Merci de saisir un mot de passe");
         }
-        /**
-         * Recherche de l'user dans la bd
 
         return 10;
     }
 
 
+    /**
+     * Méthoes utiles
+     */
     private static String getValeurChamp( HttpServletRequest request, String nomChamp ) {
         String valeur = request.getParameter( nomChamp );
         if ( valeur == null || valeur.trim().length() == 0 ) {
@@ -82,4 +100,4 @@ public class UserAuthForm {
     }
 
 
-}**/
+}

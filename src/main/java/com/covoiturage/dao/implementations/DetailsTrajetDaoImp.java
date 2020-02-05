@@ -2,6 +2,7 @@ package com.covoiturage.dao.implementations;
 
 import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
 
 import javax.naming.PartialResultException;
 import java.sql.*;
@@ -10,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DetailsTrajetDaoImp {
+public class DetailsTrajetDaoImp implements DetailsTrajetDao {
     DAOFactory daoFactory;
 
     public DetailsTrajetDaoImp(DAOFactory daoFactory) {

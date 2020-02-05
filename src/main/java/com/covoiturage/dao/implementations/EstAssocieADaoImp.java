@@ -2,13 +2,14 @@ package com.covoiturage.dao.implementations;
 
 import com.covoiturage.beans.EstAssociea;
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
 
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EstAssocieADaoImp {
+public class EstAssocieADaoImp implements EstAssocieADao {
     DAOFactory daoFactory;
     public EstAssocieADaoImp(DAOFactory daoFactory) {
         this.daoFactory = daoFactory;
