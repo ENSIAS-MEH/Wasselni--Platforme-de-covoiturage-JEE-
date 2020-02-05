@@ -156,8 +156,12 @@ public class UserInscriptionForm {
         }
     }
     private void validationPseudo( String pseudo ) throws Exception {
+        User user = new User();
+        user.setLogin(pseudo);
         if ( pseudo != null && pseudo.length() < 5 ) {
             throw new Exception( "Le pseudo d'utilisateur doit contenir au moins 5 caractères." );
+        } else if ( userDao.findSpecificUser( user ) != null ) {
+            throw new Exception( "Ce login est déjà utilisée, merci d'en choisir un autre." );
         }
         if(pseudo == null) {
             throw new Exception( "Merci de saisir un pseudo d'utilisateur valide." );
@@ -176,9 +180,13 @@ public class UserInscriptionForm {
         }
     }
     private void validationEmail(String email) throws Exception{
+        User user = new User();
+        user.setEmail(email);
         if ( email != null) {
             if ( !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
                 throw new Exception( "Merci de saisir une adresse mail valide." );
+            }else if ( userDao.findSpecificUser( user ) != null ) {
+                throw new Exception( "Cette adresse email est déjà utilisée, merci d'en choisir une autre." );
             }
         } else {
             throw new Exception( "Merci de saisir une adresse mail." );

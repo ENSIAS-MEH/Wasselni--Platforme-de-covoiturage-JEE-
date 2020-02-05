@@ -10,24 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/Images/mazal.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ImageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ImageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ImageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ImageServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/proposertrajet.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/proposertrajet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ImageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ImageServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/espace_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/proposertrajet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/Espace_user.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/Espace_user.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +302,7 @@
       <workItem from="1580903430162" duration="5445000" />
       <workItem from="1580911492012" duration="10705000" />
       <workItem from="1580911492012" duration="2040000" />
-      <workItem from="1580926855209" duration="71000" />
+      <workItem from="1580926855209" duration="578000" />
     </task>
     <servers />
   </component>
