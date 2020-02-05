@@ -18,7 +18,7 @@ public class UserAuthForm {
     private static final String CHAMP_EMAIL = "email";
 
     private String resultat;
-    private Map<String, String> erreurs= new HashMap();
+    private Map<String, String> erreurs = new HashMap();
 
     public Map<String, String> getErreurs() {
         return erreurs;
@@ -28,9 +28,9 @@ public class UserAuthForm {
         return resultat;
     }
 
-    public User authentification(HttpServletRequest req){
-        String email = getValeurChamp(req,CHAMP_EMAIL);
-        String motDePasse = getValeurChamp(req,CHAMP_MOT_DE_PASSE);
+    public User authentification(HttpServletRequest req) {
+        String email = getValeurChamp(req, CHAMP_EMAIL);
+        String motDePasse = getValeurChamp(req, CHAMP_MOT_DE_PASSE);
 
         User user = new User();
         long userId = -1;
@@ -38,16 +38,16 @@ public class UserAuthForm {
         try {
             validationEmail(email);
         } catch (Exception e) {
-            setErreur(CHAMP_EMAIL,e.getMessage());
+            setErreur(CHAMP_EMAIL, e.getMessage());
         }
         user.setEmail(email);
         try {
             userId = validationUser(email, motDePasse);
         } catch (Exception e) {
-            setErreur(CHAMP_MOT_DE_PASSE,e.getMessage());
+            setErreur(CHAMP_MOT_DE_PASSE, e.getMessage());
         }
         user.setId(userId);
-        if(erreurs.isEmpty()){
+        if (erreurs.isEmpty()) {
             resultat = "Succés de l'authentification";
         } else {
             resultat = "Echec de l'authentification. Veuillez réessayer.";
@@ -66,17 +66,18 @@ public class UserAuthForm {
      */
 
 
-    private void validationEmail(String email) throws Exception{
-        if ( email != null) {
-            if ( !email.matches( "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)" ) ) {
-                throw new Exception( "Merci de saisir une adresse mail valide." );
+    private void validationEmail(String email) throws Exception {
+        if (email != null) {
+            if (!email.matches("([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)")) {
+                throw new Exception("Merci de saisir une adresse mail valide.");
             }
         } else {
-            throw new Exception( "Merci de saisir une adresse mail." );
+            throw new Exception("Merci de saisir une adresse mail.");
         }
     }
-    private int validationUser(String email,String motDePasse) throws Exception {
-        if(motDePasse == null ){
+
+    private int validationUser(String email, String motDePasse) throws Exception {
+        if (motDePasse == null) {
             throw new Exception("Merci de saisir un mot de passe");
         }
 
@@ -87,17 +88,17 @@ public class UserAuthForm {
     /**
      * Méthoes utiles
      */
-    private static String getValeurChamp( HttpServletRequest request, String nomChamp ) {
-        String valeur = request.getParameter( nomChamp );
-        if ( valeur == null || valeur.trim().length() == 0 ) {
+    private static String getValeurChamp(HttpServletRequest request, String nomChamp) {
+        String valeur = request.getParameter(nomChamp);
+        if (valeur == null || valeur.trim().length() == 0) {
             return null;
         } else {
             return valeur;
         }
     }
-    private void setErreur( String champ, String message ) {
-        erreurs.put( champ, message );
-    }
 
+    private void setErreur(String champ, String message) {
+        erreurs.put(champ, message);
+    }
 
 }

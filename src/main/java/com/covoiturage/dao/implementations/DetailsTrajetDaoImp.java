@@ -4,6 +4,7 @@ import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.DetailsTrajetDao;
 
+
 import javax.naming.PartialResultException;
 import java.sql.*;
 import java.time.LocalDate;

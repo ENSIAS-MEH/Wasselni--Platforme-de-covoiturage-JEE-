@@ -175,6 +175,13 @@ crossorigin="anonymous">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Téléphone: </strong></div>
               <div style="margin-left: 15px;">(+212) 6 28 96 45 10</div>
             </div>
+            <br>
+            <!--Modifier-->
+            <div class="row mt-3" style="margin-left: 60px; margin-top: 20px;">
+              <a href="#" id="btnModifier" data-toggle="modal" data-target="#modifier"></a>
+           </div>
+
+
           </div>
         </div>
       </div>
@@ -433,7 +440,78 @@ crossorigin="anonymous">
 </footer>
 
 
+<div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
 
+
+        <div class="form-group">
+          <label>Nom:</label>
+          <input type="text"  class="form-control" name="prenom" placeholder="Nom" value="Mohammed">
+        </div>
+     
+     <div class="form-group">
+      <label>Prenom</label>
+      <input type="text"  class="form-control" name="nom" placeholder="Prenom" value="Sabid">
+    </div>
+
+       <div class="form-group">
+            <label>Email</label>
+            <input type="text"  class="form-control" name="email" placeholder="email" value="mohammedsabi0@gmail.com">
+       </div>
+
+       <div class="form-group">
+        <label>Numéro Téléphone</label>
+        <input type="text" class="form-control" name="tel" placeholder="Telephone" value="068874125423">
+       </div>
+
+       <div class="form-group">
+        <label>Adresse</label>
+        <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="Adresse" >
+       </div>
+
+       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button type="submit" class="btn btn-success">Modifier</button>
+      </div>
+    </form>
+       <hr>
+      
+       <form action="">
+        <div class="form-group">
+          <label>Ancien mot de passe</label>
+          <input type="text" class="form-control" placeholder="Ancien le mote de passe">
+         </div>
+  
+         <div class="form-group">
+          <label>Nouveau mot de passe</label>
+          <input type="text" class="form-control" placeholder="Nouveau le mote de passe" >
+         </div>
+              
+         <div class="form-group">
+          <label>Confirmer le mote de passe</label>
+          <input type="text" class="form-control" placeholder="Confirmer le mote de passe"  >
+         </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+          <button type="submit" class="btn btn-success">Modifier</button>
+        </div>
+       </form>
+    
+    </div>
+  </div>
+</div>
+
+<script>
+  CKEDITOR.replace( 'editor1' );
+</script>
     
 
 
