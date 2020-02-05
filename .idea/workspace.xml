@@ -9,11 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/mailer/Mailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/mailer/Mailer.java" afterDir="false" />
-    </list>
+    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,7 +322,7 @@
       <workItem from="1580938514831" duration="1438000" />
       <workItem from="1580918037199" duration="5931000" />
       <workItem from="1580940869500" duration="2049000" />
-      <workItem from="1580943064666" duration="326000" />
+      <workItem from="1580943064666" duration="924000" />
     </task>
     <servers />
   </component>
