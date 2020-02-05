@@ -196,6 +196,7 @@ public class UserDaoImp implements UserDao {
         return rowDeleted;
     }
 
+<<<<<<< HEAD
     @Override
     public String getImageProfile(User user) throws SQLException {
         String image_path = "0_image";
@@ -224,6 +225,30 @@ public class UserDaoImp implements UserDao {
         ps.execute();
 
     }
+=======
+    public void setUserActivation(User user) throws SQLException{
+        String sql;
+        PreparedStatement preparedStmt;
+        Connection connection = DAOFactory.getInstance().getConnection();
+        sql = "UPDATE users set ACTIVATION = ? where ID = ?";
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setInt(1,user.getActivation());
+        preparedStmt.setLong(2, user.getId());
+        return;
+    };
+    public int getUserActivation(User user) throws SQLException{
+        String sql;
+        PreparedStatement preparedStmt;
+        ResultSet resultset;
+        Connection connection = DAOFactory.getInstance().getConnection();
+        sql = "select ACTIVATION from users where ID = ?";
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setLong(1, user.getId());
+        resultset = preparedStmt.executeQuery();
+        return resultset.getInt("ACTIVATION");
+    };
+
+>>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
 
 
 }

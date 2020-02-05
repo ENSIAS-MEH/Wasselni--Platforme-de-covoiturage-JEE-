@@ -7,7 +7,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class EspacePrivee implements Filter {
-    private static final String ATT_SESSION_USER_ID = "userId";
+    private static final String ATT_SESSION_USERID = "userId";
     private static final String VUE_AUTHENTIFICATION = "/authentification.jsp" ;
 
     @Override
@@ -21,7 +21,7 @@ public class EspacePrivee implements Filter {
 
         HttpSession session = req.getSession();
 
-        if(session.getAttribute(ATT_SESSION_USER_ID) != null ){
+        if(session.getAttribute(ATT_SESSION_USERID) == null ){
             resp.sendRedirect(req.getContextPath()+VUE_AUTHENTIFICATION);
         } else {
             chain.doFilter(req,resp);

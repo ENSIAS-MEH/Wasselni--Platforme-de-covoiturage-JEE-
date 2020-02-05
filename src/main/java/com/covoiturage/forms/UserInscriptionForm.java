@@ -58,6 +58,7 @@ public class UserInscriptionForm {
             user.setSexe(sexe);
             user.setDateInscription(LocalDateTime.now());
             user.setRegion(region);
+            user.setImage("0_image");
             traiterNom(nom,user);
             traiterPrenom(prenom,user);
             traiterDateNaissance(dateNaissance,user);
