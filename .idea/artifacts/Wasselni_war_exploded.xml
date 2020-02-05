@@ -18,6 +18,18 @@
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.18" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
           <element id="library" level="project" name="Maven: com.restfb:restfb:2.26.0" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-catalina:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jni:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-coyote:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:9.0.30" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jaspic-api:9.0.30" />
         </element>
       </element>
       <element id="directory" name="META-INF">

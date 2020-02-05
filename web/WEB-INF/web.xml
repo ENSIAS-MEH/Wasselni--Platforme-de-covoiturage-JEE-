@@ -3,6 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+
     <servlet>
         <servlet-name>ProposerTrajet</servlet-name>
         <servlet-class>com.covoiturage.servlets.ProposerTrajet</servlet-class>
@@ -11,6 +18,7 @@
         <servlet-name>ProposerTrajet</servlet-name>
         <url-pattern>/proposerTrajet</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>Accueil</servlet-name>
         <servlet-class>com.covoiturage.servlets.Accueil</servlet-class>
@@ -19,6 +27,7 @@
         <servlet-name>Accueil</servlet-name>
         <url-pattern>/accueil</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>DemanderTrajet</servlet-name>
         <servlet-class>com.covoiturage.servlets.DemanderTrajet</servlet-class>
@@ -28,10 +37,92 @@
         <url-pattern>/demanderTrajet</url-pattern>
     </servlet-mapping>
 
-    <jsp-config>
-        <jsp-property-group>
-            <url-pattern>*.jsp</url-pattern>
-            <page-encoding>UTF-8</page-encoding>
-        </jsp-property-group>
-    </jsp-config>
+    <servlet>
+        <servlet-name>AdminAccueil</servlet-name>
+        <servlet-class>com.covoiturage.servlets.espace.admin.AdminAccueil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAccueil</servlet-name>
+        <url-pattern>/admin_accueil</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminDemandes</servlet-name>
+        <servlet-class>com.covoiturage.servlets.espace.admin.AdminDemandes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDemandes</servlet-name>
+        <url-pattern>/admin_demandes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminOffres</servlet-name>
+        <servlet-class>com.covoiturage.servlets.espace.admin.AdminOffres</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminOffres</servlet-name>
+        <url-pattern>/admin_offres</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminUsers</servlet-name>
+        <servlet-class>com.covoiturage.servlets.espace.admin.AdminUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUsers</servlet-name>
+        <url-pattern>/admin_users</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InscriptionUser</servlet-name>
+        <servlet-class>com.covoiturage.servlets.InscriptionUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InscriptionUser</servlet-name>
+        <url-pattern>/inscription</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AuthUser</servlet-name>
+        <servlet-class>com.covoiturage.servlets.AuthUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthUser</servlet-name>
+        <url-pattern>/authentification</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConsulterOffres</servlet-name>
+        <servlet-class>com.covoiturage.servlets.ConsulterOffres</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsulterOffres</servlet-name>
+        <url-pattern>/consulterOffres</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>EspacePrivee</filter-name>
+        <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EspacePrivee</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Set Character Encoding</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignore</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>

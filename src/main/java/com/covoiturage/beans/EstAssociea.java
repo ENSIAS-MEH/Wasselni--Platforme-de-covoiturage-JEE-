@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class EstAssociea implements Serializable {
     private static final long serialVersionUID = 6685041004718402373L;
     private Long idDetailsTrajet;
-    private String cinUser;
+    private Long idUser;
     private String typeAssociation;
     private LocalDateTime dateAssociation;
 
@@ -14,9 +14,9 @@ public class EstAssociea implements Serializable {
         super();
     }
 
-    public EstAssociea(Long idDetailsTrajet, String cinUser, String typeAssociation, LocalDateTime dateAssociation) {
+    public EstAssociea(Long idDetailsTrajet, Long idUser, String typeAssociation, LocalDateTime dateAssociation) {
         this.idDetailsTrajet = idDetailsTrajet;
-        this.cinUser = cinUser;
+        this.idUser = idUser;
         this.typeAssociation = typeAssociation;
         this.dateAssociation = dateAssociation;
     }
@@ -29,12 +29,12 @@ public class EstAssociea implements Serializable {
         this.idDetailsTrajet = idDetailsTrajet;
     }
 
-    public String getCinUser() {
-        return cinUser;
+    public Long getIdUser() {
+        return idUser;
     }
 
-    public void setCinUser(String cinUser) {
-        this.cinUser = cinUser;
+    public void setIdUser(Long idUser) {
+        this.idUser = idUser;
     }
 
     public String getTypeAssociation() {

@@ -5,7 +5,7 @@
   Time: 01:57
   To change this template use File | Settings | File Templates.
 --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %> 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,13 +78,13 @@
                                 <div class="grid slideactive">
                                     <div id="login">
                                         <center><h2><span  class="fa fa-road"></span >  Où allez-vous ?</h2></center>
-                                        <form action="#" method="POST">
+                                        <form action="/consulterOffres" method="post">
                                             <fieldset>
 
 
                                                 <!--Depart-->
                                                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable">
-                                                    <input class="input100" type="text" name="depare" placeholder="Départ">
+                                                    <input class="input100" type="text" name="depart" placeholder="Départ">
                                                     <span class="focus-input100"></span>
                                                     <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                                                 </div>
@@ -122,8 +122,8 @@
 
                                                 <!--Les checkbox-->
                                                 <div class="checkbox icheck-check1">
-                                                    <input type="checkbox" checked id="check1" />
-                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Avec retour</label>
+                                                    <input type="checkbox" checked id="check1" name="bagageautorise" value="true" />
+                                                    <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage Autorisé</label>
                                                 </div>
                                                 <br>
 
@@ -131,7 +131,7 @@
 
                                                 <!--Button pour chercher-->
                                                 <div style="margin-left: 150px; margin-top: 20px;">
-                                                    <a href="#" id="btn" ></a>
+                                                    <input type="submit" id="btn" ></input>
                                                 </div>
 
 
@@ -269,17 +269,17 @@
                     <br><br><br><br>
                   
                     <div style="margin-left: 210px;">
-                    <form class="form-inline">
+                    <form method="post" action="/abonnement" class="form-inline">
                         <div class="form-group mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Nom" placeholder="Nom">
+                                <input class="input10i" type="text" name="nom" placeholder="Nom">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
                             <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Email" placeholder="Email">
+                                <input class="input10i" type="email" name="email" placeholder="Email">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-envelope" aria-hidden="true"></i>  </span>
                             </div>
@@ -549,7 +549,7 @@
 		</div>
 	</div>
 </div>
-  
+
 <!--************-->
 <!--Proposer-->
 <!--************-->
@@ -560,24 +560,24 @@
                     <h2 class="display-5 d-inline mylead">vous pouvez proposer un trajet facilement! </h2>
                     <br><br> <br> <br>
                     <div >
-                    <form class="form-inline">
+                    <form method="post" action="/proposerTrajet" class="form-inline">
                         <div class="form-group mx-sm-3 mb-2">
-                            <div class=" wrap-input10i ">    
+                            <div class=" wrap-input10i ">
                                 <input class="input10i" type="text" name="depart" placeholder="Depart">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
-                            <div class=" wrap-input10i ">    
+                            <div class=" wrap-input10i ">
                                 <input class="input10i" type="text" name="destination" placeholder="Destination">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-map-marker" aria-hidden="true"></i>  </span>
                             </div>
                         </div>
                         <div class="form-group mx-sm-3 mb-2">
-                            <div class=" wrap-input10i ">    
-                                <input class="input10i" type="text" name="Prix" placeholder="Prix">
+                            <div class=" wrap-input10i ">
+                                <input class="input10i" type="text" name="prix" placeholder="Prix">
                                 <span class="focus-input10i"></span>
                                 <span class="symbol-input10i"><i class="fa fa-dollar-sign" aria-hidden="true"></i>  </span>
                             </div>
@@ -586,7 +586,7 @@
                       </form>
                     </div>
                 </div>
-            
+
         </div>
     </div>
 </section>

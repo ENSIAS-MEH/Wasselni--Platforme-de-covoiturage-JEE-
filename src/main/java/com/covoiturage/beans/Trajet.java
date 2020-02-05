@@ -12,7 +12,6 @@ public class Trajet implements Serializable {
     private String quartierDestination;
     private String rueDestination;
 
-
     public Trajet() {
         super();
     }
