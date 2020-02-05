@@ -103,7 +103,7 @@ crossorigin="anonymous">
           
           <form method="post" action="upload" enctype="multipart/form-data">
             <div class="cc-profile-image" id="profile_image">
-                <img src="" alt="">
+                <img src="ressources/img/profile_pic.png" alt="Image"/>
             </div>
             <div class="h3 title">Nom Prenom</div>
             <p class="category text-white" style="font-size:large;">PseudoNom</p>
