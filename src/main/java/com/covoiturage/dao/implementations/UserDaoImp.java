@@ -64,7 +64,6 @@ public class UserDaoImp implements UserDao {
 
         resultset.close();
         preparedStmt.close();
-        connection.close();
 
         return returnedUser;
     }
@@ -110,7 +109,6 @@ public class UserDaoImp implements UserDao {
 
         resultset.close();
         stmt.close();
-        connection.close();
 
         return listofUsers;
     }
@@ -141,14 +139,12 @@ public class UserDaoImp implements UserDao {
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {
             idrowInserted = resultset.getLong(1);
-            connection.commit();
         } else {
             idrowInserted = -1L;
         }
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return idrowInserted;
     }
@@ -176,12 +172,9 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setInt(11, user.getActivation());
         preparedStmt.setLong(12, user.getId());
         rowUpdated = preparedStmt.executeUpdate() > 0;
-        if(rowUpdated) {
-            connection.commit();
-        }
 
         preparedStmt.close();
-        connection.close();
+
 
         return rowUpdated;
     }
@@ -196,12 +189,9 @@ public class UserDaoImp implements UserDao {
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setLong(1, user.getId());
         rowDeleted = preparedStmt.executeUpdate() > 0;
-        if(rowDeleted) {
-            connection.commit();
-        }
+
 
         preparedStmt.close();
-        connection.close();
 
         return rowDeleted;
     }

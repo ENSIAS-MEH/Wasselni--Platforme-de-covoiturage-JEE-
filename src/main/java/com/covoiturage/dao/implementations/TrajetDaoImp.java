@@ -51,7 +51,6 @@ public class TrajetDaoImp implements TrajetDao {
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return returnedTrajet;
     }
@@ -85,7 +84,6 @@ public class TrajetDaoImp implements TrajetDao {
 
         stmt.close();
         resultset.close();
-        connection.close();
 
         return listOfTrajets;
     }
@@ -109,13 +107,11 @@ public class TrajetDaoImp implements TrajetDao {
 
         if(resultSet.next()) {
             IdrowInserted = resultSet.getLong(1);
-            connection.commit();
         } else {
             IdrowInserted = -1L;
         }
 
         preparedStmt.close();
-        connection.close();
 
         return  IdrowInserted;
     }

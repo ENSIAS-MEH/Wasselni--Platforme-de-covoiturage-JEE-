@@ -38,7 +38,6 @@ public class EstAssocieADaoImp implements EstAssocieADao {
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return returnedEstAssociea;
     }
@@ -66,7 +65,7 @@ public class EstAssocieADaoImp implements EstAssocieADao {
 
         stmt.close();
         resultset.close();
-        connection.close();
+
 
         return listofEstAssocieA;
     }
@@ -88,14 +87,12 @@ public class EstAssocieADaoImp implements EstAssocieADao {
 
         if (resultset.next()) {
             idrowInserted = resultset.getLong(1);
-            connection.commit();
         } else {
             idrowInserted = -1L;
         }
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return idrowInserted;
     }
@@ -110,12 +107,9 @@ public class EstAssocieADaoImp implements EstAssocieADao {
         preparedStmt.setLong(2, estAssociea.getIdUser());
         preparedStmt.setLong(3, estAssociea.getIdDetailsTrajet());
         rowUpdated = preparedStmt.executeUpdate() > 0;
-        if( rowUpdated ) {
-            connection.commit();
-        }
+
 
         preparedStmt.close();
-        connection.close();
 
         return rowUpdated;
     }
