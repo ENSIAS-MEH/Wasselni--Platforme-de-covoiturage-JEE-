@@ -50,6 +50,14 @@
             <version>1.6.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-auth -->
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-auth</artifactId>
+            <version>19.2.0</version>
+        </dependency>
+
+
 
     </dependencies>
 

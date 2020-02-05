@@ -3,7 +3,7 @@ package com.covoiturage.dao.implementations;
 import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.DetailsTrajetDao;
-import com.covoiturage.dao.interfaces.TrajetDao;
+
 
 import javax.naming.PartialResultException;
 import java.sql.*;

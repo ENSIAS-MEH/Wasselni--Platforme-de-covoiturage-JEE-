@@ -23,7 +23,7 @@ public class TrajetDaoImp implements TrajetDao {
                 " and VILLE_DESTINATION = ? and QUARTIER_DESTINATION = ? and RUE_DESTINATION = ?";
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
-        Connection connection = DAOFactory.getInstance().getConnection();
+        Connection connection = daoFactory.getConnection();
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setString(1, trajet.getVilleDepart());
         preparedStmt.setString(2, trajet.getQuartierDepart());

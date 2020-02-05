@@ -145,4 +145,9 @@
         <url-pattern>/getimage</url-pattern>
     </servlet-mapping>
 
+    <listener>
+        <listener-class>com.covoiturage.dao.config.InitialisationDaoFactory</listener-class>
+    </listener>
+
+
 </web-app>
