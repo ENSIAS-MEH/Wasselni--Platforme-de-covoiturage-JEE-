@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -62,68 +63,40 @@ crossorigin="anonymous">
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
-  <div class="container">
-      <a href="#" class="navbar-brand"> <img src="ressources/img/logo.png" alt="" width="80%" height="80%"></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Accueil</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Proposer un trajet</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Demander un trajet</a>
-              </li>
-
-          </ul>
-      </div>
-  </div>
-</nav>
-
-
-
-
+<c:import url="/navbar.jsp"/>
 <!--************-->
 <!-- Activation -->
 <!--************-->
 
-<div class="section" id="activation" style="margin-top: 100px;">
-  <div class="container cc-activation">
+<c:if test="${sessionScope.userSession.activation > 1}">
+    <div class="section" id="activation" style="margin-top: 100px;">
+        <div class="container cc-activation">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-3 bg-warning" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body cc-activation-header">
+                            <div class="h3">Activation</div>
+                        </div>
+                    </div>
+                    <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body">
+                            <form method="post" action="/validation" class="form-inline">
+                                <div class="form-group mb-2">
+                                    <div class=" wrap-input1 " style="margin-left: 90px;">
+                                        <input class="input1" type="text" name="activation" placeholder="Code d'activation">
+                                        <span class="focus-input1"></span>
+                                        <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
+                                    </div>
+                                </div>
+                                <button type="submit" style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-warning" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-activation-header">
-            <div class="h3">Activation</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <form method="post" action="/abonnement" class="form-inline">
-              <div class="form-group mb-2">
-                  <div class=" wrap-input1 " style="margin-left: 90px;">    
-                      <input class="input1" type="text" name="nom" placeholder="Code d'activation">
-                      <span class="focus-input1"></span>
-                      <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
-                  </div>
-              </div>
-              <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-</div></div>
-
+        </div></div>
+</c:if>
 
 
 <!--************-->
@@ -140,42 +113,38 @@ crossorigin="anonymous">
             <br>
             <div class="row">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
-              <div style="margin-left: 15px;">Samid</div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.nom}"/></div>
             </div>
             <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Prenon:</strong></div>
-              <div style="margin-left: 15px;">Mohammed</div>
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Prenom:</strong></div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.prenom}"/></div>
             </div>
             <div class="row mt-3">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Date de naissance:</strong></div>
-              <div style="margin-left: 15px;">10 Mai 1992</div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.dateNaissance}"/></div>
             </div>
             <div class="row mt-3">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Adresse:</strong></div>
-              <div style="margin-left: 15px;">Oujda,  Andalous Rue Bodir</div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.region}"/></div>
             </div>
             <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Sex:</strong></div>
-              <div style="margin-left: 15px;">M</div>
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Sexe:</strong></div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.sexe}"/></div>
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Informations sur le compte</div>
             <br>
             <div class="row">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
-              <div style="margin-left: 15px;"> MohammedAuto</div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.login}"/></div>
             </div>
             <div class="row mt-3">
               <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
-              <div style="margin-left: 15px;"> mohammedsamid0@gmail.com</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Téléphone: </strong></div>
-              <div style="margin-left: 15px;">(+212) 6 28 96 45 10</div>
+              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
             </div>
             <br>
 

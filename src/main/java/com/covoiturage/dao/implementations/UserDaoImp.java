@@ -64,7 +64,6 @@ public class UserDaoImp implements UserDao {
 
         resultset.close();
         preparedStmt.close();
-        connection.close();
 
         return returnedUser;
     }
@@ -110,7 +109,6 @@ public class UserDaoImp implements UserDao {
 
         resultset.close();
         stmt.close();
-        connection.close();
 
         return listofUsers;
     }
@@ -124,8 +122,8 @@ public class UserDaoImp implements UserDao {
         Connection connection = daoFactory.getConnection();
         //Rank est par Defaut 5
         sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                " DATE_INSCRIPTION) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                " DATE_INSCRIPTION,ACTIVATION) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStmt.setString(1, user.getNom());
         preparedStmt.setString(2, user.getPrenom());
@@ -136,18 +134,17 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setString(7, user.getEmail());
         preparedStmt.setString(8, user.getPassword());
         preparedStmt.setObject(9, LocalDateTime.now());
+        preparedStmt.setInt(10, user.getActivation());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {
             idrowInserted = resultset.getLong(1);
-            connection.commit();
         } else {
             idrowInserted = -1L;
         }
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return idrowInserted;
     }
@@ -175,12 +172,8 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setInt(11, user.getActivation());
         preparedStmt.setLong(12, user.getId());
         rowUpdated = preparedStmt.executeUpdate() > 0;
-        if(rowUpdated) {
-            connection.commit();
-        }
 
         preparedStmt.close();
-        connection.close();
 
         return rowUpdated;
     }
@@ -195,12 +188,9 @@ public class UserDaoImp implements UserDao {
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setLong(1, user.getId());
         rowDeleted = preparedStmt.executeUpdate() > 0;
-        if(rowDeleted) {
-            connection.commit();
-        }
+
 
         preparedStmt.close();
-        connection.close();
 
         return rowDeleted;
     }

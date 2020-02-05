@@ -100,10 +100,6 @@
         <url-pattern>/consulterOffres</url-pattern>
     </servlet-mapping>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>

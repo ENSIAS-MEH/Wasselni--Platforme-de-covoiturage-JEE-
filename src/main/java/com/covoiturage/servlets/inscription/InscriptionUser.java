@@ -1,9 +1,10 @@
-package com.covoiturage.servlets;
+package com.covoiturage.servlets.inscription;
 
 import com.covoiturage.beans.User;
 import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.UserDao;
 import com.covoiturage.forms.UserInscriptionForm;
+import com.covoiturage.mailer.Mailer;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,16 +12,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class InscriptionUser extends HttpServlet {
     static final String DAO_FACTORY  = "daofactory";
     private UserDao userDao;
 
     private static final String VUE_INSCRIPTION = "/WEB-INF/inscription.jsp" ;
-    private static final String VUE_APRES_INSCRITPION = "/after_inscription.jsp";
+    private static final String VUE_APRES_INSCRITPION = "/apres_inscription.jsp";
 
     private static final String ATT_FORM = "form";
     private static final String ATT_USER = "user";
+    private static final String ATT_SESSION_USER = "userSession";
 
     @Override
     public void init() throws ServletException {
@@ -41,12 +45,15 @@ public class InscriptionUser extends HttpServlet {
         req.setAttribute(ATT_FORM,form);
         req.setAttribute(ATT_USER,user);
 
-        //HttpSession session = req.getSession();
+
         if(form.getErreurs().isEmpty()){
-            //session.setAttribute("user",user);
+            HttpSession session = req.getSession();
+            session.setAttribute(ATT_SESSION_USER,user);
             this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRITPION).forward(req,resp);
         } else {
             this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION).forward(req, resp);
         }
     }
+
+
 }

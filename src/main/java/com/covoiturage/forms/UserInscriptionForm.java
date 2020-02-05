@@ -3,16 +3,16 @@ package com.covoiturage.forms;
 import com.covoiturage.beans.User;
 import com.covoiturage.dao.exceptions.DAOException;
 import com.covoiturage.dao.interfaces.UserDao;
+import com.covoiturage.mailer.Mailer;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class UserInscriptionForm {
     private UserDao userDao;
@@ -66,6 +66,7 @@ public class UserInscriptionForm {
             traiterMotDePasse(motDePasse,confirmation,user);
 
             if(erreurs.isEmpty()){
+                traiterActivation(user);
                 userDao.insertUser(user) ;
                 resultat = "Succés de l'inscription";
             } else {
@@ -130,6 +131,19 @@ public class UserInscriptionForm {
             setErreur( CHAMP_MOT_DE_PASSE, e.getMessage() );
         }
         user.setPassword(motDePasse);
+    }
+
+    private void traiterActivation(User user)  {
+        ArrayList list = new ArrayList<String>();
+        list.add(user.getEmail());
+        int codeValidation =((int) ((Math.random()+1)*10000));
+        String body = "Bonjour "+user.getNom()+", Bienvenue à notre application de covoiturage et merci pour votre confiance ! <br> Veuillez entrez le code suivant dans la page Après Inscription pour valider votre compte : "+ codeValidation;
+        try {
+            Mailer.sendEmail(list,"Activation",body);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        user.setActivation(codeValidation);
     }
 
     /**
@@ -228,6 +242,9 @@ public class UserInscriptionForm {
             setErreur(CHAMP_DATE_NAISSANCE,"Le format de la date n'est pas adéquat");
         }
         return null;
+    }
+    public static String leftPad(int n, int padding) {
+        return String.format("%0" + padding + "d", n);
     }
 
 }

@@ -75,7 +75,7 @@
 
     <servlet>
         <servlet-name>InscriptionUser</servlet-name>
-        <servlet-class>com.covoiturage.servlets.InscriptionUser</servlet-class>
+        <servlet-class>com.covoiturage.servlets.inscription.InscriptionUser</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>InscriptionUser</servlet-name>
@@ -100,7 +100,14 @@
         <url-pattern>/consulterOffres</url-pattern>
     </servlet-mapping>
 
-    <s
+<servlet>
+    <servlet-name>Validation</servlet-name>
+    <servlet-class>com.covoiturage.servlets.inscription.Validation</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>Validation</servlet-name>
+        <url-pattern>/validation</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>
