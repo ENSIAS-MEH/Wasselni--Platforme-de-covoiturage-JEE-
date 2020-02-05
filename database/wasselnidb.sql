@@ -21,6 +21,13 @@ SET time_zone = "+00:00";
 -- Structure de la table users
 --
 
+DROP TABLE IF EXISTS questions;
+CREATE TABLE IF NOT EXISTS questions (
+                                           id_question bigint(20) NOT NULL,
+                                           text_question varchar(500) NOT NULL,
+                                           PRIMARY KEY ( id_question )
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
                                      ID bigint(20) NOT NULL AUTO_INCREMENT,
@@ -36,9 +43,11 @@ CREATE TABLE IF NOT EXISTS users (
                                      DATE_INSCRIPTION datetime DEFAULT CURRENT_TIMESTAMP,
                                      RANK float DEFAULT '5',
                                      ACTIVATION int(11) DEFAULT '1',
+                                     ID_QUESTION_USER bigint(20),
                                      PRIMARY KEY (ID),
                                      UNIQUE KEY LOGIN_UNIQUE (LOGIN),
-                                     UNIQUE KEY EMAIL_UNIQUE (EMAIL)
+                                     UNIQUE KEY EMAIL_UNIQUE (EMAIL),
+                                     FOREIGN KEY (ID_QUESTION_USER) REFERENCES questions(id_question)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
