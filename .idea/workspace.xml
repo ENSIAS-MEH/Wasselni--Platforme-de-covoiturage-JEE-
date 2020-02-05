@@ -9,7 +9,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="" />
+    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +314,7 @@
       <workItem from="1580911340695" duration="37000" />
       <workItem from="1580903430162" duration="5445000" />
       <workItem from="1580911492012" duration="2040000" />
-      <workItem from="1580918037199" duration="3949000" />
+      <workItem from="1580918037199" duration="4358000" />
     </task>
     <servers />
   </component>
