@@ -98,12 +98,5 @@ public class DAOFactory {
     public EstAssocieADao getEstAssocieADao() { return new EstAssocieADaoImp(this);}
     public DetailsTrajetDao getDetailsTrajetDao() { return new DetailsTrajetDaoImp(this);}
 
-    public static void main(String[] args) throws SQLException {
-        UserDao users = new UserDaoImp(DAOFactory.getInstance());
-        List<User> users1 = users.findAllUsers();
-        for (int i= 0; i < users1.size();i++) {
-            System.out.println(users1.get(i).getLogin());
-        }
-    }
 
 }
