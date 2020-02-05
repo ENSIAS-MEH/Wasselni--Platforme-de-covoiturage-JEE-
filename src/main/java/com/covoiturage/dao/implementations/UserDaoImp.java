@@ -196,7 +196,6 @@ public class UserDaoImp implements UserDao {
         return rowDeleted;
     }
 
-<<<<<<< HEAD
     @Override
     public String getImageProfile(User user) throws SQLException {
         String image_path = "0_image";
@@ -225,7 +224,6 @@ public class UserDaoImp implements UserDao {
         ps.execute();
 
     }
-=======
     public void setUserActivation(User user) throws SQLException{
         String sql;
         PreparedStatement preparedStmt;
@@ -248,7 +246,6 @@ public class UserDaoImp implements UserDao {
         return resultset.getInt("ACTIVATION");
     };
 
->>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
 
 
 }

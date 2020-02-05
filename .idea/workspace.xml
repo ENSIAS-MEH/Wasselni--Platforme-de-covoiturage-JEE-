@@ -9,28 +9,36 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" afterDir="false" />
-=======
-    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="" />
-
-    <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/EstAssociea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/Trajet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/DAOFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/config/InitialisationDaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/exceptions/DAOConfigurationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/exceptions/DAOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/DetailsTrajetDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/EstAssocieADao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/TrajetDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/utilitaires/DAOUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/fb/login/UserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/fb/login/UserProfile.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/filter/EspacePrivee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/AbonnementForm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/mailer/Mailer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
->>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ImageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/UploadServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminAccueil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminDemandes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminOffres.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/user/UserAccueil.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +76,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-<<<<<<< HEAD
-=======
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
@@ -77,7 +83,6 @@
         <item name="wasselnidb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
->>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
     </expand>
     <select />
   </component>
@@ -358,27 +363,6 @@
       </list>
     </recent_temporary>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.041503523" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
->>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -436,17 +420,12 @@
       <workItem from="1580934607110" duration="3160000" />
       <workItem from="1580938514831" duration="1438000" />
       <workItem from="1580918037199" duration="5931000" />
-<<<<<<< HEAD
       <workItem from="1580942744295" duration="1094000" />
-=======
-
       <workItem from="1580940869500" duration="3283000" />
-
       <workItem from="1580940869500" duration="2049000" />
       <workItem from="1580943064666" duration="924000" />
       <workItem from="1580940869500" duration="2979000" />
-
->>>>>>> 9b039d1d803dc353cd2ebbe5d5f27941a784a970
+      <workItem from="1580944901073" duration="58000" />
     </task>
     <servers />
   </component>
