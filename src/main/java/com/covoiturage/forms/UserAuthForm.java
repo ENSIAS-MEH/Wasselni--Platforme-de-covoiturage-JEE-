@@ -1,4 +1,4 @@
-package com.covoiturage.forms;
+/*package com.covoiturage.forms;
 
 import com.covoiturage.beans.User;
 
@@ -64,7 +64,7 @@ public class UserAuthForm {
         }
         /**
          * Recherche de l'user dans la bd
-         */
+
         return 10;
     }
 
@@ -82,4 +82,4 @@ public class UserAuthForm {
     }
 
 
-}
+}**/
