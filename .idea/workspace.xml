@@ -10,61 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/mailer/Mailer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dao.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mailer.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/mailer/Mailer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/dao.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mailer.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/dao.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/EstAssociea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/Trajet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/beans/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/DAOFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/exceptions/DAOConfigurationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/exceptions/DAOException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/EstAssocieADaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/DetailsTrajetDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/EstAssocieADao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/TrajetDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/fb/login/UserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/fb/login/UserProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/filter/EspacePrivee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/AbonnementForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/OffreForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserAuthForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/trajet/DemanderTrajetForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/Abonnement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/Accueil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ConsulterOffres.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/DemanderTrajet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ImageServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/ProposerTrajet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/UploadServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminAccueil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminDemandes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminOffres.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminUsers.class" beforeDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,12 +308,10 @@
       <workItem from="1580844421021" duration="2594000" />
       <workItem from="1580863326268" duration="2454000" />
       <workItem from="1580857686092" duration="10369000" />
-
       <workItem from="1580903430162" duration="5177000" />
       <workItem from="1580911340695" duration="37000" />
-
       <workItem from="1580903430162" duration="5445000" />
-
+      <workItem from="1580911492012" duration="2040000" />
     </task>
     <servers />
   </component>
