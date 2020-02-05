@@ -21,7 +21,7 @@ public class AuthUser extends HttpServlet {
     private static final String ATT_USER = "user";
 
     private static final String VUE_AUTHENTIFICATION = "/WEB-INF/authentification.jsp";
-    private static final String VUE_USER_ACCUEIL = "/WEB-INF/espace/user/espace_user.html";
+    private static final String VUE_USER_ACCUEIL = "/WEB-INF/espace/user/espace_user.jsp";
 
 
     @Override

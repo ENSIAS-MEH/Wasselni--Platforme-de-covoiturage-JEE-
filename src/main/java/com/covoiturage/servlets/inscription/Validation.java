@@ -17,7 +17,7 @@ public class Validation extends HttpServlet {
 
     private static final String ATT_SESSION_USERID = "userId";
 
-    private static final String VUE_USER_ACCUEIL = "/WEB-INF/espace/user/espace_user.html";
+    private static final String VUE_USER_ACCUEIL = "/WEB-INF/espace/user/espace_user.jsp";
     private static final String VUE_APRES_INSCRIPTION = "/apres_inscription.jsp";
 
     @Override

@@ -11,10 +11,14 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/filter/EspacePrivee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/filter/EspacePrivee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/interfaces/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/filter/EspacePrivee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +331,7 @@
       <workItem from="1580934607110" duration="3160000" />
       <workItem from="1580938514831" duration="1438000" />
       <workItem from="1580918037199" duration="5931000" />
-      <workItem from="1580940869500" duration="2979000" />
+      <workItem from="1580940869500" duration="3283000" />
     </task>
     <servers />
   </component>
@@ -390,10 +394,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1579793292424" />
-    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1580921983821">
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1580943950342">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580921983821" />
+    <state x="539" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1580943950342" />
     <state x="757" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579879718481" />
     <state x="575" y="303" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580932903969">
       <screen x="0" y="0" width="1366" height="768" />

@@ -131,35 +131,39 @@ crossorigin="anonymous">
 <!--************-->
 <!-- Activation -->
 <!--************-->
+    <c:if test="${sessionScope.userSession.activation > 1}">
+        <div class="section" id="activation">
+            <div class="container cc-activation">
 
-<div class="section" id="activation">
-  <div class="container cc-activation">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-3 bg-warning" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="card-body cc-activation-header">
+                                <div class="h3">Activation</div>
+                            </div>
+                        </div>
+                        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                            <div class="card-body">
+                                <form method="post" action="/abonnement" class="form-inline">
+                                    <div class="form-group mb-2">
+                                        <div class=" wrap-input1 " style="margin-left: 90px;">
+                                            <input class="input1" type="text" name="nom" placeholder="Code d'activation">
+                                            <span class="focus-input1"></span>
+                                            <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
+                                        </div>
+                                    </div>
+                                    <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-warning" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-activation-header">
-            <div class="h3">Activation</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <form method="post" action="/abonnement" class="form-inline">
-              <div class="form-group mb-2">
-                  <div class=" wrap-input1 " style="margin-left: 90px;">    
-                      <input class="input1" type="text" name="nom" placeholder="Code d'activation">
-                      <span class="focus-input1"></span>
-                      <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
-                  </div>
-              </div>
-              <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div></div>
 
-</div></div>
+
+
+    </c:if>
 
 
 
