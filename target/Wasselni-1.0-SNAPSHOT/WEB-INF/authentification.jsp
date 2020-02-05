@@ -70,7 +70,11 @@ crossorigin="anonymous">
                         <div class="container">
                             <div class="row">
                             
+<<<<<<< HEAD:target/Wasselni-1.0-SNAPSHOT/authentification.jsp
+                                <form class="inscription-form validate-form" style="align-self: center;">	
+=======
                                 <form method="post" action="<c:url value='/authentification'/> " style="align-self: center;">
+>>>>>>> ea14a848e6fefe532129c119c0eb76c3d43806ad:web/WEB-INF/authentification.jsp
                                     <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
                                         S'authentifier
                                     </span>			

@@ -125,4 +125,24 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <servlet>
+        <servlet-name>cs</servlet-name>
+        <servlet-class>com.covoiturage.servlets.UploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cs</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>css</servlet-name>
+        <servlet-class>com.covoiturage.servlets.ImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>css</servlet-name>
+        <url-pattern>/getimage</url-pattern>
+    </servlet-mapping>
+
 </web-app>

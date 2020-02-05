@@ -130,8 +130,59 @@
    text-decoration: none;
     top: 50%;
   }
-  
 
+
+
+
+  #btnModifier{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgb(85, 161, 212);
+    border: 1px solid #52b3d9;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+   text-decoration: none;
+  
+  }
+  
+  #btnModifier:before{
+    color: white;
+    content: 'Modifier';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+  
+  }
+  #btnModifier:hover:before{
+    top: -30px;
+    text-decoration: none;
+  
+  }
+  #btnModifier:after{
+    font-family: 'Ionicons';
+    content: '\f30f';
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 140%;
+    transition: all 0.3s;
+    text-decoration: none;
+  
+  }
+  #btnModifier:hover:after{
+   text-decoration: none;
+    top: 50%;
+  }
   
   /*NAVIGATEUR*/
   
