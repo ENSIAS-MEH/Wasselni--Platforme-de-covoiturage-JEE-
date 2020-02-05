@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+>>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +105,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -111,6 +117,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\Wasselni\web\WEB-INF" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace\user" />
       <recent name="D:\GL\S4\PROJET JEE\2019_DW_Pr3\src\main\resources" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\trajet" />
@@ -118,6 +125,7 @@
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace\admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace.admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
+<<<<<<< HEAD
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.covoiturage.dao.config" />
@@ -126,7 +134,26 @@
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\src\main\java\com\covoiturage\fb\login" />
+=======
+>>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF" />
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web" />
+      <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\src\main\java\com\covoiturage\fb\login" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
     <configuration name="DAOFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -155,7 +182,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/accueil" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -228,29 +255,17 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DAOFactory" />
+      <item itemvalue="Application.Mailer" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DAOFactory" />
         <item itemvalue="Application.Mailer" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -302,7 +317,11 @@
       <workItem from="1580903430162" duration="5445000" />
       <workItem from="1580911492012" duration="10705000" />
       <workItem from="1580911492012" duration="2040000" />
+<<<<<<< HEAD
       <workItem from="1580926855209" duration="578000" />
+=======
+      <workItem from="1580918037199" duration="4358000" />
+>>>>>>> 59229b35a36fa11913f41cb5463ad6328b1a8e77
     </task>
     <servers />
   </component>

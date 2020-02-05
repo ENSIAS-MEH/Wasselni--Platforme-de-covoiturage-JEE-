@@ -28,7 +28,7 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="ressources/css/style.css">
 <link href="ressources/css/aos.css" rel="stylesheet">
 <link href="ressources/css/bootstrap.min.css" rel="stylesheet">
-<link href="ressources/css/Espace_user.css" rel="stylesheet">
+<link href="ressources/css/apres_inscription.css" rel="stylesheet">
 <link href="ressources/css/component.css" rel="stylesheet">
 <link rel="stylesheet" href="ressources/css/selectionner.css">
 
@@ -91,103 +91,104 @@ crossorigin="anonymous">
 
 
 
+<!--************-->
+<!-- Activation -->
+<!--************-->
+
+<div class="section" id="activation" style="margin-top: 100px;">
+  <div class="container cc-activation">
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-warning" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-activation-header">
+            <div class="h3">Activation</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <form method="post" action="/abonnement" class="form-inline">
+              <div class="form-group mb-2">
+                  <div class=" wrap-input1 " style="margin-left: 90px;">    
+                      <input class="input1" type="text" name="nom" placeholder="Code d'activation">
+                      <span class="focus-input1"></span>
+                      <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
+                  </div>
+              </div>
+              <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div></div>
 
 
 
+<!--************-->
+<!-- à PROPOS -->
+<!--************-->
+<div class="section" style="margin-bottom: 50px;">
+  <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Vos informations</h3>
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row" style="margin-left: 100px;">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Informations personnelles</div>
+            <br>
+            <div class="row">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
+              <div style="margin-left: 15px;">Samid</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Prenon:</strong></div>
+              <div style="margin-left: 15px;">Mohammed</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Date de naissance:</strong></div>
+              <div style="margin-left: 15px;">10 Mai 1992</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Adresse:</strong></div>
+              <div style="margin-left: 15px;">Oujda,  Andalous Rue Bodir</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Sex:</strong></div>
+              <div style="margin-left: 15px;">M</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Informations sur le compte</div>
+            <br>
+            <div class="row">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
+              <div style="margin-left: 15px;"> MohammedAuto</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
+              <div style="margin-left: 15px;"> mohammedsamid0@gmail.com</div>
+            </div>
+            <div class="row mt-3">
+              <div style="margin-left: 15px;"><strong class="text-uppercase">Téléphone: </strong></div>
+              <div style="margin-left: 15px;">(+212) 6 28 96 45 10</div>
+            </div>
+            <br>
 
 
-
-
-
-
-
-
-
-
-<section id="blog" class="py-3">
-  <div  style=" margin-top: -20px; margin-bottom: -20px;">
-   <div class="container-inscription">
-
-           <div class="container">
-
-               <!--Authentification par facebook-->
-               <div class="row">
-                   <div  style="margin-top: 130px;margin-bottom: 30px;">
-                       
-
-                   </div>
-               </div>
-
-               <!--Authentification par un compte-->
-               <div class="row">
-                
-                   
-
-
-                   <div class="wrap-inscription insc" style="margin-bottom: 130px;">
-
-                       <div class="container">
-                           <div class="row">
-                           
-                               <form class="inscription-form validate-form" style="align-self: center;">	
-                               <form method="post" action="<c:url value='/authentification'/> " style="align-self: center;">
-                                   <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
-                                       S'authentifier
-                                   </span>			
-                                   <!--Email-->
-                                   <div>
-                                       <input class="input100" type="text" value="<c:out value='${user.email}'/>" name="email" placeholder="Email">
-                                       <span class="focus-input100"></span>
-                                       <span class="symbol-input100">
-                                           <i class="fa fa-at" aria-hidden="true"></i>
-                                       </span>
-                                       <span>${form.erreurs['email']}</span>
-                                   </div>
-                               
-                               <!--MOT de PASSE-->
-                                   <div>
-                                       <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
-                                       <span class="focus-input100"></span>
-                                       <span class="symbol-input100">
-                                           <i class="fa fa-lock" aria-hidden="true"></i>
-                                       </span>
-                                       <span>${form.erreurs['motdepasse']}</span>
-                                       <span>${form.resultat}</span>
-                                   </div>
-                               
-               
-                               <!--Buton pour connecter-->
-                               <button type="submit" class="authentification-form-btn">
-                                   <span>
-                                       Connecter <i class="fa fa-sign-in-alt"> </i>
-                                   </span>
-                               </button>
-
-                               
-                               </form> 
-                           </div>
-                           <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>
-                           <hr style="width: 300px; margin-right: 160px;">
-                               <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
-                           </div>
-
-                       </div>
-
-                   </div>
-               </div>
-
-
-           </div>
-           
-   </div>
- </div>
-
- </section>
-
-
-
-
-
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--************-->
+<!--Foter -->
+<!--************-->
 
 <footer>
   <div class="footer-top">
@@ -240,7 +241,7 @@ crossorigin="anonymous">
   </div>
 </footer>
 
-    
+
 
 
 <!--Liens-->
