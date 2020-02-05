@@ -1,4 +1,5 @@
 package com.covoiturage.dao;
+import com.covoiturage.beans.User;
 import com.covoiturage.dao.exceptions.DAOConfigurationException;
 import com.covoiturage.dao.implementations.UserDaoImp;
 import com.covoiturage.dao.interfaces.UserDao;
@@ -8,11 +9,13 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class DAOFactory {
 
-    private static final String FICHIER_PROPERTIES       = "/com/covoiturage/dao/dao.properties";
+    private static final String FICHIER_PROPERTIES       = "dao.properties";
     private static final String PROPERTY_URL             = "url";
     private static final String PROPERTY_DRIVER          = "driver";
     private static final String PROPERTY_NOM_UTILISATEUR = "nomutilisateur";
@@ -57,6 +60,8 @@ public class DAOFactory {
             throw new DAOConfigurationException( "Impossible de charger le fichier properties " + FICHIER_PROPERTIES, e );
         }
 
+        System.out.println(nomUtilisateur);
+
         this.url = url;
         this.username = nomUtilisateur;
         this.password = motDePasse;
@@ -95,6 +100,14 @@ public class DAOFactory {
      */
     public UserDao getUserDao() {
         return new UserDaoImp( this );
+    }
+
+    public static void main(String[] args) throws SQLException {
+        UserDao users = new UserDaoImp(DAOFactory.getInstance());
+        List<User> users1 = users.findAllUsers();
+        for (int i= 0; i < users1.size();i++) {
+            System.out.println(users1.get(i).getLogin());
+        }
     }
 
 }

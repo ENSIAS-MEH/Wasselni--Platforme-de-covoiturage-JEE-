@@ -25,12 +25,12 @@ crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 <!--Fichiers-->
-<link rel="stylesheet" href="ressources/css/style.css">
-<link href="ressources/css/aos.css" rel="stylesheet">
-<link href="ressources/css/bootstrap.min.css" rel="stylesheet">
-<link href="ressources/css/Espace_user.css" rel="stylesheet">
+<link rel="stylesheet" href="../../../ressources/css/style.css">
+<link href="../../../ressources/css/aos.css" rel="stylesheet">
+<link href="../../../ressources/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../ressources/css/Espace_user.css" rel="stylesheet">
 <link href="ressources/css/component.css" rel="stylesheet">
-<link rel="stylesheet" href="ressources/css/selectionner.css">
+<link rel="stylesheet" href="../../../ressources/css/selectionner.css">
 
 
 
@@ -64,7 +64,7 @@ crossorigin="anonymous">
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
   <div class="container">
-      <a href="#" class="navbar-brand"> <img src="ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+      <a href="#" class="navbar-brand"> <img src="../../../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -97,13 +97,13 @@ crossorigin="anonymous">
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('ressources/img/profile_bg.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('../../../ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
           
           <form method="post" action="upload" enctype="multipart/form-data">
             <div class="cc-profile-image" id="profile_image">
-                <img src="ressources/img/profile_pic.png" alt="Image"/>
+                <img src="../../../ressources/img/profile_pic.png" alt="Image"/>
             </div>
             <div class="h3 title">Nom Prenom</div>
             <p class="category text-white" style="font-size:large;">PseudoNom</p>
@@ -393,7 +393,7 @@ crossorigin="anonymous">
       <div class="container">
           <div class="row">
               <div class="col-md-3 colfooter0">
-                  <img src="ressources/img/logo-footer.png"  alt="Wasselni" style="width:50%;height:22%;">
+                  <img src="../../../ressources/img/logo-footer.png" alt="Wasselni" style="width:50%;height:22%;">
                   <br>
                   <p>
                       Notre équipe travaillent  pour vous offrir des conseilles fidèles, des offres originaux.
@@ -526,12 +526,12 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <!--Fichiers-->
-<script src="ressources/js/moment.min.js"></script>
-<script src="ressources/js/dateTrajetSlide.js"></script>
-<script src="ressources/js/global.js"></script>
-<script src="ressources/js/aos.js"></script>
-<script src="ressources/js/espace_user.js"></script>
-<script src="ressources/js/selectionner.js"></script>
+<script src="../../../ressources/js/moment.min.js"></script>
+<script src="../../../ressources/js/dateTrajetSlide.js"></script>
+<script src="../../../ressources/js/global.js"></script>
+<script src="../../../ressources/js/aos.js"></script>
+<script src="../../../ressources/js/espace_user.js"></script>
+<script src="../../../ressources/js/selectionner.js"></script>
 	<script>
 		new InputFile({
 			
