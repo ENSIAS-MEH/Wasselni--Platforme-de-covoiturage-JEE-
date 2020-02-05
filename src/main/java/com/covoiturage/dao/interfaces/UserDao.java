@@ -13,4 +13,6 @@ public interface UserDao {
     public Long insertUser(User user) throws SQLException;
     public boolean updateUser(User user) throws SQLException;
     public boolean deleteUser(User user) throws SQLException;
+    public String getImageProfile(User user) throws SQLException;
+    public void setImageProfile(User user) throws  SQLException;
 }

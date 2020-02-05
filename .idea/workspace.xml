@@ -10,43 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/InscriptionUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/InscriptionUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/InscriptionUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/dao.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/dao.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/after_inscription.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/espace_user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/forms/UserInscriptionForm.class" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/InscriptionUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/apres_inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/apres_inscription.jsp" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/after_inscription.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/espace_user.jsp" beforeDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,13 +52,6 @@
         <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wasselnidb: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wasselnidb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wasselnidb: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -171,7 +135,19 @@
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace.admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.271">
     <configuration name="DAOFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.covoiturage.dao.DAOFactory" />
       <module name="Wasselni" />
@@ -271,10 +247,84 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.271" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.271" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Wasselni_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Wasselni:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Wasselni_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_wasselni" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54223" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Wasselni:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.DAOFactory" />
       <item itemvalue="Application.Mailer" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.271" />
     </list>
     <recent_temporary>
       <list>
@@ -282,29 +332,6 @@
         <item itemvalue="Application.Mailer" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.041503523" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -356,17 +383,14 @@
       <workItem from="1580903430162" duration="5445000" />
       <workItem from="1580911492012" duration="10705000" />
       <workItem from="1580911492012" duration="2040000" />
-
       <workItem from="1580926855209" duration="2811000" />
       <workItem from="1580926855209" duration="578000" />
       <workItem from="1580918037199" duration="4358000" />
-
       <workItem from="1580932880380" duration="1711000" />
       <workItem from="1580934607110" duration="3160000" />
       <workItem from="1580938514831" duration="1438000" />
-
       <workItem from="1580918037199" duration="5931000" />
-
+      <workItem from="1580942744295" duration="1094000" />
     </task>
     <servers />
   </component>

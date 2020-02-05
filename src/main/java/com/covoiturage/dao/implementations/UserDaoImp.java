@@ -174,10 +174,7 @@ public class UserDaoImp implements UserDao {
         rowUpdated = preparedStmt.executeUpdate() > 0;
 
         preparedStmt.close();
-<<<<<<< HEAD
-=======
 
->>>>>>> 41664d6d3b14bd708f977b37f4c8621d5f0583f2
 
         return rowUpdated;
     }
@@ -198,4 +195,35 @@ public class UserDaoImp implements UserDao {
 
         return rowDeleted;
     }
+
+    @Override
+    public String getImageProfile(User user) throws SQLException {
+        String image_path = "0_image";
+        Connection connection = DAOFactory.getInstance().getConnection();
+        PreparedStatement ps = connection.prepareStatement("select IMAGE_PATH from users where id = ?");
+
+        ps.setLong(1,user.getId());
+
+        ResultSet rs = ps.executeQuery();
+
+        if(rs.next()){
+            image_path = rs.getString(1);
+        }
+
+        return image_path;
+
+    }
+
+    @Override
+    public void setImageProfile(User user) throws SQLException {
+
+        Connection connection = DAOFactory.getInstance().getConnection();
+
+        PreparedStatement ps = connection.prepareStatement("insert into users  (IMAGE_PATH) values (?)");
+        ps.setString(1,user.getImage());
+        ps.execute();
+
+    }
+
+
 }
