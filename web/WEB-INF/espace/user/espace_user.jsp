@@ -25,12 +25,12 @@ crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 <!--Fichiers-->
-<link rel="stylesheet" href="/web/ressources/css/style.css">
-<link href="/web/ressources/css/aos.css" rel="stylesheet">
-<link href="/web/ressources/css/bootstrap.min.css" rel="stylesheet">
-<link href="/web/ressources/css/Espace_user.css" rel="stylesheet">
-<link href="/web/ressources/css/component.css" rel="stylesheet">
-<link rel="stylesheet" href="/web/ressources/css/selectionner.css">
+<link rel="stylesheet" href="/ressources/css/style.css">
+<link href="/ressources/css/aos.css" rel="stylesheet">
+<link href="/ressources/css/bootstrap.min.css" rel="stylesheet">
+<link href="/ressources/css/Espace_user.css" rel="stylesheet">
+<link href="/ressources/css/component.css" rel="stylesheet">
+<link rel="stylesheet" href="/ressources/css/selectionner.css">
 
 
 
@@ -105,7 +105,7 @@ crossorigin="anonymous">
           
           <form method="post" action="upload" enctype="multipart/form-data">
             <div class="cc-profile-image" id="profile_image">
-                <img src="/web/ressources/img/profile_pic.png" alt="Image"/>
+                <img src="/ressources/img/profile_pic.png" alt="Image"/>
             </div>
             <div class="h3 title">Nom Prenom</div>
             <p class="category text-white" style="font-size:large;">PseudoNom</p>
@@ -144,13 +144,14 @@ crossorigin="anonymous">
                         </div>
                         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                             <div class="card-body">
-                                <form method="post" action="/abonnement" class="form-inline">
+                                <form method="post" action="/validation" class="form-inline">
                                     <div class="form-group mb-2">
                                         <div class=" wrap-input1 " style="margin-left: 90px;">
-                                            <input class="input1" type="text" name="nom" placeholder="Code d'activation">
+                                            <input class="input1" type="text" name="validation" placeholder="Code d'activation">
                                             <span class="focus-input1"></span>
                                             <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                                         </div>
+                                        <span>${form.erreurs['validation']}</span>
                                     </div>
                                     <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
                                 </form>
@@ -438,7 +439,7 @@ crossorigin="anonymous">
       <div class="container">
           <div class="row">
               <div class="col-md-3 colfooter0">
-                  <img src="/web/ressources/img/logo-footer.png" alt="Wasselni" style="width:50%;height:22%;">
+                  <img src="/ressources/img/logo-footer.png" alt="Wasselni" style="width:50%;height:22%;">
                   <br>
                   <p>
                       Notre équipe travaillent  pour vous offrir des conseilles fidèles, des offres originaux.
@@ -571,12 +572,12 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <!--Fichiers-->
-<script src="/web/ressources/js/moment.min.js"></script>
-<script src="/web/ressources/js/dateTrajetSlide.js"></script>
-<script src="/web/ressources/js/global.js"></script>
-<script src="/web/ressources/js/aos.js"></script>
-<script src="/web/ressources/js/espace_user.js"></script>
-<script src="/web/ressources/js/selectionner.js"></script>
+<script src="/ressources/js/moment.min.js"></script>
+<script src="/ressources/js/dateTrajetSlide.js"></script>
+<script src="/ressources/js/global.js"></script>
+<script src="/ressources/js/aos.js"></script>
+<script src="/ressources/js/espace_user.js"></script>
+<script src="/ressources/js/selectionner.js"></script>
 	<script>
 		new InputFile({
 			
