@@ -94,7 +94,7 @@ crossorigin="anonymous">
                         <input class="input100" type="text" value="<c:out value='${user.dateNaissance}'/>" name="datenaissance"  id="input-start" placeholder="Date naissance">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
-                        <span>${form.erreurs['datenaissance']}</span>
+                        <span style="color: #721c24">${form.erreurs['datenaissance']}</span>
                     </div>
 
                     <!--Region-->

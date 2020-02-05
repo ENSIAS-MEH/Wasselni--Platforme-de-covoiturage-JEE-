@@ -24,13 +24,17 @@ public class Validation extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ValidationForm form = new ValidationForm(userDao);
         User userActivated = form.validate(req);
-
+        HttpSession session = req.getSession();
         if(form.getErreurs().isEmpty()){
-            HttpSession session = req.getSession();
             session.setAttribute(ATT_SESSION_USERID,userActivated.getId());
             this.getServletContext().getRequestDispatcher(VUE_USER_ACCUEIL).forward(req,resp);
         } else {
-            this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRIPTION).forward(req, resp);
+            if(session.getAttribute(ATT_SESSION_USERID) == null){
+                this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRIPTION).forward(req, resp);
+            } else {
+                this.getServletContext().getRequestDispatcher(VUE_USER_ACCUEIL).forward(req, resp);
+            }
+
         }
     }
 }

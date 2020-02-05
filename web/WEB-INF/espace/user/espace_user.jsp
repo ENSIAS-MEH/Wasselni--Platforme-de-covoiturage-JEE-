@@ -144,13 +144,14 @@ crossorigin="anonymous">
                         </div>
                         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                             <div class="card-body">
-                                <form method="post" action="/abonnement" class="form-inline">
+                                <form method="post" action="/validation" class="form-inline">
                                     <div class="form-group mb-2">
                                         <div class=" wrap-input1 " style="margin-left: 90px;">
-                                            <input class="input1" type="text" name="nom" placeholder="Code d'activation">
+                                            <input class="input1" type="text" name="validation" placeholder="Code d'activation">
                                             <span class="focus-input1"></span>
                                             <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                                         </div>
+                                        <span>${form.erreurs['validation']}</span>
                                     </div>
                                     <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
                                 </form>
