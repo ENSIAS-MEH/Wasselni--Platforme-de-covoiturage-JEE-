@@ -21,8 +21,8 @@ public class AuthUser extends HttpServlet {
     private static final String ATT_USER = "user";
 
     private static final String VUE_AUTHENTIFICATION = "/WEB-INF/authentification.jsp";
-    private static final String VUE_USER_ACCUEIL = "/after_inscription.jsp";
-    private static final String VUE_ACTIVATION = "/apres_inscription.jsp";
+    private static final String VUE_USER_ACCUEIL = "/WEB-INF/espace/user/espace_user.html";
+
 
     @Override
     public void init() throws ServletException {
@@ -46,11 +46,7 @@ public class AuthUser extends HttpServlet {
         if(form.getErreurs().isEmpty()){
             HttpSession session = req.getSession();
             session.setAttribute(ATT_SESSION_USERID,user.getId());
-            if(user.getActivation() > 1){
-                resp.sendRedirect(VUE_ACTIVATION);
-            } else {
-                this.getServletContext().getRequestDispatcher(VUE_USER_ACCUEIL).forward(req,resp);
-            }
+            this.getServletContext().getRequestDispatcher(VUE_USER_ACCUEIL).forward(req,resp);
         } else {
             this.getServletContext().getRequestDispatcher(VUE_AUTHENTIFICATION).forward(req, resp);
         }
