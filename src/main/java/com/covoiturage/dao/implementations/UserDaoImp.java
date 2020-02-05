@@ -124,8 +124,8 @@ public class UserDaoImp implements UserDao {
         Connection connection = daoFactory.getConnection();
         //Rank est par Defaut 5
         sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                " DATE_INSCRIPTION) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                " DATE_INSCRIPTION,ACTIVATION) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStmt.setString(1, user.getNom());
         preparedStmt.setString(2, user.getPrenom());
@@ -136,6 +136,7 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setString(7, user.getEmail());
         preparedStmt.setString(8, user.getPassword());
         preparedStmt.setObject(9, LocalDateTime.now());
+        preparedStmt.setInt(10, user.getActivation());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {
