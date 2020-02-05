@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Espace admin</title>
-    <meta name="description" content="Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skils and experience."/>
+    <meta name="description" content="Profile"/>
     
     
 
@@ -29,9 +29,31 @@ crossorigin="anonymous">
 <link href="ressources/css/aos.css" rel="stylesheet">
 <link href="ressources/css/bootstrap.min.css" rel="stylesheet">
 <link href="ressources/css/Espace_user.css" rel="stylesheet">
+<link href="ressources/css/component.css" rel="stylesheet">
+<link rel="stylesheet" href="ressources/css/selectionner.css">
 
 
-    
+
+      <script>
+          /* Cette fonction permet d'afficher une vignette pour chaque image sélectionnée */
+          function readFilesAndDisplayPreview(files) {
+              var imageList = document.querySelector('#profile_image');
+              imageList.innerHTML = "";
+
+              for ( var file of files ) {
+                  var reader = new FileReader();
+
+                  reader.addEventListener( "load", function( event ) {
+                      var span = document.createElement('span');
+                      span.innerHTML = '<img  src="' + event.target.result + '" />';
+                      imageList.appendChild( span );
+                  });
+
+                  reader.readAsDataURL( file );
+              }
+          }
+      </script>
+
     
     
   </head>
@@ -78,9 +100,25 @@ crossorigin="anonymous">
       <div class="page-header-image" data-parallax="true" style="background-image: url('ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="ressources/img/profile_pic.png" alt="Image"/></a></div>
-          <div class="h3 title">Nom Prenom</div>
-          <p class="category text-white" style="font-size:large;">PseudoNom</p><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Changer </a>
+          
+          <form method="post" action="upload" enctype="multipart/form-data">
+            <div class="cc-profile-image" id="profile_image">
+                <img src="ressources/img/profile_pic.png" alt="Image"/>
+            </div>
+            <div class="h3 title">Nom Prenom</div>
+            <p class="category text-white" style="font-size:large;">PseudoNom</p>
+           
+           
+            <div style="margin-left: 220px;">
+              <input type="file" name="files" accept="image/*"
+                     onchange="readFilesAndDisplayPreview(this.files);" />
+            </div>
+            <br>
+            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"/>
+
+              
+            </div>
+          </form>
         </div>
       </div>
       
@@ -415,6 +453,13 @@ crossorigin="anonymous"></script>
 <script src="ressources/js/global.js"></script>
 <script src="ressources/js/aos.js"></script>
 <script src="ressources/js/espace_user.js"></script>
+<script src="ressources/js/selectionner.js"></script>
+	<script>
+		new InputFile({
+			
+		});
+	</script>
+
 
 <!--Autres (pour le tester)-->
 <script>
