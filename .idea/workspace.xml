@@ -19,6 +19,7 @@
       <change afterPath="$PROJECT_DIR$/target/classes/dao.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/mailer.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Wasselni_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wasselni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wasselni.iml" afterDir="false" />
@@ -63,6 +64,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminDemandes.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminOffres.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/covoiturage/servlets/espace/admin/AdminUsers.class" beforeDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,8 +362,12 @@
       <workItem from="1580844421021" duration="2594000" />
       <workItem from="1580863326268" duration="2454000" />
       <workItem from="1580857686092" duration="10369000" />
+
       <workItem from="1580903430162" duration="5177000" />
       <workItem from="1580911340695" duration="37000" />
+
+      <workItem from="1580903430162" duration="5445000" />
+
     </task>
     <servers />
   </component>
