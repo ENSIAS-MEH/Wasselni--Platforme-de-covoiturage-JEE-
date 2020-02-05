@@ -54,7 +54,6 @@ public class Mailer {
 
             senderEmail = properties.getProperty("sender.email");
             senderEmailPassword = properties.getProperty("sender.password");
-            System.out.println(senderEmail+" "+senderEmailPassword);
 
         } catch (IOException ex) {
             ex.printStackTrace();
