@@ -1,11 +1,9 @@
 package com.covoiturage.forms;
 
 import com.covoiturage.beans.User;
-import com.covoiturage.dao.exceptions.DAOException;
 import com.covoiturage.dao.interfaces.UserDao;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,21 +29,19 @@ public class UserAuthForm {
     }
 
     public User authentification(HttpServletRequest req) {
-        User user = new User();
-        try{
-            String emailOuLogin = getValeurChamp(req, CHAMP_EMAIL);
-            String motDePasse = getValeurChamp(req, CHAMP_MOT_DE_PASSE);
+        String email = getValeurChamp(req, CHAMP_EMAIL);
+        String motDePasse = getValeurChamp(req, CHAMP_MOT_DE_PASSE);
 
-            traiterEmail(emailOuLogin,user);
-            traiterUser(emailOuLogin,motDePasse,user);
-            if (erreurs.isEmpty()) {
-                resultat = "Succés de l'authentification";
-            } else {
-                resultat = "Echec de l'authentification. Veuillez réessayer.";
-            }
-        } catch (DAOException e){
-            resultat = "Échec de l'authentification : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
-            e.printStackTrace();
+        User user = new User();
+        long userId = -1;
+        user.setId(userId);
+
+
+
+        if (erreurs.isEmpty()) {
+            resultat = "Succés de l'authentification";
+        } else {
+            resultat = "Echec de l'authentification. Veuillez réessayer.";
         }
         return user;
 
@@ -64,16 +60,7 @@ public class UserAuthForm {
         user.setEmail(email);
 
     }
-    private void traiterUser(String emailOuLogin,String motDePasse , User user){
-        Long userId = null;
-        try {
-            userId = validationUser(emailOuLogin, motDePasse);
-        } catch (Exception e) {
-            setErreur(CHAMP_MOT_DE_PASSE, e.getMessage());
-        }
-        user.setId(userId);
-    }
-
+  
 
     /**
      * Méthodes de validation
@@ -81,36 +68,21 @@ public class UserAuthForm {
 
 
     private void validationEmail(String email) throws Exception {
-        User user = new User();
-        user.setEmail(email);
         if (email != null) {
             if (!email.matches("([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)")) {
                 throw new Exception("Merci de saisir une adresse mail valide.");
-            } }else if ( userDao.findSpecificUser( user ) == null ) {
-            throw new Exception( "Cette adresse email n'existe pas . Veuillez entrez une adresse email existante" );
+            }
         } else {
             throw new Exception("Merci de saisir une adresse mail.");
         }
     }
 
-    private Long validationUser(String emailOuLogin, String motDePasse) throws Exception {
-        User user = new User();
-        if(emailOuLogin.contains("@")){
-            user.setEmail(emailOuLogin);
-        } else {
-            user.setLogin(emailOuLogin);
-        }
+    private int validationUser(String email, String motDePasse) throws Exception {
         if (motDePasse == null) {
             throw new Exception("Merci de saisir un mot de passe");
-        } else {
-            User usr = userDao.findSpecificUser(user);
-            if(usr.getPassword().equals(motDePasse)){
-                return usr.getId();
-            } else {
-                throw new Exception("Mot de passe ou Email invalide. Merci de réessayer");
-            }
-
         }
+
+        return 10;
     }
 
 

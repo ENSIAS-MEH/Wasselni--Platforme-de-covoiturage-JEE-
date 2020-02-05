@@ -70,16 +70,12 @@ crossorigin="anonymous">
                         <div class="container">
                             <div class="row">
                             
-<<<<<<< HEAD:target/Wasselni-1.0-SNAPSHOT/authentification.jsp
-                                <form class="inscription-form validate-form" style="align-self: center;">	
-=======
                                 <form method="post" action="<c:url value='/authentification'/> " style="align-self: center;">
->>>>>>> ea14a848e6fefe532129c119c0eb76c3d43806ad:web/WEB-INF/authentification.jsp
                                     <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
                                         S'authentifier
                                     </span>			
                                     <!--Email-->
-                                    <div>
+                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
                                         <input class="input100" type="text" value="<c:out value='${user.email}'/>" name="email" placeholder="Email">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
@@ -89,7 +85,7 @@ crossorigin="anonymous">
                                     </div>
                                 
                                 <!--MOT de PASSE-->
-                                    <div>
+                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
                                         <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
                                         <span class="focus-input100"></span>
                                         <span class="symbol-input100">
@@ -101,7 +97,12 @@ crossorigin="anonymous">
                                 
                 
                                 <!--Buton pour connecter-->
-                                <input type="submit" class="authentification-form-btn" value="Connecter"/>
+                                <button type="submit" class="authentification-form-btn">
+                                    <span>
+                                        Connecter <i class="fa fa-sign-in-alt"> </i>
+                                    </span>
+                                </button>
+
 
                                 </form> 
                             </div>
