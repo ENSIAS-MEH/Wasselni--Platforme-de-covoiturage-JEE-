@@ -121,25 +121,21 @@ public class UserDaoImp implements UserDao {
         String sql;
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
-        Connection connection = DAOFactory.getInstance().getConnection();
+        Connection connection = daoFactory.getConnection();
         //Rank est par Defaut 5
-        sql = "INSERT INTO users (ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION) " +
+        sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                " DATE_INSCRIPTION) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        preparedStmt.setLong(1, user.getId());
-        preparedStmt.setString(2, user.getNom());
-        preparedStmt.setString(3, user.getPrenom());
-        preparedStmt.setString(4, user.getSexe());
-        preparedStmt.setObject(5, user.getDateNaissance());
-        preparedStmt.setString(6, user.getRegion());
-        preparedStmt.setString(7, user.getLogin());
-        preparedStmt.setString(8, user.getEmail());
-        preparedStmt.setString(9, user.getPassword());
-        preparedStmt.setString(10, user.getImage());
-        preparedStmt.setObject(11, LocalDateTime.now());
-        preparedStmt.setFloat(12, user.getRank());
-        preparedStmt.setInt(13, user.getActivation());
+        preparedStmt.setString(1, user.getNom());
+        preparedStmt.setString(2, user.getPrenom());
+        preparedStmt.setString(3, user.getSexe());
+        preparedStmt.setObject(4, user.getDateNaissance());
+        preparedStmt.setString(5, user.getRegion());
+        preparedStmt.setString(6, user.getLogin());
+        preparedStmt.setString(7, user.getEmail());
+        preparedStmt.setString(8, user.getPassword());
+        preparedStmt.setObject(9, LocalDateTime.now());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {

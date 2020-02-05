@@ -2,12 +2,13 @@ package com.covoiturage.dao.implementations;
 
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.TrajetDao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrajetDaoImp {
+public class TrajetDaoImp implements TrajetDao {
     private DAOFactory daoFactory;
 
     public TrajetDaoImp(DAOFactory daoFactory) {
