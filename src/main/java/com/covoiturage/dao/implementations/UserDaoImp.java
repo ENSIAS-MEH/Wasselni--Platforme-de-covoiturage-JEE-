@@ -174,6 +174,10 @@ public class UserDaoImp implements UserDao {
         rowUpdated = preparedStmt.executeUpdate() > 0;
 
         preparedStmt.close();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41664d6d3b14bd708f977b37f4c8621d5f0583f2
 
         return rowUpdated;
     }

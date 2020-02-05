@@ -49,7 +49,6 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return returnedDetailsTrajet;
     }
@@ -82,7 +81,6 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
 
         stmt.close();
         resultset.close();
-        connection.close();
 
         return listofDetailsTrajets;
     }
@@ -109,14 +107,12 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
 
         if (resultset.next()) {
             idrowInserted = resultset.getLong(1);
-            connection.commit();
         } else {
             idrowInserted = -1L;
         }
 
         preparedStmt.close();
         resultset.close();
-        connection.close();
 
         return idrowInserted;
     }
@@ -143,12 +139,8 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
         preparedStmt.setInt(8, detailsTrajet.getClimatisationVoiture());
         preparedStmt.setLong(9, detailsTrajet.getIdDetailsTrajet());
         rowUpdated = preparedStmt.executeUpdate() > 0;
-        if( rowUpdated ) {
-            connection.commit();
-        }
 
         preparedStmt.close();
-        connection.close();
 
         return rowUpdated;
     }
