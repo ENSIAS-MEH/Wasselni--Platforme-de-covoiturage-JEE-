@@ -29,15 +29,11 @@ crossorigin="anonymous">
 <link href="ressources/css/aos.css" rel="stylesheet">
 <link href="ressources/css/bootstrap.min.css" rel="stylesheet">
 <link href="ressources/css/Espace_user.css" rel="stylesheet">
-<link href="ressources/css/component.css" rel="stylesheet">
-<link rel="stylesheet" href="ressources/css/selectionner.css">
-
 
 
     
     
-<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-
+    
   </head>
   <body id="top">
 
@@ -82,22 +78,9 @@ crossorigin="anonymous">
       <div class="page-header-image" data-parallax="true" style="background-image: url('ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          
-          <form action="">
-            <div class="cc-profile-image"><a href="#"><img src="ressources/img/profile_pic.png" alt="Image"/></a></div>
-            <div class="h3 title">Nom Prenom</div>
-            <p class="category text-white" style="font-size:large;">PseudoNom</p>
-           
-           
-            <div style="margin-left: 220px;">
-              <input type="file" name="files" />
-            </div>
-            <br>
-            <button type="" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Changer</button>  
-            
-              
-            </div>
-          </form>
+          <div class="cc-profile-image"><a href="#"><img src="ressources/img/profile_pic.png" alt="Image"/></a></div>
+          <div class="h3 title">Nom Prenom</div>
+          <p class="category text-white" style="font-size:large;">PseudoNom</p><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Changer </a>
         </div>
       </div>
       
@@ -432,13 +415,6 @@ crossorigin="anonymous"></script>
 <script src="ressources/js/global.js"></script>
 <script src="ressources/js/aos.js"></script>
 <script src="ressources/js/espace_user.js"></script>
-<script src="ressources/js/selectionner.js"></script>
-	<script>
-		new InputFile({
-			
-		});
-	</script>
-
 
 <!--Autres (pour le tester)-->
 <script>

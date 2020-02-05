@@ -26,7 +26,7 @@ public class UserAuthForm {
         String motDePasse = getValeurChamp(req,CHAMP_MOT_DE_PASSE);
 
         User user = new User();
-        int userId = -1;
+        long userId = -1;
         user.setId(userId);
         try {
             validationEmail(email);
