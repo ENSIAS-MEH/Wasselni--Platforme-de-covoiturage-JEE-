@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
-                                     ID bigint(20) NOT NULL,
+                                     ID bigint(20) NOT NULL AUTO_INCREMENT,
                                      NOM varchar(50),
                                      PRENOM varchar(50),
                                      SEXE varchar(5),
