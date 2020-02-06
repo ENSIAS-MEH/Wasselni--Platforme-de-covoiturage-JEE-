@@ -47,74 +47,16 @@ crossorigin="anonymous">
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
 		<div class="container-inscription">
-
-            <div class="container">
-
-                <!--Authentification par facebook-->
-                <div class="row">
-                    <div  style="margin-top: 130px;margin-bottom: 30px;">
-                        
-
-                    </div>
-                </div>
-
-                <!--Authentification par un compte-->
-                <div class="row">
-                 
-                    
-
-
+            <div class="container">                 
                     <div class="wrap-inscription insc" style="margin-bottom: 130px;">
 
-                        <div class="container">
-                            <div class="row">
-                            
-                                <form method="post" action="" style="align-self: center;">
-                                    <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
-                                        S'authentifier
-                                    </span>			
-                                    <!--Email-->
-                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
-                                        <input class="input100" type="text" value="" name="email" placeholder="Email">
-                                        <span class="focus-input100"></span>
-                                        <span class="symbol-input100">
-                                            <i class="fa fa-at" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                
-                                <!--MOT de PASSE-->
-                                    <div  class="wrap-input100 validate-input" data-validate = "Le format valide: exemple@abc.xyz">
-                                        <input class="input100" type="password" name="motdepasse" placeholder="Mot de passe">
-                                        <span class="focus-input100"></span>
-                                        <span class="symbol-input100">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                
-                
-                                <!--Buton pour connecter-->
-                                <button type="submit" class="authentification-form-btn">
-                                    <span>
-                                        Connecter <i class="fa fa-sign-in-alt"> </i>
-                                    </span>
-                                </button>
-
-
-                                </form> 
-                            </div>
-                            <label for="check1">Vous n'avez pas un compte ?<a href=""> Rejoins nous</a></label>
-                            <hr style="width: 300px; margin-right: 160px;">
-                                <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
-                            </div>
-
+                        <div class="imgBox" style="margin-left: 40px" >
+                            <img src="ressources/img/profile_pic.png" alt="" style="max-height: 60px; max-height: 90px;" width="40px" height="40px">
                         </div>
 
+
                     </div>
-                </div>
-
-
             </div>
-            
 		</div>
 	</div>
 
