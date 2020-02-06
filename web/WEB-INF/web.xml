@@ -124,7 +124,7 @@
     <filter-mapping>
         <filter-name>EspacePrivee</filter-name>
         <url-pattern>/userAccueil</url-pattern>
-        <url-pattern>/admin_accueil</url-pattern>
+        <url-pattern>/WEB-INF/espace/*</url-pattern>
     </filter-mapping>
 
     <filter>
