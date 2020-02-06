@@ -5,6 +5,9 @@ import com.covoiturage.beans.Trajet;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,6 +37,8 @@ public class ProposerTrajetForm {
     }
 
     public Trajet proposerTrajet(HttpServletRequest req){
+
+
         String depart = getValeurChamp(req,CHAMP_DEPART);
         String destination = getValeurChamp(req,CHAMP_DESTINATION);
         String dateTrajet = getValeurChamp(req,CHAMP_DATE_TRAJET);
@@ -50,20 +55,19 @@ public class ProposerTrajetForm {
         Trajet trajet = new Trajet();
         DetailsTrajet details = new DetailsTrajet();
 
+        trajet.setQuartierDepart(depart);
+        trajet.setQuartierDestination(destination);
+        details.setDateDepart(traiterDateTrajet(dateTrajet,heureDepart,minutesDepart));
+        details.setEffectif(Integer.parseInt(  effectif.split(" ")[0]));
+        details.setPrixPlace(Integer.parseInt(prix.split(" ")[0]));
+        details.setTypeVoiture(typeVehicule);
+        details.setMarqueVoiture(marque);
+        details.setModeleVoiture(model);
+        details.setClimatisationVoiture(Integer.parseInt(climatisation));
+
 
         HttpSession session = req.getSession();
-        session.setAttribute("depart",depart);
-        session.setAttribute( "destination",destination);
-        session.setAttribute("dateTrajet",dateTrajet);
-        session.setAttribute( "heureDepart",heureDepart);
-        session.setAttribute( "minutesDepart",minutesDepart);
-        session.setAttribute("effectif", effectif );
-        session.setAttribute( "prix",prix);
-        session.setAttribute( "bagageAutorisé",bagageAutorisé);
-        session.setAttribute( "typeVehicule",typeVehicule);
-        session.setAttribute( "marque",marque);
-        session.setAttribute("model", model);
-        session.setAttribute( "climatisation",climatisation);
+        session.setAttribute("details",details);
 
         try{
             validationTrajet(trajet);
@@ -72,6 +76,13 @@ public class ProposerTrajetForm {
         }
         return trajet;
     }
+
+    private LocalDateTime traiterDateTrajet(String jour, String heure, String minutes){
+        String myDate = (((convertStringToLocalDate(jour).toString().concat(" ")).concat(heure)).concat(":")).concat(minutes);
+        return convertStringToLocalDateTime(myDate);
+
+    }
+
 
     public boolean validationTrajet(Trajet trajet){
         /**
@@ -92,5 +103,18 @@ public class ProposerTrajetForm {
         } else {
             return valeur;
         }
+    }
+    private LocalDateTime convertStringToLocalDateTime(String str){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
+        return dateTime;
+    }
+    private LocalDate convertStringToLocalDate(String str)  {
+            if (str != null) {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                LocalDate date = LocalDate.parse(str, formatter);
+                return date;
+            }
+        return null;
     }
 }

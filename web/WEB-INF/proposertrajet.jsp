@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+c <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -157,7 +157,7 @@
                            <!--Les checkbox-->
                            <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check1">
-                              <input type="checkbox" id="check1" name="bagageautorise" value="true" />
+                              <input type="checkbox" id="check1" name="bagageautorise" value="1" />
                               <label for="check1" style="color: darkslategray; font-style:initial;font-size: 15px;">Bagage autorisé</label>
                           </div>
                            </div>
@@ -220,7 +220,7 @@
                           <!--Les checkbox-->
                           <div style="text-align: left;margin-left: 20px;">
                             <div class="checkbox icheck-check2" >
-                              <input type="checkbox" checked id="check2" name="climatisation" value="true"/>
+                              <input type="checkbox" checked id="check2" name="climatisation" value="1"/>
                               <label for="check2" style="color: darkslategray; font-style:initial;font-size: 15px;">Climatisation</label>
                           </div>
                           </div>

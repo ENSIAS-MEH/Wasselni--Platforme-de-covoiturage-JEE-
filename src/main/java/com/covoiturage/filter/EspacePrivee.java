@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class EspacePrivee implements Filter {
     private static final String ATT_SESSION_USERID = "userId";
-    private static final String VUE_AUTHENTIFICATION = "/WEB-INF/authentification.jsp" ;
+    private static final String VUE_AUTHENTIFICATION = "/authentification" ;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

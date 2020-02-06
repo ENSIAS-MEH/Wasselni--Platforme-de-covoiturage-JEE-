@@ -108,8 +108,8 @@ crossorigin="anonymous">
             <div class="cc-profile-image" id="profile_image">
                 <img src="/ressources/img/profile_pic.png" alt="Image"/>
             </div>
-            <div class="h3 title">Nom Prenom</div>
-            <p class="category text-white" style="font-size:large;">PseudoNom</p>
+            <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/><c:out value="${sessionScope.userSession.prenom}"/></div>
+            <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
            
            
             <div style="margin-left: 220px;">
@@ -117,10 +117,7 @@ crossorigin="anonymous">
                      onchange="readFilesAndDisplayPreview(this.files);" />
             </div>
             <br>
-            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"/>
-
-              
-            </div>
+            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
           </form>
         </div>
       </div>
