@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/AbonnementForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/AbonnementForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -418,7 +413,7 @@
       <workItem from="1580948259132" duration="5771000" />
       <workItem from="1580954791192" duration="3440000" />
       <workItem from="1580954722196" duration="3028000" />
-      <workItem from="1580986579870" duration="6532000" />
+      <workItem from="1580986579870" duration="6991000" />
     </task>
     <servers />
   </component>
