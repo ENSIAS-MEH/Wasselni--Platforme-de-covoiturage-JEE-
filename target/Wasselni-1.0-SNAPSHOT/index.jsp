@@ -285,6 +285,7 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-info mb-2 ">Inscrire</button>
+                        <span>${form.resultat}</span>
                       </form>
                     </div>
                 </div>
