@@ -2,6 +2,9 @@ package com.covoiturage.servlets;
 
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
+import com.covoiturage.dao.interfaces.TrajetDao;
 import com.covoiturage.dao.interfaces.UserDao;
 import com.covoiturage.forms.trajet.ProposerTrajetForm;
 
@@ -14,7 +17,9 @@ import java.io.IOException;
 
 public class ProposerTrajet extends HttpServlet {
     static final String DAO_FACTORY  = "daofactory";
-    private UserDao userDao;
+    private TrajetDao trajetDao;
+    private DetailsTrajetDao detailsTrajetDao;
+    private EstAssocieADao estAssocieADao;
 
 
     private static final String VUE_CREATION = "/WEB-INF/trajet/proposertrajet.jsp";
@@ -31,7 +36,9 @@ public class ProposerTrajet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.userDao = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getUserDao();
+        this.trajetDao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getTrajetDao();
+        this.detailsTrajetDao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getDetailsTrajetDao();
+        this.estAssocieADao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getEstAssocieADao();
     }
 
     @Override
@@ -41,15 +48,11 @@ public class ProposerTrajet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ProposerTrajetForm form = new ProposerTrajetForm(userDao);
+        ProposerTrajetForm form = new ProposerTrajetForm(trajetDao,detailsTrajetDao, estAssocieADao);
         form.proposerTrajet(req);
 
         req.setAttribute(ATT_FORM,form);
-
         HttpSession session = req.getSession();
-        session.getAttribute("details");
-        this.getServletContext().getRequestDispatcher("/test.jsp").forward(req,resp);
-
         if(form.getErreurs().isEmpty()){
             if(session.getAttribute(ATT_SESSION_USERID) == null){
                 this.getServletContext().getRequestDispatcher(VUE_AUTHENTIFICATION).forward(req,resp);

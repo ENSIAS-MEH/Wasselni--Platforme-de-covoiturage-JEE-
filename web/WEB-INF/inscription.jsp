@@ -161,7 +161,7 @@ crossorigin="anonymous">
 
                       <!--Reponse-->
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" value="" name="reponse" placeholder="La réponse">
+						<input class="input100" type="text" value="<c:out value='${user.reponse}'/>" name="reponse" placeholder="La réponse">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-info-circle" aria-hidden="true"></i>

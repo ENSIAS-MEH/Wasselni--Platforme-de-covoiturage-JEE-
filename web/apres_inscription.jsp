@@ -27,11 +27,11 @@ crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 <!--Fichiers-->
 <link rel="stylesheet" href="ressources/css/style.css">
-<link href="ressources/css/aos.css" rel="stylesheet">
-<link href="ressources/css/bootstrap.min.css" rel="stylesheet">
-<link href="ressources/css/apres_inscription.css" rel="stylesheet">
-<link href="ressources/css/component.css" rel="stylesheet">
-<link rel="stylesheet" href="ressources/css/selectionner.css">
+<link href="/ressources/css/aos.css" rel="stylesheet">
+<link href="/ressources/css/bootstrap.min.css" rel="stylesheet">
+<link href="/ressources/css/apres_inscription.css" rel="stylesheet">
+<link href="/ressources/css/component.css" rel="stylesheet">
+<link rel="stylesheet" href="/ressources/css/selectionner.css">
 
 
 
@@ -225,12 +225,12 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <!--Fichiers-->
-<script src="ressources/js/moment.min.js"></script>
-<script src="ressources/js/dateTrajetSlide.js"></script>
-<script src="ressources/js/global.js"></script>
-<script src="ressources/js/aos.js"></script>
-<script src="ressources/js/espace_user.js"></script>
-<script src="ressources/js/selectionner.js"></script>
+<script src="/ressources/js/moment.min.js"></script>
+<script src="/ressources/js/dateTrajetSlide.js"></script>
+<script src="/ressources/js/global.js"></script>
+<script src="/ressources/js/aos.js"></script>
+<script src="/ressources/js/espace_user.js"></script>
+<script src="/ressources/js/selectionner.js"></script>
 	<script>
 		new InputFile({
 			

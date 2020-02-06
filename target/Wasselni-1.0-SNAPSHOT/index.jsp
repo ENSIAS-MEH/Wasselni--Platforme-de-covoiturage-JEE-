@@ -103,7 +103,7 @@
                                                     <input class="input100" type="text" name="datetrajet" placeholder="Date" id="input-start">
                                                     <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                                 </div>
-
+                                                <span>${form.erreurs['datetrajet']}</span>
 
 
                                                 <!--Effectif-->
@@ -269,7 +269,7 @@
                     <br><br><br><br>
                   
                     <div style="margin-left: 210px;">
-                    <form method="post" action="/abonnement" class="form-inline">
+                    <form method="post" action="/presinscription" class="form-inline">
                         <div class="form-group mb-2">
                             <div class=" wrap-input10i ">    
                                 <input class="input10i" type="text" name="nom" placeholder="Nom">
@@ -285,7 +285,6 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-info mb-2 ">Inscrire</button>
-                        <span>${form.resultat}</span>
                       </form>
                     </div>
                 </div>

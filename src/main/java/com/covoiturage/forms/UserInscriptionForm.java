@@ -107,6 +107,8 @@ public class UserInscriptionForm {
         } catch (Exception e) {
             setErreur( CHAMP_REPONSE, e.getMessage() );
         }
+        user.setId_question(Integer.parseInt(question));
+        user.setReponse(reponse);
     }
 
     private void traiterNom(String nom,User user){
@@ -176,7 +178,7 @@ public class UserInscriptionForm {
      */
 
     private void validationReponse( String reponse ) throws Exception {
-        if( reponse != null) {
+        if( reponse == null) {
             throw new Exception("La réponse ne doit pas être vide. Choisissez une question et la reponse correspondante");
         }
     }

@@ -106,8 +106,11 @@ public class ProposerTrajetForm {
                     req.setAttribute(ATT_ASSOC,associeA);
                 } else {
                     Long trajetId = trajetDao.insertTrajet(trajet);
+
+                    details.setIdTrajetChoisie(trajetId);
                     Long detailsTrajetId = detailsTrajetDao.insertDetailsTrajet(details);
-                    associeA.setIdUser(trajetId);
+
+                    associeA.setIdUser(Long.parseLong(""+session.getAttribute(ATT_SESSION_USERID)));
                     associeA.setIdDetailsTrajet(detailsTrajetId);
                     estAssocieADao.insertEstAssocieA(associeA);
                 }
