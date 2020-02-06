@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class PreInscription extends HttpServlet {
-    private static final String VUE_INSCRIPTION = "/inscription";
+    private static final String VUE_INSCRIPTION = "/index.jsp";
 
     static final String DAO_FACTORY  = "daofactory";
     private UserDao userDao;
@@ -22,11 +22,6 @@ public class PreInscription extends HttpServlet {
     @Override
     public void init() throws ServletException {
         this.userDao = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getUserDao();
-    }
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect(VUE_INSCRIPTION);
     }
 
     @Override

@@ -85,7 +85,7 @@ public class DemanderTrajetForm {
             } else {
                 resultat = "Echec de la demande";
             }
-        } catch (DAOException | SQLException e) {
+        } catch (DAOException /*| SQLException */e) {
             resultat = "Échec de la demande du trajet : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
@@ -96,7 +96,7 @@ public class DemanderTrajetForm {
      */
     private void traiterTrajet(DetailsTrajet details,Trajet trajet) {
         try {
-            validationTrajet(trajet, details);
+           // validationTrajet(trajet, details);
         } catch (Exception e) {
             setErreur(ATT_TRAJET, e.getMessage());
         }

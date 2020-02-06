@@ -117,12 +117,8 @@ crossorigin="anonymous">
                      onchange="readFilesAndDisplayPreview(this.files);" />
             </div>
             <br>
-<<<<<<< HEAD
-            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
-=======
-            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"/>
+            <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
 
->>>>>>> b76756b121bf9c8e79ce5320dbd93df6ead8290f
           </form>
         </div>
       </div>
@@ -152,12 +148,12 @@ crossorigin="anonymous">
                                         <div class=" wrap-input1 " style="margin-left: 90px;">
                                             <input class="input1" type="text" name="activation" placeholder="Code d'activation">
                                             <span class="focus-input1"></span>
-                                            <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
+                                            <span class="symbol-input1"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>  </span>
                                         </div>
                                         <span>${form.erreurs['activation']}</span>
 
                                     </div>
-                                    <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
+                                    <button type="submit"   style="margin-left: 0px;" class="btn btn-info mb-2 ">Activer le compte</button>
                                 </form>
                             </div>
                         </div>
@@ -220,7 +216,7 @@ crossorigin="anonymous">
                                 <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
                             </div>
                             <br>
-                            <div class="row mt-3">
+                            <div class="row mt-3" style="margin-left: 60px;" >
                                 <a href="#" id ="btnModifier" data-toggle="modal" data-target="#modifier"></a>
                             </div>
 
