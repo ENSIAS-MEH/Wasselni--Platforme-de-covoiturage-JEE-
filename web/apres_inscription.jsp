@@ -87,9 +87,9 @@ crossorigin="anonymous">
                                         <span class="focus-input1"></span>
                                         <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                                     </div>
-                                    <span>${form.erreurs['validation']}</span>
                                 </div>
-                                <button type="submit" style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
+                                <span>${form.erreurs['activation']}</span>
+                                <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
                             </form>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ public class InscriptionUser extends HttpServlet {
         if(form.getErreurs().isEmpty()){
             HttpSession session = req.getSession();
             session.setAttribute(ATT_SESSION_USER,user);
-            this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRITPION).forward(req,resp);
+            resp.sendRedirect(VUE_APRES_INSCRITPION);
         } else {
             this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION).forward(req, resp);
         }

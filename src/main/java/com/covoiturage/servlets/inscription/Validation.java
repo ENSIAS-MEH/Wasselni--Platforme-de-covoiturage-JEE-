@@ -1,6 +1,7 @@
 package com.covoiturage.servlets.inscription;
 
 import com.covoiturage.beans.User;
+import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.UserDao;
 import com.covoiturage.forms.ValidationForm;
 
@@ -21,13 +22,18 @@ public class Validation extends HttpServlet {
     private static final String VUE_APRES_INSCRIPTION = "/apres_inscription.jsp";
 
     @Override
+    public void init() throws ServletException {
+        this.userDao = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getUserDao();
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ValidationForm form = new ValidationForm(userDao);
         User userActivated = form.validate(req);
         HttpSession session = req.getSession();
         if(form.getErreurs().isEmpty()){
             session.setAttribute(ATT_SESSION_USERID,userActivated.getId());
-            this.getServletContext().getRequestDispatcher(VUE_USER_ACCUEIL).forward(req,resp);
+            resp.sendRedirect(VUE_USER_ACCUEIL);
         } else {
             if(session.getAttribute(ATT_SESSION_USERID) == null){
                 this.getServletContext().getRequestDispatcher(VUE_APRES_INSCRIPTION).forward(req, resp);

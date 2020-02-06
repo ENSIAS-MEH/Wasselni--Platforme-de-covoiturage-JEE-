@@ -31,13 +31,14 @@ public class UserAuthForm {
     }
 
     public User authentification(HttpServletRequest req) {
-        User user = new User();
+        User userConnect = new User();
+        User userConnected = new User();
         try{
             String emailOuLogin = getValeurChamp(req, CHAMP_EMAIL);
             String motDePasse = getValeurChamp(req, CHAMP_MOT_DE_PASSE);
 
-            traiterEmail(emailOuLogin,user);
-            traiterUser(emailOuLogin,motDePasse,user);
+            traiterEmail(emailOuLogin,userConnect);
+            userConnected = traiterUser(emailOuLogin,motDePasse,userConnect);
             if (erreurs.isEmpty()) {
                 resultat = "Succés de l'authentification";
             } else {
@@ -47,7 +48,7 @@ public class UserAuthForm {
             resultat = "Échec de l'authentification : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
-        return user;
+        return userConnected;
 
 
     }
@@ -64,14 +65,14 @@ public class UserAuthForm {
         user.setEmail(email);
 
     }
-    private void traiterUser(String emailOuLogin,String motDePasse , User user){
-        Long userId = null;
+    private User traiterUser(String emailOuLogin,String motDePasse , User user){
+        User userConnected = new User();
         try {
-            userId = validationUser(emailOuLogin, motDePasse);
+            userConnected = validationUser(emailOuLogin, motDePasse);
         } catch (Exception e) {
             setErreur(CHAMP_MOT_DE_PASSE, e.getMessage());
         }
-        user.setId(userId);
+        return userConnected;
     }
 
 
@@ -93,7 +94,7 @@ public class UserAuthForm {
         }
     }
 
-    private Long validationUser(String emailOuLogin, String motDePasse) throws Exception {
+    private User validationUser(String emailOuLogin, String motDePasse) throws Exception {
         User user = new User();
         if(emailOuLogin.contains("@")){
             user.setEmail(emailOuLogin);
@@ -105,7 +106,7 @@ public class UserAuthForm {
         } else {
             User usr = userDao.findSpecificUser(user);
             if(usr.getPassword().equals(motDePasse)){
-                return usr.getId();
+                return usr;
             } else {
                 throw new Exception("Mot de passe ou Email invalide. Merci de réessayer");
             }
