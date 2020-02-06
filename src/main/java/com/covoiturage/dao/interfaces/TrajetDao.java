@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface TrajetDao {
     public Trajet findSpecificTrajet(Trajet trajet) throws SQLException;
+    public Trajet findSpecifictrajetById(Long id ) throws SQLException;
     public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet) throws SQLException;
     public Long insertTrajet(Trajet trajet) throws SQLException;
     public List<DetailsTrajet> findDetailleTrajetById(Long id) throws SQLException;

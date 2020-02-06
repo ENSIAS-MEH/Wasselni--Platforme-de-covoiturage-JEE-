@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/DemanderTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/DemanderTrajetForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ProposerTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ProposerTrajet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/offres.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/proposertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/proposertrajet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/proposertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/proposertrajet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/TrajetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/TrajetDao.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +121,18 @@
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace\admin" />
       <recent name="C:\Users\hp\Documents\Projects20\2019_DW_Pr3\web\WEB-INF\espace.admin" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
     <configuration name="DAOFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -333,29 +336,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.041503523" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -435,6 +415,7 @@
       <workItem from="1581013276236" duration="2208000" />
       <workItem from="1580994448749" duration="1312000" />
       <workItem from="1581025933631" duration="5267000" />
+      <workItem from="1581032947697" duration="142000" />
     </task>
     <servers />
   </component>
