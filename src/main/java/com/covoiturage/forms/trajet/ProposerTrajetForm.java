@@ -1,8 +1,12 @@
 package com.covoiturage.forms.trajet;
 
 import com.covoiturage.beans.DetailsTrajet;
+import com.covoiturage.beans.EstAssociea;
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.exceptions.DAOException;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
+import com.covoiturage.dao.interfaces.TrajetDao;
 import com.covoiturage.dao.interfaces.UserDao;
 import org.apache.tomcat.jni.Local;
 
@@ -16,7 +20,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProposerTrajetForm {
-    private UserDao userDao;
+    private TrajetDao trajetDao;
+    private DetailsTrajetDao detailsTrajetDao;
+    private EstAssocieADao estAssocieADao;
 
     private static final String CHAMP_DEPART = "depart";
     private static final String CHAMP_DESTINATION = "destination";
@@ -33,11 +39,14 @@ public class ProposerTrajetForm {
 
     private static final String ATT_TRAJET = "trajet";
     private static final String ATT_DETAILS = "details";
+    private static final String ATT_ASSOC = "associe";
 
     private static final String ATT_SESSION_USERID = "userId";
 
-    public ProposerTrajetForm(UserDao userDao) {
-        this.userDao = userDao;
+    public ProposerTrajetForm(TrajetDao trajetDao, DetailsTrajetDao detailsTrajetDao, EstAssocieADao estAssocieADao) {
+        this.trajetDao = trajetDao;
+        this.detailsTrajetDao = detailsTrajetDao;
+        this.estAssocieADao = estAssocieADao;
     }
 
     private String resultat;
@@ -88,20 +97,26 @@ public class ProposerTrajetForm {
 
             if(erreurs.isEmpty()){
                 HttpSession session = req.getSession();
+                EstAssociea associeA = new EstAssociea();
+                associeA.setDateAssociation(LocalDateTime.now());
+                associeA.setTypeAssociation("PROPOSER");
                 if(session.getAttribute(ATT_SESSION_USERID) == null){
                     req.setAttribute(ATT_DETAILS,details);
                     req.setAttribute(ATT_TRAJET,trajet);
+                    req.setAttribute(ATT_ASSOC,associeA);
                 } else {
-                    /**
-                     * ajouter le trajet proposé
-                     */
+                    Long trajetId = trajetDao.insertTrajet(trajet);
+                    Long detailsTrajetId = detailsTrajetDao.insertDetailsTrajet(details);
+                    associeA.setIdUser(trajetId);
+                    associeA.setIdDetailsTrajet(detailsTrajetId);
+                    estAssocieADao.insertEstAssocieA(associeA);
                 }
                 resultat = "Trajet proposé avec succès";
             } else {
                 resultat = "Echec de la proposition";
             }
 
-        } catch (DAOException /*| SQLException*/ e){
+        } catch (DAOException | SQLException e){
             resultat = "Échec de la proposition du trajet : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
@@ -136,13 +151,15 @@ public class ProposerTrajetForm {
     private void traiterClimatisation(String climatisation , DetailsTrajet details){
         if(climatisation != null){
             details.setClimatisationVoiture(1);
+        } else {
+            details.setClimatisationVoiture(0);
         }
     }
     private void traiterBagage(String bagage , DetailsTrajet details){
         if(bagage != null){
-            /**
-             * BAGAGE N EXISTE PAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-             */
+            details.setBagage(1);
+        } else {
+            details.setBagage(0);
         }
     }
     private void traiterEffectif(String effectif, DetailsTrajet details){

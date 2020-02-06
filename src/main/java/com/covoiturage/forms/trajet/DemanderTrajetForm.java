@@ -1,8 +1,12 @@
 package com.covoiturage.forms.trajet;
 
 import com.covoiturage.beans.DetailsTrajet;
+import com.covoiturage.beans.EstAssociea;
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.exceptions.DAOException;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
+import com.covoiturage.dao.interfaces.TrajetDao;
 import com.covoiturage.dao.interfaces.UserDao;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +19,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DemanderTrajetForm {
-    private UserDao userDao;
+    private TrajetDao trajetDao;
+    private DetailsTrajetDao detailsTrajetDao;
+    private EstAssocieADao estAssocieADao;
 
     private static final String CHAMP_DEPART = "depart";
     private static final String CHAMP_DESTINATION = "destination";
@@ -26,12 +32,16 @@ public class DemanderTrajetForm {
 
     private static final String ATT_TRAJET = "trajet";
     private static final String ATT_DETAILS = "details";
+    private static final String ATT_ASSOC = "associe";
+
+    public DemanderTrajetForm(TrajetDao trajetDao, DetailsTrajetDao detailsTrajetDao, EstAssocieADao estAssocieADao) {
+        this.trajetDao = trajetDao;
+        this.detailsTrajetDao = detailsTrajetDao;
+        this.estAssocieADao = estAssocieADao;
+    }
 
     private static final String ATT_SESSION_USERID = "userId";
 
-    public DemanderTrajetForm(UserDao userDao) {
-        this.userDao = userDao;
-    }
 
     private String resultat;
     private Map<String, String> erreurs= new HashMap();
@@ -55,8 +65,8 @@ public class DemanderTrajetForm {
             String prix = getValeurChamp(req, CHAMP_PRIX);
             String bagageAutorisé = getValeurChamp(req, CHAMP_BAGAGE_AUTORISE);
 
-            trajet.setQuartierDepart(depart);
-            trajet.setQuartierDestination(destination);
+            trajet.setVilleDepart(depart);
+            trajet.setVilleDestination(destination);
 
             traiterDateTrajet(dateTrajet, details);
             traiterEffectif(effectif, details);
@@ -72,20 +82,26 @@ public class DemanderTrajetForm {
             session.setAttribute( "bagageAutorisé",bagageAutorisé);*/
 
             if(erreurs.isEmpty()){
+                EstAssociea associeA = new EstAssociea();
+                associeA.setDateAssociation(LocalDateTime.now());
+                associeA.setTypeAssociation("DEMANDER");
                 HttpSession session = req.getSession();
                 if(session.getAttribute(ATT_SESSION_USERID) == null){
                     req.setAttribute(ATT_DETAILS,details);
                     req.setAttribute(ATT_TRAJET,trajet);
+                    req.setAttribute(ATT_ASSOC,associeA);
                 } else {
-                    /**
-                     * ajouter le trajet demandé
-                     */
+                    Long trajetId = trajetDao.insertTrajet(trajet);
+                    Long detailsTrajetId = detailsTrajetDao.insertDetailsTrajet(details);
+                    associeA.setIdUser(trajetId);
+                    associeA.setIdDetailsTrajet(detailsTrajetId);
+                    estAssocieADao.insertEstAssocieA(associeA);
                 }
                 resultat = "Trajet demandé avec succès";
             } else {
                 resultat = "Echec de la demande";
             }
-        } catch (DAOException /*| SQLException */e) {
+        } catch (DAOException | SQLException e) {
             resultat = "Échec de la demande du trajet : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
@@ -118,17 +134,9 @@ public class DemanderTrajetForm {
 
     private void traiterBagage(String bagage , DetailsTrajet details){
         if(bagage != null){
-            /**
-             * BAGAGE N EXISTE PAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-             *
-             *
-             *
-             *
-             *
-             *
-             *
-             *
-             */
+            details.setBagage(1);
+        } else {
+            details.setBagage(0);
         }
     }
     private void traiterEffectif(String effectif, DetailsTrajet details){
