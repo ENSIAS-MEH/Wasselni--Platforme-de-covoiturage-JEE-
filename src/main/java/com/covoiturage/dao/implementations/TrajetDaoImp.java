@@ -1,10 +1,12 @@
 package com.covoiturage.dao.implementations;
 
+import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.beans.Trajet;
 import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.TrajetDao;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,19 +56,25 @@ public class TrajetDaoImp implements TrajetDao {
 
         return returnedTrajet;
     }
-    public List<Trajet> findAllTrajets() throws SQLException {
+    public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet) throws SQLException {
         List<Trajet> listOfTrajets = new ArrayList<Trajet>();
 
         String sql = "SELECT ID_TRAJET, VILLE_DEPART," +
-                " VILLE_DESTINATION FROM TRAJET";
-        Statement stmt = null;
+                " VILLE_DESTINATION FROM TRAJET where VILLE_DEPART like ? or VILLE_DESTINATION like  ? or ID_TRAJET in " +
+                "(select ID_TRAJET_CHOISIE from details_trajet where EFFECTIF = ? or bagage = ? or DATETIME_DEPART = ?)";
+        PreparedStatement preparedStmt = null;
         ResultSet resultset;
-        Connection connection = DAOFactory.getInstance().getConnection();
-        stmt = connection.createStatement();
-        resultset = stmt.executeQuery(sql);
+        Connection connection = daoFactory.getConnection();
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setString(1, "%"+trajet.getVilleDepart()+"%");
+        preparedStmt.setString(2,"%"+trajet.getVilleDestination()+"%");
+        preparedStmt.setInt(3, detailsTrajet.getEffectif());
+        preparedStmt.setInt(4, detailsTrajet.getBagage());
+        preparedStmt.setObject(5, detailsTrajet.getDateDepart());
 
+        resultset = preparedStmt.executeQuery();
         Long idTrajet;
-        String villeDepart, quartierDepart, rueDepart, villeDestination, quartierDestination, rueDestination;
+        String villeDepart, villeDestination;
         Trajet TrajetToAdd;
 
         while( resultset.next() ) {
@@ -78,10 +86,10 @@ public class TrajetDaoImp implements TrajetDao {
             listOfTrajets.add(TrajetToAdd);
         }
 
-        stmt.close();
+        preparedStmt.close();
         resultset.close();
 
-        return listOfTrajets; 
+        return listOfTrajets;
     }
     public Long insertTrajet(Trajet trajet) throws SQLException {
         Long IdrowInserted;
