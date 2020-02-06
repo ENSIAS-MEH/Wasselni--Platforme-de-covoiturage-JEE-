@@ -64,7 +64,7 @@ crossorigin="anonymous">
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
   <div class="container">
-      <a href="#" class="navbar-brand"> <img src="/web/ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+      <a href="#" class="navbar-brand"> <img src="/ressources/img/logo.png" alt="" width="80%" height="80%"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,7 +99,7 @@ crossorigin="anonymous">
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('/web/ressources/img/profile_bg.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('/ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
           
