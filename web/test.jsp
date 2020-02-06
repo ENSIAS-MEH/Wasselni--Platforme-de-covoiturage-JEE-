@@ -33,6 +33,7 @@ ${sessionScope.details.climatisationVoiture}
 ${sessionScope.details.dateDepart}
 ${sessionScope.details.modeleVoiture}
 ${sessionScope.details.marqueVoiture}
+${sessionScope.details.prixPlace}
 
 
 
