@@ -70,8 +70,8 @@ public class ProposerTrajetForm {
             String climatisation = getValeurChamp(req,CHAMP_CLIMATISATION);
 
 
-            trajet.setQuartierDepart(depart);
-            trajet.setQuartierDestination(destination);
+            trajet.setVilleDepart(depart);
+            trajet.setVilleDestination(destination);
             details.setTypeVoiture(typeVehicule);
             details.setMarqueVoiture(marque);
             details.setModeleVoiture(model);
