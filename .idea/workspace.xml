@@ -10,7 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/admin/utilisateurs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/AbonnementForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/PreInscriptionForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/Abonnement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/PreInscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/admin/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/admin/utilisateurs.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +421,7 @@
       <workItem from="1580954722196" duration="3028000" />
       <workItem from="1580986579870" duration="7632000" />
       <workItem from="1580986579870" duration="6991000" />
-      <workItem from="1580994448749" duration="1312000" />
+      <workItem from="1580994448749" duration="4669000" />
     </task>
     <servers />
   </component>
@@ -467,10 +475,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579876582621" />
-    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580988192687">
+    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581019383783">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1580988192687" />
+    <state x="194" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1581019383783" />
     <state x="272" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579875945387" />
     <state x="445" y="188" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579793292424">
       <screen x="0" y="0" width="1366" height="768" />

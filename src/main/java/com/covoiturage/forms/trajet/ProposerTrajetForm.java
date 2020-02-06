@@ -142,14 +142,6 @@ public class ProposerTrajetForm {
         if(bagage != null){
             /**
              * BAGAGE N EXISTE PAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-             *
-             *
-             *
-             *
-             *
-             *
-             *
-             *
              */
         }
     }

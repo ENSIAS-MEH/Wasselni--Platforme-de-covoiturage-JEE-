@@ -1,8 +1,9 @@
 package com.covoiturage.servlets;
 
+import com.covoiturage.beans.User;
 import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.UserDao;
-import com.covoiturage.forms.AbonnementForm;
+import com.covoiturage.forms.PreInscriptionForm;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,13 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class Abonnement extends HttpServlet {
-    private static final String VUE_APRE_ABONNEMENT = "/index.jsp";
+public class PreInscription extends HttpServlet {
+    private static final String VUE_INSCRIPTION = "/inscription";
 
     static final String DAO_FACTORY  = "daofactory";
     private UserDao userDao;
 
-    private static final String ATT_FORM = "form";
+    private static final String ATT_USER = "user";
 
     @Override
     public void init() throws ServletException {
@@ -24,10 +25,15 @@ public class Abonnement extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.sendRedirect(VUE_INSCRIPTION);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        AbonnementForm form = new AbonnementForm(userDao);
-        form.inscrire(req);
-        req.setAttribute(ATT_FORM,form);
-        this.getServletContext().getRequestDispatcher(VUE_APRE_ABONNEMENT).forward(req,resp);
+        PreInscriptionForm form = new PreInscriptionForm(userDao);
+        User user = form.inscrire(req);
+        req.setAttribute(ATT_USER,user);
+        this.getServletContext().getRequestDispatcher(VUE_INSCRIPTION).forward(req,resp);
     }
 }
