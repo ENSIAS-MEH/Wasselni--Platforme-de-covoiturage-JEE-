@@ -727,18 +727,15 @@ input.input10i {
         background: #444;
       }
 
-      .imgBox{
-        position: absolute;
-        top: 5px;
-        left: 30px;
-        transform: translateX(-50%,-50%);
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 2px solid rgb(117, 188, 209);
-        overflow: hidden;
+.imgBox{
+    position: absolute;
 
-      }
+
+    border-radius: 50%;
+    border: 1px solid rgb(117, 188, 209);
+    overflow: hidden;
+
+}
       
 
 
@@ -753,6 +750,7 @@ input.input10i {
         position: relative;
         margin:20px 0 30px;
       }
+
       .h2::after {
         content: "";
         width: 240px;
