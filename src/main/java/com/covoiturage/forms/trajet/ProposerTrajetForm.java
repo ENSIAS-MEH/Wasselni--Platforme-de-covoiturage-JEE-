@@ -101,7 +101,7 @@ public class ProposerTrajetForm {
                 resultat = "Echec de la proposition";
             }
 
-        } catch (DAOException | SQLException e){
+        } catch (DAOException /*| SQLException*/ e){
             resultat = "Échec de la proposition du trajet : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
             e.printStackTrace();
         }
@@ -114,7 +114,7 @@ public class ProposerTrajetForm {
      */
     private void traiterTrajet(DetailsTrajet details,Trajet trajet) {
         try {
-            validationTrajet(trajet, details);
+            //validationTrajet(trajet, details);
         } catch (Exception e) {
             setErreur(ATT_TRAJET, e.getMessage());
         }

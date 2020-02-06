@@ -14,8 +14,8 @@ public class Abonnement extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        AbonnementForm form = new AbonnementForm();
-        form.inscrire(req);
+        //AbonnementForm form = new AbonnementForm(new UserD);
+       // form.inscrire(req);
 
         this.getServletContext().getRequestDispatcher(VUE_APRE_ABONNEMENT).forward(req,resp);
     }
