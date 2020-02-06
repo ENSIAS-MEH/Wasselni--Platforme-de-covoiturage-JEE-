@@ -736,6 +736,18 @@ input.input10i {
     overflow: hidden;
 
 }
+.imgBoxOffre{
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  transform: translateX(-50%,-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(117, 188, 209);
+  overflow: hidden;
+
+}
       
 
 
