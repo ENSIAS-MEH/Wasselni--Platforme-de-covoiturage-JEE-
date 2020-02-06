@@ -90,6 +90,14 @@
         <servlet-name>AuthUser</servlet-name>
         <url-pattern>/authentification</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>PreInscription</servlet-name>
+        <servlet-class>com.covoiturage.servlets.PreInscription</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreInscription</servlet-name>
+        <url-pattern>/preinscription</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>ConsulterOffres</servlet-name>

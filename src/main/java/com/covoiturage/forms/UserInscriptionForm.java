@@ -30,6 +30,9 @@ public class UserInscriptionForm {
     private static final String CHAMP_EMAIL = "email";
     private static final String CHAMP_MOT_DE_PASSE     = "motdepasse";
     private static final String CHAMP_CONFIRMATION_MOT_DE_PASSE = "confirmationmotdepasse";
+    private static final String CHAMP_QUESTION = "question";
+    private static final String CHAMP_REPONSE = "reponse";
+    private static final String CHAMP_ACCEPTE_TERMES = "accepte";
 
     private String resultat;
     private Map<String, String> erreurs= new HashMap();
@@ -44,39 +47,43 @@ public class UserInscriptionForm {
 
     public User inscrireUser(HttpServletRequest req){
         User user = new User();
-        try{
-            String nom = getValeurChamp(req,CHAMP_NOM);
-            String prenom = getValeurChamp(req,CHAMP_PRENOM);
-            String sexe = getValeurChamp(req,CHAMP_SEXE);
-            String dateNaissance = getValeurChamp(req,CHAMP_DATE_NAISSANCE);
-            String region = getValeurChamp(req,CHAMP_REGION);
-            String pseudo = getValeurChamp(req,CHAMP_PSEUDO);
-            String email = getValeurChamp(req,CHAMP_EMAIL);
-            String motDePasse = getValeurChamp(req,CHAMP_MOT_DE_PASSE);
-            String confirmation = getValeurChamp(req,CHAMP_CONFIRMATION_MOT_DE_PASSE);
+        try {
+            String nom = getValeurChamp(req, CHAMP_NOM);
+            String prenom = getValeurChamp(req, CHAMP_PRENOM);
+            String sexe = getValeurChamp(req, CHAMP_SEXE);
+            String dateNaissance = getValeurChamp(req, CHAMP_DATE_NAISSANCE);
+            String region = getValeurChamp(req, CHAMP_REGION);
+            String pseudo = getValeurChamp(req, CHAMP_PSEUDO);
+            String email = getValeurChamp(req, CHAMP_EMAIL);
+            String motDePasse = getValeurChamp(req, CHAMP_MOT_DE_PASSE);
+            String confirmation = getValeurChamp(req, CHAMP_CONFIRMATION_MOT_DE_PASSE);
+            String question = getValeurChamp(req, CHAMP_QUESTION);
+            String reponse = getValeurChamp(req, CHAMP_REPONSE);
+            String accepteTermes = getValeurChamp(req, CHAMP_ACCEPTE_TERMES);
 
             user.setSexe(sexe);
             user.setDateInscription(LocalDateTime.now());
             user.setRegion(region);
             user.setImage("0_image");
-            traiterNom(nom,user);
-            traiterPrenom(prenom,user);
-            traiterDateNaissance(dateNaissance,user);
-            traiterLogin(pseudo,user);
-            traiterEmail(email,user);
-            traiterMotDePasse(motDePasse,confirmation,user);
+            traiterNom(nom, user);
+            traiterPrenom(prenom, user);
+            traiterDateNaissance(dateNaissance, user);
+            traiterLogin(pseudo, user);
+            traiterEmail(email, user);
+            traiterMotDePasse(motDePasse, confirmation, user);
+            traiterReponse(question, reponse, user);
+            traiterAccepter(accepteTermes);
 
-            if(erreurs.isEmpty()){
+            if (erreurs.isEmpty()) {
                 traiterActivation(user);
-
                 user.setId(userDao.insertUser(user));
                 resultat = "Succés de l'inscription";
             } else {
                 resultat = "Echec de l'inscription";
             }
-        } catch (DAOException | SQLException e){
+        } catch (SQLException sql) {
             resultat = "Échec de l'inscription : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
-            e.printStackTrace();
+            sql.printStackTrace();
         }
         return user;
     }
@@ -85,6 +92,22 @@ public class UserInscriptionForm {
      * Méthodes de traitement
      */
 
+    private void traiterAccepter(String accepteTermes){
+        try {
+            if (accepteTermes == null) {
+                throw new Exception("Vous devez obligatoirement accepter les termes et les conditions pour continuer.");
+            }
+        } catch (Exception e) {
+            setErreur(CHAMP_ACCEPTE_TERMES, e.getMessage());
+        }
+    }
+    private void traiterReponse(String question,String reponse,User user){
+        try {
+            validationReponse(reponse);
+        } catch (Exception e) {
+            setErreur( CHAMP_REPONSE, e.getMessage() );
+        }
+    }
 
     private void traiterNom(String nom,User user){
         try {
@@ -152,6 +175,11 @@ public class UserInscriptionForm {
      * Méthodes de validation
      */
 
+    private void validationReponse( String reponse ) throws Exception {
+        if( reponse != null) {
+            throw new Exception("La réponse ne doit pas être vide. Choisissez une question et la reponse correspondante");
+        }
+    }
 
     private void validationNom( String nom ) throws Exception {
         if ( nom != null ) {
