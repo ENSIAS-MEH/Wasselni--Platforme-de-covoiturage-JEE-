@@ -1,4 +1,14 @@
+<style>
+    .card .post-image {
+        height: 100px;
+        overflow: hidden;
+        background: rgb(41, 41, 41);
+    }
 
+    .card .post-image img {
+        transition: .5s;
+    }
+</style>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
   <div class="container">
@@ -29,8 +39,14 @@
               </c:if>
 
 
-
+              <li>
+                      <div class="imgBox" style="margin-left: 40px" >
+                          <img src="ressources/img/profile_pic.png" alt="" style="max-height: 60px; max-height: 90px;" width="40px" height="40px">
+                      </div>
+              </li>
           </ul>
       </div>
+
+
   </div>
 </nav>

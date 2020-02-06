@@ -123,8 +123,13 @@
     </filter>
     <filter-mapping>
         <filter-name>EspacePrivee</filter-name>
+<<<<<<< HEAD
+        <url-pattern>/userAccueil</url-pattern>
+        <url-pattern>/WEB-INF/espace/*</url-pattern>
+=======
         <url-pattern>/WEB-INF/espace/*</url-pattern>
 
+>>>>>>> d9c4be0a67fbc3d64bcab9184bf958bb19080634
     </filter-mapping>
 
     <filter>
