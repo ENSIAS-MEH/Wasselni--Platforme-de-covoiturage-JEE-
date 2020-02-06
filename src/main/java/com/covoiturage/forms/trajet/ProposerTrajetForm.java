@@ -162,12 +162,8 @@ public class ProposerTrajetForm {
      */
 
     private LocalDateTime validationDateTrajet(String jour, String heure, String minutes) throws Exception {
-        if(jour != null & heure != null & minutes != null){
             String myDate = (((convertStringToLocalDate(jour).toString().concat(" ")).concat(heure)).concat(":")).concat(minutes);
             return convertStringToLocalDateTime(myDate);
-        } else {
-            throw new Exception("Un champ de la date est vide. Veuillez le renseigner.");
-        }
     }
 
     /**

@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +413,7 @@
       <workItem from="1580954722196" duration="3028000" />
       <workItem from="1580986579870" duration="7632000" />
       <workItem from="1580986579870" duration="6991000" />
-      <workItem from="1580994448749" duration="1005000" />
+      <workItem from="1580994448749" duration="1312000" />
     </task>
     <servers />
   </component>
