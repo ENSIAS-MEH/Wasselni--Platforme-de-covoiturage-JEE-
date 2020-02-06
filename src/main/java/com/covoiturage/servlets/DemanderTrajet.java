@@ -1,6 +1,9 @@
 package com.covoiturage.servlets;
 
 import com.covoiturage.dao.DAOFactory;
+import com.covoiturage.dao.interfaces.DetailsTrajetDao;
+import com.covoiturage.dao.interfaces.EstAssocieADao;
+import com.covoiturage.dao.interfaces.TrajetDao;
 import com.covoiturage.dao.interfaces.UserDao;
 import com.covoiturage.forms.trajet.DemanderTrajetForm;
 
@@ -13,7 +16,9 @@ import java.io.IOException;
 
 public class DemanderTrajet extends HttpServlet {
     static final String DAO_FACTORY  = "daofactory";
-    private UserDao userDao;
+    private TrajetDao trajetDao;
+    private DetailsTrajetDao detailsTrajetDao;
+    private EstAssocieADao estAssocieADao;
 
     private static final String VUE_USER_ACCUEIL = "/userAccueil";
     private static final String VUE_AUTHENTIFICATION = "/authentification" ;
@@ -26,7 +31,9 @@ public class DemanderTrajet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.userDao = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getUserDao();
+        this.trajetDao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getTrajetDao();
+        this.detailsTrajetDao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getDetailsTrajetDao();
+        this.estAssocieADao  = ((DAOFactory) this.getServletContext().getAttribute(DAO_FACTORY)).getEstAssocieADao();
     }
 
     @Override
@@ -36,7 +43,7 @@ public class DemanderTrajet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        DemanderTrajetForm form = new DemanderTrajetForm(userDao) ;
+        DemanderTrajetForm form = new DemanderTrajetForm(trajetDao,detailsTrajetDao, estAssocieADao) ;
         form.demanderTrajet(req);
         if(form.getErreurs().isEmpty()){
             HttpSession session = req.getSession();

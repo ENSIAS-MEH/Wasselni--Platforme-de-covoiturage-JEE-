@@ -27,6 +27,9 @@
               <li class="nav-item">
                   <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
               </li>
+              <li class="nav-item">
+                  <a href="<c:url value="/demanderTrajet"/>" class="nav-link">Demander un trajet</a>
+              </li>
               <c:if test="${sessionScope.userId == null}">
               <li class="nav-item">
                    <a href="<c:url value="/authentification"/>" class="nav-link"> <i class="fa fa-user"></i> se Connecter</a>

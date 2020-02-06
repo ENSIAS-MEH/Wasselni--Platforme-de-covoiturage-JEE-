@@ -161,26 +161,21 @@ crossorigin="anonymous">
 
                       <!--Reponse-->
                     <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
-						<input class="input100" type="text" value="" name="reponse" placeholder="La réponse">
+						<input class="input100" type="text" value="<c:out value='${user.reponse}'/>" name="reponse" placeholder="La réponse">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-info-circle" aria-hidden="true"></i>
 						</span>
-                    
+                        <span>${form.erreurs['reponse']}</span>
 					</div>
                <br> 
                
                    <!--Les checkbox-->
-                    <div class="checkbox icheck-check2">
-                        <input type="checkbox" checked id="check2" />
-                        <label for="check2">j'aimerais avoir des notifications sur l'actualité par email</label>
-                    <br> <br>
-                      </div>
                        <div class="checkbox icheck-check1">
-                        <input type="checkbox" checked id="check1" />
+                        <input type="checkbox" checked id="check1" value="1" name="accepte"/>
                         <label for="check1">j'accepte <a href="">les termes et conditions et la politique de confidentialité</a></label>
                     </div>
-                
+                    <span>${form.erreurs['accepte']}</span>
                 
                 
                 <!--Buton pour rejoindre-->

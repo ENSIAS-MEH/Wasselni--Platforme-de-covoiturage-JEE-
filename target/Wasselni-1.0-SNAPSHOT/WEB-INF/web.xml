@@ -90,6 +90,14 @@
         <servlet-name>AuthUser</servlet-name>
         <url-pattern>/authentification</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>PreInscription</servlet-name>
+        <servlet-class>com.covoiturage.servlets.PreInscription</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreInscription</servlet-name>
+        <url-pattern>/preinscription</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>ConsulterOffres</servlet-name>
@@ -125,8 +133,6 @@
         <filter-name>EspacePrivee</filter-name>
         <url-pattern>/userAccueil</url-pattern>
         <url-pattern>/WEB-INF/espace/*</url-pattern>
-        <url-pattern>/WEB-INF/espace/*</url-pattern>
-
     </filter-mapping>
 
     <filter>
