@@ -47,8 +47,8 @@ public class OffreForm {
             String effectif = getValeurChamp(req,CHAMP_EFFECTIF);
             String bagageAutorisé = getValeurChamp(req,CHAMP_BAGAGE_AUTORISE);
 
-            trajet.setQuartierDepart(depart);
-            trajet.setQuartierDestination(destination);
+            trajet.setVilleDepart(depart);
+            trajet.setVilleDestination(destination);
             traiterDateTrajet(dateTrajet, details);
             traiterEffectif(effectif, details);
             traiterBagage(bagageAutorisé, details);
@@ -88,17 +88,9 @@ public class OffreForm {
 
     private void traiterBagage(String bagage , DetailsTrajet details){
         if(bagage != null){
-            /**
-             * BAGAGE N EXISTE PAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-             *
-             *
-             *
-             *
-             *
-             *
-             *
-             *
-             */
+            details.setBagage(1);
+        } else {
+            details.setBagage(0);
         }
     }
     private void traiterEffectif(String effectif, DetailsTrajet details){
