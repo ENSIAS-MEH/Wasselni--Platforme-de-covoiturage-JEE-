@@ -47,15 +47,39 @@ crossorigin="anonymous">
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
 		<div class="container-inscription">
-            <div class="container">                 
+            <div class="container">     
+
+                <div class="imgBoxOffreDetaille" style="margin-left: 495px; margin-top: -50px;" >
+                    <img src="../ressources/img/box3.jpg" alt="" style="max-height: 130px; max-height: 150px;">
+                </div>
                     <div class="wrap-inscription insc" style="margin-bottom: 130px;">
 
-                        <div class="imgBox" style="margin-left: 40px" >
-                            <img src="ressources/img/profile_pic.png" alt="" style="max-height: 60px; max-height: 90px;" width="40px" height="40px">
-                        </div>
+                        
+                        <div class="row"></div>
+                            
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa 
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
+                                </div>
+                            </div>
+                                <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> 2 pssagers
+                                </div>
+                            </div>
 
 
                     </div>
+                    
             </div>
 		</div>
 	</div>
@@ -162,10 +186,16 @@ crossorigin="anonymous">
         duration:2000,
         distance:'60px'
     });
+    
     //slide
     ScrollReveal().reveal('.insc',{
         origin:'bottom',
-        duration:2000,
+        duration:1000,
+        distance:'60px'
+    });
+    ScrollReveal().reveal('.imgBoxOffreDetaille',{
+        origin:'top',
+        duration:5000,
         distance:'60px'
     });
     //footer

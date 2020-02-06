@@ -118,4 +118,52 @@ public class TrajetDaoImp implements TrajetDao {
 
         return  IdrowInserted;
     }
+
+    @Override
+    public List<DetailsTrajet> findDetailleTrajetById(Long id) throws SQLException {
+        List<DetailsTrajet> listDetails = new ArrayList<DetailsTrajet>();
+
+        String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, PRIX_PLACE, TYPE_VOITURE, MODELE_VOITURE, MARQUE_VOITURE, "+
+                "CLIMATISATION_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE, bagage from details_trajet where ID_DETAILS_TRAJET in"+
+                " (select ID_DETAILS_TRAJET_ASSOCIE from estassocie_a where ID_USER_ASSOCIE = ?) ORDER BY DATETIME_DEPART";
+        PreparedStatement preparedStmt = null;
+        ResultSet resultset;
+        Connection connection = daoFactory.getConnection();
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setLong(1, id);
+
+        resultset = preparedStmt.executeQuery();
+        Long idTrajet, idDetaille;
+        LocalDateTime date_depart;
+        String type_voiture, modele_voiture,  marque_voiture;
+        int climatisation,effectif,prix_place, bagage;
+
+        DetailsTrajet TrajetToAdd;
+
+        while( resultset.next() ) {
+            idDetaille = resultset.getLong("ID_DETAILLE_TRAJET");
+            date_depart = resultset.getObject("DATETIME_DEPART",LocalDateTime.class);
+             prix_place = resultset.getInt("PRIX_PLACE");
+            type_voiture = resultset.getString("TYPE_VOITURE");
+            modele_voiture = resultset.getString("MODELE_VOITURE");
+            marque_voiture = resultset.getString("MARQUE_VOITURE");
+            climatisation = resultset.getInt("CLIMATISATION_VOITURE");
+            effectif = resultset.getInt("EFFECTIF");
+            idTrajet = resultset.getLong("ID_TRAJET_CHOISIE");
+            bagage = resultset.getInt("BAGAGE");
+
+
+
+
+
+            TrajetToAdd = new DetailsTrajet(idDetaille,date_depart,prix_place,type_voiture,modele_voiture,marque_voiture
+            ,climatisation,effectif,idTrajet,bagage);
+            listDetails.add(TrajetToAdd);
+        }
+
+        preparedStmt.close();
+        resultset.close();
+
+        return listDetails;
+    }
 }
