@@ -117,7 +117,12 @@ crossorigin="anonymous">
                      onchange="readFilesAndDisplayPreview(this.files);" />
             </div>
             <br>
+<<<<<<< HEAD
             <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
+=======
+            <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"/>
+
+>>>>>>> b76756b121bf9c8e79ce5320dbd93df6ead8290f
           </form>
         </div>
       </div>
