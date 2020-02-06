@@ -236,7 +236,7 @@ public class UserInscriptionForm {
     private LocalDate convertStringToLocalDate(String str) throws DateTimeParseException{
         try {
             if (str != null) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
                 LocalDate date = LocalDate.parse(str, formatter);
                 return date;
             }

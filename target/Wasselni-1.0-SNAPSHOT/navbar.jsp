@@ -27,14 +27,24 @@
               <li class="nav-item">
                   <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
               </li>
-
+              <c:if test="${sessionScope.userId == null}">
               <li class="nav-item">
-                   <a href="<c:url value="/demanderTrajet"/>" class="nav-link"> <i class="fa fa-user"></i> se Connecter</a>
+                   <a href="<c:url value="/authentification"/>" class="nav-link"> <i class="fa fa-user"></i> se Connecter</a>
               </li>
+              </c:if>
+              <c:if test="${sessionScope.userId != null}">
+                  <li class="nav-item">
+                      <a href="<c:url value="#"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
+                  </li>
+              </c:if>
 
+
+<<<<<<< HEAD
               <li class="nav-item">
                   <a href="<c:url value="/demanderTrajet"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
               </li>
+=======
+>>>>>>> d9c4be0a67fbc3d64bcab9184bf958bb19080634
 
               <li>
                       <div class="imgBox" style="margin-left: 40px" >

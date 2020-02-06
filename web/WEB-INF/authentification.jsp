@@ -106,7 +106,7 @@ crossorigin="anonymous">
 
                                 </form> 
                             </div>
-                            <label for="check1">Vous n'avez pas un compte ?<a href="inscription.html"> Rejoins nous</a></label>
+                            <label for="check1">Vous n'avez pas un compte ?<a href="<c:url value="/inscription">"> Rejoins nous</a></label>
                             <hr style="width: 300px; margin-right: 160px;">
                                 <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
                             </div>

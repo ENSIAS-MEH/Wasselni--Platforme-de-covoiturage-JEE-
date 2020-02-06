@@ -27,6 +27,14 @@ ${sessionScope.userSession.login}--
 ${sessionScope.userId}--
 ${sessionScope.userSession.activation}
 
+${sessionScope.details.typeVoiture}
+${sessionScope.details.effectif}
+${sessionScope.details.climatisationVoiture}
+${sessionScope.details.dateDepart}
+${sessionScope.details.modeleVoiture}
+${sessionScope.details.marqueVoiture}
+${sessionScope.details.prixPlace}
+
 
 
 </body>

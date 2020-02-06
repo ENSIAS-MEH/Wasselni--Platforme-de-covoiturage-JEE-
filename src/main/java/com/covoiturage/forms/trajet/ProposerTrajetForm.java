@@ -2,13 +2,22 @@ package com.covoiturage.forms.trajet;
 
 import com.covoiturage.beans.DetailsTrajet;
 import com.covoiturage.beans.Trajet;
+import com.covoiturage.dao.exceptions.DAOException;
+import com.covoiturage.dao.interfaces.UserDao;
+import org.apache.tomcat.jni.Local;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ProposerTrajetForm {
+    private UserDao userDao;
+
     private static final String CHAMP_DEPART = "depart";
     private static final String CHAMP_DESTINATION = "destination";
     private static final String CHAMP_DATE_TRAJET = "datetrajet";
@@ -22,6 +31,15 @@ public class ProposerTrajetForm {
     private static final String CHAMP_MODEL = "model";
     private static final String CHAMP_CLIMATISATION = "climatisation";
 
+    private static final String ATT_TRAJET = "trajet";
+    private static final String ATT_DETAILS = "details";
+
+    private static final String ATT_SESSION_USERID = "userId";
+
+    public ProposerTrajetForm(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
     private String resultat;
     private Map<String, String> erreurs= new HashMap();
 
@@ -33,53 +51,128 @@ public class ProposerTrajetForm {
         return resultat;
     }
 
-    public Trajet proposerTrajet(HttpServletRequest req){
-        String depart = getValeurChamp(req,CHAMP_DEPART);
-        String destination = getValeurChamp(req,CHAMP_DESTINATION);
-        String dateTrajet = getValeurChamp(req,CHAMP_DATE_TRAJET);
-        String heureDepart = getValeurChamp(req,CHAMP_HEURE_DEPART);
-        String minutesDepart = getValeurChamp(req,CHAMP_MINUTES_DEPART);
-        String effectif = getValeurChamp(req,CHAMP_EFFECTIF);
-        String prix = getValeurChamp(req,CHAMP_PRIX);
-        String bagageAutorisé = getValeurChamp(req,CHAMP_BAGAGE_AUTORISE);
-        String typeVehicule = getValeurChamp(req,CHAMP_TYPE_VEHICULE);
-        String marque = getValeurChamp(req,CHAMP_MARQUE);
-        String model = getValeurChamp(req,CHAMP_MODEL);
-        String climatisation = getValeurChamp(req,CHAMP_CLIMATISATION);
-
+    public void proposerTrajet(HttpServletRequest req){
         Trajet trajet = new Trajet();
         DetailsTrajet details = new DetailsTrajet();
-
-
-        HttpSession session = req.getSession();
-        session.setAttribute("depart",depart);
-        session.setAttribute( "destination",destination);
-        session.setAttribute("dateTrajet",dateTrajet);
-        session.setAttribute( "heureDepart",heureDepart);
-        session.setAttribute( "minutesDepart",minutesDepart);
-        session.setAttribute("effectif", effectif );
-        session.setAttribute( "prix",prix);
-        session.setAttribute( "bagageAutorisé",bagageAutorisé);
-        session.setAttribute( "typeVehicule",typeVehicule);
-        session.setAttribute( "marque",marque);
-        session.setAttribute("model", model);
-        session.setAttribute( "climatisation",climatisation);
-
         try{
-            validationTrajet(trajet);
-        } catch ( Exception e) {
-            setErreur(CHAMP_DATE_TRAJET,e.getMessage());
+
+            String depart = getValeurChamp(req,CHAMP_DEPART);
+            String destination = getValeurChamp(req,CHAMP_DESTINATION);
+            String dateTrajet = getValeurChamp(req,CHAMP_DATE_TRAJET);
+            String heureDepart = getValeurChamp(req,CHAMP_HEURE_DEPART);
+            String minutesDepart = getValeurChamp(req,CHAMP_MINUTES_DEPART);
+            String effectif = getValeurChamp(req,CHAMP_EFFECTIF);
+            String prix = getValeurChamp(req,CHAMP_PRIX);
+            String bagageAutorisé = getValeurChamp(req,CHAMP_BAGAGE_AUTORISE);
+            String typeVehicule = getValeurChamp(req,CHAMP_TYPE_VEHICULE);
+            String marque = getValeurChamp(req,CHAMP_MARQUE);
+            String model = getValeurChamp(req,CHAMP_MODEL);
+            String climatisation = getValeurChamp(req,CHAMP_CLIMATISATION);
+
+
+            trajet.setQuartierDepart(depart);
+            trajet.setQuartierDestination(destination);
+            details.setTypeVoiture(typeVehicule);
+            details.setMarqueVoiture(marque);
+            details.setModeleVoiture(model);
+
+            traiterDateTrajet(dateTrajet,heureDepart,minutesDepart,details);
+            traiterClimatisation(climatisation,details);
+            traiterEffectif(effectif,details);
+            traiterPrix(prix,details);
+            traiterBagage(bagageAutorisé,details);
+            traiterTrajet(details,trajet);
+
+            //HttpSession session = req.getSession();
+            //session.setAttribute("details",details);
+
+            if(erreurs.isEmpty()){
+                HttpSession session = req.getSession();
+                if(session.getAttribute(ATT_SESSION_USERID) == null){
+                    req.setAttribute(ATT_DETAILS,details);
+                    req.setAttribute(ATT_TRAJET,trajet);
+                } else {
+                    /**
+                     * ajouter le trajet proposé
+                     */
+                }
+                resultat = "Trajet proposé avec succès";
+            } else {
+                resultat = "Echec de la proposition";
+            }
+
+        } catch (DAOException | SQLException e){
+            resultat = "Échec de la proposition du trajet : une erreur imprévue est survenue, merci de réessayer dans quelques instants.";
+            e.printStackTrace();
         }
-        return trajet;
+
     }
 
-    public boolean validationTrajet(Trajet trajet){
-        /**
-         * retourne si l'user a 2 trajets diff en même temps
-         *  ayant idUser et date depart
-         */
-        return true;
+
+    /**
+     * Méthodes de traitement
+     */
+    private void traiterTrajet(DetailsTrajet details,Trajet trajet) {
+        try {
+            validationTrajet(trajet, details);
+        } catch (Exception e) {
+            setErreur(ATT_TRAJET, e.getMessage());
+        }
     }
+
+    private void traiterDateTrajet(String jour, String heure, String minutes , DetailsTrajet details){
+        LocalDateTime dateDepart = null;
+        try{
+            dateDepart = validationDateTrajet(jour,heure,minutes);
+        } catch (Exception e){
+            setErreur(CHAMP_DATE_TRAJET , e.getMessage());
+        }
+        details.setDateDepart(dateDepart);
+    }
+
+    private void traiterPrix(String prix , DetailsTrajet details){
+        details.setPrixPlace(Integer.parseInt(prix.split(" ")[0]));
+    }
+    private void traiterClimatisation(String climatisation , DetailsTrajet details){
+        if(climatisation != null){
+            details.setClimatisationVoiture(1);
+        }
+    }
+    private void traiterBagage(String bagage , DetailsTrajet details){
+        if(bagage != null){
+            /**
+             * BAGAGE N EXISTE PAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+             *
+             *
+             *
+             *
+             *
+             *
+             *
+             *
+             */
+        }
+    }
+    private void traiterEffectif(String effectif, DetailsTrajet details){
+        details.setEffectif(Integer.parseInt(  effectif.split(" ")[0]));
+    }
+
+    /**
+     * Méthodes de validation
+     */
+
+    private LocalDateTime validationDateTrajet(String jour, String heure, String minutes) throws Exception {
+        if(jour != null & heure != null & minutes != null){
+            String myDate = (((convertStringToLocalDate(jour).toString().concat(" ")).concat(heure)).concat(":")).concat(minutes);
+            return convertStringToLocalDateTime(myDate);
+        } else {
+            throw new Exception("Un champ de la date est vide. Veuillez le renseigner.");
+        }
+    }
+
+    /**
+     * Méthodes utiles
+     */
 
     private void setErreur( String champ, String message ) {
         erreurs.put( champ, message );
@@ -92,5 +185,18 @@ public class ProposerTrajetForm {
         } else {
             return valeur;
         }
+    }
+    public LocalDateTime convertStringToLocalDateTime(String str){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
+        return dateTime;
+    }
+    public LocalDate convertStringToLocalDate(String str)  {
+            if (str != null) {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                LocalDate date = LocalDate.parse(str, formatter);
+                return date;
+            }
+        return null;
     }
 }
