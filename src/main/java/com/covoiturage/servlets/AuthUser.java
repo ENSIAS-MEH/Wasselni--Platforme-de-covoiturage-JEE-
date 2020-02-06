@@ -52,7 +52,7 @@ public class AuthUser extends HttpServlet {
             session.setAttribute(ATT_SESSION_USER,user);
             if(req.getAttribute(ATT_TRAJET) != null && req.getAttribute(ATT_DETAILS) != null){
                 /**
-                 * Ajout de la proposition + demande
+                 * Ajout de la proposition / demande
                  */
             }
             resp.sendRedirect(VUE_USER_ACCUEIL);

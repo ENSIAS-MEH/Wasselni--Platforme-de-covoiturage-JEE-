@@ -41,7 +41,7 @@ public class ProposerTrajet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ProposerTrajetForm form = new ProposerTrajetForm();
+        ProposerTrajetForm form = new ProposerTrajetForm(userDao);
         form.proposerTrajet(req);
 
         req.setAttribute(ATT_FORM,form);
