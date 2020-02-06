@@ -10,47 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/wasselnidb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/wasselnidb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/DemanderTrajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/DemanderTrajet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/DemanderTrajetForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/trajet/ProposerTrajetForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ProposerTrajet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/DetailsTrajet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/Trajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/Trajet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/beans/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/interfaces/TrajetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/interfaces/TrajetDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/AbonnementForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/OffreForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/OffreForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/DemanderTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/DemanderTrajetForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/trajet/ProposerTrajetForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/Abonnement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ConsulterOffres.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ConsulterOffres.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/DemanderTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/DemanderTrajet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ProposerTrajet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ProposerTrajet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/espace/admin/utilisateurs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/authentification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/apres_inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/apres_inscription.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/offres.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/proposertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/proposertrajet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/proposertrajet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/proposertrajet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +347,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -461,7 +434,7 @@
       <workItem from="1580994448749" duration="4669000" />
       <workItem from="1581013276236" duration="2208000" />
       <workItem from="1580994448749" duration="1312000" />
-      <workItem from="1581025933631" duration="1382000" />
+      <workItem from="1581025933631" duration="5267000" />
     </task>
     <servers />
   </component>
@@ -542,62 +515,62 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580398151367" />
-    <state width="1223" height="2" key="GridCell.Tab.0.bottom" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.0.bottom" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="2" key="GridCell.Tab.0.center" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.0.center" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="2" key="GridCell.Tab.0.left" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.0.left" timestamp="1581030352696">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1581030352696" />
     <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="2" key="GridCell.Tab.0.right" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.0.right" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="2" key="GridCell.Tab.1.bottom" timestamp="1581027263386">
+    <state width="1223" height="220" key="GridCell.Tab.1.bottom" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581027263386" />
+    <state width="1223" height="220" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375761" />
-    <state width="1223" height="2" key="GridCell.Tab.1.center" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.1.center" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375760" />
-    <state width="1223" height="2" key="GridCell.Tab.1.left" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.1.left" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375760" />
-    <state width="1223" height="2" key="GridCell.Tab.1.right" timestamp="1581027263385">
+    <state width="1223" height="220" key="GridCell.Tab.1.right" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1581027263385" />
+    <state width="1223" height="220" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375761" />
-    <state width="1223" height="2" key="GridCell.Tab.2.bottom" timestamp="1581027263386">
+    <state width="1223" height="220" key="GridCell.Tab.2.bottom" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581027263386" />
-    <state width="1223" height="2" key="GridCell.Tab.2.center" timestamp="1581027263386">
+    <state width="1223" height="220" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
+    <state width="1223" height="220" key="GridCell.Tab.2.center" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1581027263386" />
-    <state width="1223" height="2" key="GridCell.Tab.2.left" timestamp="1581027263386">
+    <state width="1223" height="220" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
+    <state width="1223" height="220" key="GridCell.Tab.2.left" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1581027263386" />
-    <state width="1223" height="2" key="GridCell.Tab.2.right" timestamp="1581027263386">
+    <state width="1223" height="220" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
+    <state width="1223" height="220" key="GridCell.Tab.2.right" timestamp="1581030352697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="2" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1581027263386" />
+    <state width="1223" height="220" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1581030352697" />
     <state width="1223" height="2" key="GridCell.Tab.3.bottom" timestamp="1580951524520">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

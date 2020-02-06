@@ -52,11 +52,7 @@ public class ProposerTrajet extends HttpServlet {
         form.proposerTrajet(req);
 
         req.setAttribute(ATT_FORM,form);
-
         HttpSession session = req.getSession();
-        session.getAttribute("details");
-        this.getServletContext().getRequestDispatcher("/test.jsp").forward(req,resp);
-
         if(form.getErreurs().isEmpty()){
             if(session.getAttribute(ATT_SESSION_USERID) == null){
                 this.getServletContext().getRequestDispatcher(VUE_AUTHENTIFICATION).forward(req,resp);
