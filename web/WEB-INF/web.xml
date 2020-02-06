@@ -108,13 +108,23 @@
         <servlet-name>Validation</servlet-name>
         <url-pattern>/validation</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserAccueil</servlet-name>
+        <servlet-class>com.covoiturage.servlets.espace.user.UserAccueil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAccueil</servlet-name>
+        <url-pattern>/userAccueil</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>EspacePrivee</filter-name>
-        <url-pattern>/test</url-pattern>
+        <url-pattern>/userAccueil</url-pattern>
+        <url-pattern>/admin_accueil</url-pattern>
     </filter-mapping>
 
     <filter>

@@ -204,6 +204,8 @@ public class UserDaoImp implements UserDao {
         preparedStmt = connection.prepareStatement(sql);
         preparedStmt.setInt(1,user.getActivation());
         preparedStmt.setLong(2, user.getId());
+        preparedStmt.executeUpdate();
+        connection.commit();
         return;
     };
     public int getUserActivation(User user) throws SQLException{

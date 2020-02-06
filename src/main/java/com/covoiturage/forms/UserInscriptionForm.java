@@ -68,7 +68,8 @@ public class UserInscriptionForm {
 
             if(erreurs.isEmpty()){
                 traiterActivation(user);
-                userDao.insertUser(user) ;
+
+                user.setId(userDao.insertUser(user));
                 resultat = "Succés de l'inscription";
             } else {
                 resultat = "Echec de l'inscription";

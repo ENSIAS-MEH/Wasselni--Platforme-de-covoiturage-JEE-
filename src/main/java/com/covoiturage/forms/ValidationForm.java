@@ -65,7 +65,6 @@ public class ValidationForm {
         } catch (Exception e) {
             setErreur(CHAMP_ACTIVATION, e.getMessage());
         }
-        user.setActivation(Integer.parseInt(code));
     }
     /**
      * Méthodes de validation
@@ -75,7 +74,8 @@ public class ValidationForm {
             throw new Exception("Le code que vous avez entré est vide .Réessayez ");
         } else {
             if((Integer.toString(user.getActivation()).equals(code))){
-                user.setActivation(Integer.parseInt(code));
+                user.setActivation(1);
+                System.out.println("ssssssssssssssssssssssss"+user.getId());
                 userDao.setUserActivation(user);
             } else {
                 throw new Exception("Le code que vous avez entré est incorrect.");

@@ -23,6 +23,11 @@ ${sessionScope.typeVehicule}--
 ${sessionScope.marque}--
 ${sessionScope.model}--
 ${sessionScope.climatisation}
+${sessionScope.userSession.login}--
+${sessionScope.userId}--
+${sessionScope.userSession.activation}
+
+
 
 </body>
 </html>

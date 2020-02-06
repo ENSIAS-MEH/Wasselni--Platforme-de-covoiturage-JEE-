@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -64,7 +65,7 @@ crossorigin="anonymous">
 <!--************-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
   <div class="container">
-      <a href="#" class="navbar-brand"> <img src="/web/ressources/img/logo.png" alt="" width="80%" height="80%"></a>
+      <a href="#" class="navbar-brand"> <img src="/ressources/img/logo.png" alt="" width="80%" height="80%"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,7 +100,7 @@ crossorigin="anonymous">
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('/web/ressources/img/profile_bg.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('/ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
           
@@ -147,11 +148,12 @@ crossorigin="anonymous">
                                 <form method="post" action="/validation" class="form-inline">
                                     <div class="form-group mb-2">
                                         <div class=" wrap-input1 " style="margin-left: 90px;">
-                                            <input class="input1" type="text" name="validation" placeholder="Code d'activation">
+                                            <input class="input1" type="text" name="activation" placeholder="Code d'activation">
                                             <span class="focus-input1"></span>
                                             <span class="symbol-input1"><i class="fa fa-user" aria-hidden="true"></i>  </span>
                                         </div>
-                                        <span>${form.erreurs['validation']}</span>
+                                        <span>${form.erreurs['activation']}</span>
+
                                     </div>
                                     <button type="submit"   style="margin-left: 150px;" class="btn btn-info mb-2 ">Activer</button>
                                 </form>
@@ -171,68 +173,64 @@ crossorigin="anonymous">
 <!--************-->
 <!-- à PROPOS -->
 <!--************-->
-<div class="section">
-  <h3 class="h2" style="text-align: center; margin-bottom: 50px;">À propos</h3>
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row" style="margin-left: 100px;">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Informations personnelles</div>
-            <br>
-            <div class="row">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
-              <div style="margin-left: 15px;">Samid</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Prenon:</strong></div>
-              <div style="margin-left: 15px;">Mohammed</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Date de naissance:</strong></div>
-              <div style="margin-left: 15px;">10 Mai 1992</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Adresse:</strong></div>
-              <div style="margin-left: 15px;">Oujda,  Andalous Rue Bodir</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Sex:</strong></div>
-              <div style="margin-left: 15px;">M</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Informations sur le compte</div>
-            <br>
-            <div class="row">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
-              <div style="margin-left: 15px;"> MohammedAuto</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
-              <div style="margin-left: 15px;"> mohammedsamid0@gmail.com</div>
-            </div>
-            <div class="row mt-3">
-              <div style="margin-left: 15px;"><strong class="text-uppercase">Téléphone: </strong></div>
-              <div style="margin-left: 15px;">(+212) 6 28 96 45 10</div>
-            </div>
-            <br>
-            <!--Modifier-->
-            <div class="row mt-3" style="margin-left: 60px; margin-top: 20px;">
-              <a href="#" id="btnModifier" data-toggle="modal" data-target="#modifier"></a>
-           </div>
+    <div class="section" style="margin-bottom: 50px;">
+        <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Vos informations</h3>
+        <div class="container">
+            <div class="card" data-aos="fade-up" data-aos-offset="10">
+                <div class="row" style="margin-left: 100px;">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card-body">
+                            <div class="h4 mt-0 title">Informations personnelles</div>
+                            <br>
+                            <div class="row">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.nom}"/></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Prenom:</strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.prenom}"/></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Date de naissance:</strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.dateNaissance}"/></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Adresse:</strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.region}"/></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Sexe:</strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.sexe}"/></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card-body">
+                            <div class="h4 mt-0 title">Informations sur le compte</div>
+                            <br>
+                            <div class="row">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.login}"/></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
+                                <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                            </div>
+                            <br>
+                            <div class="row mt-3">
+                                <a href="#" id ="btnModifier" data-toggle="modal" data-target="#modifier"></a>
+                            </div>
 
 
-          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-<div class="section" id="skill">
+
+    <div class="section" id="skill">
   <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Reviews</h3>
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
