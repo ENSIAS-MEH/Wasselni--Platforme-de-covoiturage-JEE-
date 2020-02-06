@@ -81,7 +81,7 @@ public class TrajetDaoImp implements TrajetDao {
         stmt.close();
         resultset.close();
 
-        return listOfTrajets;
+        return listOfTrajets; 
     }
     public Long insertTrajet(Trajet trajet) throws SQLException {
         Long IdrowInserted;

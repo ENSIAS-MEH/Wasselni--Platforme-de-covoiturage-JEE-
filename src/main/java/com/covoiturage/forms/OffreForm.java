@@ -53,9 +53,7 @@ public class OffreForm {
             traiterEffectif(effectif, details);
             traiterBagage(bagageAutorisé, details);
             if(erreurs.isEmpty()){
-                    /**
-                     * rechercher les trajets
-                     */
+
                 resultat = "Recherche des offres en succès";
             } else {
                 resultat = "Echec de la recherche";
