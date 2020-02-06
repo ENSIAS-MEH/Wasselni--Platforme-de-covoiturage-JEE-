@@ -27,7 +27,7 @@ public class UserDaoImp implements UserDao {
 
         if(user.getLogin() != null) {
             sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION "+
+                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION, ID_QUESTION_USER, reponse "+
                     "FROM USERS WHERE LOGIN = ? ";
             preparedStmt = connection.prepareStatement(sql);
             preparedStmt.setString(1,user.getLogin());
@@ -35,7 +35,7 @@ public class UserDaoImp implements UserDao {
 
         if(user.getEmail() != null) {
             sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION "+
+                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION ,ID_QUESTION_USER, reponse "+
                     "FROM USERS WHERE EMAIL = ? ";
             preparedStmt = connection.prepareStatement(sql);
             preparedStmt.setString(1,user.getEmail());
@@ -58,6 +58,8 @@ public class UserDaoImp implements UserDao {
             returnedUser.setDateInscription(resultset.getObject("DATE_INSCRIPTION", LocalDateTime.class));
             returnedUser.setRank(resultset.getFloat("RANK"));
             returnedUser.setActivation(resultset.getInt("ACTIVATION"));
+            returnedUser.setId_question(resultset.getInt("ID_question_user"));
+            returnedUser.setReponse(resultset.getString("reponse"));
         } else {
             returnedUser = null;
         }
@@ -76,13 +78,14 @@ public class UserDaoImp implements UserDao {
         Connection connection = DAOFactory.getInstance().getConnection();
         List<User> listofUsers = new ArrayList<User>();
         sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
-                "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION " +
+                "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION, ID_QUESTION_USER, reponse " +
                 "FROM USERS";
         stmt = connection.createStatement();
         resultset = stmt.executeQuery(sql);
 
         Long id;
-        String nom, prenom, sexe, login, email, password, region, image;
+        int id_question_user;
+        String nom, prenom, sexe, login, email, password, region, image,reponse;
         LocalDate dateNaissance;
         LocalDateTime dateInscription;
         float rank;
@@ -103,7 +106,10 @@ public class UserDaoImp implements UserDao {
             dateInscription = resultset.getObject("DATE_INSCRIPTION",LocalDateTime.class);
             rank = resultset.getFloat("RANK");
             activation = resultset.getInt("ACTIVATION");
-            usertoAdd = new User(id,nom,prenom,sexe,dateNaissance,region,login,email,password,image,dateInscription,rank,activation);
+            id_question_user = resultset.getInt("Id_question_user");
+            reponse = resultset.getString("reponse");
+
+            usertoAdd = new User(id,nom,prenom,sexe,dateNaissance,region,login,email,password,image,dateInscription,rank,activation,id_question_user,reponse);
             listofUsers.add(usertoAdd);
         }
 
@@ -122,8 +128,8 @@ public class UserDaoImp implements UserDao {
         Connection connection = daoFactory.getConnection();
         //Rank est par Defaut 5
         sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, IMAGE_PATH , REGION, LOGIN, EMAIL, PASSWORD, " +
-                " DATE_INSCRIPTION,ACTIVATION) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                " DATE_INSCRIPTION,ACTIVATION,ID_QUESTION_USER,reponse) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStmt.setString(1, user.getNom());
         preparedStmt.setString(2, user.getPrenom());
@@ -136,6 +142,8 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setString(9, user.getPassword());
         preparedStmt.setObject(10, LocalDateTime.now());
         preparedStmt.setInt(11, user.getActivation());
+        preparedStmt.setInt(12, user.getId_question());
+        preparedStmt.setString(13, user.getReponse());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {

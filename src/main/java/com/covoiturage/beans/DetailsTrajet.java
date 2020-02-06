@@ -26,6 +26,15 @@ public class DetailsTrajet implements Serializable {
     private int climatisationVoiture;
     private int effectif;
     private Long idTrajetChoisie;
+    private int bagage;
+
+    public int getBagage() {
+        return bagage;
+    }
+
+    public void setBagage(int bagage) {
+        this.bagage = bagage;
+    }
 
     public DetailsTrajet() {
         super();
@@ -38,7 +47,8 @@ public class DetailsTrajet implements Serializable {
                          String marqueVoiture,
                          int climatisationVoiture,
                          int effectif,
-                         Long idTrajetChoisie) {
+                         Long idTrajetChoisie,
+                         int bagage) {
         this.idDetailsTrajet = idDetailsTrajet;
         this.dateDepart = dateDepart;
         this.prixPlace = prixPlace;
@@ -48,6 +58,7 @@ public class DetailsTrajet implements Serializable {
         this.climatisationVoiture = climatisationVoiture;
         this.effectif = effectif;
         this.idTrajetChoisie = idTrajetChoisie;
+        this.bagage = bagage;
     }
 
     public Long getIdDetailsTrajet() {

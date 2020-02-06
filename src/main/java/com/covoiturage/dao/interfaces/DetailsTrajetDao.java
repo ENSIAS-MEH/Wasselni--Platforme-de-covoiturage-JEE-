@@ -11,4 +11,5 @@ public interface DetailsTrajetDao {
     public List<DetailsTrajet> findAllDetailsTrajets() throws SQLException;
     public Long insertDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException;
     public boolean updateDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException;
+
 }

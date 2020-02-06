@@ -19,6 +19,25 @@ public class User implements Serializable {
     private LocalDateTime dateInscription;
     private float rank;
     private int activation;
+    private int id_question;
+    private String reponse;
+
+
+    public int getId_question() {
+        return id_question;
+    }
+
+    public void setId_question(int id_question) {
+        this.id_question = id_question;
+    }
+
+    public String getReponse() {
+        return reponse;
+    }
+
+    public void setReponse(String reponse) {
+        this.reponse = reponse;
+    }
 
     public User() {
         super();
@@ -36,7 +55,7 @@ public class User implements Serializable {
                 String image,
                 LocalDateTime dateInscription,
                 float rank,
-                int activation) {
+                int activation, int id_question, String reponse) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -50,6 +69,8 @@ public class User implements Serializable {
         this.dateInscription = dateInscription;
         this.rank = rank;
         this.activation = activation;
+        this.id_question = id_question;
+        this.reponse = reponse;
     }
 
     public Long getId() {

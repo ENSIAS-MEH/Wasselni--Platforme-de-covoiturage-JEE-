@@ -9,4 +9,5 @@ public interface TrajetDao {
     public Trajet findSpecificTrajet(Trajet trajet) throws SQLException;
     public List<Trajet> findAllTrajets() throws SQLException;
     public Long insertTrajet(Trajet trajet) throws SQLException;
+
 }

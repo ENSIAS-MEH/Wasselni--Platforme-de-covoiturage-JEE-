@@ -6,10 +6,10 @@ public class Trajet implements Serializable {
     private static final long serialVersionUID = -9145861415727573123L;
     private Long idTrajet;
     private String villeDepart;
-    private String quartierDepart;
-    private String rueDepart;
+    //private String quartierDepart;
+   // private String rueDepart;
     private String villeDestination;
-    private String quartierDestination;
+    //private String quartierDestination;
     private String rueDestination;
 
     public Trajet() {
@@ -17,19 +17,15 @@ public class Trajet implements Serializable {
     }
 
     public Trajet(Long idTrajet,
-                  String villeDepart,
-                  String quartierDepart,
-                  String rueDepart,
                   String villeDestination,
-                  String quartierDestination,
-                  String rueDestination) {
+                  String villeDepart) {
         this.idTrajet = idTrajet;
         this.villeDepart = villeDepart;
-        this.quartierDepart = quartierDepart;
-        this.rueDepart = rueDepart;
+        //this.quartierDepart = quartierDepart;
+        //this.rueDepart = rueDepart;
         this.villeDestination = villeDestination;
-        this.quartierDestination = quartierDestination;
-        this.rueDestination = rueDestination;
+        //this.quartierDestination = quartierDestination;
+        //this.rueDestination = rueDestination;
     }
 
     public Long getIdTrajet() {
@@ -48,21 +44,21 @@ public class Trajet implements Serializable {
         this.villeDepart = villeDepart;
     }
 
-    public String getQuartierDepart() {
-        return quartierDepart;
-    }
+   // public String getQuartierDepart() {
+       // return quartierDepart;
+   // }
 
-    public void setQuartierDepart(String quartierDepart) {
-        this.quartierDepart = quartierDepart;
-    }
+   // public void setQuartierDepart(String quartierDepart) {
+      //  this.quartierDepart = quartierDepart;
+   // }
 
-    public String getRueDepart() {
-        return rueDepart;
-    }
+   // public String getRueDepart() {
+        //return rueDepart;
+    //}
 
-    public void setRueDepart(String rueDepart) {
-        this.rueDepart = rueDepart;
-    }
+    //public void setRueDepart(String rueDepart) {
+       // this.rueDepart = rueDepart;
+   // }
 
     public String getVilleDestination() {
         return villeDestination;
@@ -72,13 +68,7 @@ public class Trajet implements Serializable {
         this.villeDestination = villeDestination;
     }
 
-    public String getQuartierDestination() {
-        return quartierDestination;
-    }
 
-    public void setQuartierDestination(String quartierDestination) {
-        this.quartierDestination = quartierDestination;
-    }
 
     public String getRueDestination() {
         return rueDestination;
