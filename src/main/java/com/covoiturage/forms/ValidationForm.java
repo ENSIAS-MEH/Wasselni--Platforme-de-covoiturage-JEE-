@@ -3,7 +3,6 @@ package com.covoiturage.forms;
 import com.covoiturage.beans.User;
 import com.covoiturage.dao.exceptions.DAOException;
 import com.covoiturage.dao.interfaces.UserDao;
-import jdk.nashorn.internal.runtime.ECMAException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

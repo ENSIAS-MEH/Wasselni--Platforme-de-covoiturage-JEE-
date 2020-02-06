@@ -47,7 +47,7 @@ crossorigin="anonymous">
   <section id="blog" class="py-3">
    <div  style=" margin-top: -20px; margin-bottom: -20px;">
 		<div class="container-inscription ">
-			<div class="wrap-inscription insc" style="margin-top: 130px;margin-bottom: 130px;">
+			<div class="wrap-inscription insc" style="margin-top: 110px;margin-bottom: 130px;">
                 <span class="inscription-form-title" style="margin-left: 130px;">
                     Rejoins nous
                 </span>
@@ -145,6 +145,28 @@ crossorigin="anonymous">
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
+                    </div>
+                    
+
+                    <!--Question-->
+                    <div style="text-align: left;">
+                        <select name ="question" class="browser-default custom-select" style="margin-bottom: 12px; border-radius: 20px; background:#e6e6e6; width:435px;">
+                          <option value="-1" selected>Question de sécurité</option>
+                          <option value="3" >Quel est le prénom de votre enfant aîné?</option>
+                          <option value="1" >Quel était le numéro de la maison et le nom de la rue dans lequel vous viviez enfant?</option>
+                          <option value="4" >What time of the day were you born? (hh:mm)</option>
+                          <option value="2" >Quels étaient les quatre derniers chiffres de votre numéro de téléphone d'enfance?</option>
+                        </select>
+                      </div>
+
+                      <!--Reponse-->
+                    <div class="wrap-input100 validate-input" data-validate = "Champ obligatoire">
+						<input class="input100" type="text" value="" name="reponse" placeholder="La réponse">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+						</span>
+                    
 					</div>
                <br> 
                
@@ -163,8 +185,8 @@ crossorigin="anonymous">
                 
                 <!--Buton pour rejoindre-->
                 
-					<div class="container-inscription-form-btn">
-						<input type="submit" class="inscription-form-btn" value="Rejoindre" />
+					<div class="container-inscription-form-btn" >
+						<input type="submit" style="margin-right: 30px;" class="inscription-form-btn" value="Rejoindre" />
 					</div>
 				</form>
 			</div>

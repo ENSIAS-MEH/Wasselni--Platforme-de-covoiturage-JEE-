@@ -121,20 +121,21 @@ public class UserDaoImp implements UserDao {
         ResultSet resultset;
         Connection connection = daoFactory.getConnection();
         //Rank est par Defaut 5
-        sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+        sql = "INSERT INTO users (NOM, PRENOM, SEXE, DATE_NAISSANCE, IMAGE_PATH , REGION, LOGIN, EMAIL, PASSWORD, " +
                 " DATE_INSCRIPTION,ACTIVATION) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         preparedStmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStmt.setString(1, user.getNom());
         preparedStmt.setString(2, user.getPrenom());
         preparedStmt.setString(3, user.getSexe());
         preparedStmt.setObject(4, user.getDateNaissance());
-        preparedStmt.setString(5, user.getRegion());
-        preparedStmt.setString(6, user.getLogin());
-        preparedStmt.setString(7, user.getEmail());
-        preparedStmt.setString(8, user.getPassword());
-        preparedStmt.setObject(9, LocalDateTime.now());
-        preparedStmt.setInt(10, user.getActivation());
+        preparedStmt.setString(5, user.getImage());
+        preparedStmt.setString(6, user.getRegion());
+        preparedStmt.setString(7, user.getLogin());
+        preparedStmt.setString(8, user.getEmail());
+        preparedStmt.setString(9, user.getPassword());
+        preparedStmt.setObject(10, LocalDateTime.now());
+        preparedStmt.setInt(11, user.getActivation());
         preparedStmt.execute();
         resultset = preparedStmt.getGeneratedKeys();
         if (resultset.next()) {
@@ -196,6 +197,34 @@ public class UserDaoImp implements UserDao {
         return rowDeleted;
     }
 
+    @Override
+    public String getImageProfile(User user) throws SQLException {
+        String image_path = "0_image";
+        Connection connection = DAOFactory.getInstance().getConnection();
+        PreparedStatement ps = connection.prepareStatement("select IMAGE_PATH from users where id = ?");
+
+        ps.setLong(1,user.getId());
+
+        ResultSet rs = ps.executeQuery();
+
+        if(rs.next()){
+            image_path = rs.getString(1);
+        }
+
+        return image_path;
+
+    }
+
+    @Override
+    public void setImageProfile(User user) throws SQLException {
+
+        Connection connection = DAOFactory.getInstance().getConnection();
+
+        PreparedStatement ps = connection.prepareStatement("insert into users  (IMAGE_PATH) values (?)");
+        ps.setString(1,user.getImage());
+        ps.execute();
+
+    }
     public void setUserActivation(User user) throws SQLException{
         String sql;
         PreparedStatement preparedStmt;
