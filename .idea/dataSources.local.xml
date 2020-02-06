@@ -2,22 +2,9 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="wasselnidb@localhost" uuid="ec50ed36-f7f9-4fdb-9b25-45cd15fff26a">
-<<<<<<< HEAD
-      <database-info product="MySQL" version="5.5.5-10.4.8-MariaDB" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MARIADB" exact-version="10.4.8" exact-driver-version="8.0">
-=======
-      <database-info product="MySQL" version="5.5.5-10.1.40-MariaDB" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.24">
->>>>>>> 6e2f8c2cf774ad5fdd43cfa1340c181201f7d068
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>forget</secret-storage>
+      <schema-mapping />
     </data-source>
   </component>
 </project>

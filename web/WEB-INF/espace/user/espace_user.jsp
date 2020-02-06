@@ -119,8 +119,6 @@ crossorigin="anonymous">
             <br>
             <input type="submit" class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"/>
 
-              
-            </div>
           </form>
         </div>
       </div>

@@ -11,35 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/inscription.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Wasselni.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/inscription.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/inscription.css" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserAuthForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/UserInscriptionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/ValidationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/InscriptionUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/InscriptionUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/inscription/Validation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserAuthForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserAuthForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/UserInscriptionForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/AuthUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/apres_inscription.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/apres_inscription.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
->>>>>>> 6e2f8c2cf774ad5fdd43cfa1340c181201f7d068
+      <change beforePath="$PROJECT_DIR$/web/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -347,32 +327,6 @@
       </list>
     </recent_temporary>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.041503523" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
->>>>>>> 6e2f8c2cf774ad5fdd43cfa1340c181201f7d068
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -435,14 +389,12 @@
       <workItem from="1580940869500" duration="2049000" />
       <workItem from="1580943064666" duration="924000" />
       <workItem from="1580940869500" duration="2979000" />
-<<<<<<< HEAD
       <workItem from="1580944901073" duration="58000" />
       <workItem from="1580944404342" duration="874000" />
       <workItem from="1580945522916" duration="7022000" />
-=======
       <workItem from="1580944404342" duration="3835000" />
       <workItem from="1580948259132" duration="5771000" />
->>>>>>> 6e2f8c2cf774ad5fdd43cfa1340c181201f7d068
+      <workItem from="1580954722196" duration="3028000" />
     </task>
     <servers />
   </component>
