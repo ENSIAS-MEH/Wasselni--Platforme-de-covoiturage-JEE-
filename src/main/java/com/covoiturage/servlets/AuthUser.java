@@ -16,10 +16,13 @@ public class AuthUser extends HttpServlet {
     static final String DAO_FACTORY  = "daofactory";
     private UserDao userDao;
 
-    private static final String ATT_SESSION_USERID = "userId";
-    private static final String ATT_FORM = "form";
-    private static final String ATT_USER = "user";
     private static final String ATT_SESSION_USER = "userSession";
+    private static final String ATT_SESSION_USERID = "userId";
+
+    private static final String ATT_FORM = "form";
+    private static final String ATT_USER = "user";;
+    private static final String ATT_TRAJET = "trajet";
+    private static final String ATT_DETAILS = "details";
 
     private static final String VUE_AUTHENTIFICATION = "/WEB-INF/authentification.jsp";
     private static final String VUE_USER_ACCUEIL = "/userAccueil";
@@ -47,6 +50,11 @@ public class AuthUser extends HttpServlet {
             HttpSession session = req.getSession();
             session.setAttribute(ATT_SESSION_USERID,user.getId());
             session.setAttribute(ATT_SESSION_USER,user);
+            if(req.getAttribute(ATT_TRAJET) != null && req.getAttribute(ATT_DETAILS) != null){
+                /**
+                 * Ajout de la proposition + demande
+                 */
+            }
             resp.sendRedirect(VUE_USER_ACCUEIL);
         } else {
             this.getServletContext().getRequestDispatcher(VUE_AUTHENTIFICATION).forward(req, resp);
