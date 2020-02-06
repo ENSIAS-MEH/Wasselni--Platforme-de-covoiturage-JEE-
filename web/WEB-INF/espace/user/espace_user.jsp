@@ -283,7 +283,7 @@ crossorigin="anonymous">
                                       </div>
 
                                       <div class="col-sm-6">
-                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
+                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Destination: </span>Oujda, Andalous Rue Bodir
                                       </div>
                                   </div>
                                   <br>
