@@ -25,7 +25,7 @@
               <li class="nav-item">
                   <a href="<c:url value="/demanderTrajet"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
               </li>
-              
+
 
           </ul>
       </div>

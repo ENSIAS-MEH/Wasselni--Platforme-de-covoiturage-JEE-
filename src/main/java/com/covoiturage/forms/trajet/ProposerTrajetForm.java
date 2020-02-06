@@ -63,8 +63,9 @@ public class ProposerTrajetForm {
         details.setTypeVoiture(typeVehicule);
         details.setMarqueVoiture(marque);
         details.setModeleVoiture(model);
-        details.setClimatisationVoiture(Integer.parseInt(climatisation));
-
+            if(climatisation != null){
+            details.setClimatisationVoiture(1);
+        }
 
         HttpSession session = req.getSession();
         session.setAttribute("details",details);
@@ -104,17 +105,26 @@ public class ProposerTrajetForm {
             return valeur;
         }
     }
-    private LocalDateTime convertStringToLocalDateTime(String str){
+    public LocalDateTime convertStringToLocalDateTime(String str){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
         return dateTime;
     }
-    private LocalDate convertStringToLocalDate(String str)  {
+    public LocalDate convertStringToLocalDate(String str)  {
             if (str != null) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
                 LocalDate date = LocalDate.parse(str, formatter);
                 return date;
             }
         return null;
+    }
+
+    public static void main(String []args){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate date = LocalDate.parse("02/04/2019", formatter);
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        LocalDateTime dateTime = LocalDateTime.parse(date.toString()+" "+"16:40", formatter2);
+
+        System.out.println(dateTime);
     }
 }
