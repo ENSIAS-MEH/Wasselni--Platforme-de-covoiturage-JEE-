@@ -22,12 +22,12 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
     public DetailsTrajet findSpecificDetailsTrajet(DetailsTrajet detailsTrajet) throws SQLException {
         String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, PRIX_PLACE, TYPE_VOITURE, MARQUE_VOITURE, " +
                 " MODELE_VOITURE, CLIMATISATION_VOITURE, EFFECTIF, ID_TRAJET_CHOISIE, bagage " +
-                "FROM DETAILS_TRAJET WHERE ID_DETAILS_TRAJET = ?";
+                "FROM DETAILS_TRAJET WHERE ID_TRAJET_CHOISIE = ?";
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
         Connection connection = DAOFactory.getInstance().getConnection();
         preparedStmt = connection.prepareStatement(sql);
-        preparedStmt.setLong(1, detailsTrajet.getIdDetailsTrajet());
+        preparedStmt.setLong(1, detailsTrajet.getIdTrajetChoisie());
         resultset = preparedStmt.executeQuery();
         DetailsTrajet returnedDetailsTrajet;
         if( resultset.next() ) {

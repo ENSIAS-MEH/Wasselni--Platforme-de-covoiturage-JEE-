@@ -120,6 +120,8 @@
         <!-- Les offres -->
         <div class="col-10 offre">
           <!-- Premier ligne des offres -->
+
+            <c:forEach var="i" begin="0" end="${offres.size()-1}" step="1"  >
             <div class="row ">
                 <!--Trajte-->
                 <div class="col-sm-6" >
@@ -128,38 +130,36 @@
                             <div class="imgBoxOffre">
                                 <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
                             </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
+                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
                             <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
                                 <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
+                                <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
                             </div>
                             
                         </div>
                         
                         <div class="news-content">
                             <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
+                            <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
                             <div class="post-meta">
                                 <div class="row" style="text-align: left;">
                                     <!--Depart-->
                                     <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
+                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDepart}</span></a> </span>
                                     </div>
                                      <!--Destination-->
                                     <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
+                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDestination}</a> </span>
                                     </div> 
                                 </div>
                                 <div class="row" style="text-align: left;">
                                     <!--Date-->
                                     <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
+                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
                                     </div>  
                                      <!--Effectif-->
                                     <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
+                                        <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
                                     </div>
                                 </div>
                                 <p>
@@ -172,298 +172,15 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box3.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
-                                    </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
-                                    </div> 
-                                </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
-                                    </div>
-                                </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            
-            <!--row--> <br> <br>
-
-
-
-            <div class="row">
-
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
-                                    </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
-                                    </div> 
-                                </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
-                                    </div>
-                                </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box2.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
-                                    </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
-                                    </div> 
-                                </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
-                                    </div>
-                                </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
 
 
 
             </div>
 
+            
             <!--row--> <br> <br>
-            <div class="row">
-
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box3.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
-                                    </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
-                                    </div> 
-                                </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
-                                    </div>
-                                </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box2.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">Hicham Assoud</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" >Age:</span>
-                                <span style="color: rgb(255, 255, 255);" >28 ans</span> <br>
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >F</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: 200Dh</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Départe: </span> Region, ville</a> </span>
-                                    </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>Region, ville</a> </span>
-                                    </div> 
-                                </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> 22 Janvier 2020 à 18h </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> 2 places</a> </span>
-                                    </div>
-                                </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-        </div>
-                
+            </c:forEach>
 
         <div style="margin-top: 100px;">
             <ul class="pagination  justify-content-center ">

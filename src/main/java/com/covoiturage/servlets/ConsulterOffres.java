@@ -30,8 +30,9 @@ public class ConsulterOffres extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         OffreForm form = new OffreForm(trajetDao,detailsTrajetDao);
+        form.consulterOffres(req);
         if(form.getErreurs().isEmpty()){
             this.getServletContext().getRequestDispatcher("/offres.jsp").forward(req,resp);
         }else {
