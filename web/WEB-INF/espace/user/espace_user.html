@@ -63,33 +63,7 @@ crossorigin="anonymous">
 <!--************-->
 <!-- Navigateur -->
 <!--************-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
-  <div class="container">
-      <a href="#" class="navbar-brand"> <img src="/ressources/img/logo.png" alt="" width="80%" height="80%"></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Accueil</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Proposer un trajet</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Demander un trajet</a>
-              </li>
-
-          </ul>
-      </div>
-  </div>
-</nav>
-
-
+<c:import url="/navbar.jsp"/>
 
 <!--************-->
 <!-- image profile -->
@@ -108,7 +82,7 @@ crossorigin="anonymous">
             <div class="cc-profile-image" id="profile_image">
                 <img src="/ressources/img/profile_pic.png" alt="Image"/>
             </div>
-            <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/><c:out value="${sessionScope.userSession.prenom}"/></div>
+            <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
             <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
            
            
@@ -288,118 +262,50 @@ crossorigin="anonymous">
   <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Historique Offres/Demandes</h3>
   <div class="container cc-offre">
 
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-offre-header">
-            <div class="h3">Offre</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 200Dh</div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa 
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
-                </div>
-               </div>
-                <br>
-               <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> 2 pssagers
-                </div>
-               </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
+      <c:forEach items="${trajets}" var="trajet">
+          <c:forEach items="${detailsTrajets}" var="detailsTrajet">
+              <c:if test="${detailsTrajet.getId == trajet.getdetailstrajetid}">
+                  <div class="card">
+                      <div class="row">
+                          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                              <div class="card-body cc-offre-header">
+                                  <div class="h3">Demande</div>
+                              </div>
+                          </div>
+                          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                              <div class="card-body">
+                                  <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 180Dh</div>
+                                  <hr>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa
+                                      </div>
 
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
+                                      </div>
 
-    
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-offre-header">
-            <div class="h3">Demande</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 180Dh</div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa 
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
-                </div>
-               </div>
-                <br>
-               <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> 2 pssagers
-                </div>
-               </div>
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${details}">
+                                      </div>
+                                  </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </c:if>
 
+          </c:forEach>
 
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-offre-header">
-            <div class="h3">Demande</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 100Dh</div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa 
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
-                </div>
-               </div>
-                <br>
-               <div class="row">
-                <div class="col-sm-6">
-                  <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
-                </div>
-                  
-                <div class="col-sm-6">
-                  <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> 2 pssagers
-                </div>
-               </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
+      </c:forEach>
 
     <div style="margin-top: 40px; margin-bottom: 100px;">
       <ul class="pagination  justify-content-center ">

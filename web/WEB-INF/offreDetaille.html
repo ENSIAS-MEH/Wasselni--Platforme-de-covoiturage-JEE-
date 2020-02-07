@@ -26,8 +26,9 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="ressources/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" type="text/css" href="../ressources/css/TrajetSlide.css">
 <link rel="stylesheet" href="../ressources/css/style.css">
-<link rel="stylesheet" href="../ressources/css/authentification.css">
+<link rel="stylesheet" href="../ressources/css/offreDetaille.css">
 <link rel="stylesheet" href="../ressources/css/validation.css">
+<link rel="stylesheet" href="../ressources/css/Espace_user.css">
 
 
 
@@ -54,30 +55,118 @@ crossorigin="anonymous">
                 </div>
                     <div class="wrap-inscription insc" style="margin-bottom: 130px;">
 
-                        
+<!--************-->
+<!-- à PROPOS -->
+<!--************-->
+<div class="section">
+    <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Vos informations</h3>
+    <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row" style="margin-left: 100px;">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">Informations personnelles</div>
+                        <br>    
                         <div class="row">
-                            dddd
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.nom}"/></div>
                         </div>
-                            
-                            <div class="row">
-                                <div class="col-sm-6">
-                                <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa 
-                                </div>
-                                
-                                <div class="col-sm-6">
-                                <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
-                                </div>
-                            </div>
-                                <br>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
-                                </div>
-                                
-                                <div class="col-sm-6">
-                                <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> 2 pssagers
-                                </div>
-                            </div>
+                        <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Prenom:</strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.prenom}"/></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Date de naissance:</strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.dateNaissance}"/></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Adresse:</strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.region}"/></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Sexe:</strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.sexe}"/></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">Informations sur le compte</div>
+                        <br>
+                        <div class="row">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.login}"/></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                        </div>
+                        <br>
+                        <div class="row mt-3" style="margin-left: 60px;" >
+                            <a href="#" id ="btnModifier" data-toggle="modal" data-target="#modifier"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="skill">
+<h3 class="h2" style="text-align: center;">Reviews</h3>
+<div class="container">
+<div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="progress-container progress-parfait"><span class="progress-badge"><span style="font-weight: bold;"> Parfait</span>  - Un trajet agréable dans l'ensemble, rien à redire.</span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="progress-container progress-tresBien"><span class="progress-badge"><span style="font-weight: bold;">Très bien</span>   - C'est une personne de confiance.</span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="progress-container progress-bien"><span class="progress-badge"> <span style="font-weight: bold;">Bien</span>  - Vous avez apprécié le trajet en sa compagnie.</span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="progress-container progress-decevant"><span class="progress-badge"><span style="font-weight: bold;">Décevant</span>  - Expérience décevante. Peu recommandable.</span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="progress-container progress-eviter"><span class="progress-badge"><span style="font-weight: bold;"> À éviter</span>  - À éviter. Plus jamais.</span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 
                     </div>

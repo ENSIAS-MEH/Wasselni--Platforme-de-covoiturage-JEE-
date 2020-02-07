@@ -17,5 +17,6 @@ public interface UserDao {
     public void setImageProfile(User user) throws  SQLException;
     public void setUserActivation(User user) throws SQLException;
     public int getUserActivation(User user) throws SQLException;
+    public User findUserByIdDetailsTrajet(Long id) throws SQLException;
 
 }

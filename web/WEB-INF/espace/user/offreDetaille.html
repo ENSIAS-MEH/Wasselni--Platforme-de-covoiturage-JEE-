@@ -32,31 +32,13 @@ crossorigin="anonymous">
 <link href="/ressources/css/Espace_user.css" rel="stylesheet">
 <link href="/ressources/css/component.css" rel="stylesheet">
 <link rel="stylesheet" href="/ressources/css/selectionner.css">
+<link rel="stylesheet" href="../../../Paiement/styleCard.css" rel="stylesheet">
 
 
 
-      <script>
-          /* Cette fonction permet d'afficher une vignette pour chaque image sélectionnée */
-          function readFilesAndDisplayPreview(files) {
-              var imageList = document.querySelector('#profile_image');
-              imageList.innerHTML = "";
-
-              for ( var file of files ) {
-                  var reader = new FileReader();
-
-                  reader.addEventListener( "load", function( event ) {
-                      var span = document.createElement('span');
-                      span.innerHTML = '<img  src="' + event.target.result + '" />';
-                      imageList.appendChild( span );
-                  });
-
-                  reader.readAsDataURL( file );
-              }
-          }
-      </script>
 
     
-    
+   
   </head>
   <body id="top">
 
@@ -78,22 +60,12 @@ crossorigin="anonymous">
       <div class="container">
         <div class="content-center">
           
-          <form method="post" action="upload" enctype="multipart/form-data">
             <div class="cc-profile-image" id="profile_image">
                 <img src="/ressources/img/profile_pic.png" alt="Image"/>
             </div>
             <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
             <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
-           
-           
-            <div style="margin-left: 220px;">
-              <input type="file" name="files" accept="image/*"
-                     onchange="readFilesAndDisplayPreview(this.files);" />
-            </div>
-            <br>
-            <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
-
-          </form>
+          
         </div>
       </div>
       
@@ -101,6 +73,8 @@ crossorigin="anonymous">
   </div>
 </div>
 
+<<<<<<< HEAD:web/WEB-INF/espace/user/offreDetaille.html
+=======
     <div>
         <p>${form.resultat}</p>
         <p>        <span>${form.erreurs['nom']}</span></p>
@@ -150,6 +124,7 @@ crossorigin="anonymous">
 
 
     </c:if>
+>>>>>>> 400794b92638d7c221015ae27d924586cb8aaf61:web/WEB-INF/espace/user/espace_user.jsp
 
 
 
@@ -157,13 +132,13 @@ crossorigin="anonymous">
 <!-- à PROPOS -->
 <!--************-->
     <div class="section" style="margin-bottom: 50px;">
-        <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Vos informations</h3>
+        <h3 class="h2" style="text-align: center; margin-bottom: 50px;"> <span class="fa fa-road" style="color: rgb(117, 188, 209);"></span> Informations sur le trajet</h3>
         <div class="container">
             <div class="card" data-aos="fade-up" data-aos-offset="10">
                 <div class="row" style="margin-left: 100px;">
                     <div class="col-lg-6 col-md-12">
                         <div class="card-body">
-                            <div class="h4 mt-0 title">Informations personnelles</div>
+                            <div class="h4 mt-0 title">Chauffeur</div>
                             <br>
                             <div class="row">
                                 <div style="margin-left: 15px;"><strong class="text-uppercase">Nom:</strong></div>
@@ -190,21 +165,37 @@ crossorigin="anonymous">
 
                     <div class="col-lg-6 col-md-12">
                         <div class="card-body">
-                            <div class="h4 mt-0 title">Informations sur le compte</div>
+                            <div class="h4 mt-0 title">Trajet</div>
                             <br>
                             <div class="row">
-                                <div style="margin-left: 15px;"><strong class="text-uppercase">Pseudo-Nom: </strong></div>
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Prix (Dhs): </strong></div>
                                 <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.login}"/></div>
                             </div>
                             <div class="row mt-3">
-                                <div style="margin-left: 15px;"><strong class="text-uppercase">Email: </strong></div>
+                                <div style="margin-left: 15px;"><strong class="text-uppercase">Type de voiture: </strong></div>
                                 <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
                             </div>
-                            <br>
-                            <div class="row mt-3" style="margin-left: 60px;" >
-                                <a href="#" id ="btnModifier" data-toggle="modal" data-target="#modifier"></a>
-                            </div>
 
+                            <div class="row mt-3">
+                              <div style="margin-left: 15px;"><strong class="text-uppercase">Marque de voiture: </strong></div>
+                              <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                          </div>
+                          <div class="row mt-3">
+                            <div style="margin-left: 15px;"><strong class="text-uppercase">Model de voiture: </strong></div>
+                            <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                        </div>
+                        <div class="row mt-3">
+                          <div style="margin-left: 15px;"><strong class="text-uppercase">Date de depart: </strong></div>
+                          <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                      </div>
+                      <div class="row mt-3">
+                        <div style="margin-left: 15px;"><strong class="text-uppercase">Depart: </strong></div>
+                        <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                    </div>
+                    <div class="row mt-3">
+                      <div style="margin-left: 15px;"><strong class="text-uppercase">Destination: </strong></div>
+                      <div style="margin-left: 15px;"><c:out value="${sessionScope.userSession.email}"/></div>
+                  </div>
 
                         </div>
                     </div>
@@ -213,7 +204,89 @@ crossorigin="anonymous">
         </div>
     </div>
 
-    <div class="section" id="skill">
+
+    <div class='container'>
+      <div class='window'>
+        <div class='order-info'>
+          <div class='order-info-content'>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <h1>Montant à payer</h1>
+            <div class='line'></div>
+            
+              
+            </table>
+            <br> <br>
+            <table class='order-table'>
+              <tbody>
+                <tr>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class='total' style="margin-bottom: 150px;">
+              <span style='float:left;'>
+                <div class='thin dense'>VAT 19%</div>
+                <div class='thin dense'>Delivery</div>
+                TOTAL
+              </span>
+              <span style='float:right; text-align:right;'>
+                <div class='thin dense'>$68.75</div>
+                <div class='thin dense'>$4.95</div>
+                $435.55
+              </span>
+            </div>
+    </div>
+    </div>
+            <div class='credit-info'>
+              <div class='credit-info-content'>
+                <table class='half-input-table'>
+                  <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                    <div class='dropdown-select'>
+                    <ul>
+                      <li>Master Card</li>
+                      <li>American Express</li>
+                      </ul></div>
+                    </div>
+                   </td></tr>
+                </table>
+                <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                Card Number
+                <input class='input-field'></input>
+                Card Holder
+                <input class='input-field'></input>
+                <table class='half-input-table'>
+                  <tr>
+                    <td> Expires
+                      <input class='input-field'></input>
+                    </td>
+                    <td>CVC
+                      <input class='input-field'></input>
+                    </td>
+                  </tr>
+                </table>
+                <button class='pay-btn'>Checkout</button>
+    
+              </div>
+    
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+<div class="section" id="skill">
   <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Reviews</h3>
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -266,6 +339,8 @@ crossorigin="anonymous">
   </div>
 </div>
 
+<<<<<<< HEAD:web/WEB-INF/espace/user/offreDetaille.html
+=======
 <!--************-->
 <!-- Historique -->
 <!--************-->
@@ -330,12 +405,26 @@ crossorigin="anonymous">
           </li>
         </ul>
   </div>
-
-  </div>
-</div>
+>>>>>>> 400794b92638d7c221015ae27d924586cb8aaf61:web/WEB-INF/espace/user/espace_user.jsp
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../Paiement/jsCard.js"></script>
 
 <!--************-->
 <!--Foter -->
@@ -393,6 +482,8 @@ crossorigin="anonymous">
 </footer>
 
 
+<<<<<<< HEAD:web/WEB-INF/espace/user/offreDetaille.html
+=======
 <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -460,6 +551,7 @@ crossorigin="anonymous">
   CKEDITOR.replace( 'editor1' );
 </script>
     
+>>>>>>> 400794b92638d7c221015ae27d924586cb8aaf61:web/WEB-INF/espace/user/espace_user.jsp
 
 
 <!--Liens-->
