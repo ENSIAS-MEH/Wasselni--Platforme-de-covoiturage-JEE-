@@ -255,7 +255,51 @@ public class UserDaoImp implements UserDao {
         preparedStmt.setLong(1, user.getId());
         resultset = preparedStmt.executeQuery();
         return resultset.getInt("ACTIVATION");
-    };
+    }
+
+    @Override
+    public User findUserByIdDetailsTrajet(Long id) throws SQLException {
+        String sql;
+        PreparedStatement preparedStmt = null;
+        ResultSet resultset;
+        Connection connection = DAOFactory.getInstance().getConnection();
+
+
+            sql = "SELECT ID, NOM, PRENOM, SEXE, DATE_NAISSANCE, REGION, LOGIN, EMAIL, PASSWORD, " +
+                    "IMAGE_PATH, DATE_INSCRIPTION, RANK, ACTIVATION ,ID_QUESTION_USER, reponse "+
+                    "FROM USERS WHERE id in  (select  ID_USER_ASSOCIE from estassocie_a where ID_DETAILS_TRAJET_ASSOCIE = ?) ";
+            preparedStmt = connection.prepareStatement(sql);
+            preparedStmt.setLong(1,id);
+
+
+        resultset = preparedStmt.executeQuery();
+        User returnedUser;
+        if( resultset.next() ) {
+            returnedUser = new User();
+            returnedUser.setId(resultset.getLong("ID"));
+            returnedUser.setNom(resultset.getString("NOM"));
+            returnedUser.setPrenom(resultset.getString("PRENOM"));
+            returnedUser.setSexe(resultset.getString("SEXE"));
+            returnedUser.setDateNaissance(resultset.getObject("DATE_NAISSANCE", LocalDate.class));
+            returnedUser.setRegion(resultset.getString("REGION"));
+            returnedUser.setLogin(resultset.getString("LOGIN"));
+            returnedUser.setEmail(resultset.getString("EMAIL"));
+            returnedUser.setPassword(resultset.getString("PASSWORD"));
+            returnedUser.setImage(resultset.getString("IMAGE_PATH"));
+            returnedUser.setDateInscription(resultset.getObject("DATE_INSCRIPTION", LocalDateTime.class));
+            returnedUser.setRank(resultset.getFloat("RANK"));
+            returnedUser.setActivation(resultset.getInt("ACTIVATION"));
+            returnedUser.setId_question(resultset.getInt("ID_question_user"));
+            returnedUser.setReponse(resultset.getString("reponse"));
+        } else {
+            returnedUser = null;
+        }
+
+        resultset.close();
+        preparedStmt.close();
+
+        return returnedUser;
+    }
 
 
 

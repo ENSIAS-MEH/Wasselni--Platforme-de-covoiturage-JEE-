@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Paiement/jsCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Paiement/paiementCard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Paiement/styleCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/offreDetaille.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ressources/css/offreDetaille.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/TrajetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/TrajetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/css/authentification.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/authentification.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -415,7 +423,7 @@
       <workItem from="1581013276236" duration="2208000" />
       <workItem from="1580994448749" duration="1312000" />
       <workItem from="1581025933631" duration="5267000" />
-      <workItem from="1581032947697" duration="142000" />
+      <workItem from="1581032947697" duration="986000" />
     </task>
     <servers />
   </component>
