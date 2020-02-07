@@ -70,7 +70,7 @@ crossorigin="anonymous">
                         <div class="container">
                             <div class="row">
                             
-                                <form method="post" action="<c:url value='/authentification'/> " style="align-self: center;">
+                                <form method="post" action="<c:url value='/upload'/> " style="align-self: center;">
                                     <span class="inscription-form-title" style="margin-left: 130px; margin-top: -20px;">
                                         S'authentifier
                                     </span>			

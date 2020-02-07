@@ -1,3 +1,5 @@
+<%@ page import="com.covoiturage.dao.interfaces.UserDao" %>
+<%@ page import="com.covoiturage.dao.DAOFactory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -77,16 +79,13 @@ crossorigin="anonymous">
       <div class="page-header-image" data-parallax="true" style="background-image: url('/ressources/img/profile_bg.jpg');"></div>
       <div class="container">
         <div class="content-center">
-<<<<<<< HEAD
-          
+
+            <%
+                String path = (String) request.getAttribute("path");%>
+            <%=path%>
           <form method="post" action="upload" enctype="multipart/form-data">
             <div class="cc-profile-image" id="profile_image">
-                <img src="/ressources/img/profile_pic.png" alt="Image"/>
-=======
-          <form method="post" action="upload" enctype="multipart/form-data">
-            <div class="cc-profile-image" id="profile_image">
-                <img src="${pageContext.request.contextPath} +${path}" alt="Image"/>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
+                <img src="<%=path%>" alt="Image"/>
             </div>
             <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
             <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
@@ -107,8 +106,6 @@ crossorigin="anonymous">
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
     <div>
         <p>${form.resultat}</p>
         <p>        <span>${form.erreurs['nom']}</span></p>
@@ -120,7 +117,6 @@ crossorigin="anonymous">
         <p>${sessionScope.userId}</p>
 
     </div>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
 <!--************-->
 <!-- Activation -->
 <!--************-->
@@ -283,27 +279,17 @@ crossorigin="anonymous">
   <div class="container cc-offre">
 
 
-<<<<<<< HEAD
-      <c:forEach items="${trajets}" var="trajet">
-          <c:forEach items="${detailsTrajets}" var="detailsTrajet">
-              <c:if test="${detailsTrajet.getId == trajet.getdetailstrajetid}">
-=======
-      <c:forEach var="i" begin="0" end="${trajets.size()-1}" step="1">
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
+
                   <div class="card">
                       <div class="row">
                           <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                               <div class="card-body cc-offre-header">
-<<<<<<< HEAD
                                   <div class="h3">Demande</div>
-=======
                                   <div class="h3">${estAssocieas[i].typeAssociation}</div>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
                               </div>
                           </div>
                           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                               <div class="card-body">
-<<<<<<< HEAD
                                   <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 180Dh</div>
                                   <hr>
                                   <div class="row">
@@ -313,7 +299,6 @@ crossorigin="anonymous">
 
                                       <div class="col-sm-6">
                                           <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
-=======
                                   <div class="h5" style="margin-bottom: 20px;">Prix de trajet: <c:out value="${detailsTrajet[i].prixPlace}"/></div>
                                   <hr>
                                   <div class="row">
@@ -323,25 +308,21 @@ crossorigin="anonymous">
 
                                       <div class="col-sm-6">
                                           <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Destination: </span><c:out value="${trajets[i].villeDestination}"/>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
                                       </div>
                                   </div>
                                   <br>
                                   <div class="row">
                                       <div class="col-sm-6">
-<<<<<<< HEAD
                                           <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
                                       </div>
 
                                       <div class="col-sm-6">
-                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${details}">
-=======
+                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${details}"/>
                                           <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  <c:out value="${detailsTrajets[i].dateDepart}"/>
                                       </div>
 
                                       <div class="col-sm-6">
                                           <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${detailsTrajets[i].effectif}"/>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
                                       </div>
                                   </div>
 
@@ -349,14 +330,8 @@ crossorigin="anonymous">
                           </div>
                       </div>
                   </div>
-<<<<<<< HEAD
-              </c:if>
 
-          </c:forEach>
 
-=======
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
-      </c:forEach>
 
     <div style="margin-top: 40px; margin-bottom: 100px;">
       <ul class="pagination  justify-content-center ">
@@ -442,18 +417,14 @@ crossorigin="anonymous">
 <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-<<<<<<< HEAD
       <form>
-=======
       <form action="/userAccueil" method="post">
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
       <div class="modal-body">
 
-<<<<<<< HEAD
 
         <div class="form-group">
           <label>Nom:</label>
@@ -473,7 +444,7 @@ crossorigin="anonymous">
        <div class="form-group">
         <label>Numéro Téléphone</label>
         <input type="text" class="form-control" name="tel" placeholder="Telephone" value="068874125423">
-=======
+
         <div class="form-group">
           <label>Nom:</label>
           <input type="text"  class="form-control" name="nom" placeholder="Nom" value="<c:out value="${sessionScope.userSession.nom}"/>">
@@ -488,12 +459,10 @@ crossorigin="anonymous">
           <div class="form-group">
             <label>Email</label>
             <input type="text"  class="form-control" name="email" disabled placeholder="email" value="<c:out value="${sessionScope.userSession.email}"/>">
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
        </div>
 
        <div class="form-group">
         <label>Adresse</label>
-<<<<<<< HEAD
         <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="Adresse" >
        </div>
 
@@ -508,7 +477,7 @@ crossorigin="anonymous">
         <div class="form-group">
           <label>Ancien mot de passe</label>
           <input type="text" class="form-control" placeholder="Ancien le mote de passe">
-=======
+
         <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="<c:out value="${sessionScope.userSession.region}"/>" >
        </div>
 
@@ -521,19 +490,16 @@ crossorigin="anonymous">
         <div class="form-group">
           <label>Ancien mot de passe</label>
           <input type="password" class="form-control" disabled name ="ancienmotdepasse" value="${sessionScope.userSession.password}" placeholder="Ancien le mote de passe">
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
          </div>
   
          <div class="form-group">
           <label>Nouveau mot de passe</label>
-<<<<<<< HEAD
           <input type="text" class="form-control" placeholder="Nouveau le mote de passe" >
          </div>
               
          <div class="form-group">
           <label>Confirmer le mote de passe</label>
           <input type="text" class="form-control" placeholder="Confirmer le mote de passe"  >
-=======
           <input type="password" class="form-control" name = "nouveaumotdepasse" value="" placeholder="Nouveau mot de passe" >
          </div>
 
@@ -541,7 +507,6 @@ crossorigin="anonymous">
           <div class="form-group">
           <label>Confirmer le mot de passe</label>
           <input type="password" class="form-control" name="confirmation" value="" placeholder="Confirmer le mot de passe"  >
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
          </div>
   
         <div class="modal-footer">
@@ -553,11 +518,8 @@ crossorigin="anonymous">
     </div>
   </div>
 </div>
-<<<<<<< HEAD
 
-=======
 </div>
->>>>>>> 3e08aaba773afbf68e58ee1805b255b8d3eced2b
 <script>
   CKEDITOR.replace( 'editor1' );
 </script>
@@ -672,9 +634,6 @@ crossorigin="anonymous"></script>
       }
   });
 </script>
-
-
-
 
   </body>
 </html>
