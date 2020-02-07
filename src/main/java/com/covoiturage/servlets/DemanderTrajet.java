@@ -26,7 +26,8 @@ public class DemanderTrajet extends HttpServlet {
     private static final String ATT_SESSION_USERID = "userId";
 
     private static final String VUE_CREATION = "/WEB-INF/trajet/demandertrajet.jsp";
-    private static final String VUE_RESULTAT = "/test.jsp";
+
+    private static final String ATT_FORM = "form";
 
 
     @Override
@@ -45,8 +46,9 @@ public class DemanderTrajet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         DemanderTrajetForm form = new DemanderTrajetForm(trajetDao,detailsTrajetDao, estAssocieADao) ;
         form.demanderTrajet(req);
+        req.setAttribute(ATT_FORM,form);
+        HttpSession session = req.getSession();
         if(form.getErreurs().isEmpty()){
-            HttpSession session = req.getSession();
             if(session.getAttribute(ATT_SESSION_USERID) == null){
                 this.getServletContext().getRequestDispatcher(VUE_AUTHENTIFICATION).forward(req,resp);
             }  else {

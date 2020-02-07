@@ -56,6 +56,38 @@ public class TrajetDaoImp implements TrajetDao {
 
         return returnedTrajet;
     }
+
+    @Override
+    public Trajet findSpecifictrajetById(Long id) throws SQLException {
+
+        String sql = "SELECT ID_TRAJET, VILLE_DEPART, " +
+                " VILLE_DESTINATION FROM TRAJET " +
+                "WHERE ID_TRAJET= ? ";
+        PreparedStatement preparedStmt = null;
+        ResultSet resultset;
+        Connection connection = daoFactory.getConnection();
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setLong(1, id);
+
+        resultset = preparedStmt.executeQuery();
+        Trajet returnedTrajet;
+        if( resultset.next() ) {
+            Long idTrajet = resultset.getLong("ID_TRAJET");
+            String villeDepart = resultset.getString("VILLE_DEPART");
+            String villeDestination = resultset.getString("VILLE_DESTINATION");
+            returnedTrajet = new Trajet(idTrajet,
+                    villeDepart,
+                    villeDestination);
+        } else {
+            returnedTrajet = null;
+        }
+
+        preparedStmt.close();
+        resultset.close();
+
+        return returnedTrajet;
+    }
+
     public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet) throws SQLException {
         List<Trajet> listOfTrajets = new ArrayList<Trajet>();
 
@@ -141,7 +173,7 @@ public class TrajetDaoImp implements TrajetDao {
         DetailsTrajet TrajetToAdd;
 
         while( resultset.next() ) {
-            idDetaille = resultset.getLong("ID_DETAILLE_TRAJET");
+            idDetaille = resultset.getLong("ID_DETAILS_TRAJET");
             date_depart = resultset.getObject("DATETIME_DEPART",LocalDateTime.class);
              prix_place = resultset.getInt("PRIX_PLACE");
             type_voiture = resultset.getString("TYPE_VOITURE");
