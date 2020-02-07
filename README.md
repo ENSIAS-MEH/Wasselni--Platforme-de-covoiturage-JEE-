@@ -2,6 +2,8 @@
 ## Projet Maven
 Nous avons créé un projet avec l'outil maven pour automatiser la gestion de notre projet 
 ## Captures
+### ChatBot
+![alt text](https://user-images.githubusercontent.com/50969643/73990751-68083f80-494a-11ea-9cbf-d92cb19b7579.jpg)
 ### Accueil
 ![alt text](https://user-images.githubusercontent.com/51321011/73371447-009d2080-42b6-11ea-90ee-6249829ba98f.png)
 ### Authentification
