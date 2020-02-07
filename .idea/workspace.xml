@@ -10,36 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="100f309b-62d9-405a-b154-cdbb12950bac" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/web/Paiement/jsCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Paiement/paiementCard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Paiement/styleCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/offreDetaille.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/css/offreDetaille.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/interfaces/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/espace/user/espace_user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/offreDetaille.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/css/authentification.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/css/authentification.css" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/GetOffres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/dao/implementations/TrajetDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/ConsulterOffres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/DetailsTrajetDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/TrajetDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/OffreForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/forms/OffreForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ConsulterOffres.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/ConsulterOffres.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/offres.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/offres.jsp" afterDir="false" />
->>>>>>> 400794b92638d7c221015ae27d924586cb8aaf61
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/covoiturage/servlets/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/Images/0_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/Images/0_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/implementations/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/interfaces/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/dao/interfaces/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/WEB-INF/classes/com/covoiturage/servlets/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/authentification.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Wasselni-1.0-SNAPSHOT/ressources/css/authentification.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +341,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -452,12 +430,11 @@
       <workItem from="1580994448749" duration="1312000" />
       <workItem from="1581025933631" duration="6888000" />
       <workItem from="1581025933631" duration="5267000" />
-<<<<<<< HEAD
       <workItem from="1581032947697" duration="986000" />
-=======
       <workItem from="1581032947697" duration="142000" />
+      <workItem from="1581033290199" duration="19910000" />
       <workItem from="1581033290199" duration="16729000" />
->>>>>>> 400794b92638d7c221015ae27d924586cb8aaf61
+      <workItem from="1581054293459" duration="810000" />
     </task>
     <servers />
   </component>
@@ -538,78 +515,78 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580398151367" />
-    <state width="1223" height="213" key="GridCell.Tab.0.bottom" timestamp="1581049880263">
+    <state width="1223" height="212" key="GridCell.Tab.0.bottom" timestamp="1581055128239">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581049880263" />
+    <state width="1223" height="212" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581055128239" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="213" key="GridCell.Tab.0.center" timestamp="1581049880263">
+    <state width="1223" height="212" key="GridCell.Tab.0.center" timestamp="1581055128239">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1581049880263" />
+    <state width="1223" height="212" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1581055128239" />
     <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="213" key="GridCell.Tab.0.left" timestamp="1581049880263">
+    <state width="1223" height="212" key="GridCell.Tab.0.left" timestamp="1581055128238">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1581049880263" />
+    <state width="1223" height="212" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1581055128238" />
     <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="213" key="GridCell.Tab.0.right" timestamp="1581049880263">
+    <state width="1223" height="212" key="GridCell.Tab.0.right" timestamp="1581055128239">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1581049880263" />
+    <state width="1223" height="212" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1581055128239" />
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580910463392" />
-    <state width="1223" height="213" key="GridCell.Tab.1.bottom" timestamp="1581049926640">
+    <state width="1223" height="212" key="GridCell.Tab.1.bottom" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581049926640" />
+    <state width="1223" height="212" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375761" />
-    <state width="1223" height="213" key="GridCell.Tab.1.center" timestamp="1581049926640">
+    <state width="1223" height="212" key="GridCell.Tab.1.center" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1581049926640" />
+    <state width="1223" height="212" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375760" />
-    <state width="1223" height="213" key="GridCell.Tab.1.left" timestamp="1581049926640">
+    <state width="1223" height="212" key="GridCell.Tab.1.left" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1581049926640" />
+    <state width="1223" height="212" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375760" />
-    <state width="1223" height="213" key="GridCell.Tab.1.right" timestamp="1581049926640">
+    <state width="1223" height="212" key="GridCell.Tab.1.right" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1581049926640" />
+    <state width="1223" height="212" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580903375761" />
-    <state width="1223" height="213" key="GridCell.Tab.2.bottom" timestamp="1581049880064">
+    <state width="1223" height="212" key="GridCell.Tab.2.bottom" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
-    <state width="1223" height="213" key="GridCell.Tab.2.center" timestamp="1581049880063">
+    <state width="1223" height="212" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
+    <state width="1223" height="212" key="GridCell.Tab.2.center" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1581049880063" />
-    <state width="1223" height="213" key="GridCell.Tab.2.left" timestamp="1581049880063">
+    <state width="1223" height="212" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
+    <state width="1223" height="212" key="GridCell.Tab.2.left" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1581049880063" />
-    <state width="1223" height="213" key="GridCell.Tab.2.right" timestamp="1581049880064">
+    <state width="1223" height="212" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
+    <state width="1223" height="212" key="GridCell.Tab.2.right" timestamp="1581055128114">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
-    <state width="1223" height="213" key="GridCell.Tab.3.bottom" timestamp="1581049880064">
+    <state width="1223" height="212" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1581055128114" />
+    <state width="1223" height="274" key="GridCell.Tab.3.bottom" timestamp="1581052366575">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.3.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
-    <state width="1223" height="213" key="GridCell.Tab.3.center" timestamp="1581049880064">
+    <state width="1223" height="274" key="GridCell.Tab.3.bottom/0.0.1366.768@0.0.1366.768" timestamp="1581052366575" />
+    <state width="1223" height="274" key="GridCell.Tab.3.center" timestamp="1581052366575">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.3.center/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
-    <state width="1223" height="213" key="GridCell.Tab.3.left" timestamp="1581049880064">
+    <state width="1223" height="274" key="GridCell.Tab.3.center/0.0.1366.768@0.0.1366.768" timestamp="1581052366575" />
+    <state width="1223" height="274" key="GridCell.Tab.3.left" timestamp="1581052366575">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.3.left/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
-    <state width="1223" height="213" key="GridCell.Tab.3.right" timestamp="1581049880064">
+    <state width="1223" height="274" key="GridCell.Tab.3.left/0.0.1366.768@0.0.1366.768" timestamp="1581052366575" />
+    <state width="1223" height="274" key="GridCell.Tab.3.right" timestamp="1581052366575">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1223" height="213" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1581049880064" />
+    <state width="1223" height="274" key="GridCell.Tab.3.right/0.0.1366.768@0.0.1366.768" timestamp="1581052366575" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1580948241076">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -649,7 +626,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/covoiturage/forms/OffreForm.java</url>
-          <line>74</line>
+          <line>76</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

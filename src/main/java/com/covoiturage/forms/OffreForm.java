@@ -30,6 +30,8 @@ public class OffreForm {
 
     private static final String ATT_OFFRES = "offres";
     private static final String ATT_DETAILS_OFFRES  = "detailsOffres";
+
+    private static final String NO_OFFRES = "nooffres";
     private String resultat;
     private Map<String, String> erreurs= new HashMap();
 
@@ -74,6 +76,9 @@ public class OffreForm {
                 }
                 req.setAttribute(ATT_OFFRES , offres);
                 req.setAttribute(ATT_DETAILS_OFFRES , detailsOffres);
+                if(offres.size() == 0 ){
+                    req.setAttribute(NO_OFFRES,"il n'existe pas d'offres avec de tels paramètres.");
+                }
                 resultat = "Recherche des offres en succès";
             } else {
                 resultat = "Echec de la recherche";

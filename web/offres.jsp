@@ -120,59 +120,174 @@
         <!-- Les offres -->
         <div class="col-10 offre">
           <!-- Premier ligne des offres -->
+            <c:if test="${nooffres != null}">
+                <p>${nooffres}</p>
+            </c:if>
+            <c:if test="${nooffres == null}">
+                <c:forEach var="i" begin="0" end="${offres.size()-1}" step="2"  >
+                    <div class="row ">
+                    <c:if test="${i+2 <= offres.size()}">
 
-            <c:forEach var="i" begin="0" end="${offres.size()-1}" step="1"  >
-            <div class="row ">
-                <!--Trajte-->
-                <div class="col-sm-6" >
-                    <div class="card " style="margin-left: 50px;" >
-                        <div class="post-image">
-                            <div class="imgBoxOffre">
-                                <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
-                            </div>
-                            <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
-                            <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
-                                <span style="color: rgb(92, 152, 206);" > Sex:</span>
-                                <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="news-content">
-                            <!--Prix-->
-                            <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
-                            <div class="post-meta">
-                                <div class="row" style="text-align: left;">
-                                    <!--Depart-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDepart}</span></a> </span>
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBoxOffre">
+                                        <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
                                     </div>
-                                     <!--Destination-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDestination}</a> </span>
-                                    </div> 
+                                    <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
+                                    <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
+                                    </div>
+
                                 </div>
-                                <div class="row" style="text-align: left;">
-                                    <!--Date-->
-                                    <div class="col-sm-5">
-                                        <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
-                                    </div>  
-                                     <!--Effectif-->
-                                    <div class="col">
-                                        <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
+
+                                <div class="news-content">
+                                    <!--Prix-->
+                                    <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
+                                    <div class="post-meta">
+                                        <div class="row" style="text-align: left;">
+                                            <!--Depart-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDestination}</span></a> </span>
+                                            </div>
+                                            <!--Destination-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDepart}</a> </span>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="text-align: left;">
+                                            <!--Date-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
+                                            </div>
+                                            <!--Effectif-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <br><br>
+                                            <a style="margin-left: 380px; " href="#" id="btnd" ></a>
+                                            <br>
+                                        </p>
+
                                     </div>
                                 </div>
-                                <p>
-                                    <br><br>
-                                    <a style="margin-left: 380px; " href="#" id="btnd" ></a>
-                                    <br>
-                                </p>
-        
                             </div>
                         </div>
+
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBoxOffre">
+                                        <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i+1].nom} ${chauffeurs[i+1].prenom}</h4>
+                                    <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >${chauffeurs[i+1].sexe}</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="news-content">
+                                    <!--Prix-->
+                                    <span class="category">Prix de trajet: ${detailsOffres[i+1].prixPlace}</span>
+                                    <div class="post-meta">
+                                        <div class="row" style="text-align: left;">
+                                            <!--Depart-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i+1].villeDestination}</span></a> </span>
+                                            </div>
+                                            <!--Destination-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i+1].villeDepart}</a> </span>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="text-align: left;">
+                                            <!--Date-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i+1].dateDepart} </a> </span>
+                                            </div>
+                                            <!--Effectif-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i+1].effectif}</a> </span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <br><br>
+                                            <a style="margin-left: 380px; " href="#" id="btnd" ></a>
+                                            <br>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </c:if>
+                    <c:if test="${i+2 > offres.size()}">
+
+                        <!--Trajte-->
+                        <div class="col-sm-6" >
+                            <div class="card " style="margin-left: 50px;" >
+                                <div class="post-image">
+                                    <div class="imgBoxOffre">
+                                        <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                                    </div>
+                                    <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
+                                    <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                                        <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                                        <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="news-content">
+                                    <!--Prix-->
+                                    <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
+                                    <div class="post-meta">
+                                        <div class="row" style="text-align: left;">
+                                            <!--Depart-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDestination}</span></a> </span>
+                                            </div>
+                                            <!--Destination-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDepart}</a> </span>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="text-align: left;">
+                                            <!--Date-->
+                                            <div class="col-sm-5">
+                                                <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
+                                            </div>
+                                            <!--Effectif-->
+                                            <div class="col">
+                                                <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <br><br>
+                                            <a style="margin-left: 380px; " href="#" id="btnd" ></a>
+                                            <br>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </c:if>
                     </div>
-                </div>
 
+                    <!--row--> <br> <br>
+                </c:forEach>
 
                 <div class="col-sm-6" >
                   <div class="card " style="margin-left: 50px;" >
@@ -274,12 +389,9 @@
 
 
 
+            </c:if>
 
-            </div>
 
-            
-            <!--row--> <br> <br>
-            </c:forEach>
 
         <div style="margin-top: 100px;">
             <ul class="pagination  justify-content-center ">
