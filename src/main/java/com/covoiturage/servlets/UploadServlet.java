@@ -1,13 +1,12 @@
 package com.covoiturage.servlets;
 
+import com.covoiturage.beans.User;
+
 import javax.crypto.Cipher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
+import javax.servlet.http.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,15 +35,16 @@ public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse resp)
             throws ServletException, IOException {
         String fileName="-1";
+        HttpSession session = request.getSession();
         for ( Part part : request.getParts() ) {
             fileName = getFileName( part );
-            String Name= "mazal";
+            String Name= ((User) session.getAttribute("userSession")).getImage();
             String fullPath = uploadPath + File.separator +Name+"."+getExtension(part);
             part.write( fullPath );
         }
         System.out.println(uploadPath+"\\"+fileName);
         request.setAttribute("path","/Images"+"/"+fileName);
-        request.getRequestDispatcher("espace_user.jsp").forward(request,resp);
+        request.getRequestDispatcher("/userAccueil").forward(request,resp);
     }
 
 
