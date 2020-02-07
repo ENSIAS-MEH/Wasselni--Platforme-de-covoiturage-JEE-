@@ -1,8 +1,11 @@
 # Wasselni (Projet Covoiturage)
-## Projet Maven
-Nous avons créé un projet avec l'outil maven pour automatiser la gestion de notre projet 
+## Wasselni
+Wasselni une plateforme met en relation des conducteurs voyageant avec des places libres et des passagers se rendant dans la même direction. Ils partagent un trajet et les frais qui y sont liés
 ## Captures
+
 ### ChatBot
+![alt text](https://user-images.githubusercontent.com/50969643/73990751-68083f80-494a-11ea-9cbf-d92cb19b7579.jpg)
+### Preview
 ![alt text](https://user-images.githubusercontent.com/50969643/73990751-68083f80-494a-11ea-9cbf-d92cb19b7579.jpg)
 ### Accueil
 ![alt text](https://user-images.githubusercontent.com/51321011/73371447-009d2080-42b6-11ea-90ee-6249829ba98f.png)
