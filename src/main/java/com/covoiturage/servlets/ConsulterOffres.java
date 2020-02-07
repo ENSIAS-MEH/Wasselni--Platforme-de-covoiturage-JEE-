@@ -32,8 +32,12 @@ public class ConsulterOffres extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         OffreForm form = new OffreForm(trajetDao,detailsTrajetDao);
-        this.getServletContext().getRequestDispatcher("/offres.jsp").forward(req,resp);
+        if(form.getErreurs().isEmpty()){
+            this.getServletContext().getRequestDispatcher("/offres.jsp").forward(req,resp);
+        }else {
+            this.getServletContext().getRequestDispatcher("/accueil").forward(req,resp);
 
+        }
     }
 }
 

@@ -119,11 +119,8 @@ public class OffreForm {
      */
 
     private LocalDateTime validationDateTrajet(String jour) throws Exception {
-        if(jour != null){
-            return convertStringToLocalDateTime(jour);
-        } else {
-            throw new Exception("Un champ de la date est vide. Veuillez le renseigner.");
-        }
+        return convertStringToLocalDateTime(jour);
+
     }
 
     /**
