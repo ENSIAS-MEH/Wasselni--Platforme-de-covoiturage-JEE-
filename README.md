@@ -11,8 +11,7 @@ Wasselni une plateforme met en relation des conducteurs voyageant avec des place
    
 ### supervisé par:
  
-   
-
+   :point_right: <a href="https://github.com/ELHAMLAOUI"> Mahmoud El Hamlaoui </a>
 
 
 ## :camera: Captures
@@ -29,7 +28,7 @@ Wasselni une plateforme met en relation des conducteurs voyageant avec des place
 ### Demander un trajet
 ![alt text](https://user-images.githubusercontent.com/51321011/73371944-c08a6d80-42b6-11ea-8a36-0334f8474cab.png)
 ### Espace user
-![alt text](https://user-images.githubusercontent.com/51321011/73807367-81837d00-47cc-11ea-8ed3-eae673f221f7.png)
+![alt text](https://user-images.githubusercontent.com/51321011/74073323-41114280-4a0a-11ea-872c-4b54c823732d.png)
 
 ### :robot: ChatBot
 ![alt text](https://user-images.githubusercontent.com/51321011/74072405-03f78100-4a07-11ea-990f-66ecbc94bc7d.jpg)
