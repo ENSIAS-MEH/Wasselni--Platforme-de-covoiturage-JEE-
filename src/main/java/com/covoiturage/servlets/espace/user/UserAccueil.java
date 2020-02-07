@@ -27,6 +27,8 @@ public class UserAccueil extends HttpServlet {
     private EstAssocieADao estAssocieADao;
     private UserDao userDao;
 
+    private static final String ATT_FORM = "form";
+
     private static final String VUE_ACCUEIL = "/WEB-INF/espace/user/espace_user.jsp";
 
     private static final String ATT_TRAJETS = "trajets";
@@ -61,7 +63,9 @@ public class UserAccueil extends HttpServlet {
                 estAssociea.setIdDetailsTrajet(detailsTrajet.getIdDetailsTrajet());
                 estAssocieas.add(estAssocieADao.findSpecificEstAssocieA(estAssociea));
 
-        }} catch (SQLException e) {
+             }
+
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         req.setAttribute(ATT_TRAJETS,trajets);
@@ -74,6 +78,9 @@ public class UserAccueil extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UpdateUserForm form = new UpdateUserForm(userDao);
         form.updateUser(req);
-        this.getServletContext().getRequestDispatcher(VUE_ACCUEIL).forward(req,resp);
+
+        req.setAttribute(ATT_FORM,form);
+
+        doGet(req, resp);
     }
 }

@@ -101,6 +101,17 @@ crossorigin="anonymous">
   </div>
 </div>
 
+    <div>
+        <p>${form.resultat}</p>
+        <p>        <span>${form.erreurs['nom']}</span></p>
+        <p>          <span>${form.erreurs['prenom']}</span>
+        </p>
+        <p>          <span>${form.erreurs['nouveaumotdepasse']}</span>
+        </p>
+
+        <p>${sessionScope.userId}</p>
+
+    </div>
 <!--************-->
 <!-- Activation -->
 <!--************-->
@@ -396,13 +407,11 @@ crossorigin="anonymous">
           <label>Nom:</label>
           <input type="text"  class="form-control" name="nom" placeholder="Nom" value="<c:out value="${sessionScope.userSession.nom}"/>">
         </div>
-          <span>${form.erreurs['nom']}</span>
 
           <div class="form-group">
       <label>Prenom</label>
       <input type="text"  class="form-control" name="prenom" placeholder="Prenom" value="<c:out value="${sessionScope.userSession.prenom}"/>">
     </div>
-          <span>${form.erreurs['prenom']}</span>
 
 
           <div class="form-group">
@@ -415,6 +424,12 @@ crossorigin="anonymous">
         <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="<c:out value="${sessionScope.userSession.region}"/>" >
        </div>
 
+      </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              <button type="submit" class="btn btn-success">Modifier</button>
+          </div>
+
         <div class="form-group">
           <label>Ancien mot de passe</label>
           <input type="password" class="form-control" disabled name ="ancienmotdepasse" value="${sessionScope.userSession.password}" placeholder="Ancien le mote de passe">
@@ -422,21 +437,19 @@ crossorigin="anonymous">
   
          <div class="form-group">
           <label>Nouveau mot de passe</label>
-          <input type="text" class="form-control" name = "nouveaumotdepasse" value="" placeholder="Nouveau mot de passe" >
+          <input type="password" class="form-control" name = "nouveaumotdepasse" value="" placeholder="Nouveau mot de passe" >
          </div>
-          <span>${form.erreurs['nouveaumotdepasse']}</span>
 
 
           <div class="form-group">
           <label>Confirmer le mot de passe</label>
-          <input type="text" class="form-control" name="confirmation" value="" placeholder="Confirmer le mot de passe"  >
+          <input type="password" class="form-control" name="confirmation" value="" placeholder="Confirmer le mot de passe"  >
          </div>
   
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
           <button type="submit" class="btn btn-success">Modifier</button>
         </div>
-      </div>
        </form>
     
     </div>

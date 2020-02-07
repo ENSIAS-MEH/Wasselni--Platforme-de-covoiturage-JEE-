@@ -27,8 +27,6 @@ public class UpdateUserForm {
     private static final String CHAMP_NOM       = "nom";
     private static final String CHAMP_PRENOM    = "prenom";
     private static final String CHAMP_REGION     = "adresse";
-    private static final String CHAMP_EMAIL = "email";
-    private static final String CHAMP_ANCIEN_MOT_DE_PASSE     = "ancienmotdepasse";
     private static final String CHAMP_NOUVEAU_MOT_DE_PASSE     = "nouveaumotdepasse";
     private static final String CHAMP_CONFIRMATION_MOT_DE_PASSE = "confirmation";
 
@@ -51,16 +49,16 @@ public class UpdateUserForm {
             String nom = getValeurChamp(req, CHAMP_NOM);
             String prenom = getValeurChamp(req, CHAMP_PRENOM);
             String region = getValeurChamp(req, CHAMP_REGION);
-            String email = getValeurChamp(req, CHAMP_EMAIL);
-            String ancienmotDePasse = getValeurChamp(req, CHAMP_ANCIEN_MOT_DE_PASSE);
             String nouveauMotDePasse = getValeurChamp(req,CHAMP_NOUVEAU_MOT_DE_PASSE);
             String confirmation = getValeurChamp(req, CHAMP_CONFIRMATION_MOT_DE_PASSE);
 
             user.setRegion(region);
             traiterNom(nom, user);
             traiterPrenom(prenom, user);
-            traiterEmail(email, user);
-            traiterMotDePasse(nouveauMotDePasse, confirmation, user);
+            if(nouveauMotDePasse == null){
+            } else {
+                traiterMotDePasse(nouveauMotDePasse, confirmation, user);
+            }
 
             if (erreurs.isEmpty()) {
                 userDao.updateUser(user);
@@ -96,14 +94,7 @@ public class UpdateUserForm {
         user.setPrenom( prenom );
     }
 
-    private void traiterEmail(String email,User user){
-        try {
-            validationEmail( email );
-        } catch ( Exception e ) {
-            setErreur( CHAMP_EMAIL, e.getMessage() );
-        }
-        user.setEmail(email);
-    }
+
     private void traiterMotDePasse(String motDePasse , String confirmation,User user){
         try {
             validationMotDePasse( motDePasse , confirmation );
