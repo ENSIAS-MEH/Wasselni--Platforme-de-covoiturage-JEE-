@@ -10,6 +10,7 @@ import com.covoiturage.dao.interfaces.UserDao;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -68,11 +69,11 @@ public class OffreForm {
                 DetailsTrajet detailsOffre = new DetailsTrajet();
                 for(Trajet offre : offres){
                     detailsOffre.setIdTrajetChoisie(offre.getIdTrajet());
-                    detailsTrajetDao.findSpecificDetailsTrajet(detailsOffre);
+                    detailsOffre = detailsTrajetDao.findSpecificDetailsTrajet(detailsOffre);
                     detailsOffres.add(detailsOffre);
                 }
                 req.setAttribute(ATT_OFFRES , offres);
-                req.setAttribute(ATT_DETAILS_OFFRES , offres);
+                req.setAttribute(ATT_DETAILS_OFFRES , detailsOffres);
                 resultat = "Recherche des offres en succès";
             } else {
                 resultat = "Echec de la recherche";
@@ -95,15 +96,14 @@ public class OffreForm {
 
 
     private void traiterDateTrajet(String jour , DetailsTrajet details){
-        LocalDateTime dateDepart = null;
+        LocalDate dateDepart = null;
         try{
             dateDepart = validationDateTrajet(jour);
         } catch (Exception e){
             setErreur(CHAMP_DATE_TRAJET , e.getMessage());
         }
-        details.setDateDepart(dateDepart);
+        details.setDateDepart(dateDepart.atStartOfDay());
     }
-
     private void traiterBagage(String bagage , DetailsTrajet details){
         if(bagage != null){
             details.setBagage(1);
@@ -118,12 +118,9 @@ public class OffreForm {
      * Méthodes de validation
      */
 
-    private LocalDateTime validationDateTrajet(String jour) throws Exception {
-        if(jour != null){
-            return convertStringToLocalDateTime(jour);
-        } else {
-            throw new Exception("Un champ de la date est vide. Veuillez le renseigner.");
-        }
+    private LocalDate validationDateTrajet(String jour) throws Exception {
+        return convertStringToLocalDate(jour);
+
     }
 
     /**
@@ -141,9 +138,13 @@ public class OffreForm {
     private void setErreur( String champ, String message ) {
         erreurs.put( champ, message );
     }
-    public LocalDateTime convertStringToLocalDateTime(String str){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
-        return dateTime;
+
+    public LocalDate convertStringToLocalDate(String str)  {
+        if (str != null) {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+            LocalDate date = LocalDate.parse(str, formatter);
+            return date;
+        }
+        return null;
     }
 }

@@ -12,7 +12,7 @@
       overflow-x:hidden;
       height: 100%;
       font-family: Montserrat;
-      font-size: 13.5px;
+      font-size: 12.5px;
      
   }
   
@@ -748,7 +748,18 @@ input.input10i {
   overflow: hidden;
 
 }
-      
+   
+.imgBoxOffreDetaille{
+  position: absolute;
+
+  transform: translateX(-50%,-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(117, 188, 209);
+  overflow: hidden;
+
+}
 
 
       /*Mini slider*/

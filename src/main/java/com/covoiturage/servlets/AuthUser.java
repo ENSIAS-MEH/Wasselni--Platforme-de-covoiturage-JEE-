@@ -20,7 +20,6 @@ public class AuthUser extends HttpServlet {
     private static final String ATT_SESSION_USERID = "userId";
 
     private static final String ATT_FORM = "form";
-    private static final String ATT_USER = "user";;
     private static final String ATT_TRAJET = "trajet";
     private static final String ATT_DETAILS = "details";
 

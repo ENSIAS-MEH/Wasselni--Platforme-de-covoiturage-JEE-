@@ -118,6 +118,14 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>GetOffres</servlet-name>
+        <servlet-class>com.covoiturage.servlets.GetOffres</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetOffres</servlet-name>
+        <url-pattern>/getOffres</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>UserAccueil</servlet-name>
         <servlet-class>com.covoiturage.servlets.espace.user.UserAccueil</servlet-class>
     </servlet>

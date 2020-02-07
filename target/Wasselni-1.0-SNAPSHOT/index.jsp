@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.time.LocalDateTime" %><%--
   Created by IntelliJ IDEA.
   User: hp
   Date: 07/01/2020
@@ -78,7 +78,7 @@
                                 <div class="grid slideactive">
                                     <div id="login">
                                         <center><h2><span  class="fa fa-road"></span >  Où allez-vous ?</h2></center>
-                                        <form action="/consulterOffres" method="post">
+                                        <form action="/consulterOffres" method="get">
                                             <fieldset>
 
 
@@ -100,7 +100,7 @@
                                                 
                                                 <!--Date-->
                                                 <div class="wrap-input100 input-group">
-                                                    <input class="input100" type="text" name="datetrajet" placeholder="Date" id="input-start">
+                                                    <input class="input100" type="text" name="datetrajet" value="<%=LocalDateTime.now()%>" placeholder="Date" id="input-start">
                                                     <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
                                                 </div>
                                                 <span>${form.erreurs['datetrajet']}</span>

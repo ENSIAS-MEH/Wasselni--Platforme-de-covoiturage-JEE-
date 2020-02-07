@@ -6,6 +6,7 @@ import com.covoiturage.dao.DAOFactory;
 import com.covoiturage.dao.interfaces.TrajetDao;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -92,8 +93,8 @@ public class TrajetDaoImp implements TrajetDao {
         List<Trajet> listOfTrajets = new ArrayList<Trajet>();
 
         String sql = "SELECT ID_TRAJET, VILLE_DEPART," +
-                " VILLE_DESTINATION FROM TRAJET where VILLE_DEPART like ? or VILLE_DESTINATION like  ? or ID_TRAJET in " +
-                "(select ID_TRAJET_CHOISIE from details_trajet where EFFECTIF = ? or bagage = ? or DATETIME_DEPART = ?)";
+                " VILLE_DESTINATION FROM TRAJET where VILLE_DEPART like ? and VILLE_DESTINATION like  ? and ID_TRAJET in " +
+                "(select ID_TRAJET_CHOISIE from details_trajet where EFFECTIF = ? and bagage = ?  and DATETIME_DEPART like ?)";
         PreparedStatement preparedStmt = null;
         ResultSet resultset;
         Connection connection = daoFactory.getConnection();
@@ -102,7 +103,9 @@ public class TrajetDaoImp implements TrajetDao {
         preparedStmt.setString(2,"%"+trajet.getVilleDestination()+"%");
         preparedStmt.setInt(3, detailsTrajet.getEffectif());
         preparedStmt.setInt(4, detailsTrajet.getBagage());
-        preparedStmt.setObject(5, detailsTrajet.getDateDepart());
+        String date = ""+detailsTrajet.getDateDepart();
+        date = date.split("T")[0];
+        preparedStmt.setString(5, "%"+date+"%");
 
         resultset = preparedStmt.executeQuery();
         Long idTrajet;
@@ -173,7 +176,7 @@ public class TrajetDaoImp implements TrajetDao {
         DetailsTrajet TrajetToAdd;
 
         while( resultset.next() ) {
-            idDetaille = resultset.getLong("ID_DETAILLE_TRAJET");
+            idDetaille = resultset.getLong("ID_DETAILS_TRAJET");
             date_depart = resultset.getObject("DATETIME_DEPART",LocalDateTime.class);
              prix_place = resultset.getInt("PRIX_PLACE");
             type_voiture = resultset.getString("TYPE_VOITURE");
