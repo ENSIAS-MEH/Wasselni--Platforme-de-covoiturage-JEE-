@@ -1,6 +1,22 @@
 # Wasselni (Projet Covoiturage)
 ## Wasselni
 Wasselni une plateforme met en relation des conducteurs voyageant avec des places libres et des passagers se rendant dans la même direction. Ils partagent un trajet et les frais qui y sont liés
+### Contributeurs:
+
+   :point_right: <a href="https://github.com/IsmailBarkani"> Ismail Barkani </a> 
+
+   :point_right: <a href="https://github.com/boufousabd"> Abdellah Boufous </a>
+
+   :point_right: <a href="https://github.com/DarkIlyas"> Ilyas Bouziane </a>
+   
+### supervisé par:
+
+   :point_right: <a href="https://github.com/ELHAMLAOUI"> Mahmoud El Hamlaoui </a> 
+   
+   
+
+
+
 ## Captures
 
 ### ChatBot
