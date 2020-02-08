@@ -22,7 +22,11 @@ import java.sql.SQLException;
         maxRequestSize = 1024 * 1024 * 5 * 5 )
 public class UploadServlet extends HttpServlet {
 
+<<<<<<< HEAD
     private UserDao userDao;
+=======
+ private UserDao userDao;
+>>>>>>> 63821ad83cc869de0a36212c9266698de8f99988
     private static final String IMAGES_FOLDER = "/Images";
     public String uploadPath;
     @Override

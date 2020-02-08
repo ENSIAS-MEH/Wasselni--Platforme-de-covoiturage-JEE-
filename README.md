@@ -1,9 +1,20 @@
 # Wasselni (Projet Covoiturage)
-## Projet Maven
-Nous avons créé un projet avec l'outil maven pour automatiser la gestion de notre projet 
-## Captures
-### ChatBot
-![alt text](https://user-images.githubusercontent.com/50969643/73990751-68083f80-494a-11ea-9cbf-d92cb19b7579.jpg)
+## Wasselni
+Wasselni une plateforme met en relation des conducteurs voyageant avec des places libres et des passagers se rendant dans la même direction. Ils partagent un trajet et les frais qui y sont liés
+### Contributeurs:
+
+   :point_right: <a href="https://github.com/IsmailBarkani"> Ismail Barkani </a> 
+
+   :point_right: <a href="https://github.com/boufousabd"> Abdellah Boufous </a>
+
+   :point_right: <a href="https://github.com/DarkIlyas"> Ilyas Bouziane </a>
+   
+### supervisé par:
+ 
+   :point_right: <a href="https://github.com/ELHAMLAOUI"> Mahmoud El Hamlaoui </a>
+
+
+## :camera: Captures
 ### Accueil
 ![alt text](https://user-images.githubusercontent.com/51321011/73371447-009d2080-42b6-11ea-90ee-6249829ba98f.png)
 ### Authentification
@@ -17,7 +28,14 @@ Nous avons créé un projet avec l'outil maven pour automatiser la gestion de no
 ### Demander un trajet
 ![alt text](https://user-images.githubusercontent.com/51321011/73371944-c08a6d80-42b6-11ea-8a36-0334f8474cab.png)
 ### Espace user
-![alt text](https://user-images.githubusercontent.com/51321011/73807367-81837d00-47cc-11ea-8ed3-eae673f221f7.png)
+![alt text](https://user-images.githubusercontent.com/51321011/74074277-a6b2fe00-4a0d-11ea-92bc-b235785a520a.png)
+
+### :robot: ChatBot
+![alt text](https://user-images.githubusercontent.com/51321011/74072405-03f78100-4a07-11ea-990f-66ecbc94bc7d.jpg)
+![alt text](https://user-images.githubusercontent.com/51321011/74072407-0528ae00-4a07-11ea-86e3-d1d074691a89.jpg)
+![alt text](https://user-images.githubusercontent.com/51321011/74072409-05c14480-4a07-11ea-8b02-b09698ba131f.jpg)
+## :movie_camera: Preview
+![alt text](Demo.gif)
 
 
 ## Check project's notes

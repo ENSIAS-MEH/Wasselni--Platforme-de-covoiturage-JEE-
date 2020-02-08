@@ -286,6 +286,105 @@
                     <!--row--> <br> <br>
                 </c:forEach>
 
+                <div class="col-sm-6" >
+                  <div class="card " style="margin-left: 50px;" >
+                      <div class="post-image">
+                          <div class="imgBoxOffre">
+                              <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                          </div>
+                          <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
+                          <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                              <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                              <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
+                          </div>
+                          
+                      </div>
+                      
+                      <div class="news-content">
+                          <!--Prix-->
+                          <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
+                          <div class="post-meta">
+                              <div class="row" style="text-align: left;">
+                                  <!--Depart-->
+                                  <div class="col-sm-5">
+                                      <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDepart}</span></a> </span>
+                                  </div>
+                                   <!--Destination-->
+                                  <div class="col">
+                                      <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDestination}</a> </span>
+                                  </div> 
+                              </div>
+                              <div class="row" style="text-align: left;">
+                                  <!--Date-->
+                                  <div class="col-sm-5">
+                                      <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
+                                  </div>  
+                                   <!--Effectif-->
+                                  <div class="col">
+                                      <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
+                                  </div>
+                              </div>
+                              <p>
+                                  <br><br>
+                                  <a style="margin-left: 380px; " href="#" id="btnd" ></a>
+                                  <br>
+                              </p>
+      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6" >
+                <div class="card " style="margin-left: 50px;" >
+                    <div class="post-image">
+                        <div class="imgBoxOffre">
+                            <img src="ressources/img/box1.jpg" alt="" style="max-height: 120px; max-height: 150px;">
+                        </div>
+                        <h4 style=" text-align: left; margin-left: 140px; margin-top: 20px; color: rgb(92, 152, 206);">${chauffeurs[i].nom} ${chauffeurs[i].prenom}</h4>
+                        <div style=" text-align: left;margin-left: 140px; margin-top: -10px; ">
+                            <span style="color: rgb(92, 152, 206);" > Sex:</span>
+                            <span style="color: rgb(255, 255, 255);" >${chauffeurs[i].sexe}</span>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="news-content">
+                        <!--Prix-->
+                        <span class="category">Prix de trajet: ${detailsOffres[i].prixPlace}</span>
+                        <div class="post-meta">
+                            <div class="row" style="text-align: left;">
+                                <!--Depart-->
+                                <div class="col-sm-5">
+                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-street-view"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">${offres[i].villeDepart}</span></a> </span>
+                                </div>
+                                 <!--Destination-->
+                                <div class="col">
+                                    <span > <a href="#"> <i class="fa fa-map-marker"></i> <span style="color: rgb(39, 114, 77);font-weight: bold;">Destination: </span>${offres[i].villeDestination}</a> </span>
+                                </div> 
+                            </div>
+                            <div class="row" style="text-align: left;">
+                                <!--Date-->
+                                <div class="col-sm-5">
+                                    <span style="margin-left:10px;"> <a href="#"> <i class="fa fa-clock"></i> ${detailsOffres[i].dateDepart} </a> </span>
+                                </div>  
+                                 <!--Effectif-->
+                                <div class="col">
+                                    <span > <a href="#"> <i class="fa fa-users"></i> ${detailsOffres[i].effectif}</a> </span>
+                                </div>
+                            </div>
+                            <p>
+                                <br><br>
+                                <a style="margin-left: 380px; " href="#" id="btnd" ></a>
+                                <br>
+                            </p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
             </c:if>
 

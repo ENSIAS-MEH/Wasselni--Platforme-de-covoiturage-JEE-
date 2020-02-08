@@ -1,3 +1,5 @@
+<%@ page import="com.covoiturage.dao.interfaces.UserDao" %>
+<%@ page import="com.covoiturage.dao.DAOFactory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -76,6 +78,7 @@ crossorigin="anonymous">
     <div class="page-header page-header-small" filter-color="blue">
       <div class="page-header-image" data-parallax="true" style="background-image: url('/ressources/img/profile_bg.jpg');"></div>
       <div class="container">
+<<<<<<< HEAD
           <div class="content-center">
 
               <%
@@ -95,6 +98,27 @@ crossorigin="anonymous">
                   </div>
                   <br>
                   <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
+=======
+        <div class="content-center">
+
+            <%
+                String path = (String) request.getAttribute("path");%>
+            <%=path%>
+          <form method="post" action="upload" enctype="multipart/form-data">
+            <div class="cc-profile-image" id="profile_image">
+                <img src="<%=path%>" alt="Image"/>
+            </div>
+            <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
+            <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
+           
+           
+            <div style="margin-left: 220px;">
+              <input type="file" name="files" accept="image/*"
+                     onchange="readFilesAndDisplayPreview(this.files);" />
+            </div>
+            <br>
+            <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
+>>>>>>> 63821ad83cc869de0a36212c9266698de8f99988
 
           </form>
         </div>
@@ -276,6 +300,7 @@ crossorigin="anonymous">
   <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Historique Offres/Demandes</h3>
   <div class="container cc-offre">
 
+<<<<<<< HEAD
       <c:if test="${trajet.size() != 0}" >
           <c:forEach var="i" begin="0" end="${trajets.size()-1}" step="1">
               <div class="card">
@@ -302,6 +327,54 @@ crossorigin="anonymous">
                               <div class="row">
                                   <div class="col-sm-6">
                                       <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  <c:out value="${detailsTrajets[i].dateDepart}"/>
+=======
+
+
+                  <div class="card">
+                      <div class="row">
+                          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                              <div class="card-body cc-offre-header">
+                                  <div class="h3">Demande</div>
+                                  <div class="h3">${estAssocieas[i].typeAssociation}</div>
+                              </div>
+                          </div>
+                          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                              <div class="card-body">
+                                  <div class="h5" style="margin-bottom: 20px;">Prix de trajet: 180Dh</div>
+                                  <hr>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span>Casablanca, Anfa
+                                      </div>
+
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Déstination: </span>Oujda, Andalous Rue Bodir
+                                  <div class="h5" style="margin-bottom: 20px;">Prix de trajet: <c:out value="${detailsTrajet[i].prixPlace}"/></div>
+                                  <hr>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span><c:out value="${trajets[i].villeDepart}"/>
+                                      </div>
+
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Destination: </span><c:out value="${trajets[i].villeDestination}"/>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  29 Janvier 2020
+                                      </div>
+
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${details}"/>
+                                          <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  <c:out value="${detailsTrajets[i].dateDepart}"/>
+                                      </div>
+
+                                      <div class="col-sm-6">
+                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${detailsTrajets[i].effectif}"/>
+                                      </div>
+>>>>>>> 63821ad83cc869de0a36212c9266698de8f99988
                                   </div>
 
                                   <div class="col-sm-6">
@@ -312,11 +385,16 @@ crossorigin="anonymous">
                           </div>
                       </div>
                   </div>
+<<<<<<< HEAD
               </div>
           </c:forEach>
 
 
       </c:if>
+=======
+
+
+>>>>>>> 63821ad83cc869de0a36212c9266698de8f99988
 
     <div style="margin-top: 40px; margin-bottom: 100px;">
       <ul class="pagination  justify-content-center ">
@@ -402,12 +480,33 @@ crossorigin="anonymous">
 <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+      <form>
       <form action="/userAccueil" method="post">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
       <div class="modal-body">
+
+
+        <div class="form-group">
+          <label>Nom:</label>
+          <input type="text"  class="form-control" name="prenom" placeholder="Nom" value="Mohammed">
+        </div>
+     
+     <div class="form-group">
+      <label>Prenom</label>
+      <input type="text"  class="form-control" name="nom" placeholder="Prenom" value="Sabid">
+    </div>
+
+       <div class="form-group">
+            <label>Email</label>
+            <input type="text"  class="form-control" name="email" placeholder="email" value="mohammedsabi0@gmail.com">
+       </div>
+
+       <div class="form-group">
+        <label>Numéro Téléphone</label>
+        <input type="text" class="form-control" name="tel" placeholder="Telephone" value="068874125423">
 
         <div class="form-group">
           <label>Nom:</label>
@@ -427,6 +526,21 @@ crossorigin="anonymous">
 
        <div class="form-group">
         <label>Adresse</label>
+        <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="Adresse" >
+       </div>
+
+       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        <button type="submit" class="btn btn-success">Modifier</button>
+      </div>
+    </form>
+       <hr>
+      
+       <form action="">
+        <div class="form-group">
+          <label>Ancien mot de passe</label>
+          <input type="text" class="form-control" placeholder="Ancien le mote de passe">
+
         <input type="text" class="form-control" name="adresse" placeholder="Adresse" value="<c:out value="${sessionScope.userSession.region}"/>" >
        </div>
 
@@ -443,6 +557,12 @@ crossorigin="anonymous">
   
          <div class="form-group">
           <label>Nouveau mot de passe</label>
+          <input type="text" class="form-control" placeholder="Nouveau le mote de passe" >
+         </div>
+              
+         <div class="form-group">
+          <label>Confirmer le mote de passe</label>
+          <input type="text" class="form-control" placeholder="Confirmer le mote de passe"  >
           <input type="password" class="form-control" name = "nouveaumotdepasse" value="" placeholder="Nouveau mot de passe" >
          </div>
 
@@ -461,6 +581,7 @@ crossorigin="anonymous">
     </div>
   </div>
 </div>
+
 </div>
 <script>
   CKEDITOR.replace( 'editor1' );
@@ -576,9 +697,6 @@ crossorigin="anonymous"></script>
       }
   });
 </script>
-
-
-
 
   </body>
 </html>
