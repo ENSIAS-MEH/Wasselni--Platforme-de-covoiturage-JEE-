@@ -1,0 +1,96 @@
+\documentclass[a4paper]{report}
+
+%====================== PACKAGES ======================
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+%pour gérer les positionnement d'images
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+%pour les informations sur un document compilé en PDF et les liens externes / internes
+\usepackage{hyperref}
+
+%espacement entre les lignes
+\usepackage{setspace}
+%modifier la mise en page de l'abstract
+\usepackage{abstract}
+%police et mise en page (marges) du document
+\usepackage[T1]{fontenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%Pour les galerie d'images
+\usepackage{subfig}
+
+%====================== INFORMATION ET REGLES ======================
+
+%rajouter les numérotation pour les \paragraphe et \subparagraphe
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+%======================== DEBUT DU DOCUMENT ========================
+
+\begin{document}
+
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+%ne pas numéroter le sommaire
+
+\newpage
+
+%espacement entre les lignes d'un tableau
+\renewcommand{\arraystretch}{1.5}
+
+%====================== INCLUSION DES PARTIES ======================
+
+
+
+
+
+\chapter{Présentation du projet}
+
+\section{Amenant}
+
+\par 
+Au cours de notre formation en tant qu'Elève Ingénieur de l'ENSIAS en 2ème année, nous sommes appelés à travailler sur un projet JEE à travers lequel nous exploitons nos connaisances et compétences acquis durant notre formation \textbf{Développement et Ingéniere Web} afin d'aboutir à une application Web en JEE bien construite. 
+
+Avec l'accord de notre cher encadrant, nous avons choisi \textbf{Le covoiturage} comme sujet du projet. 
+
+\section{Analyse de l'existant}
+
+\par 
+Face à la défaillance du système de transport ,le parc automobile marocain croît tous les ans avec son lot de désagréments: embouteillages, pollution, accident de la route sans oublier le stress des conducteurs. Le covoiturage pourrait être la solution à tous ces soucis en réduisant le trafic, et en diminuant la pollution ainsi que la consommation d’énergie.
+
+Ainsi au Maroc, Plusieurs aujourd'hui optent pour cette alternative. Pour pallier aux problèmes liés à l’insuffisance de l’offre en matière du transport, à l’intérieur ou l’extérieur des villes, les Marocains prennent leurs maux en patience et innovent. Au sein des villes marocaines, face à l’anarchie régnante au sein du secteur du transport, le champ reste libre à plusieurs pratiques illégales dirigées par des \textit{"khattafas"}.
+
+Alors que cette activité, pourtant punissable par la loi, tisse sa toile dans de nombreuses villes, toutes catégories confondues, le transport interrégional et entre les villes connait, lui aussi, un nouvel arrivant. Après des débuts timides sur le marché marocain, le covoiturage est devenu tendance, surtout chez les plus jeunes. Largement différent de l'auto-stop classique, le covoiturage consiste à partager les frais d’un trajet entre différentes personnes ; l’une d’elles étant un conducteur non professionnel disposant d’une voiture automobile.
+
+Au Maroc, avec l’émergence des réseaux sociaux ,les groupes Facebook destinés à ce nouveau mode de transport se sont multipliés ces dernières années. Des centaines d’offres et de demandes sont publiées quotidiennement par les internautes, démontrant ainsi un réel engouement envers ce mode de transport destiné à pallier aux retards des trains, manque des moyens pour se procurer une voiture ou encore l’absence de confort de certains autocars.
+
+
+\section{Problématique soulevée}
+\par 
+Le covoiturage n’est pas sans mésaventure. Mis à part son caractère illégal, le covoiturage au Maroc échappe à toute surveillance. Bien que les imposteurs sont régulièrement dénoncés par les utilisateurs et les administrateurs de ces groupes facebook, voyager avec un groupe d’inconnus au Maroc reste encore, pour plusieurs, un pas qui nécessite vigilance et réflexion préalable : Pour eux, le covoiturage c'est \textsf{Plus de peur que de mal}.
+
+\par 
+Par conséquent, deux problèmes majeurs trouvent chemin concernant le covoiturage au Maroc :
+\begin{itemize}
+\item[•] \textbf{La sécurité :} Que ce soient des applications comme Kareem ou sur des groupes Facebook, personne n'assure la sécurité des personnes transportés étant donné qu'ils sont d'origine illégale. 
+\item[•] \textbf{L'organisation :} Toute personne souhaitant proposer ou demander un trajet sur des groupes Facebook dépose sa proposition ou sa demande sans avoir une connaissance préalable sur le conducteur ou encore sur le trajet exacte qu'il va prendre. De même, le conducteur a besoin d'avoir plus d'informations sur les personnes à prendre.                 
+\end{itemize}
+
+\section{Solution proposée}
+
+De ce qui précède, nous nous sommes aperçus que le besoin du covoiturage au Maroc, étant un besoin nécessaire et important, est à saisir et mérite une profonde réflexion aux problèmes cités avant. Ainsi, nous l'avons associé à notre projet JEE pour aboutir une application Web que nous avons nommé \textit{"Wessalani"} dont les objectifs sont :
+
+
+\begin{itemize}
+\item Assurer le covoiturage : mettre en relation des conducteurs voyageant avec des places libres et des passagers se rendant dans la même direction. Ils partagent un trajet et les frais qui y sont liés.
+\item Assurer la sécurité des passagers et du conducteur : création d'un système interne au processus des choix et des propositions d'offres qui va permettre de donner plus de confiance à tous les partis et d'organiser un trajet en toute sécurité 
+\item Assure l'organisation : établir une app Web intuitive qui va interagir avec le visiteur en toute simplicité sans avoir à parcourir plusieurs pages, seulement avec quelques cliques ou quelques messages au Chat Bot de l'application, et créer un sous-réseau social, géré par un/des administrateurs,
+pour identifier les profils conducteurs afin de renforcer la sécurité 
+\end{itemize}
+
+\end{document}
