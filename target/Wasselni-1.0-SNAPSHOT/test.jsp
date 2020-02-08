@@ -35,6 +35,8 @@ ${sessionScope.details.modeleVoiture}
 ${sessionScope.details.marqueVoiture}
 ${sessionScope.details.prixPlace}
 
+${offres}
+
 
 
 </body>

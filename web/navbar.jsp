@@ -27,9 +27,7 @@
               <li class="nav-item" style="font-size: 12px">
                   <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
               </li>
-              <li class="nav-item" style="font-size: 12px">
-                  <a href="<c:url value="/demanderTrajet"/>" class="nav-link">Demander un trajet</a>
-              </li>
+
               <c:if test="${sessionScope.userId == null}">
                   <li class="nav-item" style="font-size: 12px">
                    <a href="<c:url value="/authentification"/>" class="nav-link"> <i class="fa fa-user"></i> se Connecter</a>
@@ -37,12 +35,10 @@
               </c:if>
               <c:if test="${sessionScope.userId != null}">
                   <li class="nav-item" style="font-size: 12px">
-                      <a href="<c:url value="#"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
+                      <a href="<c:url value="/deconnexion"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
                   </li>
-                  <li>
-                      <div class="imgBox" style="margin-left: 40px" >
-                          <img src="ressources/img/profile_pic.png" alt="" style="max-height: 60px; max-height: 90px;" width="40px" height="40px">
-                      </div>
+                  <li class="nav-item" style=" font-size: 12px">
+                      <a href="<c:url value="/upload"/>" class="nav-link"> profile</a>
                   </li>
               </c:if>
 

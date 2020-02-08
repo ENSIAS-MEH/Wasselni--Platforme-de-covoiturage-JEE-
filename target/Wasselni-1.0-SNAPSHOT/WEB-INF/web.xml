@@ -133,6 +133,16 @@
         <servlet-name>UserAccueil</servlet-name>
         <url-pattern>/userAccueil</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Deconnexion</servlet-name>
+        <servlet-class>com.covoiturage.servlets.Deconnexion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Deconnexion</servlet-name>
+        <url-pattern>/deconnexion</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>EspacePrivee</filter-name>
         <filter-class>com.covoiturage.filter.EspacePrivee</filter-class>

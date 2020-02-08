@@ -201,4 +201,47 @@ public class TrajetDaoImp implements TrajetDao {
 
         return listDetails;
     }
+
+    @Override
+    public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet, int min, int max) throws SQLException {
+        List<Trajet> listOfTrajets = new ArrayList<Trajet>();
+
+        String sql = "SELECT ID_TRAJET, VILLE_DEPART," +
+                " VILLE_DESTINATION FROM TRAJET where VILLE_DEPART like ? and VILLE_DESTINATION like  ? and ID_TRAJET in " +
+                "(select ID_TRAJET_CHOISIE from details_trajet where DATETIME_DEPART like ? " +
+                "and prix_place between ? and ?)";
+        PreparedStatement preparedStmt = null;
+        ResultSet resultset;
+        Connection connection = daoFactory.getConnection();
+        preparedStmt = connection.prepareStatement(sql);
+        preparedStmt.setString(1, "%"+trajet.getVilleDepart()+"%");
+        preparedStmt.setString(2,"%"+trajet.getVilleDestination()+"%");
+        String date = ""+detailsTrajet.getDateDepart();
+        date = date.split("T")[0];
+        preparedStmt.setString(3, "%"+date+"%");
+        preparedStmt.setInt(4, min);
+        preparedStmt.setInt(5, max);
+
+
+        resultset = preparedStmt.executeQuery();
+        Long idTrajet;
+        String villeDepart, villeDestination;
+        Trajet TrajetToAdd;
+
+        while( resultset.next() ) {
+            idTrajet = resultset.getLong("ID_TRAJET");
+            villeDepart = resultset.getString("VILLE_DEPART");
+            villeDestination = resultset.getString("VILLE_DESTINATION");
+            TrajetToAdd = new Trajet(idTrajet,villeDepart,
+                    villeDestination);
+            listOfTrajets.add(TrajetToAdd);
+        }
+
+        preparedStmt.close();
+        resultset.close();
+
+        return listOfTrajets;
+    }
+
+
 }

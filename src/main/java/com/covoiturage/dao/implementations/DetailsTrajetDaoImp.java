@@ -54,6 +54,7 @@ public class DetailsTrajetDaoImp implements DetailsTrajetDao {
         return returnedDetailsTrajet;
     }
 
+
     public List<DetailsTrajet> findAllDetailsTrajets() throws SQLException {
         List<DetailsTrajet> listofDetailsTrajets = new ArrayList<DetailsTrajet>();
         String sql = "SELECT ID_DETAILS_TRAJET, DATETIME_DEPART, PRIX_PLACE, TYPE_VOITURE, MARQUE_VOITURE," +

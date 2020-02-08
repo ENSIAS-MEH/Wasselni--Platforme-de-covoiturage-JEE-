@@ -40,6 +40,9 @@ public class ImageServlet extends HttpServlet {
             exception.printStackTrace();
         }
 
+        request.setAttribute("path",request.getParameter("path"));
+        request.getRequestDispatcher("/userAccueil").forward(request,response);
+
     }
 
 }

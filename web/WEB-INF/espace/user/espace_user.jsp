@@ -76,21 +76,25 @@ crossorigin="anonymous">
     <div class="page-header page-header-small" filter-color="blue">
       <div class="page-header-image" data-parallax="true" style="background-image: url('/ressources/img/profile_bg.jpg');"></div>
       <div class="container">
-        <div class="content-center">
-          <form method="post" action="upload" enctype="multipart/form-data">
-            <div class="cc-profile-image" id="profile_image">
-                <img src="${pageContext.request.contextPath} +${path}" alt="Image"/>
-            </div>
-            <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
-            <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
-           
-           
-            <div style="margin-left: 220px;">
-              <input type="file" name="files" accept="image/*"
-                     onchange="readFilesAndDisplayPreview(this.files);" />
-            </div>
-            <br>
-            <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
+          <div class="content-center">
+
+              <%
+                  String path = (String) request.getAttribute("path");%>
+              <%=path%>
+              <form method="post" action="upload" enctype="multipart/form-data">
+                  <div class="cc-profile-image" id="profile_image">
+                      <img src="<%=path%>" alt="Image"/>
+                  </div>
+                  <div class="h3 title"><c:out value="${sessionScope.userSession.nom}"/> <c:out value="${sessionScope.userSession.prenom}"/></div>
+                  <p class="category text-white" style="font-size:large;"><c:out value="${sessionScope.userSession.login}"/></p>
+
+
+                  <div style="margin-left: 220px;">
+                      <input type="file" name="files" accept="image/*"
+                             onchange="readFilesAndDisplayPreview(this.files);" />
+                  </div>
+                  <br>
+                  <input type="submit" class="btn btn-outline-info" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" value="Changer"/>
 
           </form>
         </div>
@@ -272,44 +276,47 @@ crossorigin="anonymous">
   <h3 class="h2" style="text-align: center; margin-bottom: 50px;">Historique Offres/Demandes</h3>
   <div class="container cc-offre">
 
-
-      <c:forEach var="i" begin="0" end="${trajets.size()-1}" step="1">
-                  <div class="card">
-                      <div class="row">
-                          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                              <div class="card-body cc-offre-header">
-                                  <div class="h3">${estAssocieas[i].typeAssociation}</div>
-                              </div>
+      <c:if test="${trajet.size() != 0}" >
+          <c:forEach var="i" begin="0" end="${trajets.size()-1}" step="1">
+              <div class="card">
+                  <div class="row">
+                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                          <div class="card-body cc-offre-header">
+                              <div class="h3">${estAssocieas[i].typeAssociation}</div>
                           </div>
-                          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                              <div class="card-body">
-                                  <div class="h5" style="margin-bottom: 20px;">Prix de trajet: <c:out value="${detailsTrajet[i].prixPlace}"/></div>
-                                  <hr>
-                                  <div class="row">
-                                      <div class="col-sm-6">
-                                          <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span><c:out value="${trajets[i].villeDepart}"/>
-                                      </div>
-
-                                      <div class="col-sm-6">
-                                          <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Destination: </span><c:out value="${trajets[i].villeDestination}"/>
-                                      </div>
-                                  </div>
-                                  <br>
-                                  <div class="row">
-                                      <div class="col-sm-6">
-                                          <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  <c:out value="${detailsTrajets[i].dateDepart}"/>
-                                      </div>
-
-                                      <div class="col-sm-6">
-                                          <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${detailsTrajets[i].effectif}"/>
-                                      </div>
+                      </div>
+                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                          <div class="card-body">
+                              <div class="h5" style="margin-bottom: 20px;">Prix de trajet: <c:out value="${detailsTrajet[i].prixPlace}"/></div>
+                              <hr>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <i class="fa fa-street-view" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Depart: </span><c:out value="${trajets[i].villeDepart}"/>
                                   </div>
 
+                                  <div class="col-sm-6">
+                                      <i class="fa fa-map-marker " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Destination: </span><c:out value="${trajets[i].villeDestination}"/>
+                                  </div>
                               </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <i class="fa fa-clock" style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Date: </span>  <c:out value="${detailsTrajets[i].dateDepart}"/>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                      <i class="fa fa-users " style="color: rgb(38, 130, 167);"></i> <span style="font-weight: bold;color: rgb(124, 124, 124); "> Places:  </span> <c:out value="${detailsTrajets[i].effectif}"/>
+                                  </div>
+                              </div>
+
                           </div>
                       </div>
                   </div>
-      </c:forEach>
+              </div>
+          </c:forEach>
+
+
+      </c:if>
 
     <div style="margin-top: 40px; margin-bottom: 100px;">
       <ul class="pagination  justify-content-center ">

@@ -52,14 +52,14 @@
   <div class="row">
         <div class="col-2 filter" style="box-shadow:0px 0px 10px rgba(0, 0, 0, .4); border-radius: 20px;">
           <!-- Filtrage -->
-            <form action="">
+            <form method="post" action="/getOffres">
               <div class="aside" style="margin-top: 20px;">
 
                 <!-- Par prix -->
                 <p style="font-weight: bold;margin-left: 12px;"> Prix par passager (Dhs)</p>
                 <section>
                     <div style="margin-left: -10px; margin-top: -8px;padding: 2em;">
-                        <input class="prix"  type="text" min="50" max="500" value="150,370" name="prixx" step="10" />
+                        <input class="prix"  type="text" min="50" max="500" value="150,370" name="prix" step="10" />
                       <script>
                         $(document).ready(function() {
                           $(".prix").asRange({
@@ -78,24 +78,22 @@
               <!--Depart -->
                 <p style="font-weight: bold; margin-left: 20px;"> Depart </p>
                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable" style="  margin-top: -20px;">
-                  <input class="input100"  type="text" name="depare">
+                  <input class="input100"  type="text" name="depart">
                   <span class="focus-input100"></span>
                   <span class="symbol-input100"><i class="fa fa-street-view" aria-hidden="true"></i>  </span>
                 </div>
             </div>
-
             <hr>
 
             <div class="aside">
               <!-- Destination -->
                 <p style="font-weight: bold;margin-left: 20px;">Destination</p>
                 <div class="wrap-input100 validate-input input-group" data-validate = "indispensable" style="  margin-top: -20px;">
-                  <input class="input100"  type="text" name="depare">
+                  <input class="input100"  type="text" name="destination">
                   <span class="focus-input100"></span>
                   <span class="symbol-input100"><i class="fa fa-map-marker-alt aria-hidden="true"></i>  </span>
                 </div>
             </div>
-
             <hr>
 
             <div class="aside">
@@ -107,9 +105,8 @@
                   <span class="symbol-input100"><i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
               </div>
             </div>
-
             <div class="container-offre-form-btn">
-              <button class="offre-form-btn"  >Filter</button>
+              <button type="submit" class="offre-form-btn"  >Filter</button>
             </div>
        
           </form>
@@ -120,10 +117,10 @@
         <!-- Les offres -->
         <div class="col-10 offre">
           <!-- Premier ligne des offres -->
-            <c:if test="${nooffres != null}">
+            <c:if test="${offres.size() == 0}">
                 <p>${nooffres}</p>
             </c:if>
-            <c:if test="${nooffres == null}">
+            <c:if test="${offres.size() > 0}">
                 <c:forEach var="i" begin="0" end="${offres.size()-1}" step="2"  >
                     <div class="row ">
                     <c:if test="${i+2 <= offres.size()}">

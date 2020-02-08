@@ -12,5 +12,5 @@ public interface TrajetDao {
     public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet) throws SQLException;
     public Long insertTrajet(Trajet trajet) throws SQLException;
     public List<DetailsTrajet> findDetailleTrajetById(Long id) throws SQLException;
-
+    public List<Trajet> findAllTrajets(Trajet trajet, DetailsTrajet detailsTrajet, int min, int max) throws SQLException;
 }
