@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nom_de_admin| Espace Admin</title>
     <!-- Bootstrap CSS -->
-    <link href="../../../ressources/bootstrapPack/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../ressources/bootstrapPack/css/style.css" rel="stylesheet">
+    <link href="../ressources/bootstrapPack/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ressources/bootstrapPack/css/style.css" rel="stylesheet">
     <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
   </head>
   <body>
 
-    <c:import url="./navbar.jsp"/>
+    <c:import url="navbar.jsp"/>
 
     <header id="header">
       <div class="container">
@@ -39,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-              <c:import url="./list_group.jsp"/>
+              <c:import url="list_group.jsp"/>
 
             <div class="well">
               <h4 style="font-size: 17px; font-weight: bold;">La Croissance par semaine</h4>
@@ -244,6 +244,6 @@
       CKEDITOR.replace( 'editor1' );
   </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../../ressources/bootstrapPack/js/bootstrap.min.js"></script>
+    <script src="../ressources/bootstrapPack/js/bootstrap.min.js"></script>
   </body>
 </html>

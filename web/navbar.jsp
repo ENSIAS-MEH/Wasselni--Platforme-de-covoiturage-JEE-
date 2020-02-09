@@ -1,52 +1,25 @@
-<style>
-    .card .post-image {
-        height: 100px;
-        overflow: hidden;
-        background: rgb(41, 41, 41);
-    }
-
-    .card .post-image img {
-        transition: .5s;
-    }
-</style>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navmov" id="hamburger">
-  <div class="container">
-      <a href="#" class="navbar-brand"> <img src="../ressources/img/logo.png" alt="" width="80%" height="80%"></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-
-
-              <li class="nav-item" style="font-size: 12px">
-                  <a href="<c:url value="/accueil"/>" class="nav-link">Accueil</a>
-              </li>
-
-              <li class="nav-item" style="font-size: 12px">
-                  <a href="<c:url value="/proposerTrajet"/>" class="nav-link">Proposer un trajet</a>
-              </li>
-
-              <c:if test="${sessionScope.userId == null}">
-                  <li class="nav-item" style="font-size: 12px">
-                   <a href="<c:url value="/authentification"/>" class="nav-link"> <i class="fa fa-user"></i> se Connecter</a>
-              </li>
-              </c:if>
-              <c:if test="${sessionScope.userId != null}">
-                  <li class="nav-item" style="font-size: 12px">
-                      <a href="<c:url value="/deconnexion"/>" class="nav-link"> <i class="fa fa-user-times"></i> se Déconnecter</a>
-                  </li>
-                  <li class="nav-item" style=" font-size: 12px">
-                      <a href="<c:url value="/upload"/>" class="nav-link"> profile</a>
-                  </li>
-              </c:if>
-
-
-
-          </ul>
-      </div>
-
-
-  </div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="../../../ressources/img/logo_admin.png" alt="" width="65%" height="95%"></a></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="admin.jsp">Espace principale</a></li>
+                <li><a href="<c:url value='/admin_users'/>">Utilisateurs</a></li>
+                <li><a href="<c:url value='/admin_offres'/>">Offres</a></li>
+                <li><a href="<c:url value='/admin_demandes'/>">Demandes</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Bienvenue, nom_de_admin</a></li>
+                <li><a href="authentification.html">Déconnecter</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
