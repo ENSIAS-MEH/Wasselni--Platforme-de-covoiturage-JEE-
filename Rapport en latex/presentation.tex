@@ -49,12 +49,20 @@
 
 
 \begin{spacing}{2}
-\chapter{Présentation du projet}
 
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Avant tout développement sur ce projet, nous tenons à remercier du fond du cœur notre cher professeur monsieur EL HAMLAOUI Mahmoud qui nous a forme et accompagné  tout au long de notre travail avec beaucoup de patience et de pédagogie.
+
+Un merci bien particulier adressé également à nos professeurs pour leurs remarques, leurs directives et l'intérêt qu'ils portent aux étudiants. Nous les remercions sincèrement pour leur suivi et leur orientation.
+
+
+\chapter{Présentation du projet}
 \section{Amenant}
 
 \par 
-Au cours de notre formation en tant qu'Elève Ingénieur de l'ENSIAS en 2ème année, nous sommes appelés à travailler sur un projet JEE à travers lequel nous exploitons nos connaisances et compétences acquis durant notre formation \textbf{Développement et Ingéniere Web} afin d'aboutir à une application Web en JEE bien construite. 
+Au cours de notre formation en tant qu'Elève Ingénieur de l'ENSIAS en 2ème année, nous sommes appelés à travailler sur un projet Java EE à travers lequel nous exploitons nos connaisances et compétences acquis durant notre formation \textbf{Développement et Ingéniere Web} afin d'aboutir à une application Web basé complètement sur Java EE bien construite. 
 
 Avec l'accord de notre cher encadrant, nous avons choisi \textbf{Le covoiturage} comme sujet du projet. 
 
@@ -92,7 +100,166 @@ De ce qui précède, nous nous sommes aperçus que le besoin du covoiturage au M
 \item Assure l'organisation : établir une app Web intuitive qui va interagir avec le visiteur en toute simplicité sans avoir à parcourir plusieurs pages, seulement avec quelques cliques ou quelques messages au Chat Bot de l'application, et créer un sous-réseau social, géré par un/des administrateurs,
 pour identifier les profils conducteurs afin de renforcer la sécurité 
 \end{itemize}
-\end{spacing}
 
+
+\chapter{Analyse et Conception}
+
+\par
+La méthode que nous avons adopté pour réaliser l'analyse et la conception de
+notre système d'information est la méthode UML : Elle permet la séparation
+entre les données et les traitements effectuer en plusieurs modèles conceptuelles
+qui sont répartis sur 3 diagrammes : Le diagramme de cas d’utilisation, le 
+diagramme de classe, diagramme de séquence. Dans cette partie, nous allons 
+présenter quelques-unes de ces méthodes, et en finissant par les maquettes.
+Cette phase a pour objectif de déduire la spécication de l'architecture du système.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Diagramme de cas d’utilisations :
+
+les diagrammes de cas d'utilisation modélisent le comportement d'un système et permettent de capturer les exigences du système. Les diagrammes de cas d'utilisation décrivent
+les fonctions générales et la portée d'un système. Ces diagrammes identifient également les
+interactions entre le système et ses acteurs. Les cas d'utilisation et les acteurs dans les diagrammes de cas d'utilisation décrivent ce que le système fait et comment les acteurs l'utilisent,
+mais ne montrent pas comment le système fonctionne en interne.
+la figure xx donne une vision globale du comportement fonctionnel de l'application développé, il décrit l'interaction entre un utilisateur et le site web
+
+Diagramme de cas d’utilisation admin :
+
+ 
+
+
+Diagramme de cas d’utilisation utilisateur :
+
+ 
+
+
+
+
+
+
+
+
+Diagramme de cas d’utilisation visiteur :
+ 
+Diagramme de classe :
+
+ 
+
+
+Diagramme de séquences :
+Pour schématiser la vue comportementale de notre système informatique, nous faisons recours au diagramme de séquence d'UML. Ce diagramme permet de présenter les interactions
+entre l'acteur et le système avec des messages présentés dans un ordre chronologique. Le
+diagramme de séquences traite le système informatique comme étant une boite noire. Le
+comportement du système est décrit de l'extérieur sans avoir d'idée sur la réalisation. Nous
+pouvons, alors, constater que certains cas d'utilisation sont similaires, c'est pourquoi nous
+avons choisi de traiter quelques exemples.
+Diagramme de séquence proposer trajet :
+la figure xx ci-dessous montre le diagramme de séquence du processus "Proposer Trajet"
+ 
+
+
+
+
+Diagramme de séquence consulter les offres :
+la figure xx ci-dessous montre le diagramme de séquence du processus "Consulter les offres"
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+Diagramme de séquence créer compte :
+la figure xx ci-dessous montre le diagramme de séquence du processus "Créer Compte"
+
+
+ 
+
+
+
+
+
+
+
+
+Diagramme de séquence Choisir offre :
+la figure xx ci-dessous montre le diagramme de séquence du processus "Choisir Offre "
+
+ 
+
+
+\chapter{Maquettes de projets}
+	
+Une maquette est une représentation partielle ou complète d'un Système ou d'un objet (existant ou en projet) afin d'en tester et valider certains aspects et/ou le comportement (maquette fonctionnelle), ou simplement à des fins ludiques (maquette de jeu) ou informatives (présentation pédagogique ou commerciale d'une réalisation ou d'un projet).
+Dans ce qui suit nous allez présenter les maquettes principales de notre site web .
+
+Maquette proproser trajet :
+
+ 
+
+
+Maquette inscription :
+ 
+
+
+
+Maquette Acceuil  :
+ 
+
+
+Maquette demande :
+ 
+
+
+
+Maquette Authentification :
+
+ 
+
+
+
+\chapter{Réalisation}
+
+\section{Problèmes rencontrés durant le projet}
+\begin{spacing}{2}
+\par 
+Durant la réalisation du projet, nous avons rencontré des problèmes dont les unes sont plus graves que les autres. Nous avons pu trouver des solutions à certaines problèmes mais il restait des problèmes sans solution qui ont retardé l'avancement de notre projet. Je les cite comme suit :
+\begin{itemize}
+\item[•] \textbf{Implémentation des API :} nous avons trouvé du mal à introduire les API surtout celles du Google Maps et du Facebook. Des contraintes de paiement et de restrictions ont été imposées, ce qui a limité les fonctionnalités de notre projet : nous avons réussi à implémenter l'API du Facebook mais très limité. 
+\item[•] \textbf{Implémentation du Chat Bot:} le déploiement du Chat Bot dans notre application n'a pas été possible parce que la dependency correspondante au Chat Bot n'a pas été identifiée correctement.
+\item[•] \textbf{Upload des images dans les profils des utilisateurs :} problème de chargement de l'image au premier accès à l'espace de l'utilisateur.
+\item[•] \textbf{Différentes configurations sur un le même projet:} nous avons adopté les solutions cherchées sur Internet mais ça n'a pas marché. 
+\end{itemize} 
+
+\par
+Pour toute référence et détails sur un problème , veuillez accéder à notre projet sur GitHub dans la sections Issues. 
+\cleardoublepage
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[height=6cm]{issues.png}
+\end{center}
+\caption[Section Issues du projet]{Section Issues du projet\protect\footnotemark}
+\end{figure}
+\footnotetext{lien vers la section Issues du projet https://github.com/ENSIAS-MEH/Wasselni--Platforme-de-covoiturage-JEE-/issues } 
+
+\end{spacing}
+\end{spacing}
 
 \end{document}
